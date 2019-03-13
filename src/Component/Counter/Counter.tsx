@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 
 const Counter = (props: any) => {
-    const [count, setCount] = useState(0)
+    const [count, setCount] = React.useState(0)
     return (
         <div>
             <h1>{count}</h1>

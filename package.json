@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
     "react": "^v16.8.4",
     "react-dom": "^v16.8.4",
     "react-scripts": "2.1.2",
