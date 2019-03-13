@@ -1,9 +1,13 @@
 import * as React from 'react';
-
-const Counter = (props: any) => {
-    const [count, setCount] = React.useState(0)
+interface ICountProps {
+    title: string
+}
+const Counter = (props: ICountProps) => {
+    const [count, setCount] = React.useState(0);
+    const { title } = props
     return (
         <div>
+            <h1>{title}</h1>
             <h1>{count}</h1>
             <button onClick={() => setCount(count + 1)}>Increase</button>
             <button onClick={() => setCount(0)}>Reset</button>

@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Counter />
+        <Counter title='Welcome to Typescript'/>
       </div>
     );
   }
