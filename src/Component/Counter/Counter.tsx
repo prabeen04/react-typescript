@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 
-interface counter {
-    title: String;
-    value: Number;
-}
 const Counter = (props: any) => {
     const [count, setCount] = useState(0)
     return (
