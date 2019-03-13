@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^v16.7.0-alpha",
-    "react-dom": "^v16.7.0-alpha",
+    "react": "^v16.8.4",
+    "react-dom": "^v16.8.4",
     "react-scripts": "2.1.2",
     "reactstrap": "^7.0.2"
   },
