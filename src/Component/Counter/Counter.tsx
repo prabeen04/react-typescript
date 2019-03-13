@@ -2,9 +2,9 @@ import * as React from 'react';
 interface ICountProps {
     title: string
 }
-const Counter = (props: ICountProps) => {
+const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
     const [count, setCount] = React.useState(0);
-    const { title } = props
+    const { title } = props;
     return (
         <div>
             <h1>{title}</h1>
