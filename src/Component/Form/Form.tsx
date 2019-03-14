@@ -3,19 +3,29 @@ import TextInput from './TextInput';
 
 export default function Form() {
     const [task, setTask] = React.useState('')
-    function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const [tasks, setTasks] = React.useState([])
+
+    function handleChange(e: React.ChangeEvent<HTMLInputElement>): void {
         setTask(e.target.value)
     }
+    function handleSubmit(e: React.FormEvent<HTMLFormElement>): void {
+        e.preventDefault()
+        let newTasks = [...tasks, task]
+        setTasks(newTasks)
+    }
     return (
-        <div>
+        <>
             <h2>Form component</h2>
-            <TextInput
-                name='task'
-                placeholder='Enter task'
-                onChange={handleChange}
-                value={task}
-            />
-        </div>
+            <form onSubmit={handleSubmit}>
+                <TextInput
+                    name='task'
+                    placeholder='Enter task'
+                    onChange={handleChange}
+                    value={task}
+                />
+                <button>Add</button>
+            </form>
+        </>
     )
 }
 
