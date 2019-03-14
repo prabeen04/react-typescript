@@ -1,6 +1,6 @@
 import * as React from 'react'
 import TextInput from './TextInput';
-
+import TodoList from './TodoList'
 export default function Form(): JSX.Element {
     const [task, setTask] = React.useState<string>('')
     const [tasks, setTasks] = React.useState<string[]>([])
@@ -25,9 +25,7 @@ export default function Form(): JSX.Element {
                     value={task}
                 />
                 <button>Add</button>
-                {
-                    !!tasks && tasks.map((task: string, i: number) => <p key={i}>{task}</p>)
-                }
+                <TodoList tasks={tasks} />
             </form>
         </>
     )
