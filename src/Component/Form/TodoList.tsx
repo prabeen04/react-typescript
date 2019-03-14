@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { ITodo } from './Form'
+import TodoItem from "./TodoItem";
 export interface ITodoListProps {
     todos: ITodo[];
 }
@@ -8,7 +9,7 @@ export default function TodoList(props: ITodoListProps): JSX.Element {
     return (
         <div>
             {
-                !!todos && todos.map((todo: ITodo, i: number) => <p key={i}>{todo.title}</p>)
+                !!todos && todos.map((todo: ITodo, i: number) => <TodoItem key={i} todo={todo} />)
             }
         </div>
     )
