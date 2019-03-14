@@ -1,13 +1,19 @@
 import * as React from 'react'
 import { ITodo } from "./Form";
 
-export default function TodoItem({ todo, deleteTodo }: { todo: ITodo, deleteTodo: (todo: ITodo) => void }): JSX.Element {
+export default function TodoItem({
+    todo, deleteTodo, toggleTodo }
+    : {
+        todo: ITodo,
+        deleteTodo: (todo: ITodo) => void,
+        toggleTodo: (todo: ITodo) => void,
+    }): JSX.Element {
     return (
-        <div>
+        <li className='list-group-item'>
             <span>
-                <span>{todo.title}</span>
-                <button onClick={() => deleteTodo(todo)}>X</button>
+                <span onClick={() => toggleTodo(todo)}>{todo.title}</span>&nbsp;
+                <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>X</button>
             </span>
-        </div>
+        </li>
     )
 }

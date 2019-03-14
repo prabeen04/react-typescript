@@ -11,7 +11,6 @@ class App extends React.Component<IAppProps, IAppState> {
     return (
       <div className="App">
         <Counter title='Welcome to Typescript' />
-        <hr />
         <Form />
       </div>
     );

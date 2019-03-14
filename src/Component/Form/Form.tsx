@@ -26,6 +26,9 @@ export default function Form(): JSX.Element {
         console.log(newArr)
         setTodos(newArr)
     }
+    function toggleTodo(todo: ITodo) {
+        console.log(todo)
+    }
     return (
         <>
             <h2>Form component</h2>
@@ -37,11 +40,15 @@ export default function Form(): JSX.Element {
                         onChange={handleChange}
                         value={todo}
                         className='form-control'
-                        style={{width: 400}}
+                        style={{ width: 400 }}
                     />
                     <button className='btn btn-success' disabled={!todo}>Add</button>
                 </div>
-                <TodoList todos={todos} deleteTodo={deleteTodo} />
+                <TodoList
+                    todos={todos}
+                    deleteTodo={deleteTodo}
+                    toggleTodo={toggleTodo}
+                />
             </form>
         </>
     )
