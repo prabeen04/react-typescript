@@ -19,6 +19,9 @@ export default function Form(): JSX.Element {
         setTodos(newTodos)
         setTodo('')
     }
+    function deleteTodo(todo: ITodo, index: number) {
+        console.log(todo)
+    }
     return (
         <>
             <h2>Form component</h2>
@@ -29,8 +32,8 @@ export default function Form(): JSX.Element {
                     onChange={handleChange}
                     value={todo}
                 />
-                <button>Add</button>
-                <TodoList todos={todos} />
+                <button disabled={!todo}>Add</button>
+                <TodoList todos={todos} deleteTodo={deleteTodo}/>
             </form>
         </>
     )
