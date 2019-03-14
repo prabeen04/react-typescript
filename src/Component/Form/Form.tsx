@@ -12,6 +12,7 @@ export default function Form(): JSX.Element {
         e.preventDefault()
         let newTasks = [...tasks, task]
         setTasks(newTasks)
+        setTask('')
     }
     return (
         <>
@@ -24,6 +25,9 @@ export default function Form(): JSX.Element {
                     value={task}
                 />
                 <button>Add</button>
+                {
+                    !!tasks && tasks.map((task: string, i: number) => <p key={i}>{task}</p>)
+                }
             </form>
         </>
     )
