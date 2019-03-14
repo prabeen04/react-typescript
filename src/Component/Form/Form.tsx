@@ -5,6 +5,7 @@ import TodoList from './TodoList'
 export interface ITodo {
     title: string;
     isCompleted: boolean;
+    id: number;
 }
 export default function Form(): JSX.Element {
     const [todo, setTodo] = React.useState<string>('')
@@ -15,20 +16,14 @@ export default function Form(): JSX.Element {
     }
     function handleSubmit(e: React.FormEvent<HTMLFormElement>): void {
         e.preventDefault()
-        let newTodos = [...todos, { title: todo, isCompleted: false }]
+        let newTodos = [...todos, { title: todo, isCompleted: false, id: Date.now() }]
         setTodos(newTodos)
         setTodo('')
     }
-    function deleteTodo(todo: ITodo, index: number) {
-        console.log(todo)
+    function deleteTodo(todo: ITodo) {
         let newTodos = [...todos]
-        let newArr = newTodos.filter((todo, i) => {
-            if (i !== index) {
-                return todo
-            } else {
-                return null
-            }
-        })
+        let newArr = newTodos.filter((singleTodo: ITodo) => singleTodo.id !== todo.id)
+        console.log(newArr)
         setTodos(newArr)
     }
     return (
