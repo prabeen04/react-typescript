@@ -6,11 +6,11 @@ const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
     const [count, setCount] = React.useState(0);
     const { title } = props;
     return (
-        <div>
+        <div className='jumbotron'>
             <h1>{title}</h1>
             <h1>{count}</h1>
-            <button onClick={() => setCount(count + 1)}>Increase</button>
-            <button onClick={() => setCount(0)}>Reset</button>
+            <button className='btn btn-primary' onClick={() => setCount(count + 1)}>Increase</button>&nbsp;
+            <button className='btn btn-warning' onClick={() => setCount(0)}>Reset</button>
         </div>
     )
 }

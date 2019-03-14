@@ -30,13 +30,17 @@ export default function Form(): JSX.Element {
         <>
             <h2>Form component</h2>
             <form onSubmit={handleSubmit}>
-                <TextInput
-                    name='todo'
-                    placeholder='Enter todo'
-                    onChange={handleChange}
-                    value={todo}
-                />
-                <button disabled={!todo}>Add</button>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <TextInput
+                        name='todo'
+                        placeholder='Enter todo'
+                        onChange={handleChange}
+                        value={todo}
+                        className='form-control'
+                        style={{width: 400}}
+                    />
+                    <button className='btn btn-success' disabled={!todo}>Add</button>
+                </div>
                 <TodoList todos={todos} deleteTodo={deleteTodo} />
             </form>
         </>
