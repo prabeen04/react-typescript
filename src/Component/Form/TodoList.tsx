@@ -1,14 +1,14 @@
 import * as React from 'react'
 
 export interface ITodoListProps {
-    tasks: string[];
+    todos: string[];
 }
 export default function TodoList(props: ITodoListProps): JSX.Element {
-    const { tasks } = props
+    const { todos } = props
     return (
         <div>
             {
-                !!tasks && tasks.map((task: string, i: number) => <p key={i}>{task}</p>)
+                !!todos && todos.map((todo: string, i: number) => <p key={i}>{todo}</p>)
             }
         </div>
     )
