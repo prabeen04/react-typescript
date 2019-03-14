@@ -21,6 +21,15 @@ export default function Form(): JSX.Element {
     }
     function deleteTodo(todo: ITodo, index: number) {
         console.log(todo)
+        let newTodos = [...todos]
+        let newArr = newTodos.filter((todo, i) => {
+            if (i !== index) {
+                return todo
+            } else {
+                return null
+            }
+        })
+        setTodos(newArr)
     }
     return (
         <>
@@ -33,7 +42,7 @@ export default function Form(): JSX.Element {
                     value={todo}
                 />
                 <button disabled={!todo}>Add</button>
-                <TodoList todos={todos} deleteTodo={deleteTodo}/>
+                <TodoList todos={todos} deleteTodo={deleteTodo} />
             </form>
         </>
     )
