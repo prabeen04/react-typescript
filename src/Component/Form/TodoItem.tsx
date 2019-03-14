@@ -11,7 +11,7 @@ export default function TodoItem({
     return (
         <li className='list-group-item'>
             <span>
-                <span onClick={() => toggleTodo(todo)}>{todo.title}</span>&nbsp;
+                <span onClick={() => toggleTodo(todo)} style={{ color: todo.isCompleted ? 'red' : 'green' }}>{todo.title}</span>&nbsp;
                 <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>X</button>
             </span>
         </li>

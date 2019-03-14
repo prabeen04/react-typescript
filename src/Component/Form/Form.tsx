@@ -23,11 +23,18 @@ export default function Form(): JSX.Element {
     function deleteTodo(todo: ITodo) {
         let newTodos = [...todos]
         let newArr = newTodos.filter((singleTodo: ITodo) => singleTodo.id !== todo.id)
-        console.log(newArr)
         setTodos(newArr)
     }
     function toggleTodo(todo: ITodo) {
-        console.log(todo)
+        let newTodos = [...todos]
+        let newArr = newTodos.map((singleTodo: ITodo) => {
+            if (singleTodo.id === todo.id) {
+                return { ...singleTodo, isCompleted: !singleTodo.isCompleted }
+            } else {
+                return singleTodo
+            }
+        })
+        setTodos(newArr)
     }
     return (
         <>
