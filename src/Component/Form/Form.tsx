@@ -1,9 +1,9 @@
 import * as React from 'react'
 import TextInput from './TextInput';
 
-export default function Form() {
-    const [task, setTask] = React.useState('')
-    const [tasks, setTasks] = React.useState([])
+export default function Form(): JSX.Element {
+    const [task, setTask] = React.useState<string>('')
+    const [tasks, setTasks] = React.useState<string[]>([])
 
     function handleChange(e: React.ChangeEvent<HTMLInputElement>): void {
         setTask(e.target.value)
