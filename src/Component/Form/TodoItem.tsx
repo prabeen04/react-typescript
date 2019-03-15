@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { ITodo } from "./Form";
 import ViewEdit from "../../Hooks/ViewEdit";
-
+import TextInput from "../Form/TextInput";
 export default function TodoItem(
     { todo, deleteTodo, toggleTodo }
         : {
@@ -26,7 +26,11 @@ export default function TodoItem(
                     <button className='btn btn-default' onClick={toggleViewType}>Edit</button>&nbsp;
                     <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>Delete</button>
                     </span>
-                    : <p>Edit mode</p>
+                    : <span>
+                        {/* <TextInput name='todo' onChange={() => { }} value='' /> */}
+                        <button className='btn btn-default' onClick={toggleViewType}>Cancel</button>
+                        <button className='btn btn-primary' onClick={() => null}>Update</button>
+                    </span>
             }
 
         </li>
