@@ -3,7 +3,7 @@ import { ITodo } from "./Form";
 import ViewEdit from "../../Hooks/ViewEdit";
 import TextInput from "../Form/TextInput";
 export default function TodoItem(
-    { todo, deleteTodo, toggleTodo }
+    { todo, deleteTodo, toggleTodo, updateTodo }
         : {
             todo: ITodo,
             deleteTodo: (todo: ITodo) => void,
@@ -37,7 +37,7 @@ export default function TodoItem(
                             style={{ width: 400 }}
                         />
                         <button className='btn btn-default' onClick={toggleViewType}>Cancel</button>
-                        <button className='btn btn-primary' onClick={() => null}>Update</button>
+                        <button className='btn btn-primary' onClick={() => updateTodo(todo, title)}>Update</button>
                     </span>
             }
 
