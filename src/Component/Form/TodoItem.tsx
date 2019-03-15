@@ -10,6 +10,7 @@ export default function TodoItem(
             toggleTodo: (todo: ITodo) => void,
         }): JSX.Element {
     const { viewType, toggleViewType } = ViewEdit()
+    const [title, setTitle] = React.useState<string>(todo.title)
     return (
         <li className='list-group-item'>
             {
@@ -27,7 +28,7 @@ export default function TodoItem(
                     <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>Delete</button>
                     </span>
                     : <span>
-                        {/* <TextInput name='todo' onChange={() => { }} value='' /> */}
+                        <TextInput name='todo' onChange={({ target: { value } }) => setTitle(value)} value={title} />
                         <button className='btn btn-default' onClick={toggleViewType}>Cancel</button>
                         <button className='btn btn-primary' onClick={() => null}>Update</button>
                     </span>
