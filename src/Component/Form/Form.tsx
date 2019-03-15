@@ -40,7 +40,16 @@ export default function Form(): JSX.Element {
         setTodos(newArr)
     }
     function updateTodo(todo: ITodo, newTodo: string): void {
-
+        console.log('object')
+        let newTodos = [...todos]
+        let newArr = newTodos.map((singleTodo: ITodo) => {
+            if (singleTodo.id === todo.id) {
+                return { ...singleTodo, title: newTodo }
+            } else {
+                return singleTodo
+            }
+        })
+        setTodos(newArr)
     }
     return (
         <>

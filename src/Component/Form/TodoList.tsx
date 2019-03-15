@@ -5,7 +5,7 @@ export interface ITodoListProps {
     todos: ITodo[];
     deleteTodo: (todo: ITodo) => void;
     toggleTodo: (todo: ITodo) => void;
-    updateTodo: (todo: ITodo) => void;
+    updateTodo: (todo: ITodo, newTodo: string) => void;
 }
 export default function TodoList(props: ITodoListProps): JSX.Element {
     const { todos } = props
