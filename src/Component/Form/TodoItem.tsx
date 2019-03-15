@@ -13,7 +13,11 @@ export default function TodoItem(
             <span>
                 <span
                     onClick={() => toggleTodo(todo)}
-                    style={{ fontSize: 24, color: todo.isCompleted ? 'red' : 'green' }}>
+                    style={{ 
+                        fontSize: 24, 
+                        color: todo.isCompleted ? 'red' : 'green',
+                        textDecoration: todo.isCompleted ? 'line-through' : 'none',
+                         }}>
                     {todo.title}</span>&nbsp;
                 <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>X</button>
             </span>

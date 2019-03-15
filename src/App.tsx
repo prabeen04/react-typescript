@@ -6,13 +6,17 @@ import './App.css';
 interface IAppProps { }
 interface IAppState { }
 
+export const Style = React.createContext('')
+
 class App extends React.Component<IAppProps, IAppState> {
   render() {
     return (
-      <div className="App">
-        <Counter title='Welcome to Typescript' />
-        <Form />
-      </div>
+      <Style.Provider value='none'>
+        <div className="App">
+          <Counter title='Welcome to Typescript' />
+          <Form />
+        </div>
+      </Style.Provider>
     );
   }
 }

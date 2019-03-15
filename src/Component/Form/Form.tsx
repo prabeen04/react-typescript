@@ -41,7 +41,7 @@ export default function Form(): JSX.Element {
     }
     return (
         <>
-            <h2>Form component</h2>
+            <h2>Todo</h2>
             <form onSubmit={handleSubmit}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <TextInput
