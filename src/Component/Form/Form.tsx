@@ -48,7 +48,7 @@ export default function Form(): JSX.Element {
                         value={todo}
                         className='form-control'
                         style={{ width: 400 }}
-                    />
+                    />&nbsp;&nbsp;
                     <button className='btn btn-success' disabled={!todo}>Add</button>
                 </div>
                 <TodoList
