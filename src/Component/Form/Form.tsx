@@ -18,6 +18,7 @@ export default function Form(): JSX.Element {
         setTodo(e.target.value)
     }
     function handleSubmit(e: FormElem): void {
+        console.log('****************************************')
         e.preventDefault()
         let newTodos = [...todos, { title: todo, isCompleted: false, id: Date.now() }]
         setTodos(newTodos)
@@ -54,12 +55,12 @@ export default function Form(): JSX.Element {
                     />&nbsp;&nbsp;
                     <button className='btn btn-success' disabled={!todo}>Add</button>
                 </div>
-                <TodoList
-                    todos={todos}
-                    deleteTodo={deleteTodo}
-                    toggleTodo={toggleTodo}
-                />
             </form>
+            <TodoList
+                todos={todos}
+                deleteTodo={deleteTodo}
+                toggleTodo={toggleTodo}
+            />
         </>
     )
 }

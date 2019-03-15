@@ -27,8 +27,14 @@ export default function TodoItem(
                     <button className='btn btn-default' onClick={toggleViewType}>Edit</button>&nbsp;
                     <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>Delete</button>
                     </span>
-                    : <span>
-                        <TextInput name='todo' onChange={({ target: { value } }) => setTitle(value)} value={title} />
+                    : <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <TextInput
+                            className='form-control'
+                            name=''
+                            onChange={({ target: { value } }) => setTitle(value)}
+                            value={title}
+                            style={{ width: 400 }}
+                        />
                         <button className='btn btn-default' onClick={toggleViewType}>Cancel</button>
                         <button className='btn btn-primary' onClick={() => null}>Update</button>
                     </span>
