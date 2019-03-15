@@ -7,14 +7,17 @@ export interface ITodo {
     isCompleted: boolean;
     id: number;
 }
+export type InputElem = React.ChangeEvent<HTMLInputElement>
+export type FormElem = React.FormEvent<HTMLFormElement>
+
 export default function Form(): JSX.Element {
     const [todo, setTodo] = React.useState<string>('')
     const [todos, setTodos] = React.useState<ITodo[]>([])
 
-    function handleChange(e: React.ChangeEvent<HTMLInputElement>): void {
+    function handleChange(e: InputElem): void {
         setTodo(e.target.value)
     }
-    function handleSubmit(e: React.FormEvent<HTMLFormElement>): void {
+    function handleSubmit(e: FormElem): void {
         e.preventDefault()
         let newTodos = [...todos, { title: todo, isCompleted: false, id: Date.now() }]
         setTodos(newTodos)
