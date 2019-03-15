@@ -3,8 +3,9 @@ import { ITodo } from './Form'
 import TodoItem from "./TodoItem";
 export interface ITodoListProps {
     todos: ITodo[];
-    deleteTodo: (todo: ITodo) => void
-    toggleTodo: (todo: ITodo) => void
+    deleteTodo: (todo: ITodo) => void;
+    toggleTodo: (todo: ITodo) => void;
+    updateTodo: (todo: ITodo) => void;
 }
 export default function TodoList(props: ITodoListProps): JSX.Element {
     const { todos } = props
@@ -16,6 +17,7 @@ export default function TodoList(props: ITodoListProps): JSX.Element {
                     todo={todo}
                     deleteTodo={props.deleteTodo}
                     toggleTodo={props.toggleTodo}
+                    updateTodo={props.updateTodo}
                 />)
             }
         </ul>

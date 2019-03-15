@@ -18,18 +18,17 @@ export default function Form(): JSX.Element {
         setTodo(e.target.value)
     }
     function handleSubmit(e: FormElem): void {
-        console.log('****************************************')
         e.preventDefault()
         let newTodos = [...todos, { title: todo, isCompleted: false, id: Date.now() }]
         setTodos(newTodos)
         setTodo('')
     }
-    function deleteTodo(todo: ITodo) {
+    function deleteTodo(todo: ITodo): void {
         let newTodos = [...todos]
         let newArr = newTodos.filter((singleTodo: ITodo) => singleTodo.id !== todo.id)
         setTodos(newArr)
     }
-    function toggleTodo(todo: ITodo) {
+    function toggleTodo(todo: ITodo): void {
         let newTodos = [...todos]
         let newArr = newTodos.map((singleTodo: ITodo) => {
             if (singleTodo.id === todo.id) {
@@ -39,6 +38,9 @@ export default function Form(): JSX.Element {
             }
         })
         setTodos(newArr)
+    }
+    function updateTodo(todo: ITodo, newTodo: string): void {
+
     }
     return (
         <>
@@ -60,6 +62,7 @@ export default function Form(): JSX.Element {
                 todos={todos}
                 deleteTodo={deleteTodo}
                 toggleTodo={toggleTodo}
+                updateTodo={updateTodo}
             />
         </>
     )

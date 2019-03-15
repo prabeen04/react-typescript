@@ -8,6 +8,7 @@ export default function TodoItem(
             todo: ITodo,
             deleteTodo: (todo: ITodo) => void,
             toggleTodo: (todo: ITodo) => void,
+            updateTodo: (todo: ITodo) => void,
         }): JSX.Element {
     const { viewType, toggleViewType } = ViewEdit()
     const [title, setTitle] = React.useState<string>(todo.title)
