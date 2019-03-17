@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Style } from "../../App";
 const initialState = { count: 0 };
-interface IcounterState {
-    count: string
+interface ICounterState {
+    count: number
 }
 interface ICountProps {
 }
@@ -14,26 +14,26 @@ const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
     return (
         <div className='jumbotron'>
             <button onClick={() => console.log('injecting style ....')}>Inject styles</button>
-            <h1>{count}</h1>
-            <button className='btn btn-primary' onClick={() => setCount(count + 1)}>Increase</button>&nbsp;
-            <button className='btn btn-danger' onClick={() => setCount(count - 1)}>Decrease</button>&nbsp;
-            <button className='btn btn-warning' onClick={() => setCount(0)}>Reset</button>
+            <h1>{state.count}</h1>
+            <button className='btn btn-primary' onClick={() => dispatch({ type: 'INCREMENT' })}>Increase</button>&nbsp;
+            {/* <button className='btn btn-danger' onClick={() => setCount(count - 1)}>Decrease</button>&nbsp;
+            <button className='btn btn-warning' onClick={() => setCount(0)}>Reset</button> */}
         </div>
     )
 }
 
 export default Counter;
 
-const appReducer = (state, action) => {
-    // switch (action.type) {
-    //     case 'INCREASE_TIME':
-    //         return { ...state, time: moment(action.payload).add(1, state.viewType) }
-    //     case 'DECREASE_TIME':
-    //         return { ...state, time: moment(action.payload).subtract(1, state.viewType) }
-    //     case 'CHANGE_VIEW_TYPE':
-    //         return { ...state, viewType: action.payload }
-    //     default:
-    //         return { ...state }
-    // }
+const appReducer = (state: ICounterState, action: any) => {
+    switch (action.type) {
+        case 'INCREMENT':
+            return { ...state, count: state.count + 1 }
+        case 'DECREASE':
+            return { ...state }
+        case 'RESET':
+            return { ...state, }
+        default:
+            return { ...state }
+    }
     return state;
 }
