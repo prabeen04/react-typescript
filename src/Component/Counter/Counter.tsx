@@ -16,8 +16,8 @@ const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
             <button onClick={() => console.log('injecting style ....')}>Inject styles</button>
             <h1>{state.count}</h1>
             <button className='btn btn-primary' onClick={() => dispatch({ type: 'INCREMENT' })}>Increase</button>&nbsp;
-            {/* <button className='btn btn-danger' onClick={() => setCount(count - 1)}>Decrease</button>&nbsp;
-            <button className='btn btn-warning' onClick={() => setCount(0)}>Reset</button> */}
+            <button className='btn btn-danger' onClick={() => dispatch({ type: 'DECREMENT' })}>Decrease</button>&nbsp;
+            <button className='btn btn-warning' onClick={() => dispatch({ type: 'RESET' })}>Reset</button>
         </div>
     )
 }
@@ -28,12 +28,11 @@ const appReducer = (state: ICounterState, action: any) => {
     switch (action.type) {
         case 'INCREMENT':
             return { ...state, count: state.count + 1 }
-        case 'DECREASE':
-            return { ...state }
+        case 'DECREMENT':
+            return { ...state, count: state.count - 1 }
         case 'RESET':
-            return { ...state, }
+            return { ...state, count: 0 }
         default:
             return { ...state }
     }
-    return state;
 }
