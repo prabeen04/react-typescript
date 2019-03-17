@@ -17,19 +17,23 @@ const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
             <h1>{state.count}</h1>
             <button className='btn btn-primary' onClick={() => dispatch({ type: 'INCREMENT' })}>Increase</button>&nbsp;
             <button className='btn btn-danger' onClick={() => dispatch({ type: 'DECREMENT' })}>Decrease</button>&nbsp;
-            <button className='btn btn-warning' onClick={() => dispatch({ type: 'RESET' })}>Reset</button>
+            <button className='btn btn-warning' onClick={() => dispatch({ type: 'RESET' })}>Reset</button>&nbsp;
+            <button className='btn btn-default' onClick={() => dispatch({ type: 'MULTIPLY', payload: 5 })}>Multiply by 5 </button>
         </div>
     )
 }
 
 export default Counter;
 
-const appReducer = (state: ICounterState, action: any) => {
+const appReducer = (state: ICounterState, action: { type: string, payload?: number | null | undefined }) => {
+    console.log(action)
     switch (action.type) {
         case 'INCREMENT':
             return { ...state, count: state.count + 1 }
         case 'DECREMENT':
             return { ...state, count: state.count - 1 }
+        case 'MULTIPLY':
+            return { ...state, count: state.count * 5 }
         case 'RESET':
             return { ...state, count: 0 }
         default:
