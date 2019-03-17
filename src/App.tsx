@@ -13,7 +13,7 @@ class App extends React.Component<IAppProps, IAppState> {
     return (
       <Style.Provider value='none'>
         <div className="App">
-          <Counter title='Welcome to Typescript' />
+          <Counter />
           <Form />
         </div>
       </Style.Provider>

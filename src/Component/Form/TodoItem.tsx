@@ -36,8 +36,13 @@ export default function TodoItem(
                             value={title}
                             style={{ width: 400 }}
                         />
+                        <button
+                            className='btn btn-primary'
+                            onClick={() => {
+                                updateTodo(todo, title)
+                                toggleViewType()
+                            }}>Update</button>
                         <button className='btn btn-default' onClick={toggleViewType}>Cancel</button>
-                        <button className='btn btn-primary' onClick={() => updateTodo(todo, title)}>Update</button>
                     </span>
             }
 
