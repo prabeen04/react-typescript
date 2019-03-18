@@ -4,9 +4,9 @@ import classnames from 'classnames';
 import Counter from '../Counter/Counter'
 import Form from "../Form/Form";
 
-export default function Tabs(props) {
-    const [activeTab, setActiveTab] = React.useState('1')
-    function toggleTab(tab) {
+export default function Tabs(props: any) {
+    const [activeTab, setActiveTab] = React.useState<string>('1')
+    function toggleTab(tab: string) {
         if (activeTab !== tab) {
             setActiveTab(tab)
         }
@@ -17,7 +17,7 @@ export default function Tabs(props) {
                 <NavItem>
                     <NavLink
                         className={classnames({ active: activeTab === '1' })}
-                        onClick={() => {toggleTab('1'); }}
+                        onClick={() => { toggleTab('1'); }}
                     >
                         Counter
             </NavLink>
@@ -25,7 +25,7 @@ export default function Tabs(props) {
                 <NavItem>
                     <NavLink
                         className={classnames({ active: activeTab === '2' })}
-                        onClick={() => {toggleTab('2'); }}
+                        onClick={() => { toggleTab('2'); }}
                     >
                         Todo
             </NavLink>
