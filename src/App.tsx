@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Counter from './Component/Counter/Counter';
 import Form from './Component/Form/Form';
+import Tabs from './Component/Tabs/Tabs'
 import './App.css';
 
 interface IAppProps { }
@@ -13,8 +14,7 @@ class App extends React.Component<IAppProps, IAppState> {
     return (
       <Style.Provider value='none'>
         <div className="App">
-          <Counter />
-          <Form />
+          <Tabs />
         </div>
       </Style.Provider>
     );
