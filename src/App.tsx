@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Counter from './Component/Counter/Counter';
-import Form from './Component/Form/Form';
 import Tabs from './Component/Tabs/Tabs'
 import './App.css';
 

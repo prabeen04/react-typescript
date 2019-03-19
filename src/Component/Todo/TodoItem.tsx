@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { ITodo } from "./Form";
+import { ITodo } from "./Todo";
 import ViewEdit from "../../Hooks/ViewEdit";
-import TextInput from "../Form/TextInput";
+import TextInput from "./TextInput";
 export default function TodoItem(
     { todo, deleteTodo, toggleTodo, updateTodo }
         : {

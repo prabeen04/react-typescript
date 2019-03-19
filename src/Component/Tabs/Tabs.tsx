@@ -2,7 +2,7 @@ import * as React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Jumbotron, Container, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import Counter from '../Counter/Counter'
-import Form from "../Form/Form";
+import Todo from "../Todo/Todo";
 
 interface ITabsProps {
 
@@ -47,7 +47,7 @@ export default function Tabs(props: ITabsProps) {
                         <Container fluid>
                             <Row>
                                 <Col sm="12">
-                                    <Form />
+                                    <Todo />
                                 </Col>
                             </Row>
                         </Container>

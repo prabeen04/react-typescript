@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ITodo } from './Form'
+import { ITodo } from './Todo'
 import TodoItem from "./TodoItem";
 export interface ITodoListProps {
     todos: ITodo[];
