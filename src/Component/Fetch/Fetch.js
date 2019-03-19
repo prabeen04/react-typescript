@@ -1,9 +1,10 @@
 import * as React from 'react'
-
+import useUserData, { IUser } from "../../Hooks/UserData";
 export default function Fetch() {
-  return (
-    <>
-      
-    </>
-  )
+    const { fetchingUsers, fetchingUsersError, users: IUser } = useUserData();
+    return (
+        <>
+
+        </>
+    )
 }

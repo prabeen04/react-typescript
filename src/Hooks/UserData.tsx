@@ -13,14 +13,16 @@ const initialState = {
     fetchingUsersError: false
 }
 
-export default function UserData() {
+export default function useUserData() {
     const [usersState, setUsersState] = React.useState<IUser>(initialState)
 
     React.useEffect(() => {
+        setUsersState({ ...usersState, fetchingUsers: true })
         fetch(url)
             .then((res: any) => res.json())
-            .then((data: any) => setUsersState(data))
-    },[])
+            .then((data: any) => setUsersState({ ...usersState, fetchingUsers: false, users: data }))
+            .catch((err: any) => setUsersState({ ...usersState, fetchingUsers: false, fetchingUsersError: true }))
+    }, [])
 
     return usersState
 }
