@@ -1,8 +1,8 @@
 import * as React from 'react'
-import useUserData, { IUser } from "../../Hooks/UserData";
+import useUserData from "../../Hooks/UserData";
 
 export default function Fetch() {
-    const { fetchingUsers, fetchingUsersError, users} = useUserData();
+    const { fetchingUsers, fetchingUsersError, users } = useUserData();
     if (fetchingUsers) {
         return <p>fetching users...</p>
     }
