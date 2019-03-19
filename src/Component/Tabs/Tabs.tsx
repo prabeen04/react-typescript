@@ -3,7 +3,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Jumbotron, Container, Row, 
 import classnames from 'classnames';
 import Counter from '../Counter/Counter'
 import Todo from "../Todo/Todo";
-
+import Fetch from '../Fetch/Fetch'
 interface ITabsProps {
 
 }
@@ -29,6 +29,12 @@ export default function Tabs(props: ITabsProps) {
                         onClick={() => { toggleTab('2'); }}
                     > Todo </NavLink>
                 </NavItem>
+                <NavItem>
+                    <NavLink
+                        className={classnames({ active: activeTab === '3' })}
+                        onClick={() => { toggleTab('3'); }}
+                    > Fetch </NavLink>
+                </NavItem>
             </Nav>
             <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">
@@ -48,6 +54,17 @@ export default function Tabs(props: ITabsProps) {
                             <Row>
                                 <Col sm="12">
                                     <Todo />
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Jumbotron>
+                </TabPane>
+                <TabPane tabId="3">
+                    <Jumbotron fluid>
+                        <Container fluid>
+                            <Row>
+                                <Col sm="12">
+                                    <Fetch />
                                 </Col>
                             </Row>
                         </Container>

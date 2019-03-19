@@ -10,7 +10,7 @@ export interface ITodo {
 export type InputElem = React.ChangeEvent<HTMLInputElement>
 export type FormElem = React.FormEvent<HTMLFormElement>
 
-export default function Form(): JSX.Element {
+export default function Todo(): JSX.Element {
     const [todo, setTodo] = React.useState<string>('')
     const [todos, setTodos] = React.useState<ITodo[]>([])
 
