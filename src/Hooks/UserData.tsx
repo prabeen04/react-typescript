@@ -16,5 +16,11 @@ const initialState = {
 export default function UserData() {
     const [usersState, setUsersState] = React.useState<IUser>(initialState)
 
-    return null
+    React.useEffect(() => {
+        fetch(url)
+            .then((res: any) => res.json())
+            .then((data: any) => setUsersState(data))
+    },[])
+
+    return usersState
 }
