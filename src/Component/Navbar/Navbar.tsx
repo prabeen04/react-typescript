@@ -1,16 +1,16 @@
 import * as React from 'react';
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-} from 'reactstrap';
 import { Link } from "react-router-dom";
-export default class MyNavbar extends React.Component<any, any> {
-    constructor(props: any) {
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, } from 'reactstrap';
+
+interface INavbarState {
+    isOpen: boolean
+}
+interface INavbarProps {
+
+}
+
+export default class MyNavbar extends React.Component<INavbarProps, INavbarState> {
+    constructor(props: INavbarProps) {
         super(props);
 
         this.toggle = this.toggle.bind(this);
