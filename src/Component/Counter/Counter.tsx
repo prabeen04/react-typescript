@@ -8,7 +8,6 @@ interface ICountProps {
 }
 const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
     const style = React.useContext(Style)
-    console.log(style)
     const [state, dispatch] = React.useReducer(appReducer, initialState)
     return (
         <div className='jumbotron'>

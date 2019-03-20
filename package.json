@@ -21,9 +21,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setupTests.js" },
   "eslintConfig": {
     "extends": "react-app"
   },
