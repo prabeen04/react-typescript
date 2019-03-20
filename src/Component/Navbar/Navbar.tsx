@@ -4,7 +4,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, } 
 
 export default function MyNavbar() {
     const [isOpen, setIsOpen] = React.useState<boolean>(false);
-    function toggle() {
+    function toggle(): void {
         setIsOpen(!isOpen)
     }
     return (
