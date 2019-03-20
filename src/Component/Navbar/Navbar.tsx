@@ -41,6 +41,11 @@ export default class MyNavbar extends React.Component<any, any> {
                                     <Link to="/todo">Todo</Link>
                                 </NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink>
+                                    <Link to="/fetch">Users</Link>
+                                </NavLink>
+                            </NavItem>
                         </Nav>
                     </Collapse>
                 </Navbar>
