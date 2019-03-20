@@ -10,24 +10,18 @@ export default function MyNavbar() {
     return (
         <div>
             <Navbar color="light" light expand="md">
-                <NavbarBrand href="/"><Link to="/">Typescript</Link></NavbarBrand>
+                <Link to="/" className='navbar-brand'>Typescript</Link>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink>
-                                <Link to="/counter">Counter</Link>
-                            </NavLink>
+                            <Link to="/counter" className='nav-link'>Counter</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink>
-                                <Link to="/todo">Todo</Link>
-                            </NavLink>
+                            <Link to="/todo" className='nav-link'>Todo</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink>
-                                <Link to="/fetch">Users</Link>
-                            </NavLink>
+                            <Link to="/fetch" className='nav-link'>Users</Link>
                         </NavItem>
                     </Nav>
                 </Collapse>
