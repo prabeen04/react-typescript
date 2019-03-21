@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-interface ITextInputProps {
+export interface ITextInputProps {
     value: string;
     name: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -9,7 +9,7 @@ interface ITextInputProps {
     style?: object
 }
 export default function TextInput(props: ITextInputProps) {
-    const { value, placeholder, onChange, ...rest } = props;
+    const { name, value, placeholder, onChange, ...rest } = props;
     return (
         <>
             <input
