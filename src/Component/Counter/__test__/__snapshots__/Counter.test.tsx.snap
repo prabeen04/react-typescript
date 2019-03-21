@@ -56,6 +56,7 @@ ShallowWrapper {
         </button>,
       ],
       "className": "jumbotron",
+      "data-test": "Counter",
     },
     "ref": null,
     "rendered": Array [
@@ -184,6 +185,7 @@ ShallowWrapper {
           </button>,
         ],
         "className": "jumbotron",
+        "data-test": "Counter",
       },
       "ref": null,
       "rendered": Array [

@@ -7,4 +7,8 @@ describe('<Counter/>', () => {
         const wrapper = shallow(<Counter />)
         expect(wrapper).toMatchSnapshot()
     })
+    it('should render counter', () => {
+        const wrapper = shallow(<Counter />)
+        expect(wrapper.find('[data-test="Counter"]').length).toEqual(1)
+    })
 })
