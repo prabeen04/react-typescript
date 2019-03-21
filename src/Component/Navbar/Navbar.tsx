@@ -9,7 +9,7 @@ export default function MyNavbar() {
     }
     return (
         <div>
-            <Navbar color="light" light expand="md">
+            <Navbar color="light" light expand="md" data-test='Navbar'>
                 <Link to="/" className='navbar-brand'>Typescript</Link>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>

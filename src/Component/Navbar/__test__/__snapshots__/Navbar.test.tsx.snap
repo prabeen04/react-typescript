@@ -20,6 +20,7 @@ ShallowWrapper {
     "props": Object {
       "children": <Navbar
         color="light"
+        data-test="Navbar"
         expand="md"
         light={true}
         tag="nav"
@@ -169,6 +170,7 @@ ShallowWrapper {
           </Collapse>,
         ],
         "color": "light",
+        "data-test": "Navbar",
         "expand": "md",
         "light": true,
         "tag": "nav",
@@ -410,6 +412,7 @@ ShallowWrapper {
       "props": Object {
         "children": <Navbar
           color="light"
+          data-test="Navbar"
           expand="md"
           light={true}
           tag="nav"
@@ -559,6 +562,7 @@ ShallowWrapper {
             </Collapse>,
           ],
           "color": "light",
+          "data-test": "Navbar",
           "expand": "md",
           "light": true,
           "tag": "nav",
