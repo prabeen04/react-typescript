@@ -24,4 +24,15 @@ describe('<TextInput />', () => {
         const wrapper = shallow(<TextInput {...props} />)
         expect(wrapper.find('[data-test="TextInput"]').length).toEqual(1)
     })
+    it('should render counter', () => {
+        const props = {
+            name: 'name',
+            value: '',
+            onChange: jest.fn()
+
+        }
+        const wrapper = shallow(<TextInput name='input' {...props} />)
+        console.log(wrapper.props())
+        expect(wrapper.props().name).toEqual(undefined)
+    })
 })
