@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from "react-router-dom";
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 
 export default function MyNavbar() {
     const [isOpen, setIsOpen] = React.useState<boolean>(false);
