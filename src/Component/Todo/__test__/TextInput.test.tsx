@@ -32,7 +32,6 @@ describe('<TextInput />', () => {
 
         }
         const wrapper = shallow(<TextInput name='input' {...props} />)
-        console.log(wrapper.props())
         expect(wrapper.props().name).toEqual(undefined)
     })
 })
