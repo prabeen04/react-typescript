@@ -13,6 +13,7 @@ export default function TextInput(props: ITextInputProps) {
     return (
         <>
             <input
+                data-test='TextInput'
                 name={name}
                 value={value}
                 placeholder={placeholder}
