@@ -8,7 +8,6 @@ describe('<TextInput />', () => {
             name: '',
             value: '',
             onChange: jest.fn()
-
         }
         const wrapper = shallow(<TextInput {...props} />)
         expect(wrapper).toMatchSnapshot()
@@ -19,7 +18,6 @@ describe('<TextInput />', () => {
             name: '',
             value: '',
             onChange: jest.fn()
-
         }
         const wrapper = shallow(<TextInput {...props} />)
         expect(wrapper.find('[data-test="TextInput"]').length).toEqual(1)
@@ -29,7 +27,6 @@ describe('<TextInput />', () => {
             name: 'name',
             value: '',
             onChange: jest.fn()
-
         }
         const wrapper = shallow(<TextInput name='input' {...props} />)
         expect(wrapper.props().name).toEqual(undefined)
