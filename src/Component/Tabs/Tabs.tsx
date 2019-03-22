@@ -15,7 +15,7 @@ export default function Tabs(props: ITabsProps) {
         }
     }
     return (
-        <div>
+        <div data-test='Tabs'>
             <Nav tabs>
                 <NavItem>
                     <NavLink
