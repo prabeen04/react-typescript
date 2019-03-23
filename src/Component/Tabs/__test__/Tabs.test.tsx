@@ -9,7 +9,7 @@ describe('<Tabs/>', () => {
     })
     it('should render without error', () => {
         const wrapper = shallow(<Tabs />)
-        expect(wrapper.find('[data-test="Tabs"]')).toEqual(1)
+        expect(wrapper.find('[data-test="Tabs"]').length).toEqual(1)
     })
     
 })

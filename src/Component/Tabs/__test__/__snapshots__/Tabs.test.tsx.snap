@@ -1,0 +1,1828 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tabs/> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Tabs />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Nav
+          tabs={true}
+          tag="ul"
+          vertical={false}
+        >
+          <NavItem
+            tag="li"
+          >
+            <NavLink
+              className="active"
+              onClick={[Function]}
+              tag="a"
+            >
+               Counter 
+            </NavLink>
+          </NavItem>
+          <NavItem
+            tag="li"
+          >
+            <NavLink
+              className=""
+              onClick={[Function]}
+              tag="a"
+            >
+               Todo 
+            </NavLink>
+          </NavItem>
+          <NavItem
+            tag="li"
+          >
+            <NavLink
+              className=""
+              onClick={[Function]}
+              tag="a"
+            >
+               Fetch 
+            </NavLink>
+          </NavItem>
+        </Nav>,
+        <TabContent
+          activeTab="1"
+          tag="div"
+        >
+          <TabPane
+            tabId="1"
+            tag="div"
+          >
+            <Jumbotron
+              fluid={true}
+              tag="div"
+            >
+              <Container
+                fluid={true}
+                tag="div"
+              >
+                <Row
+                  tag="div"
+                >
+                  <Col
+                    sm="12"
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    <Counter />
+                  </Col>
+                </Row>
+              </Container>
+            </Jumbotron>
+          </TabPane>
+          <TabPane
+            tabId="2"
+            tag="div"
+          >
+            <Jumbotron
+              fluid={true}
+              tag="div"
+            >
+              <Container
+                fluid={true}
+                tag="div"
+              >
+                <Row
+                  tag="div"
+                >
+                  <Col
+                    sm="12"
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    <Todo />
+                  </Col>
+                </Row>
+              </Container>
+            </Jumbotron>
+          </TabPane>
+          <TabPane
+            tabId="3"
+            tag="div"
+          >
+            <Jumbotron
+              fluid={true}
+              tag="div"
+            >
+              <Container
+                fluid={true}
+                tag="div"
+              >
+                <Row
+                  tag="div"
+                >
+                  <Col
+                    sm="12"
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    <Fetch />
+                  </Col>
+                </Row>
+              </Container>
+            </Jumbotron>
+          </TabPane>
+        </TabContent>,
+      ],
+      "data-test": "Tabs",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                className="active"
+                onClick={[Function]}
+                tag="a"
+              >
+                 Counter 
+              </NavLink>
+            </NavItem>,
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                className=""
+                onClick={[Function]}
+                tag="a"
+              >
+                 Todo 
+              </NavLink>
+            </NavItem>,
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                className=""
+                onClick={[Function]}
+                tag="a"
+              >
+                 Fetch 
+              </NavLink>
+            </NavItem>,
+          ],
+          "tabs": true,
+          "tag": "ul",
+          "vertical": false,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <NavLink
+                className="active"
+                onClick={[Function]}
+                tag="a"
+              >
+                 Counter 
+              </NavLink>,
+              "tag": "li",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": " Counter ",
+                "className": "active",
+                "onClick": [Function],
+                "tag": "a",
+              },
+              "ref": null,
+              "rendered": " Counter ",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <NavLink
+                className=""
+                onClick={[Function]}
+                tag="a"
+              >
+                 Todo 
+              </NavLink>,
+              "tag": "li",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": " Todo ",
+                "className": "",
+                "onClick": [Function],
+                "tag": "a",
+              },
+              "ref": null,
+              "rendered": " Todo ",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <NavLink
+                className=""
+                onClick={[Function]}
+                tag="a"
+              >
+                 Fetch 
+              </NavLink>,
+              "tag": "li",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": " Fetch ",
+                "className": "",
+                "onClick": [Function],
+                "tag": "a",
+              },
+              "ref": null,
+              "rendered": " Fetch ",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "activeTab": "1",
+          "children": Array [
+            <TabPane
+              tabId="1"
+              tag="div"
+            >
+              <Jumbotron
+                fluid={true}
+                tag="div"
+              >
+                <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Counter />
+                    </Col>
+                  </Row>
+                </Container>
+              </Jumbotron>
+            </TabPane>,
+            <TabPane
+              tabId="2"
+              tag="div"
+            >
+              <Jumbotron
+                fluid={true}
+                tag="div"
+              >
+                <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Todo />
+                    </Col>
+                  </Row>
+                </Container>
+              </Jumbotron>
+            </TabPane>,
+            <TabPane
+              tabId="3"
+              tag="div"
+            >
+              <Jumbotron
+                fluid={true}
+                tag="div"
+              >
+                <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Fetch />
+                    </Col>
+                  </Row>
+                </Container>
+              </Jumbotron>
+            </TabPane>,
+          ],
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <Jumbotron
+                fluid={true}
+                tag="div"
+              >
+                <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Counter />
+                    </Col>
+                  </Row>
+                </Container>
+              </Jumbotron>,
+              "tabId": "1",
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Counter />
+                    </Col>
+                  </Row>
+                </Container>,
+                "fluid": true,
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Counter />
+                    </Col>
+                  </Row>,
+                  "fluid": true,
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Counter />
+                    </Col>,
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <Counter />,
+                      "sm": "12",
+                      "tag": "div",
+                      "widths": Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <Jumbotron
+                fluid={true}
+                tag="div"
+              >
+                <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Todo />
+                    </Col>
+                  </Row>
+                </Container>
+              </Jumbotron>,
+              "tabId": "2",
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Todo />
+                    </Col>
+                  </Row>
+                </Container>,
+                "fluid": true,
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Todo />
+                    </Col>
+                  </Row>,
+                  "fluid": true,
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Todo />
+                    </Col>,
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <Todo />,
+                      "sm": "12",
+                      "tag": "div",
+                      "widths": Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <Jumbotron
+                fluid={true}
+                tag="div"
+              >
+                <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Fetch />
+                    </Col>
+                  </Row>
+                </Container>
+              </Jumbotron>,
+              "tabId": "3",
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Fetch />
+                    </Col>
+                  </Row>
+                </Container>,
+                "fluid": true,
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Fetch />
+                    </Col>
+                  </Row>,
+                  "fluid": true,
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Fetch />
+                    </Col>,
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <Fetch />,
+                      "sm": "12",
+                      "tag": "div",
+                      "widths": Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Nav
+            tabs={true}
+            tag="ul"
+            vertical={false}
+          >
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                className="active"
+                onClick={[Function]}
+                tag="a"
+              >
+                 Counter 
+              </NavLink>
+            </NavItem>
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                className=""
+                onClick={[Function]}
+                tag="a"
+              >
+                 Todo 
+              </NavLink>
+            </NavItem>
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                className=""
+                onClick={[Function]}
+                tag="a"
+              >
+                 Fetch 
+              </NavLink>
+            </NavItem>
+          </Nav>,
+          <TabContent
+            activeTab="1"
+            tag="div"
+          >
+            <TabPane
+              tabId="1"
+              tag="div"
+            >
+              <Jumbotron
+                fluid={true}
+                tag="div"
+              >
+                <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Counter />
+                    </Col>
+                  </Row>
+                </Container>
+              </Jumbotron>
+            </TabPane>
+            <TabPane
+              tabId="2"
+              tag="div"
+            >
+              <Jumbotron
+                fluid={true}
+                tag="div"
+              >
+                <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Todo />
+                    </Col>
+                  </Row>
+                </Container>
+              </Jumbotron>
+            </TabPane>
+            <TabPane
+              tabId="3"
+              tag="div"
+            >
+              <Jumbotron
+                fluid={true}
+                tag="div"
+              >
+                <Container
+                  fluid={true}
+                  tag="div"
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      sm="12"
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      <Fetch />
+                    </Col>
+                  </Row>
+                </Container>
+              </Jumbotron>
+            </TabPane>
+          </TabContent>,
+        ],
+        "data-test": "Tabs",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  className="active"
+                  onClick={[Function]}
+                  tag="a"
+                >
+                   Counter 
+                </NavLink>
+              </NavItem>,
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  className=""
+                  onClick={[Function]}
+                  tag="a"
+                >
+                   Todo 
+                </NavLink>
+              </NavItem>,
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  className=""
+                  onClick={[Function]}
+                  tag="a"
+                >
+                   Fetch 
+                </NavLink>
+              </NavItem>,
+            ],
+            "tabs": true,
+            "tag": "ul",
+            "vertical": false,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <NavLink
+                  className="active"
+                  onClick={[Function]}
+                  tag="a"
+                >
+                   Counter 
+                </NavLink>,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": " Counter ",
+                  "className": "active",
+                  "onClick": [Function],
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": " Counter ",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <NavLink
+                  className=""
+                  onClick={[Function]}
+                  tag="a"
+                >
+                   Todo 
+                </NavLink>,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": " Todo ",
+                  "className": "",
+                  "onClick": [Function],
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": " Todo ",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <NavLink
+                  className=""
+                  onClick={[Function]}
+                  tag="a"
+                >
+                   Fetch 
+                </NavLink>,
+                "tag": "li",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": " Fetch ",
+                  "className": "",
+                  "onClick": [Function],
+                  "tag": "a",
+                },
+                "ref": null,
+                "rendered": " Fetch ",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "activeTab": "1",
+            "children": Array [
+              <TabPane
+                tabId="1"
+                tag="div"
+              >
+                <Jumbotron
+                  fluid={true}
+                  tag="div"
+                >
+                  <Container
+                    fluid={true}
+                    tag="div"
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Counter />
+                      </Col>
+                    </Row>
+                  </Container>
+                </Jumbotron>
+              </TabPane>,
+              <TabPane
+                tabId="2"
+                tag="div"
+              >
+                <Jumbotron
+                  fluid={true}
+                  tag="div"
+                >
+                  <Container
+                    fluid={true}
+                    tag="div"
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Todo />
+                      </Col>
+                    </Row>
+                  </Container>
+                </Jumbotron>
+              </TabPane>,
+              <TabPane
+                tabId="3"
+                tag="div"
+              >
+                <Jumbotron
+                  fluid={true}
+                  tag="div"
+                >
+                  <Container
+                    fluid={true}
+                    tag="div"
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Fetch />
+                      </Col>
+                    </Row>
+                  </Container>
+                </Jumbotron>
+              </TabPane>,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <Jumbotron
+                  fluid={true}
+                  tag="div"
+                >
+                  <Container
+                    fluid={true}
+                    tag="div"
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Counter />
+                      </Col>
+                    </Row>
+                  </Container>
+                </Jumbotron>,
+                "tabId": "1",
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <Container
+                    fluid={true}
+                    tag="div"
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Counter />
+                      </Col>
+                    </Row>
+                  </Container>,
+                  "fluid": true,
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Counter />
+                      </Col>
+                    </Row>,
+                    "fluid": true,
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Counter />
+                      </Col>,
+                      "tag": "div",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <Counter />,
+                        "sm": "12",
+                        "tag": "div",
+                        "widths": Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <Jumbotron
+                  fluid={true}
+                  tag="div"
+                >
+                  <Container
+                    fluid={true}
+                    tag="div"
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Todo />
+                      </Col>
+                    </Row>
+                  </Container>
+                </Jumbotron>,
+                "tabId": "2",
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <Container
+                    fluid={true}
+                    tag="div"
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Todo />
+                      </Col>
+                    </Row>
+                  </Container>,
+                  "fluid": true,
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Todo />
+                      </Col>
+                    </Row>,
+                    "fluid": true,
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Todo />
+                      </Col>,
+                      "tag": "div",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <Todo />,
+                        "sm": "12",
+                        "tag": "div",
+                        "widths": Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <Jumbotron
+                  fluid={true}
+                  tag="div"
+                >
+                  <Container
+                    fluid={true}
+                    tag="div"
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Fetch />
+                      </Col>
+                    </Row>
+                  </Container>
+                </Jumbotron>,
+                "tabId": "3",
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <Container
+                    fluid={true}
+                    tag="div"
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Fetch />
+                      </Col>
+                    </Row>
+                  </Container>,
+                  "fluid": true,
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <Row
+                      tag="div"
+                    >
+                      <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Fetch />
+                      </Col>
+                    </Row>,
+                    "fluid": true,
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": <Col
+                        sm="12"
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        <Fetch />
+                      </Col>,
+                      "tag": "div",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <Fetch />,
+                        "sm": "12",
+                        "tag": "div",
+                        "widths": Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
