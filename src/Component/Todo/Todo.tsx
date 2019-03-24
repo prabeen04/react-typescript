@@ -53,7 +53,7 @@ export default function Todo(): JSX.Element {
     }
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} data-test='Todo'>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <TextInput
                         name='todo'

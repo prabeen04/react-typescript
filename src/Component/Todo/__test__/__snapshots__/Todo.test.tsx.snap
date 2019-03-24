@@ -20,6 +20,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <form
+          data-test="Todo"
           onSubmit={[Function]}
         >
           <div
@@ -96,6 +97,7 @@ ShallowWrapper {
               Add
             </button>
           </div>,
+          "data-test": "Todo",
           "onSubmit": [Function],
         },
         "ref": null,
@@ -195,6 +197,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <form
+            data-test="Todo"
             onSubmit={[Function]}
           >
             <div
@@ -271,6 +274,7 @@ ShallowWrapper {
                 Add
               </button>
             </div>,
+            "data-test": "Todo",
             "onSubmit": [Function],
           },
           "ref": null,

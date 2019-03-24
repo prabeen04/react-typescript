@@ -11,4 +11,8 @@ describe('<Todo />', () => {
     it('should match snapshot', () => {
         expect(wrapper).toMatchSnapshot()
     })
+
+    it('should render without crashing', () => {
+        expect(wrapper.find('[data-test="Todo"]').length).toEqual()
+    })
 })
