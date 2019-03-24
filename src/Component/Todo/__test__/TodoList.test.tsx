@@ -5,7 +5,13 @@ import TodoList from "../TodoList";
 
 describe('<TodoList />', () => {
     let wrapper;
+    let props = {
+        todos: [],
+        deleteTodo: jest.fn,
+        updateTodo: jest.fn,
+        toggleTodo: jest.fn,
+    }
     beforeEach(() => {
-        wrapper = shallow(<TodoList />)
+        wrapper = shallow(<TodoList {...props} />)
     })
 })
