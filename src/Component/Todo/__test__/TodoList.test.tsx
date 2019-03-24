@@ -4,7 +4,7 @@ import TodoList from "../TodoList";
 
 
 describe('<TodoList />', () => {
-    let wrapper;
+    let wrapper: any;
     let props = {
         todos: [],
         deleteTodo: jest.fn,
@@ -13,5 +13,10 @@ describe('<TodoList />', () => {
     }
     beforeEach(() => {
         wrapper = shallow(<TodoList {...props} />)
+    })
+
+
+    it('should match snapshot', (): any => {
+        expect(wrapper).toMatchSnapshot()
     })
 })
