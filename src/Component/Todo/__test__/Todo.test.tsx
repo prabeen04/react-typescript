@@ -4,13 +4,11 @@ import Todo from "../Todo";
 
 describe('<Todo />', () => {
     let wrapper: any;
-    let props = {
-        title: '',
-        isCompleted: false,
-        id: 1,
-    }
-
     beforeEach(() => {
         wrapper = shallow(<Todo />)
+    })
+
+    it('should match snapshot', () => {
+        expect(wrapper).toMatchSnapshot()
     })
 })
