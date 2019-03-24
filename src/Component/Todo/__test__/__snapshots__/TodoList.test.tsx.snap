@@ -25,6 +25,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [],
       "className": "list-group list-group-flush",
+      "data-test": "TodoList",
     },
     "ref": null,
     "rendered": Array [],
@@ -38,6 +39,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [],
         "className": "list-group list-group-flush",
+        "data-test": "TodoList",
       },
       "ref": null,
       "rendered": Array [],

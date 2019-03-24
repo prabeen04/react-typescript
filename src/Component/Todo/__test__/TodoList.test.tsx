@@ -19,4 +19,8 @@ describe('<TodoList />', () => {
     it('should match snapshot', (): any => {
         expect(wrapper).toMatchSnapshot()
     })
+
+    it('should render without crashing', () => {
+        expect(wrapper.find('[data-test="TodoList"]').length).toEqual(1)
+    })
 })
