@@ -5,17 +5,23 @@ import './Fetch.css';
 
 export default function Fetch() {
     const { fetchingUsers, fetchingUsersError, users } = useUserData();
+    const [activeUser, setActiveUser] = React.useState({})
+    React.useEffect(() => {
+        if(users.length){
+            setActiveUser(users[0])
+        }
+    })
     return (
         <>
             <div className='user-wrapper flex-container space-between'>
                 {
                     fetchingUsers
-                        ? <p>fetching users...</p>
+                        ? <p className="fetching">fetching users...</p>
                         : fetchingUsersError
                             ? <p>Opps, Error while fetching users...</p>
                             : <>
                                 <div className='user-list'>
-                                    {users && users.map((user: IUser) => <UserList key={user.id} {...user} />)}
+                                    {users && users.map((user: IUser) => <UserList activeUser={activeUser} key={user.id} {...user} />)}
                                 </div>
                                 <div className='user-detail'>
                                 </div>

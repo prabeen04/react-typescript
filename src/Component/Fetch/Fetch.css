@@ -12,9 +12,13 @@
     padding: 1rem;
     border: 1px solid rgb(245, 111, 1);
 }
+.fetching{
+    color: rgb(245, 111, 1);
+    text-align: center;
+}
 .user-list-item{
     padding: 0.5rem;
-    border: 1px solid rgb(245, 111, 1);
+    border: 1px solid rgb(56, 44, 29);
     border-radius: 0.3rem;
     margin: 0.4rem;
     color: rgb(245, 111, 1);
@@ -26,5 +30,9 @@
 }
 .user-list-item:hover{
     color: rgb(245, 50, 1);
-    border: 2px solid rgb(245, 50, 1);
+    border: none;
+    box-shadow: 4px 4px 18px -6px  rgb(245, 50, 1);
+}
+.active-list{
+    box-shadow: 4px 4px 18px -6px  rgb(245, 50, 1);
 }
