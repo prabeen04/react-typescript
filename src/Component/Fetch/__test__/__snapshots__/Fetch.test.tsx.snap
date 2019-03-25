@@ -25,9 +25,6 @@ ShallowWrapper {
           <div
             className="user-list"
           />
-          <div
-            className="user-detail"
-          />
         </React.Fragment>
       </div>,
     },
@@ -40,9 +37,6 @@ ShallowWrapper {
         "children": <React.Fragment>
           <div
             className="user-list"
-          />
-          <div
-            className="user-detail"
           />
         </React.Fragment>,
         "className": "user-wrapper flex-container space-between",
@@ -57,9 +51,7 @@ ShallowWrapper {
             <div
               className="user-list"
             />,
-            <div
-              className="user-detail"
-            />,
+            false,
           ],
         },
         "ref": null,
@@ -76,17 +68,7 @@ ShallowWrapper {
             "rendered": Array [],
             "type": "div",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "user-detail",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "div",
-          },
+          false,
         ],
         "type": Symbol(react.fragment),
       },
@@ -107,9 +89,6 @@ ShallowWrapper {
             <div
               className="user-list"
             />
-            <div
-              className="user-detail"
-            />
           </React.Fragment>
         </div>,
       },
@@ -122,9 +101,6 @@ ShallowWrapper {
           "children": <React.Fragment>
             <div
               className="user-list"
-            />
-            <div
-              className="user-detail"
             />
           </React.Fragment>,
           "className": "user-wrapper flex-container space-between",
@@ -139,9 +115,7 @@ ShallowWrapper {
               <div
                 className="user-list"
               />,
-              <div
-                className="user-detail"
-              />,
+              false,
             ],
           },
           "ref": null,
@@ -158,17 +132,7 @@ ShallowWrapper {
               "rendered": Array [],
               "type": "div",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "user-detail",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "div",
-            },
+            false,
           ],
           "type": Symbol(react.fragment),
         },

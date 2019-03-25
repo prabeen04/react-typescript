@@ -25,7 +25,7 @@ export default function Fetch() {
                             ? <p>Opps, Error while fetching users...</p>
                             : <>
                                 <div className='user-list'>
-                                    {users && users.map((user: IUser) => <UserList setUser={setUser} activeUser={activeUser} key={user.id} {...user} />)}
+                                    {users && users.map((user: IUser) => <UserList setUser={setUser} activeUser={activeUser} key={user.id} user={user} />)}
                                 </div>
                                 {activeUser.hasOwnProperty('name')
                                     && <div className='user-detail'>
@@ -33,8 +33,6 @@ export default function Fetch() {
                                     </div>}
                             </>
                 }
-
-
             </div>
         </>
     )
