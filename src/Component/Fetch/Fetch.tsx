@@ -27,9 +27,10 @@ export default function Fetch() {
                                 <div className='user-list'>
                                     {users && users.map((user: IUser) => <UserList setUser={setUser} activeUser={activeUser} key={user.id} {...user} />)}
                                 </div>
-                                {activeUser.hasOwnProperty('name') && <div className='user-detail'>
-                                    <p>{activeUser.name}</p>
-                                </div>}
+                                {activeUser.hasOwnProperty('name')
+                                    && <div className='user-detail'>
+                                        <p>{activeUser.name}</p>
+                                    </div>}
                             </>
                 }
 
