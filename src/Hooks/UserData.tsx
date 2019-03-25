@@ -14,8 +14,24 @@ export interface IUser {
     email: string;
     phone: string;
     website: string;
-    company: any;
-    address: any
+    company: ICompany;
+    address: IAddress
+}
+export interface ICompany {
+    bs: string;
+    catchPhrase: string;
+    name: string;
+}
+export interface IAddress {
+    city: string;
+    street: string;
+    geo: IGeo;
+    suite: string;
+    zipcode: string;
+}
+export interface IGeo {
+    lat: string;
+    lng: string;
 }
 const initialState = {
     fetchingUsers: false,
