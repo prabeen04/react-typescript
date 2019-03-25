@@ -1,9 +1,30 @@
+.user-wrapper{
+    background: #0f0f0f;
+   height: 100vh;
+}
+.user-list{
+    flex-basis: 25%;
+}
+.user-detail{
+    flex-basis: 70%;
+    height: 500px;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid rgb(245, 111, 1);
+}
 .user-list-item{
     padding: 0.5rem;
-    border: 1px solid #aaa;
-    margin: 0.2rem;
-    color: #444;
+    border: 1px solid rgb(245, 111, 1);
+    border-radius: 0.3rem;
+    margin: 0.4rem;
+    color: rgb(245, 111, 1);
     font-weight: 600;
     font-family: Margarine;
     cursor: pointer;
+    display: flex;
+    flex-wrap: wrap
+}
+.user-list-item:hover{
+    color: rgb(245, 50, 1);
+    border: 2px solid rgb(245, 50, 1);
 }

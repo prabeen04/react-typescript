@@ -14,11 +14,11 @@ export default function Fetch() {
     }
     return (
         <>
-            <div className='flex-container space-between'>
-                <div className='user-list' style={{ flexBasis: '25%' }}>
+            <div className='user-wrapper flex-container space-between'>
+                <div className='user-list'>
                     {users && users.map((user: IUser) => <UserList key={user.id} {...user} />)}
                 </div>
-                <div className='user-detail' style={{ flexBasis: '70%' }}>
+                <div className='user-detail'>
 
 
                 </div>
