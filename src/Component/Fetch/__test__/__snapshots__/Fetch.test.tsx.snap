@@ -17,9 +17,11 @@ ShallowWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "function",
-    "props": Object {},
+    "props": Object {
+      "children": Array [],
+    },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [],
     "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
@@ -27,9 +29,11 @@ ShallowWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {},
+      "props": Object {
+        "children": Array [],
+      },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [],
       "type": Symbol(react.fragment),
     },
   ],

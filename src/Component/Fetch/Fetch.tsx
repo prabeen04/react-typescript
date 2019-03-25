@@ -1,5 +1,7 @@
 import * as React from 'react'
-import useUserData, { IUserState, IUser } from "../../Hooks/UserData";
+import useUserData, { IUserState, IUser, IAddress, ICompany, IGeo } from "../../Hooks/UserData";
+import UserList from "./UserList";
+import './Fetch.css';
 
 export default function Fetch() {
     const { fetchingUsers, fetchingUsersError, users } = useUserData();
@@ -12,7 +14,16 @@ export default function Fetch() {
     }
     return (
         <>
-            {/* {users && users.map((user: any) => <p>{user.name}</p>)} */}
+            <div className='flex-container space-between'>
+                <div className='user-list' style={{ flexBasis: '25%' }}>
+                    {users && users.map((user: IUser) => <UserList key={user.id} {...user} />)}
+                </div>
+                <div className='user-detail' style={{ flexBasis: '70%' }}>
+
+
+                </div>
+
+            </div>
         </>
     )
 }
