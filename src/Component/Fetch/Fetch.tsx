@@ -1,8 +1,9 @@
 import * as React from 'react'
-import useUserData from "../../Hooks/UserData";
+import useUserData, { IUserState, IUser } from "../../Hooks/UserData";
 
 export default function Fetch() {
     const { fetchingUsers, fetchingUsersError, users } = useUserData();
+    console.log(users)
     if (fetchingUsers) {
         return <p>fetching users...</p>
     }
@@ -11,7 +12,7 @@ export default function Fetch() {
     }
     return (
         <>
-            {users && users.map(user => <p>{user.name}</p>)}
+            {/* {users && users.map((user: any) => <p>{user.name}</p>)} */}
         </>
     )
 }
