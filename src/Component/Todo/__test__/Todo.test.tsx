@@ -13,6 +13,6 @@ describe('<Todo />', () => {
     })
 
     it('should render without crashing', () => {
-        expect(wrapper.find('[data-test="Todo"]').length).toEqual()
+        expect(wrapper.find('[data-test="Todo"]').length).toEqual(1)
     })
 })
