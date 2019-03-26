@@ -24,12 +24,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [],
-      "className": "list-group list-group-flush",
+      "className": "todo-list-group",
       "data-test": "TodoList",
     },
     "ref": null,
     "rendered": Array [],
-    "type": "ul",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -38,12 +38,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [],
-        "className": "list-group list-group-flush",
+        "className": "todo-list-group",
         "data-test": "TodoList",
       },
       "ref": null,
       "rendered": Array [],
-      "type": "ul",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
