@@ -15,10 +15,20 @@ const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
                 <h1>{state.count}</h1>
             </div>
             <div className="counter-controls">
-                <button className='btn btn-primary' onClick={() => dispatch({ type: 'INCREMENT' })}>Increase</button>&nbsp;
-            <button className='btn btn-danger' onClick={() => dispatch({ type: 'DECREMENT' })}>Decrease</button>&nbsp;
-            <button className='btn btn-warning' onClick={() => dispatch({ type: 'RESET' })}>Reset</button>&nbsp;
-            <button className='btn btn-secondary' onClick={() => dispatch({ type: 'MULTIPLY', payload: 5 })}>Multiply by 5 </button>
+                <button
+                    className='btn btn-primary'
+                    onClick={() => dispatch({ type: 'INCREMENT' })}>Increase</button>&nbsp;
+            <button
+                    className='btn btn-danger'
+                    disabled={state.count < 1}
+                    onClick={() => dispatch({ type: 'DECREMENT' })}>Decrease</button>&nbsp;
+            <button
+                    className='btn btn-warning'
+                    onClick={() => dispatch({ type: 'RESET' })}>Reset</button>&nbsp;
+            <button
+                    className='btn btn-secondary'
+                    disabled={state.count === 0}
+                    onClick={() => dispatch({ type: 'MULTIPLY', payload: 5 })}>Multiply by 5 </button>
             </div>
         </div>
     )
