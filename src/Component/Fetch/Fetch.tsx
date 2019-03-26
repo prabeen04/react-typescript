@@ -1,6 +1,7 @@
 import * as React from 'react'
 import useUserData, { IUserState, IUser, IAddress, ICompany, IGeo } from "../../Hooks/UserData";
 import UserList from "./UserList";
+import UserDetail from './UserDetail';
 import './Fetch.css';
 
 export default function Fetch() {
@@ -28,9 +29,7 @@ export default function Fetch() {
                                     {users && users.map((user: IUser) => <UserList setUser={setUser} activeUser={activeUser} key={user.id} user={user} />)}
                                 </div>
                                 {activeUser.hasOwnProperty('name')
-                                    && <div className='user-detail'>
-                                        <p>{activeUser.name}</p>
-                                    </div>}
+                                    && <UserDetail user={activeUser} />}
                             </>
                 }
             </div>
