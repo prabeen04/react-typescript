@@ -49,6 +49,7 @@
     background: #3b393996;
     width: 100%;
     height: fit-content;
+    border-top: 1px solid rgba(245, 50, 1, 0.322);
     padding: 0.5rem;
 }
 .user-detail-header>h1{
@@ -67,6 +68,7 @@
     padding: 1rem;
     width: auto;
     margin-top: 10px;
+    border-top: 1px solid rgba(245, 50, 1, 0.322);
 }
 .user-detail-body > p{
     color: rgb(172, 167, 167);
