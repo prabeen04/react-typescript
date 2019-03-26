@@ -1,6 +1,7 @@
 import * as React from 'react'
 import TextInput from './TextInput';
 import TodoList from './TodoList'
+import './Todo.css';
 
 export interface ITodo {
     title: string;
@@ -53,25 +54,28 @@ export default function Todo(): JSX.Element {
     }
     return (
         <>
-            <form onSubmit={handleSubmit} data-test='Todo'>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <TextInput
-                        name='todo'
-                        placeholder='Enter todo'
-                        onChange={handleChange}
-                        value={todo}
-                        className='form-control'
-                        style={{ width: 400 }}
-                    />&nbsp;&nbsp;
+            <div className='todo-wrapper'>
+                <form onSubmit={handleSubmit} data-test='Todo'>
+                    <br/>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <TextInput
+                            name='todo'
+                            placeholder='Enter todo'
+                            onChange={handleChange}
+                            value={todo}
+                            className='dark-input'
+                            style={{ width: 400 }}
+                        />&nbsp;&nbsp;
                     <button className='btn btn-success' disabled={!todo}>Add</button>
-                </div>
-            </form>
-            <TodoList
-                todos={todos}
-                deleteTodo={deleteTodo}
-                toggleTodo={toggleTodo}
-                updateTodo={updateTodo}
-            />
+                    </div>
+                </form>
+                <TodoList
+                    todos={todos}
+                    deleteTodo={deleteTodo}
+                    toggleTodo={toggleTodo}
+                    updateTodo={updateTodo}
+                />
+            </div>
         </>
     )
 }

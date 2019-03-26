@@ -1,5 +1,4 @@
 .user-wrapper{
-    background: #0f0f0f;
    height: 100vh;
 }
 .fetching{
@@ -78,7 +77,7 @@
     font-family: Oxygen;
 }
 .user-detail-body > a{
-    color: rgb(46, 221, 2);
+    color: rgb(18, 147, 187);
     margin: 0;
     padding: 0.4rem;
     font-size: 16px;

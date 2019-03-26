@@ -5,7 +5,7 @@ export interface ITextInputProps {
     name: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     placeholder?: string;
-    className?: string
+    className?: string;
     style?: object
 }
 export default function TextInput(props: ITextInputProps) {
