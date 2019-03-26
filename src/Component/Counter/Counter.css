@@ -1,0 +1,18 @@
+.counter-wrapper{
+    height: 70vh;
+    padding: 2rem;
+}
+.counter-display{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.counter-display > h1{
+    color: #aaa;
+    font-family: Oxygen;
+    font-size: 60px;
+}
+.counter-controls{
+    display: flex;
+    justify-content: center;
+}
