@@ -27,10 +27,13 @@ export default function TodoItem(
                             {todo.title}</span>
                         <span>
                             <button className='btn btn-warning yellow' onClick={() => toggleTodo(todo)}>
-                            {todo.isCompleted ? 'Incomplete' : 'Completed'}
+                            {todo.isCompleted 
+                                ? <i className="fas fa-fingerprint"></i>
+                                : <i className="fas fa-lock"></i>
+                                }
                             </button>&nbsp;
-                            <button className='btn btn-secondary sky-blue' onClick={toggleViewType}>Edit</button>&nbsp;
-                          <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>Delete</button>
+                            <button className='btn btn-secondary sky-blue' onClick={toggleViewType}> <i className="fas fa-edit"></i></button>&nbsp;
+                          <button className='btn btn-danger' onClick={() => deleteTodo(todo)}> <i className="fas fa-trash-alt"></i></button>
                         </span>
                     </span>
                     : <span className='todo-edit'>
@@ -48,8 +51,12 @@ export default function TodoItem(
                                 onClick={() => {
                                     updateTodo(todo, title)
                                     toggleViewType()
-                                }}>Update</button>&nbsp;
-                            <button className='btn btn-danger' onClick={toggleViewType}>Cancel</button>
+                                }}>
+                                <i className="fas fa-paper-plane"></i>
+                                </button>&nbsp;
+                            <button className='btn btn-danger' onClick={toggleViewType}>
+                            <i className="fas fa-times"></i>
+                            </button>
                         </span>
                     </span>
             }
