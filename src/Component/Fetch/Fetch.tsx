@@ -21,7 +21,9 @@ export default function Fetch() {
             <div className='user-wrapper flex-container space-between'>
                 {
                     fetchingUsers
-                        ? <div className="loading"></div>
+                        ? <div className="flex-container center-align-row" style={{width: '100%', padding: 100}}>
+                            <div className="loading"></div>
+                        </div>
                         : fetchingUsersError
                             ? <p>Opps, Error while fetching users...</p>
                             : <>
