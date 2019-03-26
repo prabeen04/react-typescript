@@ -10,7 +10,7 @@ export interface ITodoListProps {
 export default function TodoList(props: ITodoListProps): JSX.Element {
     const { todos } = props
     return (
-        <ul className='list-group list-group-flush' data-test='TodoList'>
+        <div className='todo-list-group' data-test='TodoList'>
             {
                 !!todos && todos.map((todo: ITodo) => <TodoItem
                     key={todo.id}
@@ -20,6 +20,6 @@ export default function TodoList(props: ITodoListProps): JSX.Element {
                     updateTodo={props.updateTodo}
                 />)
             }
-        </ul>
+        </div>
     )
 }

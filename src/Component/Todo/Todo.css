@@ -1,2 +1,22 @@
 .todo-wrapper{
 }
+.todo-list-group{
+    padding: 0.5rem;
+}
+.todo-list-group-item{
+    padding: 0.9rem;
+    margin: 0.5rem 0.3rem;
+    width: auto;
+    border-left: 4px solid orangered;
+    background: rgba(51, 51, 51, 0.13);
+    border-radius: 0 .5rem 0.5rem 0.5rem 0;
+}
+.todo-view{
+    display: flex;
+    justify-content: space-between;
+}
+.todo-edit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

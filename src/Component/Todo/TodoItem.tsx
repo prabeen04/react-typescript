@@ -13,39 +13,44 @@ export default function TodoItem(
     const { viewType, toggleViewType } = ViewEdit()
     const [title, setTitle] = React.useState<string>(todo.title)
     return (
-        <li className='list-group-item'>
+        <div className='todo-list-group-item'>
             {
                 viewType === 'view'
-                    ? <span>
+                    ? <span className='todo-view'>
                         <span
                             onClick={() => toggleTodo(todo)}
                             style={{
                                 fontSize: 24,
-                                color: todo.isCompleted ? 'red' : 'green',
+                                color: todo.isCompleted ? '#51201a' : '#f23a21',
                                 textDecoration: todo.isCompleted ? 'line-through' : 'none',
                             }}>
-                            {todo.title}</span>&nbsp;
-                    <button className='btn btn-default' onClick={toggleViewType}>Edit</button>&nbsp;
+                            {todo.title}</span>
+                        <span>
+                            <button className='btn btn-secondary' onClick={toggleViewType}>Edit</button>&nbsp;
                     <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>Delete</button>
+                        </span>
                     </span>
-                    : <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    : <span className='todo-edit'>
                         <TextInput
-                            className='form-control'
+                            className='dark-input'
                             name=''
                             onChange={({ target: { value } }) => setTitle(value)}
                             value={title}
                             style={{ width: 400 }}
                         />
-                        <button
-                            className='btn btn-primary'
-                            onClick={() => {
-                                updateTodo(todo, title)
-                                toggleViewType()
-                            }}>Update</button>
-                        <button className='btn btn-default' onClick={toggleViewType}>Cancel</button>
+                        <span>
+
+                            <button
+                                className='btn btn-primary'
+                                onClick={() => {
+                                    updateTodo(todo, title)
+                                    toggleViewType()
+                                }}>Update</button>
+                            <button className='btn btn-secondary' onClick={toggleViewType}>Cancel</button>
+                        </span>
                     </span>
             }
 
-        </li>
+        </div>
     )
 }
