@@ -36,3 +36,6 @@
 .dark-input:focus{
     background: rgba(56, 55, 55, 0.488) !important;
 }
+.btn{
+    font-family: Margarine !important;
+}

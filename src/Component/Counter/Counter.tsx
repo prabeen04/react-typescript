@@ -11,16 +11,14 @@ const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
     const [state, dispatch] = React.useReducer(appReducer, initialState)
     return (
         <div className='counter-wrapper' data-test='Counter'>
-            <div>
-                <div className='counter-display'>
-                    <h1>{state.count}</h1>
-                </div>
-                <div className="counter-controls">
-                    <button className='btn btn-primary' onClick={() => dispatch({ type: 'INCREMENT' })}>Increase</button>&nbsp;
+            <div className='counter-display'>
+                <h1>{state.count}</h1>
+            </div>
+            <div className="counter-controls">
+                <button className='btn btn-primary' onClick={() => dispatch({ type: 'INCREMENT' })}>Increase</button>&nbsp;
             <button className='btn btn-danger' onClick={() => dispatch({ type: 'DECREMENT' })}>Decrease</button>&nbsp;
             <button className='btn btn-warning' onClick={() => dispatch({ type: 'RESET' })}>Reset</button>&nbsp;
             <button className='btn btn-secondary' onClick={() => dispatch({ type: 'MULTIPLY', payload: 5 })}>Multiply by 5 </button>
-                </div>
             </div>
         </div>
     )
