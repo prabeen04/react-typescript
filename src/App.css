@@ -53,7 +53,21 @@ body::-webkit-scrollbar-thumb {
 }
 .btn{
     font-family: Margarine !important;
+    border: none !important;
 }
 .btn:focus{
     outline: none !important;
+}
+
+.red{
+    background-color: red !important;
+}
+.sky-blue{
+    background-color: #075fed !important;
+}
+.purple{
+    background-color: #6a07ed !important;
+}
+.yellow{
+    background-color: #eef913 !important;
 }

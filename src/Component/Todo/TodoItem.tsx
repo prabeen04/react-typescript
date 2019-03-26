@@ -26,10 +26,10 @@ export default function TodoItem(
                             }}>
                             {todo.title}</span>
                         <span>
-                            <button className='btn btn-warning' onClick={() => toggleTodo(todo)}>
+                            <button className='btn btn-warning yellow' onClick={() => toggleTodo(todo)}>
                             {todo.isCompleted ? 'Incomplete' : 'Completed'}
                             </button>&nbsp;
-                            <button className='btn btn-secondary' onClick={toggleViewType}>Edit</button>&nbsp;
+                            <button className='btn btn-secondary sky-blue' onClick={toggleViewType}>Edit</button>&nbsp;
                           <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>Delete</button>
                         </span>
                     </span>

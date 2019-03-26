@@ -66,7 +66,9 @@ export default function Todo(): JSX.Element {
                             className='dark-input'
                             style={{ width: 400 }}
                         />&nbsp;&nbsp;
-                    <button className='btn btn-success' disabled={!todo}>Add</button>
+                    <button className='btn btn-success red' disabled={!todo}>
+                    <i className="fas fa-paper-plane"></i>&nbsp;&nbsp;
+                     Add</button>
                     </div>
                 </form>
                 <TodoList
