@@ -1,8 +1,19 @@
 .todo-wrapper{
 }
+
+.todo-wrapper::-webkit-scrollbar {
+    width: 66px;
+    background-color: rgb(192, 5, 5);
+    overflow-y: scroll;
+} 
 .todo-list-group{
     padding: 0.5rem;
 }
+.todo-list-group::-webkit-scrollbar {
+    width: 66px;
+    background-color: rgb(192, 5, 5);
+    overflow-y: scroll;
+} 
 .todo-list-group-item{
     padding: 0.9rem;
     margin: 0.5rem 0.3rem;
