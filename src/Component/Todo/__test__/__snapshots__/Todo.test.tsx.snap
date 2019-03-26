@@ -49,10 +49,13 @@ ShallowWrapper {
             />
               
             <button
-              className="btn btn-success"
+              className="btn btn-success red"
               disabled={true}
             >
-              Add
+              <i
+                className="fas fa-paper-plane"
+              />
+                 Add
             </button>
           </div>
         </form>
@@ -99,10 +102,13 @@ ShallowWrapper {
               />
                 
               <button
-                className="btn btn-success"
+                className="btn btn-success red"
                 disabled={true}
               >
-                Add
+                <i
+                  className="fas fa-paper-plane"
+                />
+                   Add
               </button>
             </div>
           </form>,
@@ -147,10 +153,13 @@ ShallowWrapper {
                 />
                   
                 <button
-                  className="btn btn-success"
+                  className="btn btn-success red"
                   disabled={true}
                 >
-                  Add
+                  <i
+                    className="fas fa-paper-plane"
+                  />
+                     Add
                 </button>
               </div>,
             ],
@@ -188,10 +197,13 @@ ShallowWrapper {
                   />,
                   "  ",
                   <button
-                    className="btn btn-success"
+                    className="btn btn-success red"
                     disabled={true}
                   >
-                    Add
+                    <i
+                      className="fas fa-paper-plane"
+                    />
+                       Add
                   </button>,
                 ],
                 "style": Object {
@@ -226,12 +238,30 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Add",
-                    "className": "btn btn-success",
+                    "children": Array [
+                      <i
+                        className="fas fa-paper-plane"
+                      />,
+                      "   Add",
+                    ],
+                    "className": "btn btn-success red",
                     "disabled": true,
                   },
                   "ref": null,
-                  "rendered": "Add",
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fas fa-paper-plane",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "i",
+                    },
+                    "   Add",
+                  ],
                   "type": "button",
                 },
               ],
@@ -296,10 +326,13 @@ ShallowWrapper {
               />
                 
               <button
-                className="btn btn-success"
+                className="btn btn-success red"
                 disabled={true}
               >
-                Add
+                <i
+                  className="fas fa-paper-plane"
+                />
+                   Add
               </button>
             </div>
           </form>
@@ -346,10 +379,13 @@ ShallowWrapper {
                 />
                   
                 <button
-                  className="btn btn-success"
+                  className="btn btn-success red"
                   disabled={true}
                 >
-                  Add
+                  <i
+                    className="fas fa-paper-plane"
+                  />
+                     Add
                 </button>
               </div>
             </form>,
@@ -394,10 +430,13 @@ ShallowWrapper {
                   />
                     
                   <button
-                    className="btn btn-success"
+                    className="btn btn-success red"
                     disabled={true}
                   >
-                    Add
+                    <i
+                      className="fas fa-paper-plane"
+                    />
+                       Add
                   </button>
                 </div>,
               ],
@@ -435,10 +474,13 @@ ShallowWrapper {
                     />,
                     "  ",
                     <button
-                      className="btn btn-success"
+                      className="btn btn-success red"
                       disabled={true}
                     >
-                      Add
+                      <i
+                        className="fas fa-paper-plane"
+                      />
+                         Add
                     </button>,
                   ],
                   "style": Object {
@@ -473,12 +515,30 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Add",
-                      "className": "btn btn-success",
+                      "children": Array [
+                        <i
+                          className="fas fa-paper-plane"
+                        />,
+                        "   Add",
+                      ],
+                      "className": "btn btn-success red",
                       "disabled": true,
                     },
                     "ref": null,
-                    "rendered": "Add",
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-paper-plane",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "i",
+                      },
+                      "   Add",
+                    ],
                     "type": "button",
                   },
                 ],

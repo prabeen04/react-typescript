@@ -9,7 +9,7 @@
 * user list styles
 */
 .user-list{
-    flex-basis: 25%;
+    /* flex-basis: 25%; */
 }
 .user-list-item{
     padding: 0.5rem;
@@ -24,11 +24,12 @@
 }
 .user-list-item:hover{
     color: rgb(245, 50, 1);
-    border: 1px solid rgb(245, 50, 1);
+    /* border: 1px solid rgba(245, 50, 1, 0.308); */
 }
 .active-list{
     color: rgb(245, 50, 1);
-    box-shadow: 4px 4px 18px -6px  rgb(245, 50, 1);
+    border: none;
+    box-shadow: 0px 4px 6px -2px  rgb(245, 50, 1);
 }
 
 /**

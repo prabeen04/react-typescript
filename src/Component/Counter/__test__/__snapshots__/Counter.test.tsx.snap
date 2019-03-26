@@ -38,6 +38,7 @@ ShallowWrapper {
            
           <button
             className="btn btn-danger"
+            disabled={true}
             onClick={[Function]}
           >
             Decrease
@@ -52,6 +53,7 @@ ShallowWrapper {
            
           <button
             className="btn btn-secondary"
+            disabled={true}
             onClick={[Function]}
           >
             Multiply by 5 
@@ -102,6 +104,7 @@ ShallowWrapper {
             " ",
             <button
               className="btn btn-danger"
+              disabled={true}
               onClick={[Function]}
             >
               Decrease
@@ -116,6 +119,7 @@ ShallowWrapper {
             " ",
             <button
               className="btn btn-secondary"
+              disabled={true}
               onClick={[Function]}
             >
               Multiply by 5 
@@ -146,6 +150,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Decrease",
               "className": "btn btn-danger",
+              "disabled": true,
               "onClick": [Function],
             },
             "ref": null,
@@ -174,6 +179,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Multiply by 5 ",
               "className": "btn btn-secondary",
+              "disabled": true,
               "onClick": [Function],
             },
             "ref": null,
@@ -212,6 +218,7 @@ ShallowWrapper {
              
             <button
               className="btn btn-danger"
+              disabled={true}
               onClick={[Function]}
             >
               Decrease
@@ -226,6 +233,7 @@ ShallowWrapper {
              
             <button
               className="btn btn-secondary"
+              disabled={true}
               onClick={[Function]}
             >
               Multiply by 5 
@@ -276,6 +284,7 @@ ShallowWrapper {
               " ",
               <button
                 className="btn btn-danger"
+                disabled={true}
                 onClick={[Function]}
               >
                 Decrease
@@ -290,6 +299,7 @@ ShallowWrapper {
               " ",
               <button
                 className="btn btn-secondary"
+                disabled={true}
                 onClick={[Function]}
               >
                 Multiply by 5 
@@ -320,6 +330,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Decrease",
                 "className": "btn btn-danger",
+                "disabled": true,
                 "onClick": [Function],
               },
               "ref": null,
@@ -348,6 +359,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Multiply by 5 ",
                 "className": "btn btn-secondary",
+                "disabled": true,
                 "onClick": [Function],
               },
               "ref": null,
