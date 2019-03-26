@@ -20,3 +20,6 @@
     align-items: center;
     justify-content: space-between;
 }
+.completed-todo{
+    border-left: 4px solid rgb(1, 102, 63);
+}

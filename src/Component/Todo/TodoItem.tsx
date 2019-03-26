@@ -13,7 +13,7 @@ export default function TodoItem(
     const { viewType, toggleViewType } = ViewEdit()
     const [title, setTitle] = React.useState<string>(todo.title)
     return (
-        <div className='todo-list-group-item'>
+        <div className={`todo-list-group-item ${todo.isCompleted ? 'completed-todo' : ''}`}>
             {
                 viewType === 'view'
                     ? <span className='todo-view'>
@@ -21,13 +21,16 @@ export default function TodoItem(
                             onClick={() => toggleTodo(todo)}
                             style={{
                                 fontSize: 24,
-                                color: todo.isCompleted ? '#51201a' : '#f23a21',
+                                color: todo.isCompleted ? 'rgb(1, 102, 63)' : '#f23a21',
                                 textDecoration: todo.isCompleted ? 'line-through' : 'none',
                             }}>
                             {todo.title}</span>
                         <span>
+                            <button className='btn btn-warning' onClick={() => toggleTodo(todo)}>
+                            {todo.isCompleted ? 'Incomplete' : 'Completed'}
+                            </button>&nbsp;
                             <button className='btn btn-secondary' onClick={toggleViewType}>Edit</button>&nbsp;
-                    <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>Delete</button>
+                          <button className='btn btn-danger' onClick={() => deleteTodo(todo)}>Delete</button>
                         </span>
                     </span>
                     : <span className='todo-edit'>
@@ -45,8 +48,8 @@ export default function TodoItem(
                                 onClick={() => {
                                     updateTodo(todo, title)
                                     toggleViewType()
-                                }}>Update</button>
-                            <button className='btn btn-secondary' onClick={toggleViewType}>Cancel</button>
+                                }}>Update</button>&nbsp;
+                            <button className='btn btn-danger' onClick={toggleViewType}>Cancel</button>
                         </span>
                     </span>
             }

@@ -39,3 +39,6 @@
 .btn{
     font-family: Margarine !important;
 }
+.btn:focus{
+    outline: none !important;
+}
