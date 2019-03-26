@@ -41,15 +41,21 @@
     height: 500px;
     margin: 0.5rem;
     padding: 1rem;
-    border: 1px solid rgb(245, 111, 1);
+    /* border: 1px solid rgb(36, 34, 33); */
     display: flex;
 }
 .user-detail-header{
     display: flex;
     justify-content: center;
-    background: #0f0f0f;
-    height: 50px
+    background: #3b393996;
+    width: 100%;
+    height: fit-content;
+    padding: 0.5rem;
 }
 .user-detail-header>h1{
-    color: orange;
+    color: rgb(245, 50, 1);
+    display: inline;
+    margin: 0;
+    font-size: 24px;
+    font-family: Lobster;
 }
