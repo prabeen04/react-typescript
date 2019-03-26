@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
+import './Navbar.css';
 
 export default function MyNavbar() {
     const [isOpen, setIsOpen] = React.useState<boolean>(false);
@@ -9,19 +10,19 @@ export default function MyNavbar() {
     }
     return (
         <div>
-            <Navbar color="dark" light expand="md" data-test='Navbar'>
-                <Link to="/" className='navbar-brand'>Typescript</Link>
+            <Navbar expand="md" data-test='Navbar' className='transparent-bg'>
+                <NavLink to="/" className='navbar-brand logo'>Typescript</NavLink>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <Link to="/counter" className='nav-link'>Counter</Link>
+                            <NavLink activeClassName='active-menu' to="/counter" className='nav-link nav-menu'>Counter</NavLink>
                         </NavItem>
                         <NavItem>
-                            <Link to="/todo" className='nav-link'>Todo</Link>
+                            <NavLink activeClassName='active-menu' to="/todo" className='nav-link nav-menu'>Todo</NavLink>
                         </NavItem>
                         <NavItem>
-                            <Link to="/fetch" className='nav-link'>Users</Link>
+                            <NavLink activeClassName='active-menu' to="/fetch" className='nav-link nav-menu'>Users</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

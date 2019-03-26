@@ -1,0 +1,26 @@
+.transparent-bg{
+    background-color: transparent !important;
+}
+
+.logo{
+    color: red;
+    font-family: Lobster;
+    font-weight: 600;
+    font-size: 30px !important;
+}
+.logo:hover{
+    color: red;
+}
+
+.nav-menu{
+    color: red;
+    font-family: Lobster;
+    font-size: 20px !important;
+}
+.nav-menu:hover{
+    color: teal;
+}
+
+.active-menu{
+    color: teal;
+}
