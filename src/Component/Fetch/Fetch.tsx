@@ -21,7 +21,7 @@ export default function Fetch() {
             <div className='user-wrapper flex-container space-between'>
                 {
                     fetchingUsers
-                        ? <p className="fetching">fetching users...</p>
+                        ? <div className="loading"></div>
                         : fetchingUsersError
                             ? <p>Opps, Error while fetching users...</p>
                             : <>
