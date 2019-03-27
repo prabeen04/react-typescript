@@ -9,7 +9,7 @@ export default function UserDetail(props: IUserDetail) {
     return (
         <div className='user-detail'>
             <div className="user-detail-header">
-                <h1>{user.name}</h1>
+                <h1><i className="fas fa-map-marker-alt">&nbsp;&nbsp;</i>{user.name} </h1>
             </div>
 
             <div className="user-detail-body">
