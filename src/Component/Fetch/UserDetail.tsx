@@ -17,6 +17,12 @@ export default function UserDetail(props: IUserDetail) {
                 <p>{user.phone}</p>
                 <a href={user.website} target='_blank'>{user.website}</a>
             </div>
+            <div className="user-detail-body">
+                <p>{user.address.suite}</p>
+                <p>{user.address.street}</p>
+                <p>{user.address.city}</p>
+                <p>{user.address.zipcode}</p>
+            </div>
         </div>
     )
 }
