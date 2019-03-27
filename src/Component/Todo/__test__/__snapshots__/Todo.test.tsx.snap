@@ -39,7 +39,7 @@ ShallowWrapper {
               className="dark-input"
               name="todo"
               onChange={[Function]}
-              placeholder="Enter todo"
+              placeholder="Add task"
               style={
                 Object {
                   "width": 400,
@@ -92,7 +92,7 @@ ShallowWrapper {
                 className="dark-input"
                 name="todo"
                 onChange={[Function]}
-                placeholder="Enter todo"
+                placeholder="Add task"
                 style={
                   Object {
                     "width": 400,
@@ -143,7 +143,7 @@ ShallowWrapper {
                   className="dark-input"
                   name="todo"
                   onChange={[Function]}
-                  placeholder="Enter todo"
+                  placeholder="Add task"
                   style={
                     Object {
                       "width": 400,
@@ -187,7 +187,7 @@ ShallowWrapper {
                     className="dark-input"
                     name="todo"
                     onChange={[Function]}
-                    placeholder="Enter todo"
+                    placeholder="Add task"
                     style={
                       Object {
                         "width": 400,
@@ -222,7 +222,7 @@ ShallowWrapper {
                     "className": "dark-input",
                     "name": "todo",
                     "onChange": [Function],
-                    "placeholder": "Enter todo",
+                    "placeholder": "Add task",
                     "style": Object {
                       "width": 400,
                     },
@@ -316,7 +316,7 @@ ShallowWrapper {
                 className="dark-input"
                 name="todo"
                 onChange={[Function]}
-                placeholder="Enter todo"
+                placeholder="Add task"
                 style={
                   Object {
                     "width": 400,
@@ -369,7 +369,7 @@ ShallowWrapper {
                   className="dark-input"
                   name="todo"
                   onChange={[Function]}
-                  placeholder="Enter todo"
+                  placeholder="Add task"
                   style={
                     Object {
                       "width": 400,
@@ -420,7 +420,7 @@ ShallowWrapper {
                     className="dark-input"
                     name="todo"
                     onChange={[Function]}
-                    placeholder="Enter todo"
+                    placeholder="Add task"
                     style={
                       Object {
                         "width": 400,
@@ -464,7 +464,7 @@ ShallowWrapper {
                       className="dark-input"
                       name="todo"
                       onChange={[Function]}
-                      placeholder="Enter todo"
+                      placeholder="Add task"
                       style={
                         Object {
                           "width": 400,
@@ -499,7 +499,7 @@ ShallowWrapper {
                       "className": "dark-input",
                       "name": "todo",
                       "onChange": [Function],
-                      "placeholder": "Enter todo",
+                      "placeholder": "Add task",
                       "style": Object {
                         "width": 400,
                       },

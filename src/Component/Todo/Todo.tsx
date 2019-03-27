@@ -60,7 +60,7 @@ export default function Todo(): JSX.Element {
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <TextInput
                             name='todo'
-                            placeholder='Enter todo'
+                            placeholder='Add task'
                             onChange={handleChange}
                             value={todo}
                             className='dark-input'
