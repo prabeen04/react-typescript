@@ -2,20 +2,19 @@ import * as React from 'react';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 export interface IUserAddressModal {
+    title: string;
     visible: boolean;
     toggle: () => void;
     children: JSX.Element
 }
-function UserAddressModal(props: IUserAddressModal) {
-    function toggle() { }
+export default function UserAddressModal(props: IUserAddressModal) {
+    const { children, toggle, visible, title } = props
     return (
         <div>
-            <Modal isOpen={true} toggle={toggle}>
-                <ModalHeader toggle={toggle}>Modal title</ModalHeader>
-                <ModalBody>{props.children}</ModalBody>
+            <Modal isOpen={visible} toggle={toggle}>
+                <ModalHeader toggle={toggle}>{title}</ModalHeader>
+                <ModalBody>{children}</ModalBody>
             </Modal>
         </div>
     );
 }
-
-export default UserAddressModal;
