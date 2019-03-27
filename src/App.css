@@ -57,6 +57,7 @@ body::-webkit-scrollbar-thumb {
 }
 .btn:focus{
     outline: none !important;
+    box-shadow: none !important;
 }
 
 .red{

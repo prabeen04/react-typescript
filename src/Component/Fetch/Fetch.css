@@ -9,7 +9,7 @@
 * user list styles
 */
 .user-list{
-    /* flex-basis: 25%; */
+    flex-basis: 25%;
 }
 .user-list-item{
     padding: 0.5rem;
