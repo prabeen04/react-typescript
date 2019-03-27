@@ -1,8 +1,12 @@
-import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import * as React from 'react';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
-
-function UserAddressModal(props: any) {
+export interface IUserAddressModal {
+    visible: boolean;
+    toggle: () => void;
+    children: JSX.Element
+}
+function UserAddressModal(props: IUserAddressModal) {
     function toggle() { }
     return (
         <div>
