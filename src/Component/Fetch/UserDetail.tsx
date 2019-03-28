@@ -39,11 +39,11 @@ export default function UserDetail(props: IUserDetail) {
                 </animated.div>
             </div>
             <UserAddressModal
-                title='Address'
+                noHeader
                 visible={mapModal}
                 toggle={toggleModal}
             >
-                <p>children</p>
+                <p>{user.name}</p>
             </UserAddressModal>
         </>
     )
