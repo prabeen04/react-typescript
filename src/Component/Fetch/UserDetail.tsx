@@ -6,14 +6,23 @@ export interface IUserDetail {
     user: IUser;
 }
 export default function UserDetail(props: IUserDetail) {
-    const styles = useSpring({ opacity: 1, transform: 'translate3d(0px,0,0) ', from: { opacity: 0, transform: 'translate3d(0,200px,0) ', } })
     const { user } = props;
+    const styles = useSpring({ opacity: 1, transform: 'translate3d(0px,0,0) ', from: { opacity: 0, transform: 'translate3d(0,200px,0) ', } });
+    const [mapModal, setMapModal] = React.useState<boolean>(false)
+    function toggleModal() {
+        setMapModal(!mapModal)
+    }
     return (
         <>
             <div className='user-detail'>
                 <animated.div style={styles}>
                     <div className="user-detail-header">
-                        <h1><i className="fas fa-map-marker-alt clickable-icon">&nbsp;&nbsp;</i>{user.name} </h1>
+                        <h1>
+                            <i
+                                className="fas fa-map-marker-alt clickable-icon"
+                                onClick={toggleModal}
+                            > &nbsp;&nbsp;</i>
+                            {user.name} </h1>
                     </div>
 
                     <div className="user-detail-body">
@@ -31,8 +40,8 @@ export default function UserDetail(props: IUserDetail) {
             </div>
             <UserAddressModal
                 title='Address'
-                visible={true}
-                toggle={() => { }}
+                visible={mapModal}
+                toggle={toggleModal}
             >
                 <p>children</p>
             </UserAddressModal>
