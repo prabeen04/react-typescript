@@ -72,3 +72,10 @@ body::-webkit-scrollbar-thumb {
 .yellow{
     background-color: #eef913 !important;
 }
+.clickable-icon{
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.clickable-icon:hover{
+    transform: scale(1.3)
+}
