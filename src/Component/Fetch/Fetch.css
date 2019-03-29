@@ -11,6 +11,8 @@
 * user list styles
 */
 .user-list{
+    display: flex;
+    flex-direction: column;
     flex-basis: 25%;
 }
 .user-list-item{
@@ -115,14 +117,18 @@
         flex-direction: column;
     }
     .user-list{
-        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.5rem;
     }
     .user-detail{
         
     }
     .user-list-item{
         width: fit-content;
-        color: rgb(21, 245, 1);
+        margin: 0.2rem;
+        /* color: rgb(21, 245, 1); */
     }
 }
 
@@ -132,13 +138,17 @@
         flex-direction: column;
     }
     .user-list{
-        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.5rem;
     }
     .user-detail{
         
     }
     .user-list-item{
         width: fit-content;
-        color: rgb(1, 5, 245);
+        margin: 0.2rem;
+        /* color: rgb(1, 5, 245); */
     }
   }
