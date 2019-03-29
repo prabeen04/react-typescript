@@ -28,14 +28,14 @@ export default function TodoItem(
                                     textDecoration: todo.isCompleted ? 'line-through' : 'none',
                                 }}>
                                 {todo.title}</span>
-                            <span>
+                            <span className='todo-view-btn-group'>
                                 <button className='btn btn-warning yellow' onClick={() => toggleTodo(todo)}>
                                     {todo.isCompleted
                                         ? <i className="fas fa-fingerprint"></i>
                                         : <i className="fas fa-lock"></i>
                                     }
-                                </button>&nbsp;
-                            <button className='btn btn-secondary sky-blue' onClick={toggleViewType}> <i className="fas fa-edit"></i></button>&nbsp;
+                                </button>
+                            <button className='btn btn-secondary sky-blue' onClick={toggleViewType}> <i className="fas fa-edit"></i></button>
                           <button className='btn btn-danger' onClick={() => deleteTodo(todo)}> <i className="fas fa-trash-alt"></i></button>
                             </span>
                         </span>
@@ -47,8 +47,7 @@ export default function TodoItem(
                                 value={title}
                                 style={{ width: 400 }}
                             />
-                            <span>
-
+                            <span className='todo-edit-btn-group'>
                                 <button
                                     className='btn btn-primary'
                                     onClick={() => {
@@ -56,7 +55,7 @@ export default function TodoItem(
                                         toggleViewType()
                                     }}>
                                     <i className="fas fa-paper-plane"></i>
-                                </button>&nbsp;
+                                </button>
                             <button className='btn btn-danger' onClick={toggleViewType}>
                                     <i className="fas fa-times"></i>
                                 </button>

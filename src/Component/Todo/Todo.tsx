@@ -57,7 +57,7 @@ export default function Todo(): JSX.Element {
             <div className='todo-wrapper'>
                 <form onSubmit={handleSubmit} data-test='Todo'>
                     <br/>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div className='todo-form'>
                         <TextInput
                             name='todo'
                             placeholder='Add task'

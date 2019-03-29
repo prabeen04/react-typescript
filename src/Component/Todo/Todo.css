@@ -6,6 +6,11 @@
     background-color: rgb(192, 5, 5);
     overflow-y: scroll;
 } 
+.todo-form{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
 .todo-list-group{
     padding: 0.5rem;
 }
@@ -33,4 +38,21 @@
 }
 .completed-todo{
     border-left: 2px solid rgb(1, 102, 63);
+}
+.todo-view-btn-group > button{
+    margin: 0.10rem;
+}
+.todo-edit-btn-group > button{
+    margin: 0.10rem;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .todo-form{
+        margin: 0 0.5rem;
+    }
 }
