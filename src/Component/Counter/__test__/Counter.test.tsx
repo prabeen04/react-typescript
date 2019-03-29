@@ -17,7 +17,14 @@ describe('<Counter/>', () => {
         const counterDisplay = wrapper.find('[data-test="counter-display"]')
         expect(incrementButton.length).toEqual(1);
         incrementButton.simulate('click');
+        incrementButton.simulate('click');
         // incrementButton.props().      
+        setTimeout(() => {
+            incrementButton.simulate('click');
+            console.log(counterDisplay.html())
+        }, 1000)
+        incrementButton.simulate('click');
+        console.log(counterDisplay.html())
         expect(counterDisplay.text()).toEqual('0')
     })
     it('should decrement counter', () => {

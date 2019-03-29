@@ -39,7 +39,6 @@ const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
 export default Counter;
 
 const appReducer = (state: ICounterState, action: { type: string, payload?: number | null | undefined }) => {
-    console.log(action)
     switch (action.type) {
         case 'INCREMENT':
             return { ...state, count: state.count + 1 }

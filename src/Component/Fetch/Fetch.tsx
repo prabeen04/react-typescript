@@ -26,14 +26,14 @@ export default function Fetch() {
                         </div>
                         : fetchingUsersError
                             ? <p>Opps, Error while fetching users...</p>
-                            : <>
+                            : <div className='user-detail-content'>
                                 <div className='user-list'>
                                     {users && users.map((user: IUser) => <UserList setUser={setUser} activeUser={activeUser} key={user.id} user={user} />)}
                                 </div>
                                 {activeUser.hasOwnProperty('name')
                                     && <UserDetail user={activeUser} />
                                 }
-                            </>
+                            </div>
                 }
             </div>
         </>

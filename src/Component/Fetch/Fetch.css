@@ -1,5 +1,7 @@
 .user-wrapper{
+
 }
+
 .fetching{
     color: rgb(245, 111, 1);
     text-align: center;
@@ -43,6 +45,10 @@
     /* border: 1px solid rgb(36, 34, 33); */
     display: flex;
     flex-direction: column;
+}
+.user-detail-content{
+    display: flex;
+    width: 100%;
 }
 .user-detail-header{
     display: flex;
@@ -101,4 +107,38 @@
   }
   @-webkit-keyframes spin {
     to { -webkit-transform: rotate(360deg); }
+  }
+
+  /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .user-detail-content{
+        flex-direction: column;
+    }
+    .user-list{
+        
+    }
+    .user-detail{
+        
+    }
+    .user-list-item{
+        width: fit-content;
+        color: rgb(21, 245, 1);
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .user-detail-content{
+        flex-direction: column;
+    }
+    .user-list{
+        
+    }
+    .user-detail{
+        
+    }
+    .user-list-item{
+        width: fit-content;
+        color: rgb(1, 5, 245);
+    }
   }
