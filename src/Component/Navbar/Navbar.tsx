@@ -10,9 +10,9 @@ export default function MyNavbar() {
     }
     return (
         <div>
-            <Navbar expand="md" data-test='Navbar' className='transparent-bg'>
+            <Navbar expand="md" data-test='Navbar' className='my-nav transparent-bg'>
                 <NavLink to="/" className='navbar-brand logo'>Typescript</NavLink>
-                <NavbarToggler onClick={toggle} />
+                <NavbarToggler onClick={toggle} className='toggler'/>
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
