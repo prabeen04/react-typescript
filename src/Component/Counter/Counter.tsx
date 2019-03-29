@@ -12,13 +12,15 @@ const Counter: React.SFC<ICountProps> = (props: ICountProps) => {
     return (
         <div className='counter-wrapper' data-test='Counter'>
             <div className='counter-display'>
-                <h1>{state.count}</h1>
+                <h1 data-test='counter-display'>{state.count}</h1>
             </div>
             <div className="counter-controls">
                 <button
+                    data-test='increment-button'
                     className='btn btn-primary'
                     onClick={() => dispatch({ type: 'INCREMENT' })}>Increase</button>&nbsp;
             <button
+                    data-test='decrement-button'
                     className='btn btn-danger'
                     disabled={state.count < 1}
                     onClick={() => dispatch({ type: 'DECREMENT' })}>Decrease</button>&nbsp;

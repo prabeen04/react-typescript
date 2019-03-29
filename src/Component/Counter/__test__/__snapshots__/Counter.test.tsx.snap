@@ -22,7 +22,9 @@ ShallowWrapper {
         <div
           className="counter-display"
         >
-          <h1>
+          <h1
+            data-test="counter-display"
+          >
             0
           </h1>
         </div>,
@@ -31,6 +33,7 @@ ShallowWrapper {
         >
           <button
             className="btn btn-primary"
+            data-test="increment-button"
             onClick={[Function]}
           >
             Increase
@@ -38,6 +41,7 @@ ShallowWrapper {
            
           <button
             className="btn btn-danger"
+            data-test="decrement-button"
             disabled={true}
             onClick={[Function]}
           >
@@ -70,7 +74,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <h1>
+          "children": <h1
+            data-test="counter-display"
+          >
             0
           </h1>,
           "className": "counter-display",
@@ -82,6 +88,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": 0,
+            "data-test": "counter-display",
           },
           "ref": null,
           "rendered": 0,
@@ -97,6 +104,7 @@ ShallowWrapper {
           "children": Array [
             <button
               className="btn btn-primary"
+              data-test="increment-button"
               onClick={[Function]}
             >
               Increase
@@ -104,6 +112,7 @@ ShallowWrapper {
             " ",
             <button
               className="btn btn-danger"
+              data-test="decrement-button"
               disabled={true}
               onClick={[Function]}
             >
@@ -136,6 +145,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Increase",
               "className": "btn btn-primary",
+              "data-test": "increment-button",
               "onClick": [Function],
             },
             "ref": null,
@@ -150,6 +160,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Decrease",
               "className": "btn btn-danger",
+              "data-test": "decrement-button",
               "disabled": true,
               "onClick": [Function],
             },
@@ -202,7 +213,9 @@ ShallowWrapper {
           <div
             className="counter-display"
           >
-            <h1>
+            <h1
+              data-test="counter-display"
+            >
               0
             </h1>
           </div>,
@@ -211,6 +224,7 @@ ShallowWrapper {
           >
             <button
               className="btn btn-primary"
+              data-test="increment-button"
               onClick={[Function]}
             >
               Increase
@@ -218,6 +232,7 @@ ShallowWrapper {
              
             <button
               className="btn btn-danger"
+              data-test="decrement-button"
               disabled={true}
               onClick={[Function]}
             >
@@ -250,7 +265,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h1>
+            "children": <h1
+              data-test="counter-display"
+            >
               0
             </h1>,
             "className": "counter-display",
@@ -262,6 +279,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": 0,
+              "data-test": "counter-display",
             },
             "ref": null,
             "rendered": 0,
@@ -277,6 +295,7 @@ ShallowWrapper {
             "children": Array [
               <button
                 className="btn btn-primary"
+                data-test="increment-button"
                 onClick={[Function]}
               >
                 Increase
@@ -284,6 +303,7 @@ ShallowWrapper {
               " ",
               <button
                 className="btn btn-danger"
+                data-test="decrement-button"
                 disabled={true}
                 onClick={[Function]}
               >
@@ -316,6 +336,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Increase",
                 "className": "btn btn-primary",
+                "data-test": "increment-button",
                 "onClick": [Function],
               },
               "ref": null,
@@ -330,6 +351,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Decrease",
                 "className": "btn btn-danger",
+                "data-test": "decrement-button",
                 "disabled": true,
                 "onClick": [Function],
               },
