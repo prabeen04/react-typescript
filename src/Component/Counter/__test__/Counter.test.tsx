@@ -20,4 +20,13 @@ describe('<Counter/>', () => {
         // incrementButton.props().      
         expect(counterDisplay.text()).toEqual('0')
     })
+    it('should decrement counter', () => {
+        const wrapper = shallow(<Counter />)
+        const decrementButton = wrapper.find('[data-test="decrement-button"]')
+        const counterDisplay = wrapper.find('[data-test="counter-display"]')
+        expect(decrementButton.length).toEqual(1);
+        decrementButton.simulate('click');
+        // incrementButton.props().      
+        expect(counterDisplay.text()).toEqual('0')
+    })
 })
