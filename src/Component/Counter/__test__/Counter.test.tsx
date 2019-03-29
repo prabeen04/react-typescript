@@ -16,8 +16,8 @@ describe('<Counter/>', () => {
         const incrementButton = wrapper.find('[data-test="increment-button"]')
         const counterDisplay = wrapper.find('[data-test="counter-display"]')
         expect(incrementButton.length).toEqual(1);
-        // incrementButton.simulate('click');
+        incrementButton.simulate('click');
         // incrementButton.props().      
-        // expect(counterDisplay.text()).toEqual(1)
+        expect(counterDisplay.text()).toEqual('0')
     })
 })
