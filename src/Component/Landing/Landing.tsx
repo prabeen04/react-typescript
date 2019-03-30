@@ -12,14 +12,9 @@ export default function Landing() {
 
     React.useEffect(() => {
         setTimeout(() => {
-            if (points.indexOf(title) === 0) {
-                setTitle(points[1])
-            }
-            else if (points.indexOf(title) === 1) {
-                setTitle(points[2])
-            }
-            else if (points.indexOf(title) === 2) {
-                setTitle(points[3])
+            let index = points.indexOf(title);
+            if (index < points.length - 1) {
+                setTitle(points[index + 1])
             }
             else {
                 setTitle(points[0])
@@ -55,13 +50,6 @@ function Title({ title }: any) {
                 color: 'blue',
                 opacity: 0,
             },
-            // enter: { opacity: 1, transform: 'translateY(0)' },
-            // leave: { opacity: 0, transform: 'translateY(-100px)', pointerEvents: 'none' },
-            // // update: {
-            // //     transform: 'translate3d(0,0px,0)',
-            // //     color: 'blue',
-            // //     opacity: 0,
-            // // },
             delay: 1000
         })
     return (
