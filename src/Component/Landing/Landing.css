@@ -1,6 +1,5 @@
 .landing-wrapper{
-    background-image: url('../../Assets//Image/Landing.jpg');
-    background-position: center;
-    background-size: cover;
-    min-height: calc(100vh - 80px);
+    background:linear-gradient(0deg,rgba(54, 4, 4, 0.925),rgba(20, 20, 20, 0.897)),url('../../Assets//Image/Landing.jpg');
+    background-size:cover;
+    height: calc(100vh - 71px);
 }
