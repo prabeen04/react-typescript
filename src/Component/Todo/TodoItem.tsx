@@ -11,9 +11,11 @@ export default function TodoItem(
             toggleTodo: (todo: ITodo) => void,
             updateTodo: (todo: ITodo, index: string) => void,
         }): JSX.Element {
+
     const { viewType, toggleViewType } = ViewEdit()
     const [title, setTitle] = React.useState<string>(todo.title)
     const styles = useSpring({ opacity: 1, transform: 'translate3d(0px,0,0) ', from: { opacity: 0, transform: 'translate3d(0,200px,0) ', } })
+    
     return (
         <animated.div style={styles}>
             <div className={`todo-list-group-item ${todo.isCompleted ? 'completed-todo' : ''}`}>

@@ -27,13 +27,7 @@ ShallowWrapper {
         >
           <br />
           <div
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-                "justifyContent": "center",
-              }
-            }
+            className="todo-form"
           >
             <TextInput
               className="dark-input"
@@ -80,13 +74,7 @@ ShallowWrapper {
           >
             <br />
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "justifyContent": "center",
-                }
-              }
+              className="todo-form"
             >
               <TextInput
                 className="dark-input"
@@ -131,13 +119,7 @@ ShallowWrapper {
             "children": Array [
               <br />,
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "justifyContent": "center",
-                  }
-                }
+                className="todo-form"
               >
                 <TextInput
                   className="dark-input"
@@ -206,11 +188,7 @@ ShallowWrapper {
                        Add
                   </button>,
                 ],
-                "style": Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "justifyContent": "center",
-                },
+                "className": "todo-form",
               },
               "ref": null,
               "rendered": Array [
@@ -304,13 +282,7 @@ ShallowWrapper {
           >
             <br />
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "justifyContent": "center",
-                }
-              }
+              className="todo-form"
             >
               <TextInput
                 className="dark-input"
@@ -357,13 +329,7 @@ ShallowWrapper {
             >
               <br />
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "justifyContent": "center",
-                  }
-                }
+                className="todo-form"
               >
                 <TextInput
                   className="dark-input"
@@ -408,13 +374,7 @@ ShallowWrapper {
               "children": Array [
                 <br />,
                 <div
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "display": "flex",
-                      "justifyContent": "center",
-                    }
-                  }
+                  className="todo-form"
                 >
                   <TextInput
                     className="dark-input"
@@ -483,11 +443,7 @@ ShallowWrapper {
                          Add
                     </button>,
                   ],
-                  "style": Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "justifyContent": "center",
-                  },
+                  "className": "todo-form",
                 },
                 "ref": null,
                 "rendered": Array [
