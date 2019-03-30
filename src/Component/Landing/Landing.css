@@ -3,3 +3,12 @@
     background-size:cover;
     height: calc(100vh - 71px);
 }
+.welcome-text{
+    display:flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.welcome-text > h1 {
+    color: rgb(48, 47, 47);
+    font-family: margarine;
+}
