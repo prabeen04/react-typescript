@@ -11,4 +11,5 @@
 .welcome-text > h1 {
     color: rgb(48, 47, 47);
     font-family: margarine;
+    display: inline;
 }
