@@ -47,6 +47,9 @@
 }
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
+    .todo-form{
+        margin: 0 0.5rem;
+    }
     .todo-view-btn-group > .btn{
         padding: 0;
         background: none !important;
@@ -66,9 +69,33 @@
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
+    .todo-form{
+        margin: 0 0.5rem;
+    }
     .todo-view-btn-group > .btn{
         padding: 0;
         background: none !important;
+        display: flex;
+        flex-direction: column;
+        margin: 0.2rem;
+    }
+    .todo-view-btn-group > .yellow{
+        padding: 0;
+        color: yellow !important;
+        display: flex;
+        flex-direction: column;
+        margin: 0.2rem;
+    }
+    .todo-view-btn-group > .sky-blue{
+        padding: 0;
+        color: #075fed !important;
+        display: flex;
+        flex-direction: column;
+        margin: 0.2rem;
+    }
+    .todo-view-btn-group > .btn-danger{
+        padding: 0;
+        color: red !important;
         display: flex;
         flex-direction: column;
         margin: 0.2rem;
