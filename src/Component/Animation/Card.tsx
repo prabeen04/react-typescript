@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated, AnimatedValue, } from "react-spring";
 
 function Card(props: any) {
     // We add this ref to card element and use in onMouseMove event ...
@@ -10,8 +10,10 @@ function Card(props: any) {
     // ... zIndex to ensure it shows up above other cards when animation causes overlap.
     const [isHovered, setHovered] = React.useState(false);
 
+    // type x = AnimatedValue<Pick<OverwriteKeys<{ xys: number[]; config: { mass: number; tension: number; friction: number; precision: number; }; }, React.CSSProperties>, "xys">>
+    // type y = AnimatedValue<Pick<OverwriteKeys<{ xys: number[]; config: { mass: number; tension: number; friction: number; precision: number; }; }, CSSProperties>, "xys">>
     // The useSpring hook
-    const [animatedProps, setAnimatedProps] = useSpring<any>({
+    const [animatedProps, setAnimatedProps] = useSpring<{ xys: number[]; config: { mass: number; tension: number; friction: number; precision: number; }}>({
         // Array containing [rotateX, rotateY, and scale] values.
         // We store under a single key (xys) instead of separate keys ...
         // ... so that we can use animatedProps.xys.interpolate() to ...
