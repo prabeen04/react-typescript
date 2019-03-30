@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Switch, Route } from "react-router-dom";
 import Navbar from './Component/Navbar/Navbar'
+import Landing from './Component/Landing/Landing';
 import Todo from './Component/Todo/Todo'
 import Counter from './Component/Counter/Counter'
 import Fetch from './Component/Fetch/Fetch'
@@ -18,7 +19,7 @@ class App extends React.Component<IAppProps, IAppState> {
         <div className="App">
           <Navbar />
           <Switch>
-            <Route exact path='/' component={Counter} />
+            <Route exact path='/' component={Landing} />
             <Route exact path='/todo' component={Todo} />
             <Route exact path='/counter' component={Counter} />
             <Route exact path='/fetch' component={Fetch} />

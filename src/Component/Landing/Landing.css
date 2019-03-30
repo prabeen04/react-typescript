@@ -1,0 +1,6 @@
+.landing-wrapper{
+    background-image: url('../../Assets//Image/Landing.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 80px);
+}
