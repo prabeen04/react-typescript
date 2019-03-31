@@ -59,7 +59,10 @@ body::-webkit-scrollbar-thumb {
     outline: none !important;
     box-shadow: none !important;
 }
-
+.text-btn{
+    background-color: transparent !important;
+    border: none;
+}
 .red{
     background-color: red !important;
 }

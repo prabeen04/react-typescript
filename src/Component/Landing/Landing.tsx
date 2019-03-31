@@ -4,13 +4,13 @@ import { ICardData } from './LandingInterface'
 import Card from './Card';
 import './Landing.css';
 const cardData: ICardData[] = [
-    { title: 'Counter', description: 'Explore the Counter ', action: null },
-    { title: 'Todo', description: 'Explore the Todo ', action: null },
-    { title: 'Users', description: 'Explore the Users ', action: null },
+    { title: 'Counter', description: 'Explore the Counter ', action: '/counter' },
+    { title: 'Todo', description: 'Explore the Todo ', action: '/todo' },
+    { title: 'Users', description: 'Explore the Users ', action: '/fetch' },
 ]
 export default function Landing() {
     const points: string[] = [' POWER ', ' STYLE ', ' AWESOMENESS ', ' EVERYTHING ']
-    const [cardState, setCardState] = React.useState<ICardData[]>(cardData)
+    const [cardState, setCardState] = React.useState<any[]>(cardData)
     const styles = useSpring({
         opacity: 1, transform: 'translate3d(0px,0,0) ', rotate: '0',
         from: { opacity: 0, transform: 'translate3d(0,200px,0) ', rotate: '180', }
@@ -43,9 +43,9 @@ export default function Landing() {
                 </animated.div>
             </div>
             <div className="feature-card-list">
-                <Card />
-                <Card />
-                <Card />
+                {
+                    cardState.map((card: any, i: number) => <Card card={card} />)
+                }
             </div>
         </div>
     )

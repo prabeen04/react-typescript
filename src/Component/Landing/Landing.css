@@ -26,7 +26,7 @@
 .feature-card{
     width: 400px;
     background: rgba(53, 34, 34, 0.685);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 0.3rem;
     display: flex;
     flex-direction: column;
