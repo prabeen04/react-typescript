@@ -62,6 +62,15 @@ body::-webkit-scrollbar-thumb {
 .text-btn{
     background-color: transparent !important;
     border: none;
+    font-family: 'Segoe UI'!important;
+    color: gray !important;
+    transition: all .8s ease-in;
+}
+.text-btn:hover{
+    background-color: transparent !important;
+    border: none;
+    color: rgb(224, 24, 24) !important;
+    transform: scale(1.1);
 }
 .red{
     background-color: red !important;

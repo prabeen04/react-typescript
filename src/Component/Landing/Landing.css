@@ -35,14 +35,14 @@
     box-shadow: 2px 4px 16px -8px #000;
 }
 .feature-card:hover{
-    box-shadow: 2px 4px 16px -8px red;
+    /* box-shadow: 2px 4px 16px -8px red; */
 }
 .feature-card > h3{
     display: inline;
-    font-family: Indie Flower;
+    font-family: 'Segoe UI';
     color: red;
 }
 .feature-card > p{
-    font-family: Indie Flower;
+    font-family: 'Segoe UI';
     color: rgb(219, 114, 114);
 }

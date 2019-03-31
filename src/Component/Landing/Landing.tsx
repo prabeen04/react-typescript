@@ -15,6 +15,11 @@ export default function Landing() {
         opacity: 1, transform: 'translate3d(0px,0,0) ', rotate: '0',
         from: { opacity: 0, transform: 'translate3d(0,200px,0) ', rotate: '180', }
     })
+    const cardStyles = useSpring({
+        opacity: 1,
+        from: { opacity: 0 },
+        delay: 1000
+    })
     const [title, setTitle] = React.useState<string>(points[0])
 
     React.useEffect(() => {
@@ -42,11 +47,13 @@ export default function Landing() {
                     </>
                 </animated.div>
             </div>
-            <div className="feature-card-list">
-                {
-                    cardState.map((card: any, i: number) => <Card card={card} />)
-                }
-            </div>
+            <animated.div style={cardStyles}>
+                <div className="feature-card-list">
+                    {
+                        cardState.map((card: any, i: number) => <Card card={card} />)
+                    }
+                </div>
+            </animated.div>
         </div>
     )
 }
