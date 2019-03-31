@@ -1,0 +1,626 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Landing /> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Landing />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="welcome-text"
+      >
+        <ForwardRef
+          style={
+            Object {
+              "opacity": AnimatedValue {
+                "animatedStyles": Set {},
+                "children": Array [],
+                "done": false,
+                "lastPosition": 0,
+                "lastTime": undefined,
+                "lastVelocity": undefined,
+                "payload": undefined,
+                "setValue": [Function],
+                "startPosition": 0,
+                "startTime": 1554004685321,
+                "value": 0,
+              },
+              "rotate": AnimatedInterpolation {
+                "attach": [Function],
+                "calc": [Function],
+                "children": Array [],
+                "detach": [Function],
+                "payload": Array [
+                  AnimatedValue {
+                    "animatedStyles": Set {},
+                    "children": Array [],
+                    "done": false,
+                    "lastPosition": 0,
+                    "lastTime": undefined,
+                    "lastVelocity": undefined,
+                    "payload": undefined,
+                    "setValue": [Function],
+                    "startPosition": 0,
+                    "startTime": 1554004685321,
+                    "value": 0,
+                  },
+                ],
+              },
+              "transform": AnimatedInterpolation {
+                "attach": [Function],
+                "calc": [Function],
+                "children": Array [],
+                "detach": [Function],
+                "payload": Array [
+                  AnimatedValue {
+                    "animatedStyles": Set {},
+                    "children": Array [],
+                    "done": false,
+                    "lastPosition": 0,
+                    "lastTime": undefined,
+                    "lastVelocity": undefined,
+                    "payload": undefined,
+                    "setValue": [Function],
+                    "startPosition": 0,
+                    "startTime": 1554004685321,
+                    "value": 0,
+                  },
+                ],
+              },
+            }
+          }
+        >
+          <React.Fragment>
+            <h1>
+              Let's explore the
+              <Title
+                title=" POWER "
+              />
+              of typescript
+            </h1>
+          </React.Fragment>
+        </ForwardRef>
+      </div>,
+      "className": "landing-wrapper",
+      "data-test": "Landing",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ForwardRef
+          style={
+            Object {
+              "opacity": AnimatedValue {
+                "animatedStyles": Set {},
+                "children": Array [],
+                "done": false,
+                "lastPosition": 0,
+                "lastTime": undefined,
+                "lastVelocity": undefined,
+                "payload": undefined,
+                "setValue": [Function],
+                "startPosition": 0,
+                "startTime": 1554004685321,
+                "value": 0,
+              },
+              "rotate": AnimatedInterpolation {
+                "attach": [Function],
+                "calc": [Function],
+                "children": Array [],
+                "detach": [Function],
+                "payload": Array [
+                  AnimatedValue {
+                    "animatedStyles": Set {},
+                    "children": Array [],
+                    "done": false,
+                    "lastPosition": 0,
+                    "lastTime": undefined,
+                    "lastVelocity": undefined,
+                    "payload": undefined,
+                    "setValue": [Function],
+                    "startPosition": 0,
+                    "startTime": 1554004685321,
+                    "value": 0,
+                  },
+                ],
+              },
+              "transform": AnimatedInterpolation {
+                "attach": [Function],
+                "calc": [Function],
+                "children": Array [],
+                "detach": [Function],
+                "payload": Array [
+                  AnimatedValue {
+                    "animatedStyles": Set {},
+                    "children": Array [],
+                    "done": false,
+                    "lastPosition": 0,
+                    "lastTime": undefined,
+                    "lastVelocity": undefined,
+                    "payload": undefined,
+                    "setValue": [Function],
+                    "startPosition": 0,
+                    "startTime": 1554004685321,
+                    "value": 0,
+                  },
+                ],
+              },
+            }
+          }
+        >
+          <React.Fragment>
+            <h1>
+              Let's explore the
+              <Title
+                title=" POWER "
+              />
+              of typescript
+            </h1>
+          </React.Fragment>
+        </ForwardRef>,
+        "className": "welcome-text",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <React.Fragment>
+            <h1>
+              Let's explore the
+              <Title
+                title=" POWER "
+              />
+              of typescript
+            </h1>
+          </React.Fragment>,
+          "style": Object {
+            "opacity": AnimatedValue {
+              "animatedStyles": Set {},
+              "children": Array [],
+              "done": false,
+              "lastPosition": 0,
+              "lastTime": undefined,
+              "lastVelocity": undefined,
+              "payload": undefined,
+              "setValue": [Function],
+              "startPosition": 0,
+              "startTime": 1554004685321,
+              "value": 0,
+            },
+            "rotate": AnimatedInterpolation {
+              "attach": [Function],
+              "calc": [Function],
+              "children": Array [],
+              "detach": [Function],
+              "payload": Array [
+                AnimatedValue {
+                  "animatedStyles": Set {},
+                  "children": Array [],
+                  "done": false,
+                  "lastPosition": 0,
+                  "lastTime": undefined,
+                  "lastVelocity": undefined,
+                  "payload": undefined,
+                  "setValue": [Function],
+                  "startPosition": 0,
+                  "startTime": 1554004685321,
+                  "value": 0,
+                },
+              ],
+            },
+            "transform": AnimatedInterpolation {
+              "attach": [Function],
+              "calc": [Function],
+              "children": Array [],
+              "detach": [Function],
+              "payload": Array [
+                AnimatedValue {
+                  "animatedStyles": Set {},
+                  "children": Array [],
+                  "done": false,
+                  "lastPosition": 0,
+                  "lastTime": undefined,
+                  "lastVelocity": undefined,
+                  "payload": undefined,
+                  "setValue": [Function],
+                  "startPosition": 0,
+                  "startTime": 1554004685321,
+                  "value": 0,
+                },
+              ],
+            },
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <h1>
+              Let's explore the
+              <Title
+                title=" POWER "
+              />
+              of typescript
+            </h1>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Let's explore the",
+                <Title
+                  title=" POWER "
+                />,
+                "of typescript",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Let's explore the",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "title": " POWER ",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "of typescript",
+            ],
+            "type": "h1",
+          },
+          "type": Symbol(react.fragment),
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="welcome-text"
+        >
+          <ForwardRef
+            style={
+              Object {
+                "opacity": AnimatedValue {
+                  "animatedStyles": Set {},
+                  "children": Array [],
+                  "done": false,
+                  "lastPosition": 0,
+                  "lastTime": undefined,
+                  "lastVelocity": undefined,
+                  "payload": undefined,
+                  "setValue": [Function],
+                  "startPosition": 0,
+                  "startTime": 1554004685321,
+                  "value": 0,
+                },
+                "rotate": AnimatedInterpolation {
+                  "attach": [Function],
+                  "calc": [Function],
+                  "children": Array [],
+                  "detach": [Function],
+                  "payload": Array [
+                    AnimatedValue {
+                      "animatedStyles": Set {},
+                      "children": Array [],
+                      "done": false,
+                      "lastPosition": 0,
+                      "lastTime": undefined,
+                      "lastVelocity": undefined,
+                      "payload": undefined,
+                      "setValue": [Function],
+                      "startPosition": 0,
+                      "startTime": 1554004685321,
+                      "value": 0,
+                    },
+                  ],
+                },
+                "transform": AnimatedInterpolation {
+                  "attach": [Function],
+                  "calc": [Function],
+                  "children": Array [],
+                  "detach": [Function],
+                  "payload": Array [
+                    AnimatedValue {
+                      "animatedStyles": Set {},
+                      "children": Array [],
+                      "done": false,
+                      "lastPosition": 0,
+                      "lastTime": undefined,
+                      "lastVelocity": undefined,
+                      "payload": undefined,
+                      "setValue": [Function],
+                      "startPosition": 0,
+                      "startTime": 1554004685321,
+                      "value": 0,
+                    },
+                  ],
+                },
+              }
+            }
+          >
+            <React.Fragment>
+              <h1>
+                Let's explore the
+                <Title
+                  title=" POWER "
+                />
+                of typescript
+              </h1>
+            </React.Fragment>
+          </ForwardRef>
+        </div>,
+        "className": "landing-wrapper",
+        "data-test": "Landing",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ForwardRef
+            style={
+              Object {
+                "opacity": AnimatedValue {
+                  "animatedStyles": Set {},
+                  "children": Array [],
+                  "done": false,
+                  "lastPosition": 0,
+                  "lastTime": undefined,
+                  "lastVelocity": undefined,
+                  "payload": undefined,
+                  "setValue": [Function],
+                  "startPosition": 0,
+                  "startTime": 1554004685321,
+                  "value": 0,
+                },
+                "rotate": AnimatedInterpolation {
+                  "attach": [Function],
+                  "calc": [Function],
+                  "children": Array [],
+                  "detach": [Function],
+                  "payload": Array [
+                    AnimatedValue {
+                      "animatedStyles": Set {},
+                      "children": Array [],
+                      "done": false,
+                      "lastPosition": 0,
+                      "lastTime": undefined,
+                      "lastVelocity": undefined,
+                      "payload": undefined,
+                      "setValue": [Function],
+                      "startPosition": 0,
+                      "startTime": 1554004685321,
+                      "value": 0,
+                    },
+                  ],
+                },
+                "transform": AnimatedInterpolation {
+                  "attach": [Function],
+                  "calc": [Function],
+                  "children": Array [],
+                  "detach": [Function],
+                  "payload": Array [
+                    AnimatedValue {
+                      "animatedStyles": Set {},
+                      "children": Array [],
+                      "done": false,
+                      "lastPosition": 0,
+                      "lastTime": undefined,
+                      "lastVelocity": undefined,
+                      "payload": undefined,
+                      "setValue": [Function],
+                      "startPosition": 0,
+                      "startTime": 1554004685321,
+                      "value": 0,
+                    },
+                  ],
+                },
+              }
+            }
+          >
+            <React.Fragment>
+              <h1>
+                Let's explore the
+                <Title
+                  title=" POWER "
+                />
+                of typescript
+              </h1>
+            </React.Fragment>
+          </ForwardRef>,
+          "className": "welcome-text",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <React.Fragment>
+              <h1>
+                Let's explore the
+                <Title
+                  title=" POWER "
+                />
+                of typescript
+              </h1>
+            </React.Fragment>,
+            "style": Object {
+              "opacity": AnimatedValue {
+                "animatedStyles": Set {},
+                "children": Array [],
+                "done": false,
+                "lastPosition": 0,
+                "lastTime": undefined,
+                "lastVelocity": undefined,
+                "payload": undefined,
+                "setValue": [Function],
+                "startPosition": 0,
+                "startTime": 1554004685321,
+                "value": 0,
+              },
+              "rotate": AnimatedInterpolation {
+                "attach": [Function],
+                "calc": [Function],
+                "children": Array [],
+                "detach": [Function],
+                "payload": Array [
+                  AnimatedValue {
+                    "animatedStyles": Set {},
+                    "children": Array [],
+                    "done": false,
+                    "lastPosition": 0,
+                    "lastTime": undefined,
+                    "lastVelocity": undefined,
+                    "payload": undefined,
+                    "setValue": [Function],
+                    "startPosition": 0,
+                    "startTime": 1554004685321,
+                    "value": 0,
+                  },
+                ],
+              },
+              "transform": AnimatedInterpolation {
+                "attach": [Function],
+                "calc": [Function],
+                "children": Array [],
+                "detach": [Function],
+                "payload": Array [
+                  AnimatedValue {
+                    "animatedStyles": Set {},
+                    "children": Array [],
+                    "done": false,
+                    "lastPosition": 0,
+                    "lastTime": undefined,
+                    "lastVelocity": undefined,
+                    "payload": undefined,
+                    "setValue": [Function],
+                    "startPosition": 0,
+                    "startTime": 1554004685321,
+                    "value": 0,
+                  },
+                ],
+              },
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <h1>
+                Let's explore the
+                <Title
+                  title=" POWER "
+                />
+                of typescript
+              </h1>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Let's explore the",
+                  <Title
+                    title=" POWER "
+                  />,
+                  "of typescript",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Let's explore the",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "title": " POWER ",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "of typescript",
+              ],
+              "type": "h1",
+            },
+            "type": Symbol(react.fragment),
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          },
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
