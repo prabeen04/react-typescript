@@ -1,10 +1,16 @@
 import * as React from 'react';
 import { useSpring, animated } from 'react-spring';
+import { ICardData } from './LandingInterface'
 import Card from './Card';
 import './Landing.css';
-
+const cardData: ICardData[] = [
+    { title: 'Counter', description: 'Explore the Counter ', action: null },
+    { title: 'Todo', description: 'Explore the Todo ', action: null },
+    { title: 'Users', description: 'Explore the Users ', action: null },
+]
 export default function Landing() {
     const points: string[] = [' POWER ', ' STYLE ', ' AWESOMENESS ', ' EVERYTHING ']
+    const [cardState, setCardState] = React.useState<ICardData[]>(cardData)
     const styles = useSpring({
         opacity: 1, transform: 'translate3d(0px,0,0) ', rotate: '0',
         from: { opacity: 0, transform: 'translate3d(0,200px,0) ', rotate: '180', }
@@ -45,7 +51,7 @@ export default function Landing() {
     )
 }
 
-function Title({ title }: any) {
+function Title({ title }: { title: string }) {
     const textStyles = useSpring(
         {
             transform: 'translate3d(0,-400px,0)',
