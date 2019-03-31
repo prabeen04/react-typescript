@@ -25,7 +25,7 @@ export default function Landing() {
         }
     }, [title])
     return (
-        <div className='landing-wrapper'>
+        <div className='landing-wrapper' data-test="Landing">
             <div className="welcome-text">
                 <animated.div style={styles}>
                     <>
