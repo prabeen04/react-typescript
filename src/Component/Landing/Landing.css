@@ -8,8 +8,13 @@
     justify-content: center;
     padding: 2rem;
 }
-.welcome-text > h1 {
-    color: rgb(201, 185, 185);
+.welcome-text-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.welcome-text {
+    color: rgb(110, 108, 108);
     font-family: margarine;
     display: inline;
 }
@@ -20,9 +25,24 @@
 }
 .feature-card{
     width: 400px;
-    background: rgba(85, 2, 2, 0.685);
+    background: rgba(53, 34, 34, 0.685);
     padding: 1rem;
+    border-radius: 0.3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
+    box-shadow: 2px 4px 16px -8px #000;
+}
+.feature-card:hover{
+    box-shadow: 2px 4px 16px -8px red;
+}
+.feature-card > h3{
+    display: inline;
+    font-family: Indie Flower;
+    color: red;
+}
+.feature-card > p{
+    font-family: Indie Flower;
+    color: rgb(219, 114, 114);
 }

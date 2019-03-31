@@ -27,10 +27,10 @@ export default function Landing() {
     }, [title])
     return (
         <div className='landing-wrapper' data-test="Landing">
-            <div className="welcome-text">
+            <div className='welcome-text-container'>
                 <animated.div style={styles}>
                     <>
-                        <h1>Let's explore the
+                        <h1 className="welcome-text">Let's explore the
                         {<Title title={title} />}
                             of typescript</h1>
                     </>
