@@ -13,3 +13,16 @@
     font-family: margarine;
     display: inline;
 }
+.feature-card-list{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.feature-card{
+    width: 400px;
+    background: rgba(85, 2, 2, 0.685);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

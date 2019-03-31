@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useSpring, animated } from 'react-spring';
+import Card from './Card';
 import './Landing.css';
 
 export default function Landing() {
@@ -34,6 +35,11 @@ export default function Landing() {
                             of typescript</h1>
                     </>
                 </animated.div>
+            </div>
+            <div className="feature-card-list">
+                <Card />
+                <Card />
+                <Card />
             </div>
         </div>
     )
