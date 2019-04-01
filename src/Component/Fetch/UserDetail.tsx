@@ -31,11 +31,11 @@ export default function UserDetail(props: IUserDetail) {
                             <p>{user.email}</p>
                         </div>
                         <div className="detail-list-row">
-                            <label>Email</label>
+                            <label>Phone</label>
                             <p>{user.phone}</p>
                         </div>
                         <div className="detail-list-row">
-                            <label>Email</label>
+                            <label>Website</label>
                             <a href={user.website} target='_blank'>{user.website}</a>
                         </div>
                     </div>

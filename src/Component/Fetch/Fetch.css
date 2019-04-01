@@ -79,22 +79,32 @@
     margin-top: 10px;
     border-top: 1px solid rgba(245, 50, 1, 0.322);
 }
-.user-detail-body > p{
+
+.detail-list-row{
+    display: flex;
+}
+.detail-list-row > label{
+    color: rgb(51, 129, 134);
+    margin: 0;
+    font-weight: 600;
+    padding: 0.4rem;
+    font-size: 16px;
+    font-family: Oxygen;
+    width: 20%;
+}
+.detail-list-row > p{
     color: rgb(172, 167, 167);
     margin: 0;
     padding: 0.4rem;
     font-size: 16px;
     font-family: Oxygen;
 }
-.user-detail-body > a{
+.detail-list-row > a{
     color: rgb(18, 147, 187);
     margin: 0;
     padding: 0.4rem;
     font-size: 16px;
     font-family: Oxygen;
-}
-.detail-list-row{
-    
 }
 .loading {
     display: inline-block;
