@@ -93,6 +93,9 @@
     font-size: 16px;
     font-family: Oxygen;
 }
+.detail-list-row{
+    
+}
 .loading {
     display: inline-block;
     width: 50px;

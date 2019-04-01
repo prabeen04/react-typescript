@@ -26,9 +26,18 @@ export default function UserDetail(props: IUserDetail) {
                     </div>
 
                     <div className="user-detail-body">
-                        <p>{user.email}</p>
-                        <p>{user.phone}</p>
-                        <a href={user.website} target='_blank'>{user.website}</a>
+                        <div className="detail-list-row">
+                            <label>Email</label>
+                            <p>{user.email}</p>
+                        </div>
+                        <div className="detail-list-row">
+                            <label>Email</label>
+                            <p>{user.phone}</p>
+                        </div>
+                        <div className="detail-list-row">
+                            <label>Email</label>
+                            <a href={user.website} target='_blank'>{user.website}</a>
+                        </div>
                     </div>
                     <div className="user-detail-body">
                         <p>{user.address.suite}</p>
