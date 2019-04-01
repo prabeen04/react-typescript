@@ -18,7 +18,7 @@ export default function Landing() {
     const cardStyles = useSpring({
         opacity: 1,
         from: { opacity: 0 },
-        delay: 1000
+        delay: 500
     })
     const [title, setTitle] = React.useState<string>(points[0])
 
@@ -69,7 +69,7 @@ function Title({ title }: { title: string }) {
                 color: 'blue',
                 opacity: 0,
             },
-            delay: 1000
+            delay: 500
         })
     return (
         <animated.span style={textStyles}>
