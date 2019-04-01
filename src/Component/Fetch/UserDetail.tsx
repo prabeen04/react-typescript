@@ -40,10 +40,22 @@ export default function UserDetail(props: IUserDetail) {
                         </div>
                     </div>
                     <div className="user-detail-body">
-                        <p>{user.address.suite}</p>
-                        <p>{user.address.street}</p>
-                        <p>{user.address.city}</p>
-                        <p>{user.address.zipcode}</p>
+                        <div className="detail-list-row">
+                            <label>Suite</label>
+                            <p>{user.address.suite}</p>
+                        </div>
+                        <div className="detail-list-row">
+                            <label>Street</label>
+                            <p>{user.address.street}</p>
+                        </div>
+                        <div className="detail-list-row">
+                            <label>City</label>
+                            <p>{user.address.city}</p>
+                        </div>
+                        <div className="detail-list-row">
+                            <label>Zipcode</label>
+                            <p>{user.address.zipcode}</p>
+                        </div>
                     </div>
                 </animated.div>
             </div>
