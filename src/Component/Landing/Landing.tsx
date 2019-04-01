@@ -10,7 +10,7 @@ const cardData: ICardData[] = [
 ]
 export default function Landing() {
     const points: string[] = [' POWER ', ' STYLE ', ' AWESOMENESS ', ' EVERYTHING ']
-    const [cardState, setCardState] = React.useState<any[]>(cardData)
+    const [cardState, setCardState] = React.useState<ICardData[]>(cardData)
     const styles = useSpring({
         opacity: 1, transform: 'translate3d(0px,0,0) ', rotate: '0',
         from: { opacity: 0, transform: 'translate3d(0,200px,0) ', rotate: '180', }
@@ -50,7 +50,7 @@ export default function Landing() {
             <animated.div style={cardStyles}>
                 <div className="feature-card-list">
                     {
-                        cardState.map((card: any, i: number) => <Card card={card} />)
+                        cardState.map((card: ICardData, i: number) => <Card key={i} card={card} />)
                     }
                 </div>
             </animated.div>

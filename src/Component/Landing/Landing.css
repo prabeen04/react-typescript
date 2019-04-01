@@ -6,12 +6,13 @@
 .welcome-text{
     display:flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 100px 50px;
+    margin: 80px;
 }
 .welcome-text-container{
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 .welcome-text {
     color: rgb(110, 108, 108);
@@ -40,9 +41,23 @@
 .feature-card > h3{
     display: inline;
     font-family: 'Segoe UI';
-    color: red;
+    color: rgb(189, 27, 27);
 }
 .feature-card > p{
     font-family: 'Segoe UI';
     color: rgb(219, 114, 114);
+}
+.text-btn{
+    background-color: transparent !important;
+    border: none;
+    font-family: 'Segoe UI'!important;
+    color: gray !important;
+    transition: all .8s ease-in;
+    padding: 0 !important;
+}
+.text-btn:hover{
+    background-color: transparent !important;
+    border: none;
+    color: rgb(224, 24, 24) !important;
+    transform: scale(1.1);
 }
