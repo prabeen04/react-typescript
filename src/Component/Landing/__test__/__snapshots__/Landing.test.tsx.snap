@@ -35,7 +35,7 @@ ShallowWrapper {
                   "payload": undefined,
                   "setValue": [Function],
                   "startPosition": 0,
-                  "startTime": 1554133073900,
+                  "startTime": 1554213629303,
                   "value": 0,
                 },
                 "rotate": AnimatedInterpolation {
@@ -54,7 +54,7 @@ ShallowWrapper {
                       "payload": undefined,
                       "setValue": [Function],
                       "startPosition": 0,
-                      "startTime": 1554133073900,
+                      "startTime": 1554213629303,
                       "value": 0,
                     },
                   ],
@@ -75,7 +75,7 @@ ShallowWrapper {
                       "payload": undefined,
                       "setValue": [Function],
                       "startPosition": 0,
-                      "startTime": 1554133073900,
+                      "startTime": 1554213629303,
                       "value": 0,
                     },
                   ],
@@ -88,9 +88,11 @@ ShallowWrapper {
                 className="welcome-text"
               >
                 Let's explore the
-                <Title
-                  title=" POWER "
-                />
+                <React.Fragment>
+                  <Title
+                    title=" POWER "
+                  />
+                </React.Fragment>
                 of typescript
               </h1>
             </React.Fragment>
@@ -109,7 +111,7 @@ ShallowWrapper {
                 "payload": undefined,
                 "setValue": [Function],
                 "startPosition": 0,
-                "startTime": 1554133073901,
+                "startTime": 1554213629304,
                 "value": 0,
               },
             }
@@ -171,7 +173,7 @@ ShallowWrapper {
                   "payload": undefined,
                   "setValue": [Function],
                   "startPosition": 0,
-                  "startTime": 1554133073900,
+                  "startTime": 1554213629303,
                   "value": 0,
                 },
                 "rotate": AnimatedInterpolation {
@@ -190,7 +192,7 @@ ShallowWrapper {
                       "payload": undefined,
                       "setValue": [Function],
                       "startPosition": 0,
-                      "startTime": 1554133073900,
+                      "startTime": 1554213629303,
                       "value": 0,
                     },
                   ],
@@ -211,7 +213,7 @@ ShallowWrapper {
                       "payload": undefined,
                       "setValue": [Function],
                       "startPosition": 0,
-                      "startTime": 1554133073900,
+                      "startTime": 1554213629303,
                       "value": 0,
                     },
                   ],
@@ -224,9 +226,11 @@ ShallowWrapper {
                 className="welcome-text"
               >
                 Let's explore the
-                <Title
-                  title=" POWER "
-                />
+                <React.Fragment>
+                  <Title
+                    title=" POWER "
+                  />
+                </React.Fragment>
                 of typescript
               </h1>
             </React.Fragment>
@@ -244,9 +248,11 @@ ShallowWrapper {
                 className="welcome-text"
               >
                 Let's explore the
-                <Title
-                  title=" POWER "
-                />
+                <React.Fragment>
+                  <Title
+                    title=" POWER "
+                  />
+                </React.Fragment>
                 of typescript
               </h1>
             </React.Fragment>,
@@ -261,7 +267,7 @@ ShallowWrapper {
                 "payload": undefined,
                 "setValue": [Function],
                 "startPosition": 0,
-                "startTime": 1554133073900,
+                "startTime": 1554213629303,
                 "value": 0,
               },
               "rotate": AnimatedInterpolation {
@@ -280,7 +286,7 @@ ShallowWrapper {
                     "payload": undefined,
                     "setValue": [Function],
                     "startPosition": 0,
-                    "startTime": 1554133073900,
+                    "startTime": 1554213629303,
                     "value": 0,
                   },
                 ],
@@ -301,7 +307,7 @@ ShallowWrapper {
                     "payload": undefined,
                     "setValue": [Function],
                     "startPosition": 0,
-                    "startTime": 1554133073900,
+                    "startTime": 1554213629303,
                     "value": 0,
                   },
                 ],
@@ -318,9 +324,11 @@ ShallowWrapper {
                 className="welcome-text"
               >
                 Let's explore the
-                <Title
-                  title=" POWER "
-                />
+                <React.Fragment>
+                  <Title
+                    title=" POWER "
+                  />
+                </React.Fragment>
                 of typescript
               </h1>,
             },
@@ -332,9 +340,11 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Let's explore the",
-                  <Title
-                    title=" POWER "
-                  />,
+                  <React.Fragment>
+                    <Title
+                      title=" POWER "
+                    />
+                  </React.Fragment>,
                   "of typescript",
                 ],
                 "className": "welcome-text",
@@ -347,11 +357,23 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "title": " POWER ",
+                    "children": <Title
+                      title=" POWER "
+                    />,
                   },
                   "ref": null,
-                  "rendered": null,
-                  "type": [Function],
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "title": " POWER ",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": Symbol(react.fragment),
                 },
                 "of typescript",
               ],
@@ -413,7 +435,7 @@ ShallowWrapper {
               "payload": undefined,
               "setValue": [Function],
               "startPosition": 0,
-              "startTime": 1554133073901,
+              "startTime": 1554213629304,
               "value": 0,
             },
           },
@@ -536,7 +558,7 @@ ShallowWrapper {
                     "payload": undefined,
                     "setValue": [Function],
                     "startPosition": 0,
-                    "startTime": 1554133073900,
+                    "startTime": 1554213629303,
                     "value": 0,
                   },
                   "rotate": AnimatedInterpolation {
@@ -555,7 +577,7 @@ ShallowWrapper {
                         "payload": undefined,
                         "setValue": [Function],
                         "startPosition": 0,
-                        "startTime": 1554133073900,
+                        "startTime": 1554213629303,
                         "value": 0,
                       },
                     ],
@@ -576,7 +598,7 @@ ShallowWrapper {
                         "payload": undefined,
                         "setValue": [Function],
                         "startPosition": 0,
-                        "startTime": 1554133073900,
+                        "startTime": 1554213629303,
                         "value": 0,
                       },
                     ],
@@ -589,9 +611,11 @@ ShallowWrapper {
                   className="welcome-text"
                 >
                   Let's explore the
-                  <Title
-                    title=" POWER "
-                  />
+                  <React.Fragment>
+                    <Title
+                      title=" POWER "
+                    />
+                  </React.Fragment>
                   of typescript
                 </h1>
               </React.Fragment>
@@ -610,7 +634,7 @@ ShallowWrapper {
                   "payload": undefined,
                   "setValue": [Function],
                   "startPosition": 0,
-                  "startTime": 1554133073901,
+                  "startTime": 1554213629304,
                   "value": 0,
                 },
               }
@@ -672,7 +696,7 @@ ShallowWrapper {
                     "payload": undefined,
                     "setValue": [Function],
                     "startPosition": 0,
-                    "startTime": 1554133073900,
+                    "startTime": 1554213629303,
                     "value": 0,
                   },
                   "rotate": AnimatedInterpolation {
@@ -691,7 +715,7 @@ ShallowWrapper {
                         "payload": undefined,
                         "setValue": [Function],
                         "startPosition": 0,
-                        "startTime": 1554133073900,
+                        "startTime": 1554213629303,
                         "value": 0,
                       },
                     ],
@@ -712,7 +736,7 @@ ShallowWrapper {
                         "payload": undefined,
                         "setValue": [Function],
                         "startPosition": 0,
-                        "startTime": 1554133073900,
+                        "startTime": 1554213629303,
                         "value": 0,
                       },
                     ],
@@ -725,9 +749,11 @@ ShallowWrapper {
                   className="welcome-text"
                 >
                   Let's explore the
-                  <Title
-                    title=" POWER "
-                  />
+                  <React.Fragment>
+                    <Title
+                      title=" POWER "
+                    />
+                  </React.Fragment>
                   of typescript
                 </h1>
               </React.Fragment>
@@ -745,9 +771,11 @@ ShallowWrapper {
                   className="welcome-text"
                 >
                   Let's explore the
-                  <Title
-                    title=" POWER "
-                  />
+                  <React.Fragment>
+                    <Title
+                      title=" POWER "
+                    />
+                  </React.Fragment>
                   of typescript
                 </h1>
               </React.Fragment>,
@@ -762,7 +790,7 @@ ShallowWrapper {
                   "payload": undefined,
                   "setValue": [Function],
                   "startPosition": 0,
-                  "startTime": 1554133073900,
+                  "startTime": 1554213629303,
                   "value": 0,
                 },
                 "rotate": AnimatedInterpolation {
@@ -781,7 +809,7 @@ ShallowWrapper {
                       "payload": undefined,
                       "setValue": [Function],
                       "startPosition": 0,
-                      "startTime": 1554133073900,
+                      "startTime": 1554213629303,
                       "value": 0,
                     },
                   ],
@@ -802,7 +830,7 @@ ShallowWrapper {
                       "payload": undefined,
                       "setValue": [Function],
                       "startPosition": 0,
-                      "startTime": 1554133073900,
+                      "startTime": 1554213629303,
                       "value": 0,
                     },
                   ],
@@ -819,9 +847,11 @@ ShallowWrapper {
                   className="welcome-text"
                 >
                   Let's explore the
-                  <Title
-                    title=" POWER "
-                  />
+                  <React.Fragment>
+                    <Title
+                      title=" POWER "
+                    />
+                  </React.Fragment>
                   of typescript
                 </h1>,
               },
@@ -833,9 +863,11 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Let's explore the",
-                    <Title
-                      title=" POWER "
-                    />,
+                    <React.Fragment>
+                      <Title
+                        title=" POWER "
+                      />
+                    </React.Fragment>,
                     "of typescript",
                   ],
                   "className": "welcome-text",
@@ -848,11 +880,23 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
-                      "title": " POWER ",
+                      "children": <Title
+                        title=" POWER "
+                      />,
                     },
                     "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "title": " POWER ",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": Symbol(react.fragment),
                   },
                   "of typescript",
                 ],
@@ -914,7 +958,7 @@ ShallowWrapper {
                 "payload": undefined,
                 "setValue": [Function],
                 "startPosition": 0,
-                "startTime": 1554133073901,
+                "startTime": 1554213629304,
                 "value": 0,
               },
             },

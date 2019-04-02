@@ -42,7 +42,7 @@ export default function Landing() {
                 <animated.div style={styles}>
                     <>
                         <h1 className="welcome-text">Let's explore the
-                        {<Title title={title} />}
+                        <>{<Title title={title} />}</>
                             of typescript</h1>
                     </>
                 </animated.div>
