@@ -1,6 +1,17 @@
 import * as React from 'react';
 import { TMDB_API_KEY } from '../../Config/Keys'
 import * as types from "./MovieActionTypes";
+import { IMovie } from "./MovieInterface";
+
+interface IUseMovie {
+    fetchingMovies: boolean;
+    fetchingMoviesError: boolean;
+    movies: IMovie[];
+}
+export interface IAction {
+    type: string;
+    payload?: any
+}
 const initialState = {
     fetchingMovies: false,
     fetchingMoviesError: false,
@@ -29,7 +40,7 @@ export default function useMovie() {
     }, [])
     return { state, dispatch }
 }
-function movieReducer(state: any, action: any) {
+function movieReducer(state: IUseMovie, action: IAction) {
     switch (action.type) {
         case types.GET_MOVIES_REQUEST:
             return { ...state, fetchingMovies: true, fetchingMoviesError: false }
