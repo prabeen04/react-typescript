@@ -4,11 +4,25 @@
 .movie-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .movie-card{
-    width: 300px;
-    /* border: 1px solid red; */
-    margin: 1rem;
+    width: calc(16.6666% - 0.6rem);
+    border: 1px solid rgb(107, 103, 103);
+    margin: 0.3rem;
     padding: 0.5rem;
+}
+.movie-card > p{
+    color: #ccc;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: ZCOOL XiaoWei;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0.2rem 0.4rem;
+}
+.movie-card > img{
+width: 100%;
 }
