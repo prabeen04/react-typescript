@@ -32,6 +32,6 @@ describe('<MovieCard/>', () => {
     })
     it('should recieve movie props', () => {
         const wrapper = shallow(<MovieCard movie={movieProp} />)
-        expect(wrapper.props().movie).toEqual(movieProp)
+        expect(wrapper.instance().props.movie).toEqual(movieProp)
     })
 })
