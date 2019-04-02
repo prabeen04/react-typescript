@@ -1,6 +1,8 @@
-import * as React from 'react'
+import * as React from 'react';
+import { IMovie } from "./MovieInterface";
 import useMovie from './UseMovie';
 
+const IMG_URL = 'http://image.tmdb.org/t/p/w185/'
 export default function Movie() {
     const { state, dispatch } = useMovie();
     const { fetchingMovies, fetchingMoviesError, movies } = state;
@@ -17,7 +19,12 @@ export default function Movie() {
     }
     return (
         <div style={{ height: 200 }}>
-            {movies.map((movie: any) => <p>{movie.original_title}</p>)}
+            {movies.map((movie: IMovie) => {
+                return <>
+                    <p>{movie.original_title}</p>
+                    <img src={`${IMG_URL}${movie.poster_path}`} alt="" />
+                </>
+            })}
         </div>
     )
 }
