@@ -41,13 +41,18 @@ const initialState = {
 
 export default function useUserData() {
     const [usersState, setUsersState] = React.useState<IUserState>(initialState)
-
+    const controller = new AbortController();
+    const signal = controller.signal;
     React.useEffect(() => {
         setUsersState({ ...usersState, fetchingUsers: true })
-        fetch(url)
+        fetch(url, {
+            method: 'GET',
+            signal
+        })
             .then((res: any) => res.json())
             .then((data: IUser[]) => setUsersState({ ...usersState, fetchingUsers: false, users: data }))
             .catch((err: any) => setUsersState({ ...usersState, fetchingUsers: false, fetchingUsersError: true }))
+        return () => controller.abort();
     }, [])
 
     return usersState

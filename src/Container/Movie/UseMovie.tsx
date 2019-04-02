@@ -21,10 +21,14 @@ const initialState = {
 export default function useMovie() {
     const [state, dispatch] = React.useReducer(movieReducer, initialState);
     const API_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}`;
-
+    const controller = new AbortController();
+    const signal = controller.signal;
     React.useEffect(() => {
         dispatch({ type: types.GET_MOVIES_REQUEST })
-        fetch(API_URL)
+        fetch(API_URL, {
+            method: 'GET',
+            signal
+        })
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -37,6 +41,8 @@ export default function useMovie() {
                 console.log(err)
                 dispatch({ type: types.GET_MOVIES_REQUEST })
             })
+
+        return () => controller.abort();
     }, [])
     return { state, dispatch }
 }
