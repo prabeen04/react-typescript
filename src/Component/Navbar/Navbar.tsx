@@ -24,6 +24,9 @@ export default function MyNavbar() {
                         <NavItem>
                             <NavLink activeClassName='active-menu' to="/fetch" className='nav-link nav-menu'>Users</NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink activeClassName='active-menu' to="/movie" className='nav-link nav-menu'>Movies</NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </Navbar>

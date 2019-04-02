@@ -5,6 +5,7 @@ import Landing from './Component/Landing/Landing';
 import Todo from './Component/Todo/Todo'
 import Counter from './Component/Counter/Counter'
 import Fetch from './Component/Fetch/Fetch'
+import Movie from './Container/Movie/Movie'
 import './App.css';
 
 interface IAppProps { }
@@ -23,6 +24,7 @@ class App extends React.Component<IAppProps, IAppState> {
             <Route exact path='/todo' component={Todo} />
             <Route exact path='/counter' component={Counter} />
             <Route exact path='/fetch' component={Fetch} />
+            <Route exact path='/Movie' component={Movie} />
           </Switch>
         </div>
       </Style.Provider>
