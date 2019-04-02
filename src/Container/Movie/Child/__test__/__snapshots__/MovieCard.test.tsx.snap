@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MovieCard/> should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MovieCard
+    movie={
+      Object {
+        "adult": false,
+        "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+        "genre_ids": Array [
+          16,
+          10751,
+          12,
+        ],
+        "id": 166428,
+        "original_language": "en",
+        "original_title": "How to Train Your Dragon: The Hidden World",
+        "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+        "popularity": 470.427,
+        "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+        "release_date": "2019-01-03",
+        "title": "How to Train Your Dragon: The Hidden World",
+        "video": false,
+        "vote_average": 7.7,
+        "vote_count": 1230,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p>
+          How to Train Your Dragon: The Hidden World
+        </p>,
+        <img
+          alt=""
+          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+        />,
+      ],
+      "className": "movie-card",
+      "data-test": "MovieCard",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "How to Train Your Dragon: The Hidden World",
+        },
+        "ref": null,
+        "rendered": "How to Train Your Dragon: The Hidden World",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "",
+          "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            How to Train Your Dragon: The Hidden World
+          </p>,
+          <img
+            alt=""
+            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+          />,
+        ],
+        "className": "movie-card",
+        "data-test": "MovieCard",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "How to Train Your Dragon: The Hidden World",
+          },
+          "ref": null,
+          "rendered": "How to Train Your Dragon: The Hidden World",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "",
+            "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

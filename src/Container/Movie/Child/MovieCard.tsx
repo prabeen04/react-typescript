@@ -7,7 +7,7 @@ interface IMovieCardProps {
 }
 export default function MovieCard({ movie }: { movie: IMovie }): JSX.Element {
     return (
-        <div className='movie-card'>
+        <div className='movie-card' data-test='MovieCard'>
             <p>{movie.title}</p>
             <img src={`${IMG_URL}${movie.poster_path}`} alt="" />
         </div>
