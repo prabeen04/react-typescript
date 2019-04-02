@@ -1,0 +1,14 @@
+.movie-wrapper{
+
+}
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.movie-card{
+    width: 300px;
+    /* border: 1px solid red; */
+    margin: 1rem;
+    padding: 0.5rem;
+}

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { IMovie } from "./MovieInterface";
 import useMovie from './UseMovie';
-import MovieList from './Child/MovieList'
+import MovieList from './Child/MovieList';
+import './Movie.css';
 
 export default function Movie(): JSX.Element {
     const { state, dispatch } = useMovie();
@@ -18,8 +18,8 @@ export default function Movie(): JSX.Element {
         return <h3>Error fetvhing movies</h3>
     }
     return (
-        <div>
-            <MovieList movies={movies}/>
+        <div className='movie-wrapper'>
+            <MovieList movies={movies} />
         </div>
     )
 }
