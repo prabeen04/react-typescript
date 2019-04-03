@@ -23,16 +23,27 @@
     margin: 0;
     padding: 0.2rem 0.4rem;
 }
-.movie-card > img{
-width: 100%;
+.movie-poster{
+    width: 100%;
 }
-.movie-stats{
+.stats-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
 
+.movie-stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .stats-column > i {
-    color: rgb(228, 92, 92);
+    color: rgb(245, 33, 26);
     margin-right: 0.2rem;
 }
 .stats-column > span {
     color: rgb(80, 79, 79);
+    font-size: 0.7rem;
 }
