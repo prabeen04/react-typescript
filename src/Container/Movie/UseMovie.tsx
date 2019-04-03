@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { TMDB_API_KEY } from '../../Config/Keys'
 import * as types from "./MovieActionTypes";
 import { IMovie } from "./MovieInterface";
 
@@ -19,8 +18,11 @@ const initialState = {
 }
 
 export default function useMovie() {
+    console.log(process)
+    console.log(process.env)
+    console.log(process.env.TMDB_API_KEY)
     const [state, dispatch] = React.useReducer(movieReducer, initialState);
-    const API_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}`;
+    const API_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_TMDB_API_KEY}`;
     const controller = new AbortController();
     const signal = controller.signal;
     React.useEffect(() => {
