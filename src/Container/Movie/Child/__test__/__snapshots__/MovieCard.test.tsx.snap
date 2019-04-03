@@ -45,10 +45,49 @@ ShallowWrapper {
         <p>
           How to Train Your Dragon: The Hidden World
         </p>,
-        <img
-          alt=""
-          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-        />,
+        <div
+          className="flex-container"
+        >
+          <img
+            alt=""
+            className="movie-poster"
+            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+          />
+        </div>,
+        <div
+          className="movie-stats"
+        >
+          <div
+            className="stats-column"
+          >
+            <i
+              className="fas fa-calendar-day"
+            />
+            <span>
+              2019-01-03
+            </span>
+          </div>
+          <div
+            className="stats-column"
+          >
+            <i
+              className="fas fa-heartbeat"
+            />
+            <span>
+              1230
+            </span>
+          </div>
+          <div
+            className="stats-column"
+          >
+            <i
+              className="fas fa-star"
+            />
+            <span>
+              7.7
+            </span>
+          </div>
+        </div>,
       ],
       "className": "movie-card",
       "data-test": "MovieCard",
@@ -71,12 +110,198 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "",
-          "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+          "children": <img
+            alt=""
+            className="movie-poster"
+            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+          />,
+          "className": "flex-container",
         },
         "ref": null,
-        "rendered": null,
-        "type": "img",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "",
+            "className": "movie-poster",
+            "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="stats-column"
+            >
+              <i
+                className="fas fa-calendar-day"
+              />
+              <span>
+                2019-01-03
+              </span>
+            </div>,
+            <div
+              className="stats-column"
+            >
+              <i
+                className="fas fa-heartbeat"
+              />
+              <span>
+                1230
+              </span>
+            </div>,
+            <div
+              className="stats-column"
+            >
+              <i
+                className="fas fa-star"
+              />
+              <span>
+                7.7
+              </span>
+            </div>,
+          ],
+          "className": "movie-stats",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-calendar-day"
+                />,
+                <span>
+                  2019-01-03
+                </span>,
+              ],
+              "className": "stats-column",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-calendar-day",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "2019-01-03",
+                },
+                "ref": null,
+                "rendered": "2019-01-03",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-heartbeat"
+                />,
+                <span>
+                  1230
+                </span>,
+              ],
+              "className": "stats-column",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-heartbeat",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 1230,
+                },
+                "ref": null,
+                "rendered": 1230,
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="fas fa-star"
+                />,
+                <span>
+                  7.7
+                </span>,
+              ],
+              "className": "stats-column",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-star",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 7.7,
+                },
+                "ref": null,
+                "rendered": 7.7,
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -91,10 +316,49 @@ ShallowWrapper {
           <p>
             How to Train Your Dragon: The Hidden World
           </p>,
-          <img
-            alt=""
-            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-          />,
+          <div
+            className="flex-container"
+          >
+            <img
+              alt=""
+              className="movie-poster"
+              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+            />
+          </div>,
+          <div
+            className="movie-stats"
+          >
+            <div
+              className="stats-column"
+            >
+              <i
+                className="fas fa-calendar-day"
+              />
+              <span>
+                2019-01-03
+              </span>
+            </div>
+            <div
+              className="stats-column"
+            >
+              <i
+                className="fas fa-heartbeat"
+              />
+              <span>
+                1230
+              </span>
+            </div>
+            <div
+              className="stats-column"
+            >
+              <i
+                className="fas fa-star"
+              />
+              <span>
+                7.7
+              </span>
+            </div>
+          </div>,
         ],
         "className": "movie-card",
         "data-test": "MovieCard",
@@ -117,12 +381,198 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "",
-            "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+            "children": <img
+              alt=""
+              className="movie-poster"
+              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+            />,
+            "className": "flex-container",
           },
           "ref": null,
-          "rendered": null,
-          "type": "img",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "",
+              "className": "movie-poster",
+              "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="stats-column"
+              >
+                <i
+                  className="fas fa-calendar-day"
+                />
+                <span>
+                  2019-01-03
+                </span>
+              </div>,
+              <div
+                className="stats-column"
+              >
+                <i
+                  className="fas fa-heartbeat"
+                />
+                <span>
+                  1230
+                </span>
+              </div>,
+              <div
+                className="stats-column"
+              >
+                <i
+                  className="fas fa-star"
+                />
+                <span>
+                  7.7
+                </span>
+              </div>,
+            ],
+            "className": "movie-stats",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="fas fa-calendar-day"
+                  />,
+                  <span>
+                    2019-01-03
+                  </span>,
+                ],
+                "className": "stats-column",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-calendar-day",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "2019-01-03",
+                  },
+                  "ref": null,
+                  "rendered": "2019-01-03",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="fas fa-heartbeat"
+                  />,
+                  <span>
+                    1230
+                  </span>,
+                ],
+                "className": "stats-column",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-heartbeat",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 1230,
+                  },
+                  "ref": null,
+                  "rendered": 1230,
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="fas fa-star"
+                  />,
+                  <span>
+                    7.7
+                  </span>,
+                ],
+                "className": "stats-column",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-star",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 7.7,
+                  },
+                  "ref": null,
+                  "rendered": 7.7,
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
