@@ -34,4 +34,8 @@ describe('<MovieList/>', () => {
         const wrapper = mount(<MovieList movies={movieListProps} />)
         expect(wrapper.prop('movies')).toEqual(movieListProps)
     })
+    it('should recieve only 1 moviedetail', () => {
+        const wrapper = mount(<MovieList movies={movieListProps} />)
+        expect(wrapper.prop('movies').length).toEqual(1)
+    })
 })
