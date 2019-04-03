@@ -9,7 +9,7 @@ export default function MovieList(props: IMovieListProps): JSX.Element {
     const { movies } = props;
     return (
         <div className='movie-list' data-test='MovieList'>
-            {movies.map((movie: IMovie) => <MovieCard movie={movie} />)}
+            {movies.map((movie: IMovie) => <MovieCard  key={movie.id} movie={movie} />)}
         </div>
     )
 }

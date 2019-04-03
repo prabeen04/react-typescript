@@ -159,7 +159,7 @@ ReactWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "166428",
           "nodeType": "function",
           "props": Object {
             "movie": Object {
@@ -738,7 +738,7 @@ ReactWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "166428",
             "nodeType": "function",
             "props": Object {
               "movie": Object {
