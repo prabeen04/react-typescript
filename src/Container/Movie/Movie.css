@@ -23,8 +23,17 @@
     margin: 0;
     padding: 0.2rem 0.4rem;
 }
+.animated-clickable-div{
+    cursor: pointer;
+}
 .movie-poster{
     width: 100%;
+}
+.movie-description{
+    width: 100%;
+    height: 260px;
+    color: #888;
+    overflow: hidden;
 }
 .stats-column{
     display: flex;
