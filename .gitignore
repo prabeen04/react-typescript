@@ -16,6 +16,7 @@
 
 #environment variable
 /.env
+/.env.local
 
 # misc
 .DS_Store

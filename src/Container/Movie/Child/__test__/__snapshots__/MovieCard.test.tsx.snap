@@ -48,11 +48,66 @@ ShallowWrapper {
         <div
           className="flex-container"
         >
-          <img
-            alt=""
-            className="movie-poster"
-            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-          />
+          <div
+            className="animated-clickable-div"
+            onClick={[Function]}
+          >
+            <ForwardRef
+              className="c back"
+              style={
+                Object {
+                  "opacity": AnimatedInterpolation {
+                    "attach": [Function],
+                    "calc": [Function],
+                    "children": Array [],
+                    "detach": [Function],
+                    "payload": Array [
+                      AnimatedValue {
+                        "animatedStyles": Set {},
+                        "children": Array [],
+                        "done": false,
+                        "lastPosition": 0,
+                        "lastTime": undefined,
+                        "lastVelocity": undefined,
+                        "payload": undefined,
+                        "setValue": [Function],
+                        "startPosition": 0,
+                        "startTime": 1554320471673,
+                        "value": 0,
+                      },
+                    ],
+                  },
+                  "transform": AnimatedInterpolation {
+                    "attach": [Function],
+                    "calc": [Function],
+                    "children": Array [],
+                    "detach": [Function],
+                    "payload": Array [
+                      AnimatedValue {
+                        "animatedStyles": Set {},
+                        "children": Array [],
+                        "done": false,
+                        "lastPosition": 0,
+                        "lastTime": undefined,
+                        "lastVelocity": undefined,
+                        "payload": undefined,
+                        "setValue": [Function],
+                        "startPosition": 0,
+                        "startTime": 1554320471676,
+                        "value": 0,
+                      },
+                    ],
+                  },
+                }
+              }
+            >
+              <img
+                alt=""
+                className="movie-poster"
+                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+              />
+            </ForwardRef>
+          </div>
         </div>,
         <div
           className="movie-stats"
@@ -110,11 +165,66 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <img
-            alt=""
-            className="movie-poster"
-            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-          />,
+          "children": <div
+            className="animated-clickable-div"
+            onClick={[Function]}
+          >
+            <ForwardRef
+              className="c back"
+              style={
+                Object {
+                  "opacity": AnimatedInterpolation {
+                    "attach": [Function],
+                    "calc": [Function],
+                    "children": Array [],
+                    "detach": [Function],
+                    "payload": Array [
+                      AnimatedValue {
+                        "animatedStyles": Set {},
+                        "children": Array [],
+                        "done": false,
+                        "lastPosition": 0,
+                        "lastTime": undefined,
+                        "lastVelocity": undefined,
+                        "payload": undefined,
+                        "setValue": [Function],
+                        "startPosition": 0,
+                        "startTime": 1554320471673,
+                        "value": 0,
+                      },
+                    ],
+                  },
+                  "transform": AnimatedInterpolation {
+                    "attach": [Function],
+                    "calc": [Function],
+                    "children": Array [],
+                    "detach": [Function],
+                    "payload": Array [
+                      AnimatedValue {
+                        "animatedStyles": Set {},
+                        "children": Array [],
+                        "done": false,
+                        "lastPosition": 0,
+                        "lastTime": undefined,
+                        "lastVelocity": undefined,
+                        "payload": undefined,
+                        "setValue": [Function],
+                        "startPosition": 0,
+                        "startTime": 1554320471676,
+                        "value": 0,
+                      },
+                    ],
+                  },
+                }
+              }
+            >
+              <img
+                alt=""
+                className="movie-poster"
+                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+              />
+            </ForwardRef>
+          </div>,
           "className": "flex-container",
         },
         "ref": null,
@@ -123,13 +233,147 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "",
-            "className": "movie-poster",
-            "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+            "children": Array [
+              <ForwardRef
+                className="c back"
+                style={
+                  Object {
+                    "opacity": AnimatedInterpolation {
+                      "attach": [Function],
+                      "calc": [Function],
+                      "children": Array [],
+                      "detach": [Function],
+                      "payload": Array [
+                        AnimatedValue {
+                          "animatedStyles": Set {},
+                          "children": Array [],
+                          "done": false,
+                          "lastPosition": 0,
+                          "lastTime": undefined,
+                          "lastVelocity": undefined,
+                          "payload": undefined,
+                          "setValue": [Function],
+                          "startPosition": 0,
+                          "startTime": 1554320471673,
+                          "value": 0,
+                        },
+                      ],
+                    },
+                    "transform": AnimatedInterpolation {
+                      "attach": [Function],
+                      "calc": [Function],
+                      "children": Array [],
+                      "detach": [Function],
+                      "payload": Array [
+                        AnimatedValue {
+                          "animatedStyles": Set {},
+                          "children": Array [],
+                          "done": false,
+                          "lastPosition": 0,
+                          "lastTime": undefined,
+                          "lastVelocity": undefined,
+                          "payload": undefined,
+                          "setValue": [Function],
+                          "startPosition": 0,
+                          "startTime": 1554320471676,
+                          "value": 0,
+                        },
+                      ],
+                    },
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  className="movie-poster"
+                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                />
+              </ForwardRef>,
+              false,
+            ],
+            "className": "animated-clickable-div",
+            "onClick": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": "img",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <img
+                  alt=""
+                  className="movie-poster"
+                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                />,
+                "className": "c back",
+                "style": Object {
+                  "opacity": AnimatedInterpolation {
+                    "attach": [Function],
+                    "calc": [Function],
+                    "children": Array [],
+                    "detach": [Function],
+                    "payload": Array [
+                      AnimatedValue {
+                        "animatedStyles": Set {},
+                        "children": Array [],
+                        "done": false,
+                        "lastPosition": 0,
+                        "lastTime": undefined,
+                        "lastVelocity": undefined,
+                        "payload": undefined,
+                        "setValue": [Function],
+                        "startPosition": 0,
+                        "startTime": 1554320471673,
+                        "value": 0,
+                      },
+                    ],
+                  },
+                  "transform": AnimatedInterpolation {
+                    "attach": [Function],
+                    "calc": [Function],
+                    "children": Array [],
+                    "detach": [Function],
+                    "payload": Array [
+                      AnimatedValue {
+                        "animatedStyles": Set {},
+                        "children": Array [],
+                        "done": false,
+                        "lastPosition": 0,
+                        "lastTime": undefined,
+                        "lastVelocity": undefined,
+                        "payload": undefined,
+                        "setValue": [Function],
+                        "startPosition": 0,
+                        "startTime": 1554320471676,
+                        "value": 0,
+                      },
+                    ],
+                  },
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "",
+                  "className": "movie-poster",
+                  "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+            },
+            false,
+          ],
+          "type": "div",
         },
         "type": "div",
       },
@@ -319,11 +563,66 @@ ShallowWrapper {
           <div
             className="flex-container"
           >
-            <img
-              alt=""
-              className="movie-poster"
-              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-            />
+            <div
+              className="animated-clickable-div"
+              onClick={[Function]}
+            >
+              <ForwardRef
+                className="c back"
+                style={
+                  Object {
+                    "opacity": AnimatedInterpolation {
+                      "attach": [Function],
+                      "calc": [Function],
+                      "children": Array [],
+                      "detach": [Function],
+                      "payload": Array [
+                        AnimatedValue {
+                          "animatedStyles": Set {},
+                          "children": Array [],
+                          "done": false,
+                          "lastPosition": 0,
+                          "lastTime": undefined,
+                          "lastVelocity": undefined,
+                          "payload": undefined,
+                          "setValue": [Function],
+                          "startPosition": 0,
+                          "startTime": 1554320471673,
+                          "value": 0,
+                        },
+                      ],
+                    },
+                    "transform": AnimatedInterpolation {
+                      "attach": [Function],
+                      "calc": [Function],
+                      "children": Array [],
+                      "detach": [Function],
+                      "payload": Array [
+                        AnimatedValue {
+                          "animatedStyles": Set {},
+                          "children": Array [],
+                          "done": false,
+                          "lastPosition": 0,
+                          "lastTime": undefined,
+                          "lastVelocity": undefined,
+                          "payload": undefined,
+                          "setValue": [Function],
+                          "startPosition": 0,
+                          "startTime": 1554320471676,
+                          "value": 0,
+                        },
+                      ],
+                    },
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  className="movie-poster"
+                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                />
+              </ForwardRef>
+            </div>
           </div>,
           <div
             className="movie-stats"
@@ -381,11 +680,66 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <img
-              alt=""
-              className="movie-poster"
-              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-            />,
+            "children": <div
+              className="animated-clickable-div"
+              onClick={[Function]}
+            >
+              <ForwardRef
+                className="c back"
+                style={
+                  Object {
+                    "opacity": AnimatedInterpolation {
+                      "attach": [Function],
+                      "calc": [Function],
+                      "children": Array [],
+                      "detach": [Function],
+                      "payload": Array [
+                        AnimatedValue {
+                          "animatedStyles": Set {},
+                          "children": Array [],
+                          "done": false,
+                          "lastPosition": 0,
+                          "lastTime": undefined,
+                          "lastVelocity": undefined,
+                          "payload": undefined,
+                          "setValue": [Function],
+                          "startPosition": 0,
+                          "startTime": 1554320471673,
+                          "value": 0,
+                        },
+                      ],
+                    },
+                    "transform": AnimatedInterpolation {
+                      "attach": [Function],
+                      "calc": [Function],
+                      "children": Array [],
+                      "detach": [Function],
+                      "payload": Array [
+                        AnimatedValue {
+                          "animatedStyles": Set {},
+                          "children": Array [],
+                          "done": false,
+                          "lastPosition": 0,
+                          "lastTime": undefined,
+                          "lastVelocity": undefined,
+                          "payload": undefined,
+                          "setValue": [Function],
+                          "startPosition": 0,
+                          "startTime": 1554320471676,
+                          "value": 0,
+                        },
+                      ],
+                    },
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  className="movie-poster"
+                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                />
+              </ForwardRef>
+            </div>,
             "className": "flex-container",
           },
           "ref": null,
@@ -394,13 +748,147 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "alt": "",
-              "className": "movie-poster",
-              "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+              "children": Array [
+                <ForwardRef
+                  className="c back"
+                  style={
+                    Object {
+                      "opacity": AnimatedInterpolation {
+                        "attach": [Function],
+                        "calc": [Function],
+                        "children": Array [],
+                        "detach": [Function],
+                        "payload": Array [
+                          AnimatedValue {
+                            "animatedStyles": Set {},
+                            "children": Array [],
+                            "done": false,
+                            "lastPosition": 0,
+                            "lastTime": undefined,
+                            "lastVelocity": undefined,
+                            "payload": undefined,
+                            "setValue": [Function],
+                            "startPosition": 0,
+                            "startTime": 1554320471673,
+                            "value": 0,
+                          },
+                        ],
+                      },
+                      "transform": AnimatedInterpolation {
+                        "attach": [Function],
+                        "calc": [Function],
+                        "children": Array [],
+                        "detach": [Function],
+                        "payload": Array [
+                          AnimatedValue {
+                            "animatedStyles": Set {},
+                            "children": Array [],
+                            "done": false,
+                            "lastPosition": 0,
+                            "lastTime": undefined,
+                            "lastVelocity": undefined,
+                            "payload": undefined,
+                            "setValue": [Function],
+                            "startPosition": 0,
+                            "startTime": 1554320471676,
+                            "value": 0,
+                          },
+                        ],
+                      },
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    className="movie-poster"
+                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                  />
+                </ForwardRef>,
+                false,
+              ],
+              "className": "animated-clickable-div",
+              "onClick": [Function],
             },
             "ref": null,
-            "rendered": null,
-            "type": "img",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <img
+                    alt=""
+                    className="movie-poster"
+                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                  />,
+                  "className": "c back",
+                  "style": Object {
+                    "opacity": AnimatedInterpolation {
+                      "attach": [Function],
+                      "calc": [Function],
+                      "children": Array [],
+                      "detach": [Function],
+                      "payload": Array [
+                        AnimatedValue {
+                          "animatedStyles": Set {},
+                          "children": Array [],
+                          "done": false,
+                          "lastPosition": 0,
+                          "lastTime": undefined,
+                          "lastVelocity": undefined,
+                          "payload": undefined,
+                          "setValue": [Function],
+                          "startPosition": 0,
+                          "startTime": 1554320471673,
+                          "value": 0,
+                        },
+                      ],
+                    },
+                    "transform": AnimatedInterpolation {
+                      "attach": [Function],
+                      "calc": [Function],
+                      "children": Array [],
+                      "detach": [Function],
+                      "payload": Array [
+                        AnimatedValue {
+                          "animatedStyles": Set {},
+                          "children": Array [],
+                          "done": false,
+                          "lastPosition": 0,
+                          "lastTime": undefined,
+                          "lastVelocity": undefined,
+                          "payload": undefined,
+                          "setValue": [Function],
+                          "startPosition": 0,
+                          "startTime": 1554320471676,
+                          "value": 0,
+                        },
+                      ],
+                    },
+                  },
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "",
+                    "className": "movie-poster",
+                    "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "render": [Function],
+                },
+              },
+              false,
+            ],
+            "type": "div",
           },
           "type": "div",
         },
