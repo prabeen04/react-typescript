@@ -1,46 +1,1198 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MovieList/> should match snapshot 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
+ReactWrapper {
   Symbol(enzyme.__unrendered__): <MovieList
-    movies={Array []}
+    movies={
+      Array [
+        Object {
+          "adult": false,
+          "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+          "genre_ids": Array [
+            16,
+            10751,
+            12,
+          ],
+          "id": 166428,
+          "original_language": "en",
+          "original_title": "How to Train Your Dragon: The Hidden World",
+          "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+          "popularity": 470.427,
+          "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+          "release_date": "2019-01-03",
+          "title": "How to Train Your Dragon: The Hidden World",
+          "video": false,
+          "vote_average": 7.7,
+          "vote_count": 1230,
+        },
+      ]
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
+  Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": Array [],
-      "className": "movie-list",
-      "data-test": "MovieList",
+      "movies": Array [
+        Object {
+          "adult": false,
+          "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+          "genre_ids": Array [
+            16,
+            10751,
+            12,
+          ],
+          "id": 166428,
+          "original_language": "en",
+          "original_title": "How to Train Your Dragon: The Hidden World",
+          "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+          "popularity": 470.427,
+          "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+          "release_date": "2019-01-03",
+          "title": "How to Train Your Dragon: The Hidden World",
+          "video": false,
+          "vote_average": 7.7,
+          "vote_count": 1230,
+        },
+      ],
     },
     "ref": null,
-    "rendered": Array [],
-    "type": "div",
+    "rendered": Object {
+      "instance": <div
+        class="movie-list"
+        data-test="MovieList"
+      >
+        <div
+          class="movie-card"
+          data-test="MovieCard"
+        >
+          <p>
+            How to Train Your Dragon: The Hidden World
+          </p>
+          <div
+            class="flex-container"
+          >
+            <img
+              alt=""
+              class="movie-poster"
+              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+            />
+          </div>
+          <div
+            class="movie-stats"
+          >
+            <div
+              class="stats-column"
+            >
+              <i
+                class="fas fa-calendar-day"
+              />
+              <span>
+                2019-01-03
+              </span>
+            </div>
+            <div
+              class="stats-column"
+            >
+              <i
+                class="fas fa-heartbeat"
+              />
+              <span>
+                1230
+              </span>
+            </div>
+            <div
+              class="stats-column"
+            >
+              <i
+                class="fas fa-star"
+              />
+              <span>
+                7.7
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <MovieCard
+            movie={
+              Object {
+                "adult": false,
+                "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+                "genre_ids": Array [
+                  16,
+                  10751,
+                  12,
+                ],
+                "id": 166428,
+                "original_language": "en",
+                "original_title": "How to Train Your Dragon: The Hidden World",
+                "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+                "popularity": 470.427,
+                "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                "release_date": "2019-01-03",
+                "title": "How to Train Your Dragon: The Hidden World",
+                "video": false,
+                "vote_average": 7.7,
+                "vote_count": 1230,
+              }
+            }
+          />,
+        ],
+        "className": "movie-list",
+        "data-test": "MovieList",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "adult": false,
+              "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+              "genre_ids": Array [
+                16,
+                10751,
+                12,
+              ],
+              "id": 166428,
+              "original_language": "en",
+              "original_title": "How to Train Your Dragon: The Hidden World",
+              "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+              "popularity": 470.427,
+              "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+              "release_date": "2019-01-03",
+              "title": "How to Train Your Dragon: The Hidden World",
+              "video": false,
+              "vote_average": 7.7,
+              "vote_count": 1230,
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": <div
+              class="movie-card"
+              data-test="MovieCard"
+            >
+              <p>
+                How to Train Your Dragon: The Hidden World
+              </p>
+              <div
+                class="flex-container"
+              >
+                <img
+                  alt=""
+                  class="movie-poster"
+                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                />
+              </div>
+              <div
+                class="movie-stats"
+              >
+                <div
+                  class="stats-column"
+                >
+                  <i
+                    class="fas fa-calendar-day"
+                  />
+                  <span>
+                    2019-01-03
+                  </span>
+                </div>
+                <div
+                  class="stats-column"
+                >
+                  <i
+                    class="fas fa-heartbeat"
+                  />
+                  <span>
+                    1230
+                  </span>
+                </div>
+                <div
+                  class="stats-column"
+                >
+                  <i
+                    class="fas fa-star"
+                  />
+                  <span>
+                    7.7
+                  </span>
+                </div>
+              </div>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  How to Train Your Dragon: The Hidden World
+                </p>,
+                <div
+                  className="flex-container"
+                >
+                  <img
+                    alt=""
+                    className="movie-poster"
+                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                  />
+                </div>,
+                <div
+                  className="movie-stats"
+                >
+                  <div
+                    className="stats-column"
+                  >
+                    <i
+                      className="fas fa-calendar-day"
+                    />
+                    <span>
+                      2019-01-03
+                    </span>
+                  </div>
+                  <div
+                    className="stats-column"
+                  >
+                    <i
+                      className="fas fa-heartbeat"
+                    />
+                    <span>
+                      1230
+                    </span>
+                  </div>
+                  <div
+                    className="stats-column"
+                  >
+                    <i
+                      className="fas fa-star"
+                    />
+                    <span>
+                      7.7
+                    </span>
+                  </div>
+                </div>,
+              ],
+              "className": "movie-card",
+              "data-test": "MovieCard",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <p>
+                  How to Train Your Dragon: The Hidden World
+                </p>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "How to Train Your Dragon: The Hidden World",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "How to Train Your Dragon: The Hidden World",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": <div
+                  class="flex-container"
+                >
+                  <img
+                    alt=""
+                    class="movie-poster"
+                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                  />
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt=""
+                    className="movie-poster"
+                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                  />,
+                  "className": "flex-container",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <img
+                      alt=""
+                      class="movie-poster"
+                      src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                    />,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "",
+                      "className": "movie-poster",
+                      "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "img",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": <div
+                  class="movie-stats"
+                >
+                  <div
+                    class="stats-column"
+                  >
+                    <i
+                      class="fas fa-calendar-day"
+                    />
+                    <span>
+                      2019-01-03
+                    </span>
+                  </div>
+                  <div
+                    class="stats-column"
+                  >
+                    <i
+                      class="fas fa-heartbeat"
+                    />
+                    <span>
+                      1230
+                    </span>
+                  </div>
+                  <div
+                    class="stats-column"
+                  >
+                    <i
+                      class="fas fa-star"
+                    />
+                    <span>
+                      7.7
+                    </span>
+                  </div>
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="stats-column"
+                    >
+                      <i
+                        className="fas fa-calendar-day"
+                      />
+                      <span>
+                        2019-01-03
+                      </span>
+                    </div>,
+                    <div
+                      className="stats-column"
+                    >
+                      <i
+                        className="fas fa-heartbeat"
+                      />
+                      <span>
+                        1230
+                      </span>
+                    </div>,
+                    <div
+                      className="stats-column"
+                    >
+                      <i
+                        className="fas fa-star"
+                      />
+                      <span>
+                        7.7
+                      </span>
+                    </div>,
+                  ],
+                  "className": "movie-stats",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <div
+                      class="stats-column"
+                    >
+                      <i
+                        class="fas fa-calendar-day"
+                      />
+                      <span>
+                        2019-01-03
+                      </span>
+                    </div>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <i
+                          className="fas fa-calendar-day"
+                        />,
+                        <span>
+                          2019-01-03
+                        </span>,
+                      ],
+                      "className": "stats-column",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <i
+                          class="fas fa-calendar-day"
+                        />,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-calendar-day",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "i",
+                      },
+                      Object {
+                        "instance": <span>
+                          2019-01-03
+                        </span>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "2019-01-03",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "2019-01-03",
+                        ],
+                        "type": "span",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": <div
+                      class="stats-column"
+                    >
+                      <i
+                        class="fas fa-heartbeat"
+                      />
+                      <span>
+                        1230
+                      </span>
+                    </div>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <i
+                          className="fas fa-heartbeat"
+                        />,
+                        <span>
+                          1230
+                        </span>,
+                      ],
+                      "className": "stats-column",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <i
+                          class="fas fa-heartbeat"
+                        />,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-heartbeat",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "i",
+                      },
+                      Object {
+                        "instance": <span>
+                          1230
+                        </span>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": 1230,
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          1230,
+                        ],
+                        "type": "span",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": <div
+                      class="stats-column"
+                    >
+                      <i
+                        class="fas fa-star"
+                      />
+                      <span>
+                        7.7
+                      </span>
+                    </div>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <i
+                          className="fas fa-star"
+                        />,
+                        <span>
+                          7.7
+                        </span>,
+                      ],
+                      "className": "stats-column",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <i
+                          class="fas fa-star"
+                        />,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "fas fa-star",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "i",
+                      },
+                      Object {
+                        "instance": <span>
+                          7.7
+                        </span>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": 7.7,
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          7.7,
+                        ],
+                        "type": "span",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": Array [],
-        "className": "movie-list",
-        "data-test": "MovieList",
+        "movies": Array [
+          Object {
+            "adult": false,
+            "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+            "genre_ids": Array [
+              16,
+              10751,
+              12,
+            ],
+            "id": 166428,
+            "original_language": "en",
+            "original_title": "How to Train Your Dragon: The Hidden World",
+            "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+            "popularity": 470.427,
+            "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+            "release_date": "2019-01-03",
+            "title": "How to Train Your Dragon: The Hidden World",
+            "video": false,
+            "vote_average": 7.7,
+            "vote_count": 1230,
+          },
+        ],
       },
       "ref": null,
-      "rendered": Array [],
-      "type": "div",
+      "rendered": Object {
+        "instance": <div
+          class="movie-list"
+          data-test="MovieList"
+        >
+          <div
+            class="movie-card"
+            data-test="MovieCard"
+          >
+            <p>
+              How to Train Your Dragon: The Hidden World
+            </p>
+            <div
+              class="flex-container"
+            >
+              <img
+                alt=""
+                class="movie-poster"
+                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+              />
+            </div>
+            <div
+              class="movie-stats"
+            >
+              <div
+                class="stats-column"
+              >
+                <i
+                  class="fas fa-calendar-day"
+                />
+                <span>
+                  2019-01-03
+                </span>
+              </div>
+              <div
+                class="stats-column"
+              >
+                <i
+                  class="fas fa-heartbeat"
+                />
+                <span>
+                  1230
+                </span>
+              </div>
+              <div
+                class="stats-column"
+              >
+                <i
+                  class="fas fa-star"
+                />
+                <span>
+                  7.7
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <MovieCard
+              movie={
+                Object {
+                  "adult": false,
+                  "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+                  "genre_ids": Array [
+                    16,
+                    10751,
+                    12,
+                  ],
+                  "id": 166428,
+                  "original_language": "en",
+                  "original_title": "How to Train Your Dragon: The Hidden World",
+                  "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+                  "popularity": 470.427,
+                  "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                  "release_date": "2019-01-03",
+                  "title": "How to Train Your Dragon: The Hidden World",
+                  "video": false,
+                  "vote_average": 7.7,
+                  "vote_count": 1230,
+                }
+              }
+            />,
+          ],
+          "className": "movie-list",
+          "data-test": "MovieList",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "movie": Object {
+                "adult": false,
+                "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+                "genre_ids": Array [
+                  16,
+                  10751,
+                  12,
+                ],
+                "id": 166428,
+                "original_language": "en",
+                "original_title": "How to Train Your Dragon: The Hidden World",
+                "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+                "popularity": 470.427,
+                "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                "release_date": "2019-01-03",
+                "title": "How to Train Your Dragon: The Hidden World",
+                "video": false,
+                "vote_average": 7.7,
+                "vote_count": 1230,
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <div
+                class="movie-card"
+                data-test="MovieCard"
+              >
+                <p>
+                  How to Train Your Dragon: The Hidden World
+                </p>
+                <div
+                  class="flex-container"
+                >
+                  <img
+                    alt=""
+                    class="movie-poster"
+                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                  />
+                </div>
+                <div
+                  class="movie-stats"
+                >
+                  <div
+                    class="stats-column"
+                  >
+                    <i
+                      class="fas fa-calendar-day"
+                    />
+                    <span>
+                      2019-01-03
+                    </span>
+                  </div>
+                  <div
+                    class="stats-column"
+                  >
+                    <i
+                      class="fas fa-heartbeat"
+                    />
+                    <span>
+                      1230
+                    </span>
+                  </div>
+                  <div
+                    class="stats-column"
+                  >
+                    <i
+                      class="fas fa-star"
+                    />
+                    <span>
+                      7.7
+                    </span>
+                  </div>
+                </div>
+              </div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    How to Train Your Dragon: The Hidden World
+                  </p>,
+                  <div
+                    className="flex-container"
+                  >
+                    <img
+                      alt=""
+                      className="movie-poster"
+                      src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                    />
+                  </div>,
+                  <div
+                    className="movie-stats"
+                  >
+                    <div
+                      className="stats-column"
+                    >
+                      <i
+                        className="fas fa-calendar-day"
+                      />
+                      <span>
+                        2019-01-03
+                      </span>
+                    </div>
+                    <div
+                      className="stats-column"
+                    >
+                      <i
+                        className="fas fa-heartbeat"
+                      />
+                      <span>
+                        1230
+                      </span>
+                    </div>
+                    <div
+                      className="stats-column"
+                    >
+                      <i
+                        className="fas fa-star"
+                      />
+                      <span>
+                        7.7
+                      </span>
+                    </div>
+                  </div>,
+                ],
+                "className": "movie-card",
+                "data-test": "MovieCard",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <p>
+                    How to Train Your Dragon: The Hidden World
+                  </p>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "How to Train Your Dragon: The Hidden World",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "How to Train Your Dragon: The Hidden World",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": <div
+                    class="flex-container"
+                  >
+                    <img
+                      alt=""
+                      class="movie-poster"
+                      src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                    />
+                  </div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt=""
+                      className="movie-poster"
+                      src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                    />,
+                    "className": "flex-container",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <img
+                        alt=""
+                        class="movie-poster"
+                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                      />,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "",
+                        "className": "movie-poster",
+                        "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "img",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": <div
+                    class="movie-stats"
+                  >
+                    <div
+                      class="stats-column"
+                    >
+                      <i
+                        class="fas fa-calendar-day"
+                      />
+                      <span>
+                        2019-01-03
+                      </span>
+                    </div>
+                    <div
+                      class="stats-column"
+                    >
+                      <i
+                        class="fas fa-heartbeat"
+                      />
+                      <span>
+                        1230
+                      </span>
+                    </div>
+                    <div
+                      class="stats-column"
+                    >
+                      <i
+                        class="fas fa-star"
+                      />
+                      <span>
+                        7.7
+                      </span>
+                    </div>
+                  </div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="stats-column"
+                      >
+                        <i
+                          className="fas fa-calendar-day"
+                        />
+                        <span>
+                          2019-01-03
+                        </span>
+                      </div>,
+                      <div
+                        className="stats-column"
+                      >
+                        <i
+                          className="fas fa-heartbeat"
+                        />
+                        <span>
+                          1230
+                        </span>
+                      </div>,
+                      <div
+                        className="stats-column"
+                      >
+                        <i
+                          className="fas fa-star"
+                        />
+                        <span>
+                          7.7
+                        </span>
+                      </div>,
+                    ],
+                    "className": "movie-stats",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <div
+                        class="stats-column"
+                      >
+                        <i
+                          class="fas fa-calendar-day"
+                        />
+                        <span>
+                          2019-01-03
+                        </span>
+                      </div>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <i
+                            className="fas fa-calendar-day"
+                          />,
+                          <span>
+                            2019-01-03
+                          </span>,
+                        ],
+                        "className": "stats-column",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": <i
+                            class="fas fa-calendar-day"
+                          />,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fas fa-calendar-day",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            undefined,
+                          ],
+                          "type": "i",
+                        },
+                        Object {
+                          "instance": <span>
+                            2019-01-03
+                          </span>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "2019-01-03",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "2019-01-03",
+                          ],
+                          "type": "span",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": <div
+                        class="stats-column"
+                      >
+                        <i
+                          class="fas fa-heartbeat"
+                        />
+                        <span>
+                          1230
+                        </span>
+                      </div>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <i
+                            className="fas fa-heartbeat"
+                          />,
+                          <span>
+                            1230
+                          </span>,
+                        ],
+                        "className": "stats-column",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": <i
+                            class="fas fa-heartbeat"
+                          />,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fas fa-heartbeat",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            undefined,
+                          ],
+                          "type": "i",
+                        },
+                        Object {
+                          "instance": <span>
+                            1230
+                          </span>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": 1230,
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            1230,
+                          ],
+                          "type": "span",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": <div
+                        class="stats-column"
+                      >
+                        <i
+                          class="fas fa-star"
+                        />
+                        <span>
+                          7.7
+                        </span>
+                      </div>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <i
+                            className="fas fa-star"
+                          />,
+                          <span>
+                            7.7
+                          </span>,
+                        ],
+                        "className": "stats-column",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": <i
+                            class="fas fa-star"
+                          />,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fas fa-star",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            undefined,
+                          ],
+                          "type": "i",
+                        },
+                        Object {
+                          "instance": <span>
+                            7.7
+                          </span>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": 7.7,
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            7.7,
+                          ],
+                          "type": "span",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

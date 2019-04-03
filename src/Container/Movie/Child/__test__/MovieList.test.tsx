@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import MovieList from '../MovieList';
 import { IMovie } from "../../MovieInterface";
 
@@ -22,12 +22,16 @@ const movieListProps: IMovie[] = [{
 describe('<MovieList/>', () => {
     it('should match snapshot', () => {
 
-        const wrapper = shallow(<MovieList movies={movieListProps} />)
+        const wrapper = mount(<MovieList movies={movieListProps} />)
         expect(wrapper).toMatchSnapshot()
     })
     it('should render Movielist', () => {
         const wrapper = shallow(<MovieList movies={[]} />)
         const movieList = wrapper.find('[data-test="MovieList"]')
         expect(movieList.length).toEqual(1)
+    })
+    it('should recieve correct props', () => {
+        const wrapper = mount(<MovieList movies={movieListProps} />)
+        expect(wrapper.prop('movies')).toEqual(movieListProps)
     })
 })
