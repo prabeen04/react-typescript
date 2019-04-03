@@ -26,3 +26,13 @@
 .movie-card > img{
 width: 100%;
 }
+.movie-stats{
+
+}
+.stats-column > i {
+    color: rgb(228, 92, 92);
+    margin-right: 0.2rem;
+}
+.stats-column > span {
+    color: rgb(80, 79, 79);
+}

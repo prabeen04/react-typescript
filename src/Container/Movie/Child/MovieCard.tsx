@@ -10,6 +10,20 @@ export default function MovieCard({ movie }: { movie: IMovie }): JSX.Element {
         <div className='movie-card' data-test='MovieCard'>
             <p>{movie.title}</p>
             <img src={`${IMG_URL}${movie.poster_path}`} alt="" />
+            <div className="movie-stats">
+                <div className="stats-column">
+                    <i className="fas fa-calendar-day"></i>
+                    <span>{movie.release_date}</span>
+                </div>
+                <div className="stats-column">
+                <i className="fas fa-heartbeat"></i>
+                    <span>{movie.vote_count}</span>
+                </div>
+                <div className="stats-column">
+                <i className="fas fa-star"></i>
+                    <span>{movie.vote_average}</span>
+                </div>
+            </div>
         </div>
     )
 }

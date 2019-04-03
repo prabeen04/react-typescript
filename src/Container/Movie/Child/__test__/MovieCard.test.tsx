@@ -33,5 +33,6 @@ describe('<MovieCard/>', () => {
     it('should recieve movie props', () => {
         const wrapper = mount(<MovieCard movie={movieProp} />)
         expect(wrapper.prop('movie')).toEqual(movieProp)
+        expect(wrapper.prop('movie').title).toEqual("How to Train Your Dragon: The Hidden World")
     })
 })
