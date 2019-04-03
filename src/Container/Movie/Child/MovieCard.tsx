@@ -17,7 +17,15 @@ export default function MovieCard({ movie }: { movie: IMovie }): JSX.Element {
         <div className='movie-card' data-test='MovieCard'>
             <p>{movie.title}</p>
             <div className='flex-container'>
-                <img className='movie-poster' src={`${IMG_URL}${movie.poster_path}`} alt="" />
+                <div onClick={() => setFlipped(state => !state)}>
+                    <animated.div className="c back" style={{ opacity: opacity.interpolate((o: any) => 1 - o), transform }} >
+                        <img className='movie-poster' src={`${IMG_URL}${movie.poster_path}`} alt="" />
+                    </animated.div>
+                    <animated.div className="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} >
+                        <p className='movie-description' >{movie.overview} </p>
+                    </animated.div>
+                </div>
+
             </div>
             <div className="movie-stats">
                 <div className="stats-column">
