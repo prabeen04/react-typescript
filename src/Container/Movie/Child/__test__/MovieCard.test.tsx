@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import MovieCard from '../MovieCard';
 import { IMovie } from "../../MovieInterface";
 
@@ -31,7 +31,7 @@ describe('<MovieCard/>', () => {
         expect(element.length).toEqual(1)
     })
     it('should recieve movie props', () => {
-        const wrapper = shallow(<MovieCard movie={movieProp} />)
-        expect(wrapper.instance().props.movie).toEqual(movieProp)
+        const wrapper = mount(<MovieCard movie={movieProp} />)
+        expect(wrapper.prop('movie')).toEqual(movieProp)
     })
 })
