@@ -53,15 +53,30 @@
     margin-right: 0.2rem;
 }
 .stats-column > span {
-    color: rgb(80, 79, 79);
+    color: rgb(173, 151, 151);
     font-size: 0.7rem;
 }
 .movie-header{
-    border: 1px solid greenyellow;
+    padding: 0.5rem;
 }
 .filter-tags{
-    border: 1px solid palevioletred;
+    /* border: 1px solid palevioletred; */
 }
 .tag{
-    border: 1px solid darkorange;
+    cursor: pointer;
+    color: #888;
+    background: rgba(248, 4, 4, 0.184);
+    font-family: Oxygen;
+    margin: 0.2rem 0.2rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+}
+.tag:hover{
+    color: #ccc;
+    background: rgba(248, 4, 4, 0.444);
+}
+.active-tag{
+    color: #fff;
+    background: rgba(248, 4, 4, 0.644);
 }
