@@ -24,9 +24,9 @@ export default function Movie(): JSX.Element {
                 searchText={searchText}
                 dispatch={dispatch}
             />
-            <MovieList 
-            movies={movies}
-            searchText={searchText}
+            <MovieList
+                movies={movies}
+                searchText={searchText}
             />
         </div>
     )
