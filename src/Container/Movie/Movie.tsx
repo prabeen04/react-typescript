@@ -1,6 +1,7 @@
 import * as React from 'react';
 import useMovie from './UseMovie';
 import MovieList from './Child/MovieList';
+import MovieHeader from "./Child/MovieHeader";
 import './Movie.css';
 
 export default function Movie(): JSX.Element {
@@ -19,6 +20,7 @@ export default function Movie(): JSX.Element {
     }
     return (
         <div className='movie-wrapper'>
+            <MovieHeader/>
             <MovieList movies={movies} />
         </div>
     )

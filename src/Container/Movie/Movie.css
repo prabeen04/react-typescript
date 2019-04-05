@@ -56,3 +56,12 @@
     color: rgb(80, 79, 79);
     font-size: 0.7rem;
 }
+.movie-header{
+    border: 1px solid greenyellow;
+}
+.filter-tags{
+    border: 1px solid palevioletred;
+}
+.tag{
+    border: 1px solid darkorange;
+}
