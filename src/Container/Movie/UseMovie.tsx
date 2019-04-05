@@ -67,13 +67,13 @@ function movieReducer(state: IUseMovie, action: IAction) {
  */
 function sortMoviesByActiveFilter(movies: IMovie[], filter: string) {
     if (filter === 'top-rated') {
-        return movies.sort(movie => movie.vote_average ? 1 : -1)
+        return movies.sort((a, b) => a.vote_average < b.vote_average ? 1 : -1)
     }
     if (filter === 'most-loved') {
-        return movies.sort(movie => movie.vote_count ? 1 : -1)
+        return movies.sort((a, b) => a.vote_count < b.vote_count ? 1 : -1)
     }
     if (filter === 'new-arrival') {
-        return movies.sort(movie => movie.id ? 1 : -1)
+        return movies.sort((a, b) => a.release_date < b.release_date ? 1 : -1)
     }
     return movies
 }
