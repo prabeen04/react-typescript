@@ -59,6 +59,13 @@ function movieReducer(state: IUseMovie, action: IAction) {
             return { ...state, fetchingMovies: false, fetchingMoviesError: true }
         case types.SET_MOVIE_FILTER:
             return { ...state, activeFilter: action.payload, movies: sortMoviesByActiveFilter(state.movies, action.payload) }
+        case types.SET_FILTER_TEXT:
+            return {
+                ...state, searchText: action.payload,
+                movies: !action.payload
+                    ? state.movies
+                    : state.movies.filter((movie: IMovie) => movie.title.toLowerCase().includes(action.payload.toLowerCase()))
+            }
         default:
             return state;
     }
