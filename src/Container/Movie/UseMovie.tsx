@@ -62,9 +62,7 @@ function movieReducer(state: IUseMovie, action: IAction) {
         case types.SET_FILTER_TEXT:
             return {
                 ...state, searchText: action.payload,
-                movies: !action.payload
-                    ? state.movies
-                    : state.movies.filter((movie: IMovie) => movie.title.toLowerCase().includes(action.payload.toLowerCase()))
+                movies: filterMovieBySearchText(state.movies, action.payload)
             }
         default:
             return state;
@@ -85,4 +83,15 @@ function sortMoviesByActiveFilter(movies: IMovie[], filter: string) {
         return movies.sort((a, b) => a.release_date < b.release_date ? 1 : -1)
     }
     return movies
+}
+
+/**
+ * sort movies based on the active filter provided
+ */
+function filterMovieBySearchText(movies: IMovie[], searchText: string) {
+    const newMovies = [...movies]
+    if (!searchText) {
+        return newMovies
+    }
+    return movies.filter((movie: IMovie) => movie.title.toLowerCase().includes(searchText.toLowerCase()))
 }
