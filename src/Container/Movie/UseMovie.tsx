@@ -16,7 +16,7 @@ const initialState = {
     fetchingMovies: false,
     fetchingMoviesError: false,
     movies: [],
-    activeFilter: 'top-rated',
+    activeFilter: 'default',
 }
 
 export default function useMovie() {
@@ -55,7 +55,25 @@ function movieReducer(state: IUseMovie, action: IAction) {
             return { ...state, fetchingMovies: false, fetchingMoviesError: false, movies: action.payload }
         case types.GET_MOVIES_FAILURE:
             return { ...state, fetchingMovies: false, fetchingMoviesError: true }
+        case types.SET_MOVIE_FILTER:
+            return { ...state, activeFilter: action.payload, movies: sortMoviesByActiveFilter(state.movies, action.payload) }
         default:
             return state;
     }
+}
+
+/**
+ * sort movies based on the active filter provided
+ */
+function sortMoviesByActiveFilter(movies: IMovie[], filter: string) {
+    if (filter === 'top-rated') {
+        return movies.sort(movie => movie.vote_average ? 1 : -1)
+    }
+    if (filter === 'most-loved') {
+        return movies.sort(movie => movie.vote_count ? 1 : -1)
+    }
+    if (filter === 'new-arrival') {
+        return movies.sort(movie => movie.id ? 1 : -1)
+    }
+    return movies
 }
