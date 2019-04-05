@@ -6,6 +6,7 @@ interface IUseMovie {
     fetchingMovies: boolean;
     fetchingMoviesError: boolean;
     movies: IMovie[];
+    activeFilter: string;
 }
 export interface IAction {
     type: string;
@@ -15,6 +16,7 @@ const initialState = {
     fetchingMovies: false,
     fetchingMoviesError: false,
     movies: [],
+    activeFilter: 'top-rated',
 }
 
 export default function useMovie() {
