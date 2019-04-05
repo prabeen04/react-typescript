@@ -4,12 +4,15 @@ import MovieCard from './MovieCard';
 
 interface IMovieListProps {
     movies: IMovie[];
+    searchText: string;
 }
 export default function MovieList(props: IMovieListProps): JSX.Element {
-    const { movies } = props;
+    const { movies, searchText } = props;
     return (
         <div className='movie-list' data-test='MovieList'>
-            {movies.map((movie: IMovie) => <MovieCard  key={movie.id} movie={movie} />)}
+            {movies
+                .filter((movie: IMovie) => movie.title.toLowerCase().includes(searchText.toLowerCase()))
+                .map((movie: IMovie) => <MovieCard key={movie.id} movie={movie} />)}
         </div>
     )
 }

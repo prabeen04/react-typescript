@@ -7,7 +7,6 @@ import './Movie.css';
 export default function Movie(): JSX.Element {
     const { state, dispatch } = useMovie();
     const { fetchingMovies, fetchingMoviesError, movies, activeFilter, searchText } = state;
-    console.log(state)
     if (fetchingMovies) {
         return (
             <div className="flex-container center-align-row" style={{ width: '100%', padding: 100 }}>
@@ -25,7 +24,10 @@ export default function Movie(): JSX.Element {
                 searchText={searchText}
                 dispatch={dispatch}
             />
-            <MovieList movies={movies} />
+            <MovieList 
+            movies={movies}
+            searchText={searchText}
+            />
         </div>
     )
 }
