@@ -7,6 +7,7 @@ interface IUseMovie {
     fetchingMoviesError: boolean;
     movies: IMovie[];
     activeFilter: string;
+    searchText: string;
 }
 export interface IAction {
     type: string;
@@ -17,6 +18,7 @@ const initialState = {
     fetchingMoviesError: false,
     movies: [],
     activeFilter: 'default',
+    searchText: '',
 }
 
 export default function useMovie() {

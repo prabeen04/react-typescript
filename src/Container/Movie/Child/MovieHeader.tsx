@@ -1,16 +1,23 @@
 import * as React from 'react';
-import { SET_MOVIE_FILTER } from "../MovieActionTypes";
-
+import { SET_MOVIE_FILTER, SET_FILTER_TEXT } from "../MovieActionTypes";
+import TextInput from "../../../Component/Form/TextInput";
 interface IMovieHeaderProps {
-    dispatch: any,
-    activeFilter: string
+    dispatch: any;
+    activeFilter: string;
+    searchText: string;
 }
 export default function MovieHeader(props: IMovieHeaderProps) {
-    const { activeFilter, dispatch } = props;
+    const { activeFilter, searchText, dispatch } = props;
     function setFilter(filterType: string): void {
         dispatch({
             type: SET_MOVIE_FILTER,
             payload: filterType
+        })
+    }
+    function setSearchText(event: React.ChangeEvent<HTMLInputElement>) {
+        dispatch({
+            type: SET_FILTER_TEXT,
+            payload: event.target.value
         })
     }
     return (
@@ -25,6 +32,16 @@ export default function MovieHeader(props: IMovieHeaderProps) {
                 <span
                     className={`tag ${activeFilter === 'new-arrival' && 'active-tag'}`}
                     onClick={() => setFilter('new-arrival')}  >New arrival</span>
+            </div>
+            <div className="seach-box">
+                <TextInput
+                    name='movie-fiter'
+                    onChange={setSearchText}
+                    className='dark-input'
+                    placeholder='Search movie ...'
+                    value={searchText}
+                    style={{ width: 300, padding: '0.3rem', paddingLeft: 30 }}
+                />
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import './Movie.css';
 
 export default function Movie(): JSX.Element {
     const { state, dispatch } = useMovie();
-    const { fetchingMovies, fetchingMoviesError, movies, activeFilter} = state;
+    const { fetchingMovies, fetchingMoviesError, movies, activeFilter, searchText } = state;
     console.log(state)
     if (fetchingMovies) {
         return (
@@ -20,7 +20,11 @@ export default function Movie(): JSX.Element {
     }
     return (
         <div className='movie-wrapper'>
-            <MovieHeader activeFilter={activeFilter} dispatch={dispatch} />
+            <MovieHeader
+                activeFilter={activeFilter}
+                searchText={searchText}
+                dispatch={dispatch}
+            />
             <MovieList movies={movies} />
         </div>
     )
