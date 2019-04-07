@@ -5,12 +5,12 @@ import gql from "graphql-tag";
 const SampleQuery = () => (
     <Query
         query={gql`
-      {
-        users {
-          userName
-        }
-      }
-    `}
+            {
+                users {
+                    userName
+                }
+            }
+        `}
     >
         {({ loading, error, data }) => {
             console.log(data)
