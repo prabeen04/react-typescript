@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useSpring, useSprings, animated } from "react-spring";
+import { useSpring, useSprings, useTransition, animated } from "react-spring";
 import { IMovie } from "../MovieInterface";
 import MovieCard from './MovieCard';
 
@@ -9,17 +9,16 @@ interface IMovieListProps {
 }
 export default function MovieList(props: IMovieListProps): JSX.Element {
     const { movies, searchText } = props;
-    const styles = useSpring({ 
-        opacity: 1,
-        transform: 'translate3d(200px,800px,0) ', 
-        from: { 
-            opacity: 0,
-            transform: 'translate3d(0,0,0) '
-        },
-         delay: 500
-         })
+    // const transitions = useTransition(movies, (item: any) => item.id, {
+    //     from: ({ xy, width, height }) => ({ xy, width, height, opacity: 0 }),
+    //     enter: ({ xy, width, height }) => ({ xy, width, height, opacity: 1 }),
+    //     update: ({ xy, width, height }) => ({ xy, width, height }),
+    //     leave: { height: 0, opacity: 0 },
+    //     config: { mass: 5, tension: 500, friction: 100 },
+    //     trail: 25
+    //   })
     return (
-        <animated.div style={styles}>
+        <animated.div>
             <div className='movie-list' data-test='MovieList'>
                 {movies
                     .filter((movie: IMovie) => movie.title.toLowerCase().includes(searchText.toLowerCase()))
