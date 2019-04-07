@@ -20,7 +20,7 @@ export default function MovieList(props: IMovieListProps): JSX.Element {
     return (
         <animated.div>
             <div className='movie-list' data-test='MovieList'>
-                {movies
+                {movies && movies
                     .filter((movie: IMovie) => movie.title.toLowerCase().includes(searchText.toLowerCase()))
                     .map((movie: IMovie) => <MovieCard key={movie.id} movie={movie} />)}
             </div>
