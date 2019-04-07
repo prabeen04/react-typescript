@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { Switch, Route } from "react-router-dom";
-import Navbar from './Component/Navbar/Navbar'
+import Navbar from './Component/Navbar/Navbar';
 import Landing from './Component/Landing/Landing';
-import Todo from './Component/Todo/Todo'
+import Todo from './Component/Todo/Todo';
 import Counter from './Component/Counter/Counter'
-import Fetch from './Component/Fetch/Fetch'
-import Movie from './Container/Movie/Movie'
+import Fetch from './Component/Fetch/Fetch';
+import Movie from './Container/Movie/Movie';
+import Graphql from './Container/Graphql/Graphql';
+
 import './App.css';
 
 interface IAppProps { }
@@ -25,6 +27,7 @@ class App extends React.Component<IAppProps, IAppState> {
             <Route exact path='/counter' component={Counter} />
             <Route exact path='/fetch' component={Fetch} />
             <Route exact path='/Movie' component={Movie} />
+            <Route exact path='/graphql' component={Graphql} />
           </Switch>
         </div>
       </Style.Provider>
