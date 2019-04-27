@@ -1,15 +1,20 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
-
+import { sampleQuery } from "./Actions/queries";
 const SampleQuery = () => (
     <Query
         query={gql`
             {
-                users {
-                    userName
-                }
-            }
+  getStoryById(id: "5cbf2970bb668c41a88f693f") {
+    id
+    title
+    user {
+      userName
+    }
+  }
+}
+
         `}
     >
         {({ loading, error, data }) => {
