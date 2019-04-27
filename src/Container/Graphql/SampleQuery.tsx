@@ -1,10 +1,9 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
-import gql from "graphql-tag";
-import { sampleQuery } from "./Actions/queries";
+import { GET_STORY_BY_ID } from "./Actions/queries";
 const SampleQuery = () => (
     <Query
-        query={sampleQuery}
+        query={GET_STORY_BY_ID}
     >
         {({ loading, error, data }) => {
             console.log(data)
