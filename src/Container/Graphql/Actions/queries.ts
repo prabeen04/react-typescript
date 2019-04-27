@@ -2,8 +2,13 @@ import gql from "graphql-tag";
 
 export const sampleQuery = gql`
 {
-    users {
-        userName
+getStoryById(id: "5cbf2970bb668c41a88f693f") {
+    id
+    title
+    user {
+         userName
+        }
     }
 }
+
 `
