@@ -10,5 +10,11 @@ getStoryById(id: "5cbf2970bb668c41a88f693f") {
         }
     }
 }
-
+`
+export const GET_STORIES = gql`
+{
+stories  {
+    id
+    title
+}
 `
