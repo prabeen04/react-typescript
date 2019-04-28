@@ -1,6 +1,10 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
 import gql from 'graphql-tag';
+
+interface IStory {
+    title: String
+}
 const SampleQuery = () => (
     <>
         <Query
@@ -20,7 +24,7 @@ const SampleQuery = () => (
                 return (
                     <div>
                         {
-                            data.stories.map((item: any) => <p>{item.title}</p>)
+                            data.stories.map((item: IStory, i: any) => <Story key={i} title={item.title}/>)
                         }
                     </div>
                 );
@@ -30,9 +34,6 @@ const SampleQuery = () => (
 );
 export default SampleQuery;
 
-interface IStory {
-    title: String
-}
 function Story(props: IStory) {
-    return <h1>{props.title}</h1>
+    return <h1 className='story-title'>{props.title}</h1>
 }

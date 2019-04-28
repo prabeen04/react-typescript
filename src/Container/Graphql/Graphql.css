@@ -1,3 +1,10 @@
 .graphql-wrapper{
     display: flex;
 }
+.story-title{
+    color: #888;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    border: 1px solid #333;
+}
