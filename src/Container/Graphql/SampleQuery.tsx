@@ -4,19 +4,7 @@ import gql from 'graphql-tag';
 const SampleQuery = () => (
     <>
         <Query
-            query={
-                gql`
-                {
-                getStoryById(id: "5cbf2970bb668c41a88f693f") {
-                    id
-                    title
-                    user {
-                        userName
-                        }
-                    }
-                }
-                `
-            }
+            query={{}}
         >
             {({ loading, error, data }) => {
                 console.log(data)
