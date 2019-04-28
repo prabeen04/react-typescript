@@ -1,38 +1,35 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
-import { GET_STORY_BY_ID, GET_STORIES } from "./Actions/queries";
+import gql from 'graphql-tag';
 const SampleQuery = () => (
     <>
-    <Query
-        query={GET_STORY_BY_ID}
-    >
-        {({ loading, error, data }) => {
-            console.log(data)
-            if (loading) return <p>Loading...</p>;
-            if (error) return <p>Error :(</p>;
+        <Query
+            query={
+                gql`
+                {
+                getStoryById(id: "5cbf2970bb668c41a88f693f") {
+                    id
+                    title
+                    user {
+                        userName
+                        }
+                    }
+                }
+                `
+            }
+        >
+            {({ loading, error, data }) => {
+                console.log(data)
+                if (loading) return <p>Loading...</p>;
+                if (error) return <p>Error :(</p>;
 
-            return (
-                <div>
-                    <p>{data.getStoryById.id}</p>
-                </div>
-            );
-        }}
-    </Query>
-    <Query
-        query={GET_STORIES}
-    >
-        {({ loading, error, data }) => {
-            console.log(data)
-            if (loading) return <p>Loading...</p>;
-            if (error) return <p>Error :(</p>;
-
-            return (
-                <div>
-                    <p>stories</p>
-                </div>
-            );
-        }}
-    </Query>
+                return (
+                    <div>
+                        <p>{data.getStoryById.id}</p>
+                    </div>
+                );
+            }}
+        </Query>
     </>
 );
 export default SampleQuery;
