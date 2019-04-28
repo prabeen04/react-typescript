@@ -29,3 +29,10 @@ const SampleQuery = () => (
     </>
 );
 export default SampleQuery;
+
+interface IStory {
+    title: String
+}
+function Story(props: IStory) {
+    return <h1>{props.title}</h1>
+}
