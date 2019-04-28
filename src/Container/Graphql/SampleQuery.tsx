@@ -4,7 +4,13 @@ import gql from 'graphql-tag';
 const SampleQuery = () => (
     <>
         <Query
-            query={{}}
+            query={gql`
+                {
+                    stories {
+                    title
+                }
+                }
+            `}
         >
             {({ loading, error, data }) => {
                 console.log(data)
@@ -13,7 +19,9 @@ const SampleQuery = () => (
 
                 return (
                     <div>
-                        <p>{data.getStoryById.id}</p>
+                        {
+                            data.stories.map((item: any) => <p>{item.title}</p>)
+                        }
                     </div>
                 );
             }}

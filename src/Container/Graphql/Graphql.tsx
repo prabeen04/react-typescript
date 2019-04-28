@@ -13,8 +13,6 @@ export default function Graphql(): JSX.Element {
         <>
             <ApolloProvider client={client}>
                 <div className='graphql-wrapper'>
-                    <h4>Graphql</h4>
-                    <h4>Graphql</h4>
                    {window.location.origin.includes('localhost') && <SampleQuery/>}
                 </div>
             </ApolloProvider>
