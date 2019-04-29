@@ -10,4 +10,11 @@ describe('<Story/>', () => {
         const wrapper = shallow(<Story {...props} />)
         expect(wrapper).toMatchSnapshot()
     })
+    it('should render story', () => {
+        const props = {
+            title: 'new title'
+        }
+        const wrapper = shallow(<Story {...props} />)
+        expect(wrapper.find('[data-test="Story"]').length).toEqual(1)
+    })
 })
