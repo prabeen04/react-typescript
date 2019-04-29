@@ -104,6 +104,17 @@ ShallowWrapper {
                 Movies
               </NavLink>
             </NavItem>
+            <NavItem
+              tag="li"
+            >
+              <NavLink
+                activeClassName="active-menu"
+                className="nav-link nav-menu"
+                to="/graphql"
+              >
+                Graphql
+              </NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>,
@@ -193,6 +204,17 @@ ShallowWrapper {
                   to="/movie"
                 >
                   Movies
+                </NavLink>
+              </NavItem>
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  activeClassName="active-menu"
+                  className="nav-link nav-menu"
+                  to="/graphql"
+                >
+                  Graphql
                 </NavLink>
               </NavItem>
             </Nav>
@@ -288,6 +310,17 @@ ShallowWrapper {
                   Movies
                 </NavLink>
               </NavItem>
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  activeClassName="active-menu"
+                  className="nav-link nav-menu"
+                  to="/graphql"
+                >
+                  Graphql
+                </NavLink>
+              </NavItem>
             </Nav>,
             "enter": true,
             "exit": true,
@@ -354,6 +387,17 @@ ShallowWrapper {
                     to="/movie"
                   >
                     Movies
+                  </NavLink>
+                </NavItem>,
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    activeClassName="active-menu"
+                    className="nav-link nav-menu"
+                    to="/graphql"
+                  >
+                    Graphql
                   </NavLink>
                 </NavItem>,
               ],
@@ -488,6 +532,37 @@ ShallowWrapper {
                 },
                 "type": [Function],
               },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <NavLink
+                    activeClassName="active-menu"
+                    className="nav-link nav-menu"
+                    to="/graphql"
+                  >
+                    Graphql
+                  </NavLink>,
+                  "tag": "li",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "activeClassName": "active-menu",
+                    "children": "Graphql",
+                    "className": "nav-link nav-menu",
+                    "to": "/graphql",
+                  },
+                  "ref": null,
+                  "rendered": "Graphql",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
             ],
             "type": [Function],
           },
@@ -590,6 +665,17 @@ ShallowWrapper {
                   Movies
                 </NavLink>
               </NavItem>
+              <NavItem
+                tag="li"
+              >
+                <NavLink
+                  activeClassName="active-menu"
+                  className="nav-link nav-menu"
+                  to="/graphql"
+                >
+                  Graphql
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>,
@@ -679,6 +765,17 @@ ShallowWrapper {
                     to="/movie"
                   >
                     Movies
+                  </NavLink>
+                </NavItem>
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    activeClassName="active-menu"
+                    className="nav-link nav-menu"
+                    to="/graphql"
+                  >
+                    Graphql
                   </NavLink>
                 </NavItem>
               </Nav>
@@ -774,6 +871,17 @@ ShallowWrapper {
                     Movies
                   </NavLink>
                 </NavItem>
+                <NavItem
+                  tag="li"
+                >
+                  <NavLink
+                    activeClassName="active-menu"
+                    className="nav-link nav-menu"
+                    to="/graphql"
+                  >
+                    Graphql
+                  </NavLink>
+                </NavItem>
               </Nav>,
               "enter": true,
               "exit": true,
@@ -840,6 +948,17 @@ ShallowWrapper {
                       to="/movie"
                     >
                       Movies
+                    </NavLink>
+                  </NavItem>,
+                  <NavItem
+                    tag="li"
+                  >
+                    <NavLink
+                      activeClassName="active-menu"
+                      className="nav-link nav-menu"
+                      to="/graphql"
+                    >
+                      Graphql
                     </NavLink>
                   </NavItem>,
                 ],
@@ -970,6 +1089,37 @@ ShallowWrapper {
                     },
                     "ref": null,
                     "rendered": "Movies",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <NavLink
+                      activeClassName="active-menu"
+                      className="nav-link nav-menu"
+                      to="/graphql"
+                    >
+                      Graphql
+                    </NavLink>,
+                    "tag": "li",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "activeClassName": "active-menu",
+                      "children": "Graphql",
+                      "className": "nav-link nav-menu",
+                      "to": "/graphql",
+                    },
+                    "ref": null,
+                    "rendered": "Graphql",
                     "type": [Function],
                   },
                   "type": [Function],
