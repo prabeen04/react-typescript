@@ -20,11 +20,6 @@ describe('<MovieCard/>', () => {
         vote_average: 7.7,
         vote_count: 1230,
     }
-    it('should match snapshot', () => {
-        const wrapper = shallow(<MovieCard movie={movieProp} />)
-        expect(wrapper).toMatchSnapshot()
-    })
-    
     it('should render', () => {
         const wrapper = shallow(<MovieCard movie={movieProp} />)
         const element = wrapper.find('[data-test="MovieCard"]')
