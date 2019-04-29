@@ -22,20 +22,20 @@ const movieListProps: IMovie[] = [{
 describe('<MovieList/>', () => {
     it('should match snapshot', () => {
 
-        const wrapper = mount(<MovieList movies={movieListProps} />)
+        const wrapper = mount(<MovieList movies={movieListProps} searchText=''/>)
         expect(wrapper).toMatchSnapshot()
     })
     it('should render Movielist', () => {
-        const wrapper = shallow(<MovieList movies={[]} />)
+        const wrapper = shallow(<MovieList movies={[]}  searchText=''/>)
         const movieList = wrapper.find('[data-test="MovieList"]')
         expect(movieList.length).toEqual(1)
     })
     it('should recieve correct props', () => {
-        const wrapper = mount(<MovieList movies={movieListProps} />)
+        const wrapper = mount(<MovieList movies={movieListProps}  searchText=''/>)
         expect(wrapper.prop('movies')).toEqual(movieListProps)
     })
     it('should recieve only 1 moviedetail', () => {
-        const wrapper = mount(<MovieList movies={movieListProps} />)
+        const wrapper = mount(<MovieList movies={movieListProps} searchText=''/>)
         expect(wrapper.prop('movies').length).toEqual(1)
     })
 })

@@ -27,6 +27,7 @@ ReactWrapper {
         },
       ]
     }
+    searchText=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -64,78 +65,18 @@ ReactWrapper {
           "vote_count": 1230,
         },
       ],
+      "searchText": "",
     },
     "ref": null,
     "rendered": Object {
-      "instance": <div
-        class="movie-list"
-        data-test="MovieList"
-      >
-        <div
-          class="movie-card"
-          data-test="MovieCard"
-        >
-          <p>
-            How to Train Your Dragon: The Hidden World
-          </p>
-          <div
-            class="flex-container"
-          >
-            <div
-              class="animated-clickable-div"
-            >
-              <div
-                class="c back"
-                style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
-              >
-                <img
-                  alt=""
-                  class="movie-poster"
-                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="movie-stats"
-          >
-            <div
-              class="stats-column"
-            >
-              <i
-                class="fas fa-calendar-day"
-              />
-              <span>
-                2019-01-03
-              </span>
-            </div>
-            <div
-              class="stats-column"
-            >
-              <i
-                class="fas fa-heartbeat"
-              />
-              <span>
-                1230
-              </span>
-            </div>
-            <div
-              class="stats-column"
-            >
-              <i
-                class="fas fa-star"
-              />
-              <span>
-                7.7
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>,
+      "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": Array [
+        "children": <div
+          className="movie-list"
+          data-test="MovieList"
+        >
           <MovieCard
             movie={
               Object {
@@ -159,42 +100,17 @@ ReactWrapper {
                 "vote_count": 1230,
               }
             }
-          />,
-        ],
-        "className": "movie-list",
-        "data-test": "MovieList",
+          />
+        </div>,
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "166428",
-          "nodeType": "function",
-          "props": Object {
-            "movie": Object {
-              "adult": false,
-              "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
-              "genre_ids": Array [
-                16,
-                10751,
-                12,
-              ],
-              "id": 166428,
-              "original_language": "en",
-              "original_title": "How to Train Your Dragon: The Hidden World",
-              "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
-              "popularity": 470.427,
-              "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
-              "release_date": "2019-01-03",
-              "title": "How to Train Your Dragon: The Hidden World",
-              "video": false,
-              "vote_average": 7.7,
-              "vote_count": 1230,
-            },
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": <div
+      "rendered": Object {
+        "instance": <div>
+          <div
+            class="movie-list"
+            data-test="MovieList"
+          >
+            <div
               class="movie-card"
               data-test="MovieCard"
             >
@@ -253,981 +169,16 @@ ReactWrapper {
                   </span>
                 </div>
               </div>
-            </div>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <p>
-                  How to Train Your Dragon: The Hidden World
-                </p>,
-                <div
-                  className="flex-container"
-                >
-                  <div
-                    className="animated-clickable-div"
-                    onClick={[Function]}
-                  >
-                    <ForwardRef
-                      className="c back"
-                      style={
-                        Object {
-                          "opacity": AnimatedInterpolation {
-                            "attach": [Function],
-                            "calc": [Function],
-                            "children": Array [
-                              AnimatedStyle {
-                                "attach": [Function],
-                                "children": Array [
-                                  AnimatedProps {
-                                    "attach": [Function],
-                                    "children": Array [],
-                                    "detach": [Function],
-                                    "payload": Object {
-                                      "children": <img
-                                        alt=""
-                                        className="movie-poster"
-                                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                      />,
-                                      "className": "c back",
-                                      "style": [Circular],
-                                    },
-                                    "update": [Function],
-                                  },
-                                ],
-                                "detach": [Function],
-                                "payload": [Circular],
-                              },
-                            ],
-                            "detach": [Function],
-                            "payload": Array [
-                              AnimatedValue {
-                                "animatedStyles": Set {},
-                                "children": Array [
-                                  [Circular],
-                                ],
-                                "done": false,
-                                "lastPosition": 0,
-                                "lastTime": undefined,
-                                "lastVelocity": undefined,
-                                "payload": undefined,
-                                "setValue": [Function],
-                                "startPosition": 0,
-                                "startTime": 1554350414975,
-                                "value": 0,
-                              },
-                            ],
-                          },
-                          "transform": AnimatedInterpolation {
-                            "attach": [Function],
-                            "calc": [Function],
-                            "children": Array [
-                              AnimatedStyle {
-                                "attach": [Function],
-                                "children": Array [
-                                  AnimatedProps {
-                                    "attach": [Function],
-                                    "children": Array [],
-                                    "detach": [Function],
-                                    "payload": Object {
-                                      "children": <img
-                                        alt=""
-                                        className="movie-poster"
-                                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                      />,
-                                      "className": "c back",
-                                      "style": [Circular],
-                                    },
-                                    "update": [Function],
-                                  },
-                                ],
-                                "detach": [Function],
-                                "payload": [Circular],
-                              },
-                            ],
-                            "detach": [Function],
-                            "payload": Array [
-                              AnimatedValue {
-                                "animatedStyles": Set {},
-                                "children": Array [
-                                  [Circular],
-                                ],
-                                "done": false,
-                                "lastPosition": 0,
-                                "lastTime": undefined,
-                                "lastVelocity": undefined,
-                                "payload": undefined,
-                                "setValue": [Function],
-                                "startPosition": 0,
-                                "startTime": 1554350414977,
-                                "value": 0,
-                              },
-                            ],
-                          },
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        className="movie-poster"
-                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                      />
-                    </ForwardRef>
-                  </div>
-                </div>,
-                <div
-                  className="movie-stats"
-                >
-                  <div
-                    className="stats-column"
-                  >
-                    <i
-                      className="fas fa-calendar-day"
-                    />
-                    <span>
-                      2019-01-03
-                    </span>
-                  </div>
-                  <div
-                    className="stats-column"
-                  >
-                    <i
-                      className="fas fa-heartbeat"
-                    />
-                    <span>
-                      1230
-                    </span>
-                  </div>
-                  <div
-                    className="stats-column"
-                  >
-                    <i
-                      className="fas fa-star"
-                    />
-                    <span>
-                      7.7
-                    </span>
-                  </div>
-                </div>,
-              ],
-              "className": "movie-card",
-              "data-test": "MovieCard",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": <p>
-                  How to Train Your Dragon: The Hidden World
-                </p>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "How to Train Your Dragon: The Hidden World",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "How to Train Your Dragon: The Hidden World",
-                ],
-                "type": "p",
-              },
-              Object {
-                "instance": <div
-                  class="flex-container"
-                >
-                  <div
-                    class="animated-clickable-div"
-                  >
-                    <div
-                      class="c back"
-                      style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
-                    >
-                      <img
-                        alt=""
-                        class="movie-poster"
-                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <div
-                    className="animated-clickable-div"
-                    onClick={[Function]}
-                  >
-                    <ForwardRef
-                      className="c back"
-                      style={
-                        Object {
-                          "opacity": AnimatedInterpolation {
-                            "attach": [Function],
-                            "calc": [Function],
-                            "children": Array [
-                              AnimatedStyle {
-                                "attach": [Function],
-                                "children": Array [
-                                  AnimatedProps {
-                                    "attach": [Function],
-                                    "children": Array [],
-                                    "detach": [Function],
-                                    "payload": Object {
-                                      "children": <img
-                                        alt=""
-                                        className="movie-poster"
-                                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                      />,
-                                      "className": "c back",
-                                      "style": [Circular],
-                                    },
-                                    "update": [Function],
-                                  },
-                                ],
-                                "detach": [Function],
-                                "payload": [Circular],
-                              },
-                            ],
-                            "detach": [Function],
-                            "payload": Array [
-                              AnimatedValue {
-                                "animatedStyles": Set {},
-                                "children": Array [
-                                  [Circular],
-                                ],
-                                "done": false,
-                                "lastPosition": 0,
-                                "lastTime": undefined,
-                                "lastVelocity": undefined,
-                                "payload": undefined,
-                                "setValue": [Function],
-                                "startPosition": 0,
-                                "startTime": 1554350414975,
-                                "value": 0,
-                              },
-                            ],
-                          },
-                          "transform": AnimatedInterpolation {
-                            "attach": [Function],
-                            "calc": [Function],
-                            "children": Array [
-                              AnimatedStyle {
-                                "attach": [Function],
-                                "children": Array [
-                                  AnimatedProps {
-                                    "attach": [Function],
-                                    "children": Array [],
-                                    "detach": [Function],
-                                    "payload": Object {
-                                      "children": <img
-                                        alt=""
-                                        className="movie-poster"
-                                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                      />,
-                                      "className": "c back",
-                                      "style": [Circular],
-                                    },
-                                    "update": [Function],
-                                  },
-                                ],
-                                "detach": [Function],
-                                "payload": [Circular],
-                              },
-                            ],
-                            "detach": [Function],
-                            "payload": Array [
-                              AnimatedValue {
-                                "animatedStyles": Set {},
-                                "children": Array [
-                                  [Circular],
-                                ],
-                                "done": false,
-                                "lastPosition": 0,
-                                "lastTime": undefined,
-                                "lastVelocity": undefined,
-                                "payload": undefined,
-                                "setValue": [Function],
-                                "startPosition": 0,
-                                "startTime": 1554350414977,
-                                "value": 0,
-                              },
-                            ],
-                          },
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        className="movie-poster"
-                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                      />
-                    </ForwardRef>
-                  </div>,
-                  "className": "flex-container",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <div
-                      class="animated-clickable-div"
-                    >
-                      <div
-                        class="c back"
-                        style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
-                      >
-                        <img
-                          alt=""
-                          class="movie-poster"
-                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                        />
-                      </div>
-                    </div>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <ForwardRef
-                          className="c back"
-                          style={
-                            Object {
-                              "opacity": AnimatedInterpolation {
-                                "attach": [Function],
-                                "calc": [Function],
-                                "children": Array [
-                                  AnimatedStyle {
-                                    "attach": [Function],
-                                    "children": Array [
-                                      AnimatedProps {
-                                        "attach": [Function],
-                                        "children": Array [],
-                                        "detach": [Function],
-                                        "payload": Object {
-                                          "children": <img
-                                            alt=""
-                                            className="movie-poster"
-                                            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                          />,
-                                          "className": "c back",
-                                          "style": [Circular],
-                                        },
-                                        "update": [Function],
-                                      },
-                                    ],
-                                    "detach": [Function],
-                                    "payload": [Circular],
-                                  },
-                                ],
-                                "detach": [Function],
-                                "payload": Array [
-                                  AnimatedValue {
-                                    "animatedStyles": Set {},
-                                    "children": Array [
-                                      [Circular],
-                                    ],
-                                    "done": false,
-                                    "lastPosition": 0,
-                                    "lastTime": undefined,
-                                    "lastVelocity": undefined,
-                                    "payload": undefined,
-                                    "setValue": [Function],
-                                    "startPosition": 0,
-                                    "startTime": 1554350414975,
-                                    "value": 0,
-                                  },
-                                ],
-                              },
-                              "transform": AnimatedInterpolation {
-                                "attach": [Function],
-                                "calc": [Function],
-                                "children": Array [
-                                  AnimatedStyle {
-                                    "attach": [Function],
-                                    "children": Array [
-                                      AnimatedProps {
-                                        "attach": [Function],
-                                        "children": Array [],
-                                        "detach": [Function],
-                                        "payload": Object {
-                                          "children": <img
-                                            alt=""
-                                            className="movie-poster"
-                                            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                          />,
-                                          "className": "c back",
-                                          "style": [Circular],
-                                        },
-                                        "update": [Function],
-                                      },
-                                    ],
-                                    "detach": [Function],
-                                    "payload": [Circular],
-                                  },
-                                ],
-                                "detach": [Function],
-                                "payload": Array [
-                                  AnimatedValue {
-                                    "animatedStyles": Set {},
-                                    "children": Array [
-                                      [Circular],
-                                    ],
-                                    "done": false,
-                                    "lastPosition": 0,
-                                    "lastTime": undefined,
-                                    "lastVelocity": undefined,
-                                    "payload": undefined,
-                                    "setValue": [Function],
-                                    "startPosition": 0,
-                                    "startTime": 1554350414977,
-                                    "value": 0,
-                                  },
-                                ],
-                              },
-                            }
-                          }
-                        >
-                          <img
-                            alt=""
-                            className="movie-poster"
-                            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                          />
-                        </ForwardRef>,
-                        false,
-                      ],
-                      "className": "animated-clickable-div",
-                      "onClick": [Function],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "children": <img
-                            alt=""
-                            className="movie-poster"
-                            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                          />,
-                          "className": "c back",
-                          "style": Object {
-                            "opacity": AnimatedInterpolation {
-                              "attach": [Function],
-                              "calc": [Function],
-                              "children": Array [
-                                AnimatedStyle {
-                                  "attach": [Function],
-                                  "children": Array [
-                                    AnimatedProps {
-                                      "attach": [Function],
-                                      "children": Array [],
-                                      "detach": [Function],
-                                      "payload": Object {
-                                        "children": <img
-                                          alt=""
-                                          className="movie-poster"
-                                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                        />,
-                                        "className": "c back",
-                                        "style": [Circular],
-                                      },
-                                      "update": [Function],
-                                    },
-                                  ],
-                                  "detach": [Function],
-                                  "payload": [Circular],
-                                },
-                              ],
-                              "detach": [Function],
-                              "payload": Array [
-                                AnimatedValue {
-                                  "animatedStyles": Set {},
-                                  "children": Array [
-                                    [Circular],
-                                  ],
-                                  "done": false,
-                                  "lastPosition": 0,
-                                  "lastTime": undefined,
-                                  "lastVelocity": undefined,
-                                  "payload": undefined,
-                                  "setValue": [Function],
-                                  "startPosition": 0,
-                                  "startTime": 1554350414975,
-                                  "value": 0,
-                                },
-                              ],
-                            },
-                            "transform": AnimatedInterpolation {
-                              "attach": [Function],
-                              "calc": [Function],
-                              "children": Array [
-                                AnimatedStyle {
-                                  "attach": [Function],
-                                  "children": Array [
-                                    AnimatedProps {
-                                      "attach": [Function],
-                                      "children": Array [],
-                                      "detach": [Function],
-                                      "payload": Object {
-                                        "children": <img
-                                          alt=""
-                                          className="movie-poster"
-                                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                        />,
-                                        "className": "c back",
-                                        "style": [Circular],
-                                      },
-                                      "update": [Function],
-                                    },
-                                  ],
-                                  "detach": [Function],
-                                  "payload": [Circular],
-                                },
-                              ],
-                              "detach": [Function],
-                              "payload": Array [
-                                AnimatedValue {
-                                  "animatedStyles": Set {},
-                                  "children": Array [
-                                    [Circular],
-                                  ],
-                                  "done": false,
-                                  "lastPosition": 0,
-                                  "lastTime": undefined,
-                                  "lastVelocity": undefined,
-                                  "payload": undefined,
-                                  "setValue": [Function],
-                                  "startPosition": 0,
-                                  "startTime": 1554350414977,
-                                  "value": 0,
-                                },
-                              ],
-                            },
-                          },
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": <div
-                            class="c back"
-                            style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
-                          >
-                            <img
-                              alt=""
-                              class="movie-poster"
-                              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                            />
-                          </div>,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": <img
-                              alt=""
-                              className="movie-poster"
-                              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                            />,
-                            "className": "c back",
-                            "style": Object {
-                              "opacity": 1,
-                              "transform": "perspective(600px) rotateX(0deg)",
-                            },
-                          },
-                          "ref": [Function],
-                          "rendered": Array [
-                            Object {
-                              "instance": <img
-                                alt=""
-                                class="movie-poster"
-                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                              />,
-                              "key": undefined,
-                              "nodeType": "host",
-                              "props": Object {
-                                "alt": "",
-                                "className": "movie-poster",
-                                "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
-                              },
-                              "ref": null,
-                              "rendered": Array [
-                                undefined,
-                              ],
-                              "type": "img",
-                            },
-                          ],
-                          "type": "div",
-                        },
-                        "type": Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "render": [Function],
-                        },
-                      },
-                    ],
-                    "type": "div",
-                  },
-                ],
-                "type": "div",
-              },
-              Object {
-                "instance": <div
-                  class="movie-stats"
-                >
-                  <div
-                    class="stats-column"
-                  >
-                    <i
-                      class="fas fa-calendar-day"
-                    />
-                    <span>
-                      2019-01-03
-                    </span>
-                  </div>
-                  <div
-                    class="stats-column"
-                  >
-                    <i
-                      class="fas fa-heartbeat"
-                    />
-                    <span>
-                      1230
-                    </span>
-                  </div>
-                  <div
-                    class="stats-column"
-                  >
-                    <i
-                      class="fas fa-star"
-                    />
-                    <span>
-                      7.7
-                    </span>
-                  </div>
-                </div>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <div
-                      className="stats-column"
-                    >
-                      <i
-                        className="fas fa-calendar-day"
-                      />
-                      <span>
-                        2019-01-03
-                      </span>
-                    </div>,
-                    <div
-                      className="stats-column"
-                    >
-                      <i
-                        className="fas fa-heartbeat"
-                      />
-                      <span>
-                        1230
-                      </span>
-                    </div>,
-                    <div
-                      className="stats-column"
-                    >
-                      <i
-                        className="fas fa-star"
-                      />
-                      <span>
-                        7.7
-                      </span>
-                    </div>,
-                  ],
-                  "className": "movie-stats",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <div
-                      class="stats-column"
-                    >
-                      <i
-                        class="fas fa-calendar-day"
-                      />
-                      <span>
-                        2019-01-03
-                      </span>
-                    </div>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <i
-                          className="fas fa-calendar-day"
-                        />,
-                        <span>
-                          2019-01-03
-                        </span>,
-                      ],
-                      "className": "stats-column",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": <i
-                          class="fas fa-calendar-day"
-                        />,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "className": "fas fa-calendar-day",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          undefined,
-                        ],
-                        "type": "i",
-                      },
-                      Object {
-                        "instance": <span>
-                          2019-01-03
-                        </span>,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "2019-01-03",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          "2019-01-03",
-                        ],
-                        "type": "span",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": <div
-                      class="stats-column"
-                    >
-                      <i
-                        class="fas fa-heartbeat"
-                      />
-                      <span>
-                        1230
-                      </span>
-                    </div>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <i
-                          className="fas fa-heartbeat"
-                        />,
-                        <span>
-                          1230
-                        </span>,
-                      ],
-                      "className": "stats-column",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": <i
-                          class="fas fa-heartbeat"
-                        />,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "className": "fas fa-heartbeat",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          undefined,
-                        ],
-                        "type": "i",
-                      },
-                      Object {
-                        "instance": <span>
-                          1230
-                        </span>,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": 1230,
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          1230,
-                        ],
-                        "type": "span",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": <div
-                      class="stats-column"
-                    >
-                      <i
-                        class="fas fa-star"
-                      />
-                      <span>
-                        7.7
-                      </span>
-                    </div>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <i
-                          className="fas fa-star"
-                        />,
-                        <span>
-                          7.7
-                        </span>,
-                      ],
-                      "className": "stats-column",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": <i
-                          class="fas fa-star"
-                        />,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "className": "fas fa-star",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          undefined,
-                        ],
-                        "type": "i",
-                      },
-                      Object {
-                        "instance": <span>
-                          7.7
-                        </span>,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": 7.7,
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          7.7,
-                        ],
-                        "type": "span",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                ],
-                "type": "div",
-              },
-            ],
-            "type": "div",
-          },
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "movies": Array [
-          Object {
-            "adult": false,
-            "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
-            "genre_ids": Array [
-              16,
-              10751,
-              12,
-            ],
-            "id": 166428,
-            "original_language": "en",
-            "original_title": "How to Train Your Dragon: The Hidden World",
-            "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
-            "popularity": 470.427,
-            "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
-            "release_date": "2019-01-03",
-            "title": "How to Train Your Dragon: The Hidden World",
-            "video": false,
-            "vote_average": 7.7,
-            "vote_count": 1230,
-          },
-        ],
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": <div
-          class="movie-list"
-          data-test="MovieList"
-        >
-          <div
-            class="movie-card"
-            data-test="MovieCard"
-          >
-            <p>
-              How to Train Your Dragon: The Hidden World
-            </p>
-            <div
-              class="flex-container"
-            >
-              <div
-                class="animated-clickable-div"
-              >
-                <div
-                  class="c back"
-                  style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
-                >
-                  <img
-                    alt=""
-                    class="movie-poster"
-                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              class="movie-stats"
-            >
-              <div
-                class="stats-column"
-              >
-                <i
-                  class="fas fa-calendar-day"
-                />
-                <span>
-                  2019-01-03
-                </span>
-              </div>
-              <div
-                class="stats-column"
-              >
-                <i
-                  class="fas fa-heartbeat"
-                />
-                <span>
-                  1230
-                </span>
-              </div>
-              <div
-                class="stats-column"
-              >
-                <i
-                  class="fas fa-star"
-                />
-                <span>
-                  7.7
-                </span>
-              </div>
             </div>
           </div>
         </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
+          "children": <div
+            className="movie-list"
+            data-test="MovieList"
+          >
             <MovieCard
               movie={
                 Object {
@@ -1251,42 +202,17 @@ ReactWrapper {
                   "vote_count": 1230,
                 }
               }
-            />,
-          ],
-          "className": "movie-list",
-          "data-test": "MovieList",
+            />
+          </div>,
         },
-        "ref": null,
+        "ref": [Function],
         "rendered": Array [
           Object {
-            "instance": null,
-            "key": "166428",
-            "nodeType": "function",
-            "props": Object {
-              "movie": Object {
-                "adult": false,
-                "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
-                "genre_ids": Array [
-                  16,
-                  10751,
-                  12,
-                ],
-                "id": 166428,
-                "original_language": "en",
-                "original_title": "How to Train Your Dragon: The Hidden World",
-                "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
-                "popularity": 470.427,
-                "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
-                "release_date": "2019-01-03",
-                "title": "How to Train Your Dragon: The Hidden World",
-                "video": false,
-                "vote_average": 7.7,
-                "vote_count": 1230,
-              },
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": <div
+            "instance": <div
+              class="movie-list"
+              data-test="MovieList"
+            >
+              <div
                 class="movie-card"
                 data-test="MovieCard"
               >
@@ -1345,321 +271,81 @@ ReactWrapper {
                     </span>
                   </div>
                 </div>
-              </div>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <p>
-                    How to Train Your Dragon: The Hidden World
-                  </p>,
-                  <div
-                    className="flex-container"
-                  >
-                    <div
-                      className="animated-clickable-div"
-                      onClick={[Function]}
-                    >
-                      <ForwardRef
-                        className="c back"
-                        style={
-                          Object {
-                            "opacity": AnimatedInterpolation {
-                              "attach": [Function],
-                              "calc": [Function],
-                              "children": Array [
-                                AnimatedStyle {
-                                  "attach": [Function],
-                                  "children": Array [
-                                    AnimatedProps {
-                                      "attach": [Function],
-                                      "children": Array [],
-                                      "detach": [Function],
-                                      "payload": Object {
-                                        "children": <img
-                                          alt=""
-                                          className="movie-poster"
-                                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                        />,
-                                        "className": "c back",
-                                        "style": [Circular],
-                                      },
-                                      "update": [Function],
-                                    },
-                                  ],
-                                  "detach": [Function],
-                                  "payload": [Circular],
-                                },
-                              ],
-                              "detach": [Function],
-                              "payload": Array [
-                                AnimatedValue {
-                                  "animatedStyles": Set {},
-                                  "children": Array [
-                                    [Circular],
-                                  ],
-                                  "done": false,
-                                  "lastPosition": 0,
-                                  "lastTime": undefined,
-                                  "lastVelocity": undefined,
-                                  "payload": undefined,
-                                  "setValue": [Function],
-                                  "startPosition": 0,
-                                  "startTime": 1554350414975,
-                                  "value": 0,
-                                },
-                              ],
-                            },
-                            "transform": AnimatedInterpolation {
-                              "attach": [Function],
-                              "calc": [Function],
-                              "children": Array [
-                                AnimatedStyle {
-                                  "attach": [Function],
-                                  "children": Array [
-                                    AnimatedProps {
-                                      "attach": [Function],
-                                      "children": Array [],
-                                      "detach": [Function],
-                                      "payload": Object {
-                                        "children": <img
-                                          alt=""
-                                          className="movie-poster"
-                                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                        />,
-                                        "className": "c back",
-                                        "style": [Circular],
-                                      },
-                                      "update": [Function],
-                                    },
-                                  ],
-                                  "detach": [Function],
-                                  "payload": [Circular],
-                                },
-                              ],
-                              "detach": [Function],
-                              "payload": Array [
-                                AnimatedValue {
-                                  "animatedStyles": Set {},
-                                  "children": Array [
-                                    [Circular],
-                                  ],
-                                  "done": false,
-                                  "lastPosition": 0,
-                                  "lastTime": undefined,
-                                  "lastVelocity": undefined,
-                                  "payload": undefined,
-                                  "setValue": [Function],
-                                  "startPosition": 0,
-                                  "startTime": 1554350414977,
-                                  "value": 0,
-                                },
-                              ],
-                            },
-                          }
-                        }
-                      >
-                        <img
-                          alt=""
-                          className="movie-poster"
-                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                        />
-                      </ForwardRef>
-                    </div>
-                  </div>,
-                  <div
-                    className="movie-stats"
-                  >
-                    <div
-                      className="stats-column"
-                    >
-                      <i
-                        className="fas fa-calendar-day"
-                      />
-                      <span>
-                        2019-01-03
-                      </span>
-                    </div>
-                    <div
-                      className="stats-column"
-                    >
-                      <i
-                        className="fas fa-heartbeat"
-                      />
-                      <span>
-                        1230
-                      </span>
-                    </div>
-                    <div
-                      className="stats-column"
-                    >
-                      <i
-                        className="fas fa-star"
-                      />
-                      <span>
-                        7.7
-                      </span>
-                    </div>
-                  </div>,
-                ],
-                "className": "movie-card",
-                "data-test": "MovieCard",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": <p>
-                    How to Train Your Dragon: The Hidden World
-                  </p>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "How to Train Your Dragon: The Hidden World",
+              </div>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <MovieCard
+                  movie={
+                    Object {
+                      "adult": false,
+                      "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+                      "genre_ids": Array [
+                        16,
+                        10751,
+                        12,
+                      ],
+                      "id": 166428,
+                      "original_language": "en",
+                      "original_title": "How to Train Your Dragon: The Hidden World",
+                      "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+                      "popularity": 470.427,
+                      "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                      "release_date": "2019-01-03",
+                      "title": "How to Train Your Dragon: The Hidden World",
+                      "video": false,
+                      "vote_average": 7.7,
+                      "vote_count": 1230,
+                    }
+                  }
+                />,
+              ],
+              "className": "movie-list",
+              "data-test": "MovieList",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "166428",
+                "nodeType": "function",
+                "props": Object {
+                  "movie": Object {
+                    "adult": false,
+                    "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+                    "genre_ids": Array [
+                      16,
+                      10751,
+                      12,
+                    ],
+                    "id": 166428,
+                    "original_language": "en",
+                    "original_title": "How to Train Your Dragon: The Hidden World",
+                    "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+                    "popularity": 470.427,
+                    "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                    "release_date": "2019-01-03",
+                    "title": "How to Train Your Dragon: The Hidden World",
+                    "video": false,
+                    "vote_average": 7.7,
+                    "vote_count": 1230,
                   },
-                  "ref": null,
-                  "rendered": Array [
-                    "How to Train Your Dragon: The Hidden World",
-                  ],
-                  "type": "p",
                 },
-                Object {
+                "ref": null,
+                "rendered": Object {
                   "instance": <div
-                    class="flex-container"
+                    class="movie-card"
+                    data-test="MovieCard"
                   >
+                    <p>
+                      How to Train Your Dragon: The Hidden World
+                    </p>
                     <div
-                      class="animated-clickable-div"
+                      class="flex-container"
                     >
                       <div
-                        class="c back"
-                        style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
-                      >
-                        <img
-                          alt=""
-                          class="movie-poster"
-                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                        />
-                      </div>
-                    </div>
-                  </div>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <div
-                      className="animated-clickable-div"
-                      onClick={[Function]}
-                    >
-                      <ForwardRef
-                        className="c back"
-                        style={
-                          Object {
-                            "opacity": AnimatedInterpolation {
-                              "attach": [Function],
-                              "calc": [Function],
-                              "children": Array [
-                                AnimatedStyle {
-                                  "attach": [Function],
-                                  "children": Array [
-                                    AnimatedProps {
-                                      "attach": [Function],
-                                      "children": Array [],
-                                      "detach": [Function],
-                                      "payload": Object {
-                                        "children": <img
-                                          alt=""
-                                          className="movie-poster"
-                                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                        />,
-                                        "className": "c back",
-                                        "style": [Circular],
-                                      },
-                                      "update": [Function],
-                                    },
-                                  ],
-                                  "detach": [Function],
-                                  "payload": [Circular],
-                                },
-                              ],
-                              "detach": [Function],
-                              "payload": Array [
-                                AnimatedValue {
-                                  "animatedStyles": Set {},
-                                  "children": Array [
-                                    [Circular],
-                                  ],
-                                  "done": false,
-                                  "lastPosition": 0,
-                                  "lastTime": undefined,
-                                  "lastVelocity": undefined,
-                                  "payload": undefined,
-                                  "setValue": [Function],
-                                  "startPosition": 0,
-                                  "startTime": 1554350414975,
-                                  "value": 0,
-                                },
-                              ],
-                            },
-                            "transform": AnimatedInterpolation {
-                              "attach": [Function],
-                              "calc": [Function],
-                              "children": Array [
-                                AnimatedStyle {
-                                  "attach": [Function],
-                                  "children": Array [
-                                    AnimatedProps {
-                                      "attach": [Function],
-                                      "children": Array [],
-                                      "detach": [Function],
-                                      "payload": Object {
-                                        "children": <img
-                                          alt=""
-                                          className="movie-poster"
-                                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                        />,
-                                        "className": "c back",
-                                        "style": [Circular],
-                                      },
-                                      "update": [Function],
-                                    },
-                                  ],
-                                  "detach": [Function],
-                                  "payload": [Circular],
-                                },
-                              ],
-                              "detach": [Function],
-                              "payload": Array [
-                                AnimatedValue {
-                                  "animatedStyles": Set {},
-                                  "children": Array [
-                                    [Circular],
-                                  ],
-                                  "done": false,
-                                  "lastPosition": 0,
-                                  "lastTime": undefined,
-                                  "lastVelocity": undefined,
-                                  "payload": undefined,
-                                  "setValue": [Function],
-                                  "startPosition": 0,
-                                  "startTime": 1554350414977,
-                                  "value": 0,
-                                },
-                              ],
-                            },
-                          }
-                        }
-                      >
-                        <img
-                          alt=""
-                          className="movie-poster"
-                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                        />
-                      </ForwardRef>
-                    </div>,
-                    "className": "flex-container",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": <div
                         class="animated-clickable-div"
                       >
                         <div
@@ -1672,11 +358,57 @@ ReactWrapper {
                             src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
                           />
                         </div>
-                      </div>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
+                      </div>
+                    </div>
+                    <div
+                      class="movie-stats"
+                    >
+                      <div
+                        class="stats-column"
+                      >
+                        <i
+                          class="fas fa-calendar-day"
+                        />
+                        <span>
+                          2019-01-03
+                        </span>
+                      </div>
+                      <div
+                        class="stats-column"
+                      >
+                        <i
+                          class="fas fa-heartbeat"
+                        />
+                        <span>
+                          1230
+                        </span>
+                      </div>
+                      <div
+                        class="stats-column"
+                      >
+                        <i
+                          class="fas fa-star"
+                        />
+                        <span>
+                          7.7
+                        </span>
+                      </div>
+                    </div>
+                  </div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <p>
+                        How to Train Your Dragon: The Hidden World
+                      </p>,
+                      <div
+                        className="flex-container"
+                      >
+                        <div
+                          className="animated-clickable-div"
+                          onClick={[Function]}
+                        >
                           <ForwardRef
                             className="c back"
                             style={
@@ -1722,7 +454,7 @@ ReactWrapper {
                                       "payload": undefined,
                                       "setValue": [Function],
                                       "startPosition": 0,
-                                      "startTime": 1554350414975,
+                                      "startTime": 1556559588972,
                                       "value": 0,
                                     },
                                   ],
@@ -1768,7 +500,7 @@ ReactWrapper {
                                       "payload": undefined,
                                       "setValue": [Function],
                                       "startPosition": 0,
-                                      "startTime": 1554350414977,
+                                      "startTime": 1556559588975,
                                       "value": 0,
                                     },
                                   ],
@@ -1781,123 +513,205 @@ ReactWrapper {
                               className="movie-poster"
                               src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
                             />
-                          </ForwardRef>,
-                          false,
-                        ],
-                        "className": "animated-clickable-div",
-                        "onClick": [Function],
+                          </ForwardRef>
+                        </div>
+                      </div>,
+                      <div
+                        className="movie-stats"
+                      >
+                        <div
+                          className="stats-column"
+                        >
+                          <i
+                            className="fas fa-calendar-day"
+                          />
+                          <span>
+                            2019-01-03
+                          </span>
+                        </div>
+                        <div
+                          className="stats-column"
+                        >
+                          <i
+                            className="fas fa-heartbeat"
+                          />
+                          <span>
+                            1230
+                          </span>
+                        </div>
+                        <div
+                          className="stats-column"
+                        >
+                          <i
+                            className="fas fa-star"
+                          />
+                          <span>
+                            7.7
+                          </span>
+                        </div>
+                      </div>,
+                    ],
+                    "className": "movie-card",
+                    "data-test": "MovieCard",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <p>
+                        How to Train Your Dragon: The Hidden World
+                      </p>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "How to Train Your Dragon: The Hidden World",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "How to Train Your Dragon: The Hidden World",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": <div
+                        class="flex-container"
+                      >
+                        <div
+                          class="animated-clickable-div"
+                        >
+                          <div
+                            class="c back"
+                            style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
+                          >
+                            <img
+                              alt=""
+                              class="movie-poster"
+                              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                            />
+                          </div>
+                        </div>
+                      </div>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <div
+                          className="animated-clickable-div"
+                          onClick={[Function]}
+                        >
+                          <ForwardRef
+                            className="c back"
+                            style={
+                              Object {
+                                "opacity": AnimatedInterpolation {
+                                  "attach": [Function],
+                                  "calc": [Function],
+                                  "children": Array [
+                                    AnimatedStyle {
+                                      "attach": [Function],
+                                      "children": Array [
+                                        AnimatedProps {
+                                          "attach": [Function],
+                                          "children": Array [],
+                                          "detach": [Function],
+                                          "payload": Object {
+                                            "children": <img
+                                              alt=""
+                                              className="movie-poster"
+                                              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                            />,
+                                            "className": "c back",
+                                            "style": [Circular],
+                                          },
+                                          "update": [Function],
+                                        },
+                                      ],
+                                      "detach": [Function],
+                                      "payload": [Circular],
+                                    },
+                                  ],
+                                  "detach": [Function],
+                                  "payload": Array [
+                                    AnimatedValue {
+                                      "animatedStyles": Set {},
+                                      "children": Array [
+                                        [Circular],
+                                      ],
+                                      "done": false,
+                                      "lastPosition": 0,
+                                      "lastTime": undefined,
+                                      "lastVelocity": undefined,
+                                      "payload": undefined,
+                                      "setValue": [Function],
+                                      "startPosition": 0,
+                                      "startTime": 1556559588972,
+                                      "value": 0,
+                                    },
+                                  ],
+                                },
+                                "transform": AnimatedInterpolation {
+                                  "attach": [Function],
+                                  "calc": [Function],
+                                  "children": Array [
+                                    AnimatedStyle {
+                                      "attach": [Function],
+                                      "children": Array [
+                                        AnimatedProps {
+                                          "attach": [Function],
+                                          "children": Array [],
+                                          "detach": [Function],
+                                          "payload": Object {
+                                            "children": <img
+                                              alt=""
+                                              className="movie-poster"
+                                              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                            />,
+                                            "className": "c back",
+                                            "style": [Circular],
+                                          },
+                                          "update": [Function],
+                                        },
+                                      ],
+                                      "detach": [Function],
+                                      "payload": [Circular],
+                                    },
+                                  ],
+                                  "detach": [Function],
+                                  "payload": Array [
+                                    AnimatedValue {
+                                      "animatedStyles": Set {},
+                                      "children": Array [
+                                        [Circular],
+                                      ],
+                                      "done": false,
+                                      "lastPosition": 0,
+                                      "lastTime": undefined,
+                                      "lastVelocity": undefined,
+                                      "payload": undefined,
+                                      "setValue": [Function],
+                                      "startPosition": 0,
+                                      "startTime": 1556559588975,
+                                      "value": 0,
+                                    },
+                                  ],
+                                },
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              className="movie-poster"
+                              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                            />
+                          </ForwardRef>
+                        </div>,
+                        "className": "flex-container",
                       },
                       "ref": null,
                       "rendered": Array [
                         Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "children": <img
-                              alt=""
-                              className="movie-poster"
-                              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                            />,
-                            "className": "c back",
-                            "style": Object {
-                              "opacity": AnimatedInterpolation {
-                                "attach": [Function],
-                                "calc": [Function],
-                                "children": Array [
-                                  AnimatedStyle {
-                                    "attach": [Function],
-                                    "children": Array [
-                                      AnimatedProps {
-                                        "attach": [Function],
-                                        "children": Array [],
-                                        "detach": [Function],
-                                        "payload": Object {
-                                          "children": <img
-                                            alt=""
-                                            className="movie-poster"
-                                            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                          />,
-                                          "className": "c back",
-                                          "style": [Circular],
-                                        },
-                                        "update": [Function],
-                                      },
-                                    ],
-                                    "detach": [Function],
-                                    "payload": [Circular],
-                                  },
-                                ],
-                                "detach": [Function],
-                                "payload": Array [
-                                  AnimatedValue {
-                                    "animatedStyles": Set {},
-                                    "children": Array [
-                                      [Circular],
-                                    ],
-                                    "done": false,
-                                    "lastPosition": 0,
-                                    "lastTime": undefined,
-                                    "lastVelocity": undefined,
-                                    "payload": undefined,
-                                    "setValue": [Function],
-                                    "startPosition": 0,
-                                    "startTime": 1554350414975,
-                                    "value": 0,
-                                  },
-                                ],
-                              },
-                              "transform": AnimatedInterpolation {
-                                "attach": [Function],
-                                "calc": [Function],
-                                "children": Array [
-                                  AnimatedStyle {
-                                    "attach": [Function],
-                                    "children": Array [
-                                      AnimatedProps {
-                                        "attach": [Function],
-                                        "children": Array [],
-                                        "detach": [Function],
-                                        "payload": Object {
-                                          "children": <img
-                                            alt=""
-                                            className="movie-poster"
-                                            src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                                          />,
-                                          "className": "c back",
-                                          "style": [Circular],
-                                        },
-                                        "update": [Function],
-                                      },
-                                    ],
-                                    "detach": [Function],
-                                    "payload": [Circular],
-                                  },
-                                ],
-                                "detach": [Function],
-                                "payload": Array [
-                                  AnimatedValue {
-                                    "animatedStyles": Set {},
-                                    "children": Array [
-                                      [Circular],
-                                    ],
-                                    "done": false,
-                                    "lastPosition": 0,
-                                    "lastTime": undefined,
-                                    "lastVelocity": undefined,
-                                    "payload": undefined,
-                                    "setValue": [Function],
-                                    "startPosition": 0,
-                                    "startTime": 1554350414977,
-                                    "value": 0,
-                                  },
-                                ],
-                              },
-                            },
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": <div
+                          "instance": <div
+                            class="animated-clickable-div"
+                          >
+                            <div
                               class="c back"
                               style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
                             >
@@ -1906,49 +720,541 @@ ReactWrapper {
                                 class="movie-poster"
                                 src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
                               />
-                            </div>,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": <img
-                                alt=""
-                                className="movie-poster"
-                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
-                              />,
-                              "className": "c back",
-                              "style": Object {
-                                "opacity": 1,
-                                "transform": "perspective(600px) rotateX(0deg)",
-                              },
-                            },
-                            "ref": [Function],
-                            "rendered": Array [
-                              Object {
-                                "instance": <img
+                            </div>
+                          </div>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <ForwardRef
+                                className="c back"
+                                style={
+                                  Object {
+                                    "opacity": AnimatedInterpolation {
+                                      "attach": [Function],
+                                      "calc": [Function],
+                                      "children": Array [
+                                        AnimatedStyle {
+                                          "attach": [Function],
+                                          "children": Array [
+                                            AnimatedProps {
+                                              "attach": [Function],
+                                              "children": Array [],
+                                              "detach": [Function],
+                                              "payload": Object {
+                                                "children": <img
+                                                  alt=""
+                                                  className="movie-poster"
+                                                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                                />,
+                                                "className": "c back",
+                                                "style": [Circular],
+                                              },
+                                              "update": [Function],
+                                            },
+                                          ],
+                                          "detach": [Function],
+                                          "payload": [Circular],
+                                        },
+                                      ],
+                                      "detach": [Function],
+                                      "payload": Array [
+                                        AnimatedValue {
+                                          "animatedStyles": Set {},
+                                          "children": Array [
+                                            [Circular],
+                                          ],
+                                          "done": false,
+                                          "lastPosition": 0,
+                                          "lastTime": undefined,
+                                          "lastVelocity": undefined,
+                                          "payload": undefined,
+                                          "setValue": [Function],
+                                          "startPosition": 0,
+                                          "startTime": 1556559588972,
+                                          "value": 0,
+                                        },
+                                      ],
+                                    },
+                                    "transform": AnimatedInterpolation {
+                                      "attach": [Function],
+                                      "calc": [Function],
+                                      "children": Array [
+                                        AnimatedStyle {
+                                          "attach": [Function],
+                                          "children": Array [
+                                            AnimatedProps {
+                                              "attach": [Function],
+                                              "children": Array [],
+                                              "detach": [Function],
+                                              "payload": Object {
+                                                "children": <img
+                                                  alt=""
+                                                  className="movie-poster"
+                                                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                                />,
+                                                "className": "c back",
+                                                "style": [Circular],
+                                              },
+                                              "update": [Function],
+                                            },
+                                          ],
+                                          "detach": [Function],
+                                          "payload": [Circular],
+                                        },
+                                      ],
+                                      "detach": [Function],
+                                      "payload": Array [
+                                        AnimatedValue {
+                                          "animatedStyles": Set {},
+                                          "children": Array [
+                                            [Circular],
+                                          ],
+                                          "done": false,
+                                          "lastPosition": 0,
+                                          "lastTime": undefined,
+                                          "lastVelocity": undefined,
+                                          "payload": undefined,
+                                          "setValue": [Function],
+                                          "startPosition": 0,
+                                          "startTime": 1556559588975,
+                                          "value": 0,
+                                        },
+                                      ],
+                                    },
+                                  }
+                                }
+                              >
+                                <img
                                   alt=""
-                                  class="movie-poster"
+                                  className="movie-poster"
+                                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                />
+                              </ForwardRef>,
+                              false,
+                            ],
+                            "className": "animated-clickable-div",
+                            "onClick": [Function],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "children": <img
+                                  alt=""
+                                  className="movie-poster"
                                   src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
                                 />,
+                                "className": "c back",
+                                "style": Object {
+                                  "opacity": AnimatedInterpolation {
+                                    "attach": [Function],
+                                    "calc": [Function],
+                                    "children": Array [
+                                      AnimatedStyle {
+                                        "attach": [Function],
+                                        "children": Array [
+                                          AnimatedProps {
+                                            "attach": [Function],
+                                            "children": Array [],
+                                            "detach": [Function],
+                                            "payload": Object {
+                                              "children": <img
+                                                alt=""
+                                                className="movie-poster"
+                                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                              />,
+                                              "className": "c back",
+                                              "style": [Circular],
+                                            },
+                                            "update": [Function],
+                                          },
+                                        ],
+                                        "detach": [Function],
+                                        "payload": [Circular],
+                                      },
+                                    ],
+                                    "detach": [Function],
+                                    "payload": Array [
+                                      AnimatedValue {
+                                        "animatedStyles": Set {},
+                                        "children": Array [
+                                          [Circular],
+                                        ],
+                                        "done": false,
+                                        "lastPosition": 0,
+                                        "lastTime": undefined,
+                                        "lastVelocity": undefined,
+                                        "payload": undefined,
+                                        "setValue": [Function],
+                                        "startPosition": 0,
+                                        "startTime": 1556559588972,
+                                        "value": 0,
+                                      },
+                                    ],
+                                  },
+                                  "transform": AnimatedInterpolation {
+                                    "attach": [Function],
+                                    "calc": [Function],
+                                    "children": Array [
+                                      AnimatedStyle {
+                                        "attach": [Function],
+                                        "children": Array [
+                                          AnimatedProps {
+                                            "attach": [Function],
+                                            "children": Array [],
+                                            "detach": [Function],
+                                            "payload": Object {
+                                              "children": <img
+                                                alt=""
+                                                className="movie-poster"
+                                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                              />,
+                                              "className": "c back",
+                                              "style": [Circular],
+                                            },
+                                            "update": [Function],
+                                          },
+                                        ],
+                                        "detach": [Function],
+                                        "payload": [Circular],
+                                      },
+                                    ],
+                                    "detach": [Function],
+                                    "payload": Array [
+                                      AnimatedValue {
+                                        "animatedStyles": Set {},
+                                        "children": Array [
+                                          [Circular],
+                                        ],
+                                        "done": false,
+                                        "lastPosition": 0,
+                                        "lastTime": undefined,
+                                        "lastVelocity": undefined,
+                                        "payload": undefined,
+                                        "setValue": [Function],
+                                        "startPosition": 0,
+                                        "startTime": 1556559588975,
+                                        "value": 0,
+                                      },
+                                    ],
+                                  },
+                                },
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": <div
+                                  class="c back"
+                                  style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
+                                >
+                                  <img
+                                    alt=""
+                                    class="movie-poster"
+                                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                  />
+                                </div>,
                                 "key": undefined,
                                 "nodeType": "host",
                                 "props": Object {
-                                  "alt": "",
-                                  "className": "movie-poster",
-                                  "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                                  "children": <img
+                                    alt=""
+                                    className="movie-poster"
+                                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                  />,
+                                  "className": "c back",
+                                  "style": Object {
+                                    "opacity": 1,
+                                    "transform": "perspective(600px) rotateX(0deg)",
+                                  },
                                 },
-                                "ref": null,
+                                "ref": [Function],
                                 "rendered": Array [
-                                  undefined,
+                                  Object {
+                                    "instance": <img
+                                      alt=""
+                                      class="movie-poster"
+                                      src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                    />,
+                                    "key": undefined,
+                                    "nodeType": "host",
+                                    "props": Object {
+                                      "alt": "",
+                                      "className": "movie-poster",
+                                      "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                                    },
+                                    "ref": null,
+                                    "rendered": Array [
+                                      undefined,
+                                    ],
+                                    "type": "img",
+                                  },
                                 ],
-                                "type": "img",
+                                "type": "div",
                               },
+                              "type": Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "render": [Function],
+                              },
+                            },
+                          ],
+                          "type": "div",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": <div
+                        class="movie-stats"
+                      >
+                        <div
+                          class="stats-column"
+                        >
+                          <i
+                            class="fas fa-calendar-day"
+                          />
+                          <span>
+                            2019-01-03
+                          </span>
+                        </div>
+                        <div
+                          class="stats-column"
+                        >
+                          <i
+                            class="fas fa-heartbeat"
+                          />
+                          <span>
+                            1230
+                          </span>
+                        </div>
+                        <div
+                          class="stats-column"
+                        >
+                          <i
+                            class="fas fa-star"
+                          />
+                          <span>
+                            7.7
+                          </span>
+                        </div>
+                      </div>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <div
+                            className="stats-column"
+                          >
+                            <i
+                              className="fas fa-calendar-day"
+                            />
+                            <span>
+                              2019-01-03
+                            </span>
+                          </div>,
+                          <div
+                            className="stats-column"
+                          >
+                            <i
+                              className="fas fa-heartbeat"
+                            />
+                            <span>
+                              1230
+                            </span>
+                          </div>,
+                          <div
+                            className="stats-column"
+                          >
+                            <i
+                              className="fas fa-star"
+                            />
+                            <span>
+                              7.7
+                            </span>
+                          </div>,
+                        ],
+                        "className": "movie-stats",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": <div
+                            class="stats-column"
+                          >
+                            <i
+                              class="fas fa-calendar-day"
+                            />
+                            <span>
+                              2019-01-03
+                            </span>
+                          </div>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <i
+                                className="fas fa-calendar-day"
+                              />,
+                              <span>
+                                2019-01-03
+                              </span>,
                             ],
-                            "type": "div",
+                            "className": "stats-column",
                           },
-                          "type": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "render": [Function],
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": <i
+                                class="fas fa-calendar-day"
+                              />,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "fas fa-calendar-day",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                undefined,
+                              ],
+                              "type": "i",
+                            },
+                            Object {
+                              "instance": <span>
+                                2019-01-03
+                              </span>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "2019-01-03",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "2019-01-03",
+                              ],
+                              "type": "span",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": <div
+                            class="stats-column"
+                          >
+                            <i
+                              class="fas fa-heartbeat"
+                            />
+                            <span>
+                              1230
+                            </span>
+                          </div>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <i
+                                className="fas fa-heartbeat"
+                              />,
+                              <span>
+                                1230
+                              </span>,
+                            ],
+                            "className": "stats-column",
                           },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": <i
+                                class="fas fa-heartbeat"
+                              />,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "fas fa-heartbeat",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                undefined,
+                              ],
+                              "type": "i",
+                            },
+                            Object {
+                              "instance": <span>
+                                1230
+                              </span>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": 1230,
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                1230,
+                              ],
+                              "type": "span",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": <div
+                            class="stats-column"
+                          >
+                            <i
+                              class="fas fa-star"
+                            />
+                            <span>
+                              7.7
+                            </span>
+                          </div>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <i
+                                className="fas fa-star"
+                              />,
+                              <span>
+                                7.7
+                              </span>,
+                            ],
+                            "className": "stats-column",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": <i
+                                class="fas fa-star"
+                              />,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "fas fa-star",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                undefined,
+                              ],
+                              "type": "i",
+                            },
+                            Object {
+                              "instance": <span>
+                                7.7
+                              </span>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": 7.7,
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                7.7,
+                              ],
+                              "type": "span",
+                            },
+                          ],
+                          "type": "div",
                         },
                       ],
                       "type": "div",
@@ -1956,8 +1262,222 @@ ReactWrapper {
                   ],
                   "type": "div",
                 },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "movies": Array [
+          Object {
+            "adult": false,
+            "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+            "genre_ids": Array [
+              16,
+              10751,
+              12,
+            ],
+            "id": 166428,
+            "original_language": "en",
+            "original_title": "How to Train Your Dragon: The Hidden World",
+            "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+            "popularity": 470.427,
+            "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+            "release_date": "2019-01-03",
+            "title": "How to Train Your Dragon: The Hidden World",
+            "video": false,
+            "vote_average": 7.7,
+            "vote_count": 1230,
+          },
+        ],
+        "searchText": "",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <div
+            className="movie-list"
+            data-test="MovieList"
+          >
+            <MovieCard
+              movie={
                 Object {
-                  "instance": <div
+                  "adult": false,
+                  "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+                  "genre_ids": Array [
+                    16,
+                    10751,
+                    12,
+                  ],
+                  "id": 166428,
+                  "original_language": "en",
+                  "original_title": "How to Train Your Dragon: The Hidden World",
+                  "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+                  "popularity": 470.427,
+                  "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                  "release_date": "2019-01-03",
+                  "title": "How to Train Your Dragon: The Hidden World",
+                  "video": false,
+                  "vote_average": 7.7,
+                  "vote_count": 1230,
+                }
+              }
+            />
+          </div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": <div>
+            <div
+              class="movie-list"
+              data-test="MovieList"
+            >
+              <div
+                class="movie-card"
+                data-test="MovieCard"
+              >
+                <p>
+                  How to Train Your Dragon: The Hidden World
+                </p>
+                <div
+                  class="flex-container"
+                >
+                  <div
+                    class="animated-clickable-div"
+                  >
+                    <div
+                      class="c back"
+                      style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
+                    >
+                      <img
+                        alt=""
+                        class="movie-poster"
+                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="movie-stats"
+                >
+                  <div
+                    class="stats-column"
+                  >
+                    <i
+                      class="fas fa-calendar-day"
+                    />
+                    <span>
+                      2019-01-03
+                    </span>
+                  </div>
+                  <div
+                    class="stats-column"
+                  >
+                    <i
+                      class="fas fa-heartbeat"
+                    />
+                    <span>
+                      1230
+                    </span>
+                  </div>
+                  <div
+                    class="stats-column"
+                  >
+                    <i
+                      class="fas fa-star"
+                    />
+                    <span>
+                      7.7
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="movie-list"
+              data-test="MovieList"
+            >
+              <MovieCard
+                movie={
+                  Object {
+                    "adult": false,
+                    "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+                    "genre_ids": Array [
+                      16,
+                      10751,
+                      12,
+                    ],
+                    "id": 166428,
+                    "original_language": "en",
+                    "original_title": "How to Train Your Dragon: The Hidden World",
+                    "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+                    "popularity": 470.427,
+                    "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                    "release_date": "2019-01-03",
+                    "title": "How to Train Your Dragon: The Hidden World",
+                    "video": false,
+                    "vote_average": 7.7,
+                    "vote_count": 1230,
+                  }
+                }
+              />
+            </div>,
+          },
+          "ref": [Function],
+          "rendered": Array [
+            Object {
+              "instance": <div
+                class="movie-list"
+                data-test="MovieList"
+              >
+                <div
+                  class="movie-card"
+                  data-test="MovieCard"
+                >
+                  <p>
+                    How to Train Your Dragon: The Hidden World
+                  </p>
+                  <div
+                    class="flex-container"
+                  >
+                    <div
+                      class="animated-clickable-div"
+                    >
+                      <div
+                        class="c back"
+                        style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
+                      >
+                        <img
+                          alt=""
+                          class="movie-poster"
+                          src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
                     class="movie-stats"
                   >
                     <div
@@ -1990,233 +1510,1010 @@ ReactWrapper {
                         7.7
                       </span>
                     </div>
-                  </div>,
-                  "key": undefined,
-                  "nodeType": "host",
+                  </div>
+                </div>
+              </div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <MovieCard
+                    movie={
+                      Object {
+                        "adult": false,
+                        "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+                        "genre_ids": Array [
+                          16,
+                          10751,
+                          12,
+                        ],
+                        "id": 166428,
+                        "original_language": "en",
+                        "original_title": "How to Train Your Dragon: The Hidden World",
+                        "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+                        "popularity": 470.427,
+                        "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                        "release_date": "2019-01-03",
+                        "title": "How to Train Your Dragon: The Hidden World",
+                        "video": false,
+                        "vote_average": 7.7,
+                        "vote_count": 1230,
+                      }
+                    }
+                  />,
+                ],
+                "className": "movie-list",
+                "data-test": "MovieList",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "166428",
+                  "nodeType": "function",
                   "props": Object {
-                    "children": Array [
-                      <div
-                        className="stats-column"
-                      >
-                        <i
-                          className="fas fa-calendar-day"
-                        />
-                        <span>
-                          2019-01-03
-                        </span>
-                      </div>,
-                      <div
-                        className="stats-column"
-                      >
-                        <i
-                          className="fas fa-heartbeat"
-                        />
-                        <span>
-                          1230
-                        </span>
-                      </div>,
-                      <div
-                        className="stats-column"
-                      >
-                        <i
-                          className="fas fa-star"
-                        />
-                        <span>
-                          7.7
-                        </span>
-                      </div>,
-                    ],
-                    "className": "movie-stats",
+                    "movie": Object {
+                      "adult": false,
+                      "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+                      "genre_ids": Array [
+                        16,
+                        10751,
+                        12,
+                      ],
+                      "id": 166428,
+                      "original_language": "en",
+                      "original_title": "How to Train Your Dragon: The Hidden World",
+                      "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+                      "popularity": 470.427,
+                      "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                      "release_date": "2019-01-03",
+                      "title": "How to Train Your Dragon: The Hidden World",
+                      "video": false,
+                      "vote_average": 7.7,
+                      "vote_count": 1230,
+                    },
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": <div
-                        class="stats-column"
+                  "rendered": Object {
+                    "instance": <div
+                      class="movie-card"
+                      data-test="MovieCard"
+                    >
+                      <p>
+                        How to Train Your Dragon: The Hidden World
+                      </p>
+                      <div
+                        class="flex-container"
                       >
-                        <i
-                          class="fas fa-calendar-day"
-                        />
-                        <span>
-                          2019-01-03
-                        </span>
-                      </div>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
+                        <div
+                          class="animated-clickable-div"
+                        >
+                          <div
+                            class="c back"
+                            style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
+                          >
+                            <img
+                              alt=""
+                              class="movie-poster"
+                              src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="movie-stats"
+                      >
+                        <div
+                          class="stats-column"
+                        >
                           <i
-                            className="fas fa-calendar-day"
-                          />,
-                          <span>
-                            2019-01-03
-                          </span>,
-                        ],
-                        "className": "stats-column",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": <i
                             class="fas fa-calendar-day"
-                          />,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "className": "fas fa-calendar-day",
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            undefined,
-                          ],
-                          "type": "i",
-                        },
-                        Object {
-                          "instance": <span>
+                          />
+                          <span>
                             2019-01-03
-                          </span>,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": "2019-01-03",
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            "2019-01-03",
-                          ],
-                          "type": "span",
-                        },
-                      ],
-                      "type": "div",
-                    },
-                    Object {
-                      "instance": <div
-                        class="stats-column"
-                      >
-                        <i
-                          class="fas fa-heartbeat"
-                        />
-                        <span>
-                          1230
-                        </span>
-                      </div>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
+                          </span>
+                        </div>
+                        <div
+                          class="stats-column"
+                        >
                           <i
-                            className="fas fa-heartbeat"
-                          />,
-                          <span>
-                            1230
-                          </span>,
-                        ],
-                        "className": "stats-column",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": <i
                             class="fas fa-heartbeat"
-                          />,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "className": "fas fa-heartbeat",
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            undefined,
-                          ],
-                          "type": "i",
-                        },
-                        Object {
-                          "instance": <span>
+                          />
+                          <span>
                             1230
-                          </span>,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": 1230,
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            1230,
-                          ],
-                          "type": "span",
-                        },
-                      ],
-                      "type": "div",
-                    },
-                    Object {
-                      "instance": <div
-                        class="stats-column"
-                      >
-                        <i
-                          class="fas fa-star"
-                        />
-                        <span>
-                          7.7
-                        </span>
-                      </div>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
+                          </span>
+                        </div>
+                        <div
+                          class="stats-column"
+                        >
                           <i
-                            className="fas fa-star"
-                          />,
+                            class="fas fa-star"
+                          />
                           <span>
                             7.7
-                          </span>,
-                        ],
-                        "className": "stats-column",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": <i
-                            class="fas fa-star"
-                          />,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "className": "fas fa-star",
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            undefined,
-                          ],
-                          "type": "i",
-                        },
-                        Object {
-                          "instance": <span>
-                            7.7
-                          </span>,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": 7.7,
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            7.7,
-                          ],
-                          "type": "span",
-                        },
+                          </span>
+                        </div>
+                      </div>
+                    </div>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <p>
+                          How to Train Your Dragon: The Hidden World
+                        </p>,
+                        <div
+                          className="flex-container"
+                        >
+                          <div
+                            className="animated-clickable-div"
+                            onClick={[Function]}
+                          >
+                            <ForwardRef
+                              className="c back"
+                              style={
+                                Object {
+                                  "opacity": AnimatedInterpolation {
+                                    "attach": [Function],
+                                    "calc": [Function],
+                                    "children": Array [
+                                      AnimatedStyle {
+                                        "attach": [Function],
+                                        "children": Array [
+                                          AnimatedProps {
+                                            "attach": [Function],
+                                            "children": Array [],
+                                            "detach": [Function],
+                                            "payload": Object {
+                                              "children": <img
+                                                alt=""
+                                                className="movie-poster"
+                                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                              />,
+                                              "className": "c back",
+                                              "style": [Circular],
+                                            },
+                                            "update": [Function],
+                                          },
+                                        ],
+                                        "detach": [Function],
+                                        "payload": [Circular],
+                                      },
+                                    ],
+                                    "detach": [Function],
+                                    "payload": Array [
+                                      AnimatedValue {
+                                        "animatedStyles": Set {},
+                                        "children": Array [
+                                          [Circular],
+                                        ],
+                                        "done": false,
+                                        "lastPosition": 0,
+                                        "lastTime": undefined,
+                                        "lastVelocity": undefined,
+                                        "payload": undefined,
+                                        "setValue": [Function],
+                                        "startPosition": 0,
+                                        "startTime": 1556559588972,
+                                        "value": 0,
+                                      },
+                                    ],
+                                  },
+                                  "transform": AnimatedInterpolation {
+                                    "attach": [Function],
+                                    "calc": [Function],
+                                    "children": Array [
+                                      AnimatedStyle {
+                                        "attach": [Function],
+                                        "children": Array [
+                                          AnimatedProps {
+                                            "attach": [Function],
+                                            "children": Array [],
+                                            "detach": [Function],
+                                            "payload": Object {
+                                              "children": <img
+                                                alt=""
+                                                className="movie-poster"
+                                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                              />,
+                                              "className": "c back",
+                                              "style": [Circular],
+                                            },
+                                            "update": [Function],
+                                          },
+                                        ],
+                                        "detach": [Function],
+                                        "payload": [Circular],
+                                      },
+                                    ],
+                                    "detach": [Function],
+                                    "payload": Array [
+                                      AnimatedValue {
+                                        "animatedStyles": Set {},
+                                        "children": Array [
+                                          [Circular],
+                                        ],
+                                        "done": false,
+                                        "lastPosition": 0,
+                                        "lastTime": undefined,
+                                        "lastVelocity": undefined,
+                                        "payload": undefined,
+                                        "setValue": [Function],
+                                        "startPosition": 0,
+                                        "startTime": 1556559588975,
+                                        "value": 0,
+                                      },
+                                    ],
+                                  },
+                                }
+                              }
+                            >
+                              <img
+                                alt=""
+                                className="movie-poster"
+                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                              />
+                            </ForwardRef>
+                          </div>
+                        </div>,
+                        <div
+                          className="movie-stats"
+                        >
+                          <div
+                            className="stats-column"
+                          >
+                            <i
+                              className="fas fa-calendar-day"
+                            />
+                            <span>
+                              2019-01-03
+                            </span>
+                          </div>
+                          <div
+                            className="stats-column"
+                          >
+                            <i
+                              className="fas fa-heartbeat"
+                            />
+                            <span>
+                              1230
+                            </span>
+                          </div>
+                          <div
+                            className="stats-column"
+                          >
+                            <i
+                              className="fas fa-star"
+                            />
+                            <span>
+                              7.7
+                            </span>
+                          </div>
+                        </div>,
                       ],
-                      "type": "div",
+                      "className": "movie-card",
+                      "data-test": "MovieCard",
                     },
-                  ],
-                  "type": "div",
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <p>
+                          How to Train Your Dragon: The Hidden World
+                        </p>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "How to Train Your Dragon: The Hidden World",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "How to Train Your Dragon: The Hidden World",
+                        ],
+                        "type": "p",
+                      },
+                      Object {
+                        "instance": <div
+                          class="flex-container"
+                        >
+                          <div
+                            class="animated-clickable-div"
+                          >
+                            <div
+                              class="c back"
+                              style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
+                            >
+                              <img
+                                alt=""
+                                class="movie-poster"
+                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <div
+                            className="animated-clickable-div"
+                            onClick={[Function]}
+                          >
+                            <ForwardRef
+                              className="c back"
+                              style={
+                                Object {
+                                  "opacity": AnimatedInterpolation {
+                                    "attach": [Function],
+                                    "calc": [Function],
+                                    "children": Array [
+                                      AnimatedStyle {
+                                        "attach": [Function],
+                                        "children": Array [
+                                          AnimatedProps {
+                                            "attach": [Function],
+                                            "children": Array [],
+                                            "detach": [Function],
+                                            "payload": Object {
+                                              "children": <img
+                                                alt=""
+                                                className="movie-poster"
+                                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                              />,
+                                              "className": "c back",
+                                              "style": [Circular],
+                                            },
+                                            "update": [Function],
+                                          },
+                                        ],
+                                        "detach": [Function],
+                                        "payload": [Circular],
+                                      },
+                                    ],
+                                    "detach": [Function],
+                                    "payload": Array [
+                                      AnimatedValue {
+                                        "animatedStyles": Set {},
+                                        "children": Array [
+                                          [Circular],
+                                        ],
+                                        "done": false,
+                                        "lastPosition": 0,
+                                        "lastTime": undefined,
+                                        "lastVelocity": undefined,
+                                        "payload": undefined,
+                                        "setValue": [Function],
+                                        "startPosition": 0,
+                                        "startTime": 1556559588972,
+                                        "value": 0,
+                                      },
+                                    ],
+                                  },
+                                  "transform": AnimatedInterpolation {
+                                    "attach": [Function],
+                                    "calc": [Function],
+                                    "children": Array [
+                                      AnimatedStyle {
+                                        "attach": [Function],
+                                        "children": Array [
+                                          AnimatedProps {
+                                            "attach": [Function],
+                                            "children": Array [],
+                                            "detach": [Function],
+                                            "payload": Object {
+                                              "children": <img
+                                                alt=""
+                                                className="movie-poster"
+                                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                              />,
+                                              "className": "c back",
+                                              "style": [Circular],
+                                            },
+                                            "update": [Function],
+                                          },
+                                        ],
+                                        "detach": [Function],
+                                        "payload": [Circular],
+                                      },
+                                    ],
+                                    "detach": [Function],
+                                    "payload": Array [
+                                      AnimatedValue {
+                                        "animatedStyles": Set {},
+                                        "children": Array [
+                                          [Circular],
+                                        ],
+                                        "done": false,
+                                        "lastPosition": 0,
+                                        "lastTime": undefined,
+                                        "lastVelocity": undefined,
+                                        "payload": undefined,
+                                        "setValue": [Function],
+                                        "startPosition": 0,
+                                        "startTime": 1556559588975,
+                                        "value": 0,
+                                      },
+                                    ],
+                                  },
+                                }
+                              }
+                            >
+                              <img
+                                alt=""
+                                className="movie-poster"
+                                src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                              />
+                            </ForwardRef>
+                          </div>,
+                          "className": "flex-container",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": <div
+                              class="animated-clickable-div"
+                            >
+                              <div
+                                class="c back"
+                                style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
+                              >
+                                <img
+                                  alt=""
+                                  class="movie-poster"
+                                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                />
+                              </div>
+                            </div>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <ForwardRef
+                                  className="c back"
+                                  style={
+                                    Object {
+                                      "opacity": AnimatedInterpolation {
+                                        "attach": [Function],
+                                        "calc": [Function],
+                                        "children": Array [
+                                          AnimatedStyle {
+                                            "attach": [Function],
+                                            "children": Array [
+                                              AnimatedProps {
+                                                "attach": [Function],
+                                                "children": Array [],
+                                                "detach": [Function],
+                                                "payload": Object {
+                                                  "children": <img
+                                                    alt=""
+                                                    className="movie-poster"
+                                                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                                  />,
+                                                  "className": "c back",
+                                                  "style": [Circular],
+                                                },
+                                                "update": [Function],
+                                              },
+                                            ],
+                                            "detach": [Function],
+                                            "payload": [Circular],
+                                          },
+                                        ],
+                                        "detach": [Function],
+                                        "payload": Array [
+                                          AnimatedValue {
+                                            "animatedStyles": Set {},
+                                            "children": Array [
+                                              [Circular],
+                                            ],
+                                            "done": false,
+                                            "lastPosition": 0,
+                                            "lastTime": undefined,
+                                            "lastVelocity": undefined,
+                                            "payload": undefined,
+                                            "setValue": [Function],
+                                            "startPosition": 0,
+                                            "startTime": 1556559588972,
+                                            "value": 0,
+                                          },
+                                        ],
+                                      },
+                                      "transform": AnimatedInterpolation {
+                                        "attach": [Function],
+                                        "calc": [Function],
+                                        "children": Array [
+                                          AnimatedStyle {
+                                            "attach": [Function],
+                                            "children": Array [
+                                              AnimatedProps {
+                                                "attach": [Function],
+                                                "children": Array [],
+                                                "detach": [Function],
+                                                "payload": Object {
+                                                  "children": <img
+                                                    alt=""
+                                                    className="movie-poster"
+                                                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                                  />,
+                                                  "className": "c back",
+                                                  "style": [Circular],
+                                                },
+                                                "update": [Function],
+                                              },
+                                            ],
+                                            "detach": [Function],
+                                            "payload": [Circular],
+                                          },
+                                        ],
+                                        "detach": [Function],
+                                        "payload": Array [
+                                          AnimatedValue {
+                                            "animatedStyles": Set {},
+                                            "children": Array [
+                                              [Circular],
+                                            ],
+                                            "done": false,
+                                            "lastPosition": 0,
+                                            "lastTime": undefined,
+                                            "lastVelocity": undefined,
+                                            "payload": undefined,
+                                            "setValue": [Function],
+                                            "startPosition": 0,
+                                            "startTime": 1556559588975,
+                                            "value": 0,
+                                          },
+                                        ],
+                                      },
+                                    }
+                                  }
+                                >
+                                  <img
+                                    alt=""
+                                    className="movie-poster"
+                                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                  />
+                                </ForwardRef>,
+                                false,
+                              ],
+                              "className": "animated-clickable-div",
+                              "onClick": [Function],
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "function",
+                                "props": Object {
+                                  "children": <img
+                                    alt=""
+                                    className="movie-poster"
+                                    src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                  />,
+                                  "className": "c back",
+                                  "style": Object {
+                                    "opacity": AnimatedInterpolation {
+                                      "attach": [Function],
+                                      "calc": [Function],
+                                      "children": Array [
+                                        AnimatedStyle {
+                                          "attach": [Function],
+                                          "children": Array [
+                                            AnimatedProps {
+                                              "attach": [Function],
+                                              "children": Array [],
+                                              "detach": [Function],
+                                              "payload": Object {
+                                                "children": <img
+                                                  alt=""
+                                                  className="movie-poster"
+                                                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                                />,
+                                                "className": "c back",
+                                                "style": [Circular],
+                                              },
+                                              "update": [Function],
+                                            },
+                                          ],
+                                          "detach": [Function],
+                                          "payload": [Circular],
+                                        },
+                                      ],
+                                      "detach": [Function],
+                                      "payload": Array [
+                                        AnimatedValue {
+                                          "animatedStyles": Set {},
+                                          "children": Array [
+                                            [Circular],
+                                          ],
+                                          "done": false,
+                                          "lastPosition": 0,
+                                          "lastTime": undefined,
+                                          "lastVelocity": undefined,
+                                          "payload": undefined,
+                                          "setValue": [Function],
+                                          "startPosition": 0,
+                                          "startTime": 1556559588972,
+                                          "value": 0,
+                                        },
+                                      ],
+                                    },
+                                    "transform": AnimatedInterpolation {
+                                      "attach": [Function],
+                                      "calc": [Function],
+                                      "children": Array [
+                                        AnimatedStyle {
+                                          "attach": [Function],
+                                          "children": Array [
+                                            AnimatedProps {
+                                              "attach": [Function],
+                                              "children": Array [],
+                                              "detach": [Function],
+                                              "payload": Object {
+                                                "children": <img
+                                                  alt=""
+                                                  className="movie-poster"
+                                                  src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                                />,
+                                                "className": "c back",
+                                                "style": [Circular],
+                                              },
+                                              "update": [Function],
+                                            },
+                                          ],
+                                          "detach": [Function],
+                                          "payload": [Circular],
+                                        },
+                                      ],
+                                      "detach": [Function],
+                                      "payload": Array [
+                                        AnimatedValue {
+                                          "animatedStyles": Set {},
+                                          "children": Array [
+                                            [Circular],
+                                          ],
+                                          "done": false,
+                                          "lastPosition": 0,
+                                          "lastTime": undefined,
+                                          "lastVelocity": undefined,
+                                          "payload": undefined,
+                                          "setValue": [Function],
+                                          "startPosition": 0,
+                                          "startTime": 1556559588975,
+                                          "value": 0,
+                                        },
+                                      ],
+                                    },
+                                  },
+                                },
+                                "ref": null,
+                                "rendered": Object {
+                                  "instance": <div
+                                    class="c back"
+                                    style="opacity: 1; transform: perspective(600px) rotateX(0deg);"
+                                  >
+                                    <img
+                                      alt=""
+                                      class="movie-poster"
+                                      src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                    />
+                                  </div>,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": <img
+                                      alt=""
+                                      className="movie-poster"
+                                      src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                    />,
+                                    "className": "c back",
+                                    "style": Object {
+                                      "opacity": 1,
+                                      "transform": "perspective(600px) rotateX(0deg)",
+                                    },
+                                  },
+                                  "ref": [Function],
+                                  "rendered": Array [
+                                    Object {
+                                      "instance": <img
+                                        alt=""
+                                        class="movie-poster"
+                                        src="http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg"
+                                      />,
+                                      "key": undefined,
+                                      "nodeType": "host",
+                                      "props": Object {
+                                        "alt": "",
+                                        "className": "movie-poster",
+                                        "src": "http://image.tmdb.org/t/p/w185//xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+                                      },
+                                      "ref": null,
+                                      "rendered": Array [
+                                        undefined,
+                                      ],
+                                      "type": "img",
+                                    },
+                                  ],
+                                  "type": "div",
+                                },
+                                "type": Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "render": [Function],
+                                },
+                              },
+                            ],
+                            "type": "div",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": <div
+                          class="movie-stats"
+                        >
+                          <div
+                            class="stats-column"
+                          >
+                            <i
+                              class="fas fa-calendar-day"
+                            />
+                            <span>
+                              2019-01-03
+                            </span>
+                          </div>
+                          <div
+                            class="stats-column"
+                          >
+                            <i
+                              class="fas fa-heartbeat"
+                            />
+                            <span>
+                              1230
+                            </span>
+                          </div>
+                          <div
+                            class="stats-column"
+                          >
+                            <i
+                              class="fas fa-star"
+                            />
+                            <span>
+                              7.7
+                            </span>
+                          </div>
+                        </div>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <div
+                              className="stats-column"
+                            >
+                              <i
+                                className="fas fa-calendar-day"
+                              />
+                              <span>
+                                2019-01-03
+                              </span>
+                            </div>,
+                            <div
+                              className="stats-column"
+                            >
+                              <i
+                                className="fas fa-heartbeat"
+                              />
+                              <span>
+                                1230
+                              </span>
+                            </div>,
+                            <div
+                              className="stats-column"
+                            >
+                              <i
+                                className="fas fa-star"
+                              />
+                              <span>
+                                7.7
+                              </span>
+                            </div>,
+                          ],
+                          "className": "movie-stats",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": <div
+                              class="stats-column"
+                            >
+                              <i
+                                class="fas fa-calendar-day"
+                              />
+                              <span>
+                                2019-01-03
+                              </span>
+                            </div>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <i
+                                  className="fas fa-calendar-day"
+                                />,
+                                <span>
+                                  2019-01-03
+                                </span>,
+                              ],
+                              "className": "stats-column",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": <i
+                                  class="fas fa-calendar-day"
+                                />,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "className": "fas fa-calendar-day",
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  undefined,
+                                ],
+                                "type": "i",
+                              },
+                              Object {
+                                "instance": <span>
+                                  2019-01-03
+                                </span>,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "2019-01-03",
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  "2019-01-03",
+                                ],
+                                "type": "span",
+                              },
+                            ],
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": <div
+                              class="stats-column"
+                            >
+                              <i
+                                class="fas fa-heartbeat"
+                              />
+                              <span>
+                                1230
+                              </span>
+                            </div>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <i
+                                  className="fas fa-heartbeat"
+                                />,
+                                <span>
+                                  1230
+                                </span>,
+                              ],
+                              "className": "stats-column",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": <i
+                                  class="fas fa-heartbeat"
+                                />,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "className": "fas fa-heartbeat",
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  undefined,
+                                ],
+                                "type": "i",
+                              },
+                              Object {
+                                "instance": <span>
+                                  1230
+                                </span>,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 1230,
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  1230,
+                                ],
+                                "type": "span",
+                              },
+                            ],
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": <div
+                              class="stats-column"
+                            >
+                              <i
+                                class="fas fa-star"
+                              />
+                              <span>
+                                7.7
+                              </span>
+                            </div>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <i
+                                  className="fas fa-star"
+                                />,
+                                <span>
+                                  7.7
+                                </span>,
+                              ],
+                              "className": "stats-column",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": <i
+                                  class="fas fa-star"
+                                />,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "className": "fas fa-star",
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  undefined,
+                                ],
+                                "type": "i",
+                              },
+                              Object {
+                                "instance": <span>
+                                  7.7
+                                </span>,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 7.7,
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  7.7,
+                                ],
+                                "type": "span",
+                              },
+                            ],
+                            "type": "div",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": [Function],
                 },
               ],
               "type": "div",
             },
-            "type": [Function],
-          },
-        ],
-        "type": "div",
+          ],
+          "type": "div",
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "render": [Function],
+        },
       },
       "type": [Function],
     },
