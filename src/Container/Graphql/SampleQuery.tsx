@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
 import gql from 'graphql-tag';
-import Story, { IStory } from './Story/Story';
-
+import Story from './Story/Story';
+import { IStory } from "./Story/StoryInterface";
 const SampleQuery = () => (
     <>
         <Query
