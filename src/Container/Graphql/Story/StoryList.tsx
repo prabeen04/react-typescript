@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
 import gql from 'graphql-tag';
-import SingleStory from './SingleStory';
+import Story from './Story';
 import { IStory } from "./StoryInterface";
 const SampleQuery = () => (
     <>
@@ -22,7 +22,7 @@ const SampleQuery = () => (
                 return (
                     <div>
                         {
-                            data.stories.map((item: IStory, i: any) => <SingleStory key={i} title={item.title} />)
+                            data.stories.map((item: IStory, i: any) => <Story key={i} title={item.title} />)
                         }
                     </div>
                 );
