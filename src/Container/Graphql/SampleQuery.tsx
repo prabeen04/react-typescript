@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
 import gql from 'graphql-tag';
-import Story, { IStory } from './Story';
+import Story, { IStory } from './Story/Story';
 
 const SampleQuery = () => (
     <>
