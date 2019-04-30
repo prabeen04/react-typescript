@@ -2,6 +2,7 @@ import * as React from 'react'
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import SampleQuery from './SampleQuery';
+import Story from './Story/Story'
 import './Graphql.css';
 
 const client = new ApolloClient({
@@ -13,7 +14,7 @@ export default function Graphql(): JSX.Element {
         <>
             <ApolloProvider client={client}>
                 <div className='graphql-wrapper'>
-                   {window.location.origin.includes('localhost') && <SampleQuery/>}
+                   {window.location.origin.includes('localhost') && <Story/>}
                 </div>
             </ApolloProvider>
         </>
