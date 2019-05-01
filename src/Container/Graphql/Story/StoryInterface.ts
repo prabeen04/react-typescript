@@ -1,6 +1,8 @@
 
 export interface IStories {
-    stories: IStory[]
+    addStoryModal: Boolean;
+    stories: IStory[];
+    storyDetail: IStory;
 }
 
 export interface IStory {
