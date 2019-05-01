@@ -6,8 +6,12 @@ import './Story.css';
 export default function Story(): JSX.Element {
     return (
         <div className='story-wrapper'>
-            <StoryList />
-            <StoryDetail />
+            <div className="story-list">
+                <StoryList />
+            </div>
+            <div className="story-detail">
+                <StoryDetail />
+            </div>
         </div>
     )
 }
