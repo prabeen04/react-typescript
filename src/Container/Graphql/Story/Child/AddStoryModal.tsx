@@ -1,13 +1,7 @@
 import * as React from 'react';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { IAddStoryModal } from "../StoryInterface";
 
-export interface IAddStoryModal {
-    title?: string;
-    visible: boolean;
-    toggle: () => void;
-    children: JSX.Element;
-    noHeader?: boolean;
-}
 export default function AddStoryModal(props: IAddStoryModal) {
     const { children, toggle, visible, title, noHeader } = props
     return (
