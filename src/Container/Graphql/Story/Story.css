@@ -1,3 +1,14 @@
+.story-wrapper{
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between
+}
+.story-list{
+    flex-basis: 25%;
+}
+.story-detail{
+    flex-basis: 75%;
+}
 .story-title{
     color: #888;
     font-size: 1rem;
