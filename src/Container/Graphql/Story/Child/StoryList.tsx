@@ -1,10 +1,8 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
 import gql from 'graphql-tag';
-import { Button } from "reactstrap";
 import * as types from '../StoryActionTypes'
 import SingleStory from './SingleStory';
-import AddStoryModal from "./AddStoryModal";
 import { IStory } from "../StoryInterface";
 import useStory from '../useStory'
 
@@ -41,7 +39,6 @@ const StoryList = (): JSX.Element => {
                     );
                 }}
             </Query>
-            <AddStoryModal />
         </>
     )
 };

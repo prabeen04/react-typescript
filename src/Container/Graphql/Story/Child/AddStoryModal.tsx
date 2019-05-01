@@ -7,6 +7,7 @@ import useStory from '../useStory';
 
 export default function AddStoryModal() {
     const { state, dispatch } = useStory()
+    console.log('******',state)
     return (
         <Modal
             noHeader
