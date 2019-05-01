@@ -5,9 +5,9 @@ import AddStoryModal from "./Child/AddStoryModal";
 import useStory from './useStory'
 import './Story.css';
 
+export const StoryContext = React.createContext({});
 export default function Story(): JSX.Element {
     const { state, dispatch } = useStory()
-    const StoryContext = React.createContext({ state, dispatch });
     return (
         <StoryContext.Provider value={{ state, dispatch }}>
 
