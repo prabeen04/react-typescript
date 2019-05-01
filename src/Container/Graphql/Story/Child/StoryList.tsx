@@ -10,7 +10,7 @@ const StoryList = (): JSX.Element => {
 
     const { state, dispatch } = useStory()
     // const test = React.useContext(StoryContext)
-    console.log(test)
+    // console.log(test)
     return (
         <>
             <Query
