@@ -1,13 +1,11 @@
 import * as React from 'react'
 import * as types from '../StoryActionTypes'
-import { Button } from 'reactstrap';
 import Modal from '../../../../Utils/Modal'
 import TextInput from '../../../../Component/Form/TextInput'
-import useStory from '../useStory';
+import StoryContext from '../StoryContext';
 
 export default function AddStoryModal() {
-    const { state, dispatch } = useStory()
-    console.log('******',state)
+    const { state, dispatch } = React.useContext(StoryContext)
     return (
         <Modal
             noHeader

@@ -1,3 +1,4 @@
 import * as React from 'react';
-const StoryContext = React.createContext({})
+import { initialState } from "./useStory";
+const StoryContext = React.createContext(initialState)
 export default StoryContext

@@ -10,7 +10,6 @@ export default function Story(): JSX.Element {
     const { state, dispatch } = useStory()
     return (
         <StoryContext.Provider value={{state, dispatch}}>
-
         <div className='story-wrapper'>
             <div className="story-list">
                 <StoryList />
