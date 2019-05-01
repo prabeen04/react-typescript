@@ -1,6 +1,6 @@
 import * as React from 'react'
-import StoryList from "./StoryList";
-import StoryDetail from './StoryDetail';
+import StoryList from "./Child/StoryList";
+import StoryDetail from './Child/StoryDetail';
 import './Story.css';
 
 export default function Story(): JSX.Element {

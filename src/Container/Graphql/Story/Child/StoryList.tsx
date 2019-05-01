@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Query } from "react-apollo";
 import gql from 'graphql-tag';
 import SingleStory from './SingleStory';
-import { IStory } from "./StoryInterface";
+import { IStory } from "../StoryInterface";
 
 const StoryList = (): JSX.Element => (
     <>
