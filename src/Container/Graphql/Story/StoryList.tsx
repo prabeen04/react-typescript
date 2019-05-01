@@ -3,7 +3,8 @@ import { Query } from "react-apollo";
 import gql from 'graphql-tag';
 import SingleStory from './SingleStory';
 import { IStory } from "./StoryInterface";
-const StoryList = () => (
+
+const StoryList = (): JSX.Element => (
     <>
         <Query
             query={gql`
