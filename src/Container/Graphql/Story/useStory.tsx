@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as types from './StoryActionTypes';
 
 export default function useStory() {
     const initialState: any = {
@@ -10,6 +11,8 @@ export default function useStory() {
 
 function storyReducer(state: any, action: any) {
     switch (action.type) {
+        case types.TOGGLE_ADD_STORY_MODAL:
+            return { ...state, addStoryModal: action.payload }
         default:
             throw new Error('should have a condition');
     }
