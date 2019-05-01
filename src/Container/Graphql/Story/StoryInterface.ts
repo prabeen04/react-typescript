@@ -8,11 +8,3 @@ export interface IStories {
 export interface IStory {
     title: String
 }
-
-export interface IAddStoryModal {
-    title?: string;
-    visible: boolean;
-    toggle: () => void;
-    children: JSX.Element;
-    noHeader?: boolean;
-}

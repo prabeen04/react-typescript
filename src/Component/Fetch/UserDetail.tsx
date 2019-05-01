@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useSpring, animated } from 'react-spring';
 import { IUser, IAddress, IGeo, ICompany } from "../../Hooks/UserData";
-import UserAddressModal from "../../Utils/UserAddressModal";
+import Modal from "../../Utils/Modal";
 export interface IUserDetail {
     user: IUser;
 }
@@ -59,13 +59,13 @@ export default function UserDetail(props: IUserDetail) {
                     </div>
                 </animated.div>
             </div>
-            <UserAddressModal
+            <Modal
                 noHeader
                 visible={mapModal}
                 toggle={toggleModal}
             >
                 <p>{user.name}</p>
-            </UserAddressModal>
+            </Modal>
         </>
     )
 }

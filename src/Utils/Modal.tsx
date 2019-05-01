@@ -8,7 +8,7 @@ export interface IUserAddressModal {
     children: JSX.Element;
     noHeader?: boolean;
 }
-export default function UserAddressModal(props: IUserAddressModal) {
+export default function Modal_(props: IUserAddressModal) {
     const { children, toggle, visible, title, noHeader } = props
     return (
         <div>
