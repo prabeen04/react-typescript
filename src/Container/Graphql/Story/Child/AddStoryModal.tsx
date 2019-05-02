@@ -2,6 +2,7 @@ import * as React from 'react'
 import * as types from '../StoryActionTypes'
 import Modal from '../../../../Utils/Modal'
 import TextInput from '../../../../Component/Form/TextInput'
+import SelectInput from '../../../../Component/Form/SelectInput'
 import StoryContext from '../StoryContext';
 
 export default function AddStoryModal() {
@@ -19,7 +20,15 @@ export default function AddStoryModal() {
                     onChange={() => { }}
                     value={''}
                     placeholder="What's the story ?"
-                />
+                /><br/>
+                <SelectInput
+                    className='form-control'
+                    name='title'
+                    onChange={() => { }}
+                    value={3}
+                    placeholder="What's the story ?"
+                    options={[{ label: 'one', value: 1 }, { label: 'two', value: 2 }, { label: 'three', value: 3 },]}
+                /><br/>
                 <button
                     className='btn btn-primary'
                     onClick={() => { }}>Add</button>

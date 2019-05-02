@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 export interface ISelectInputInputProps {
-    value: string;
+    value: string | number;
     name: string;
     onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
     placeholder?: string;
