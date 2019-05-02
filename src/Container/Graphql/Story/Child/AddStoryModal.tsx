@@ -8,6 +8,7 @@ import StoryContext from '../StoryContext';
 export default function AddStoryModal() {
     const { state, dispatch } = React.useContext(StoryContext)
     const [storyTitle, setStoryTitle] = React.useState<string>('')
+    const [user, setUser] = React.useState<string>('')
 
     return (
         <Modal
@@ -26,8 +27,8 @@ export default function AddStoryModal() {
                 <SelectInput
                     className='form-control'
                     name='title'
-                    onChange={() => { }}
-                    value={3}
+                    onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
+                    value={user}
                     placeholder="What's the story ?"
                     options={[{ label: 'one', value: 1 }, { label: 'two', value: 2 }, { label: 'three', value: 3 },]}
                 /><br />
