@@ -14,6 +14,6 @@ function storyReducer(state: any, action: any) {
         case types.TOGGLE_ADD_STORY_MODAL:
             return { ...state, addStoryModal: action.payload }
         default:
-            throw new Error('should have a condition');
+            throw new Error('should match a case');
     }
 }

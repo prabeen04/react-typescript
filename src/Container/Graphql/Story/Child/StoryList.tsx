@@ -4,7 +4,7 @@ import gql from 'graphql-tag';
 import * as types from '../StoryActionTypes'
 import SingleStory from './SingleStory';
 import { IStory } from "../StoryInterface";
-import StoryContext  from "../StoryContext";
+import StoryContext from "../StoryContext";
 const StoryList = (): JSX.Element => {
 
     const test = React.useContext(StoryContext)
@@ -28,10 +28,12 @@ const StoryList = (): JSX.Element => {
                             <button
                                 className='btn btn-primary'
                                 onClick={() => test.dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: true })}>Add Story</button>
-                            <br />
-                            {
-                                data.stories.map((item: IStory, i: any) => <SingleStory key={i} title={item.title} />)
-                            }
+                            <hr />
+                            <>
+                                {
+                                    data.stories.map((item: IStory, i: any) => <SingleStory key={i} title={item.title} />)
+                                }
+                            </>
                         </div>
                     );
                 }}
