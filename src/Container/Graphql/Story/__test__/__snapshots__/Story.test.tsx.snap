@@ -3,9 +3,7 @@
 exports[`<Story/> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Story
-    title="test"
-  />,
+  Symbol(enzyme.__unrendered__): <Story />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
