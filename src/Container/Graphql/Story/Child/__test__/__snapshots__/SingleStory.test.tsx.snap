@@ -3,7 +3,7 @@
 exports[`<SingleStory/> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Story
+  Symbol(enzyme.__unrendered__): <SingleStory
     title="test"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -22,7 +22,7 @@ ShallowWrapper {
     "props": Object {
       "children": "test",
       "className": "story-title",
-      "data-test": "Story",
+      "data-test": "SingleStory",
     },
     "ref": null,
     "rendered": "test",
@@ -36,7 +36,7 @@ ShallowWrapper {
       "props": Object {
         "children": "test",
         "className": "story-title",
-        "data-test": "Story",
+        "data-test": "SingleStory",
       },
       "ref": null,
       "rendered": "test",

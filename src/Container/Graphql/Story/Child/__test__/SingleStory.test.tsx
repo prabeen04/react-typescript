@@ -16,4 +16,3 @@ describe('<SingleStory/>', () => {
         expect(wrapper.find('[data-test="SingleStory"]').length).toEqual(1)
     })
 })
-})
