@@ -10,5 +10,9 @@ describe('<StoryList/>', () => {
         const wrapper = shallow(<StoryList {...props} />)
         expect(wrapper).toMatchSnapshot()
     })
+    it('should render story', () => {
+        const wrapper = shallow(<StoryList {...props} />)
 
+        expect(wrapper.find('[data-test="StoryList"]').length).toEqual(1)
+    })
 })
