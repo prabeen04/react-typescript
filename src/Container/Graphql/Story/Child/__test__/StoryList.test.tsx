@@ -3,16 +3,8 @@ import { shallow } from "enzyme";
 import StoryList from '../StoryList';
 
 describe('<StoryList/>', () => {
-    const props = {
-        title: 'test'
-    }
     it('should match snapshot', () => {
-        const wrapper = shallow(<StoryList {...props} />)
+        const wrapper = shallow(<StoryList/>)
         expect(wrapper).toMatchSnapshot()
-    })
-    it('should render story', () => {
-        const wrapper = shallow(<StoryList {...props} />)
-
-        expect(wrapper.find('[data-test="StoryList"]').length).toEqual(1)
     })
 })
