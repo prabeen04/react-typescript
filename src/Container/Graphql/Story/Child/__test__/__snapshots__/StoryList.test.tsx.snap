@@ -16,7 +16,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
       "children": <Query
         query={
@@ -71,6 +71,7 @@ ShallowWrapper {
       >
         [Function]
       </Query>,
+      "data-test": "StoryList",
     },
     "ref": null,
     "rendered": Object {
@@ -131,13 +132,13 @@ ShallowWrapper {
       "rendered": [Function],
       "type": [Function],
     },
-    "type": Symbol(react.fragment),
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
         "children": <Query
           query={
@@ -192,6 +193,7 @@ ShallowWrapper {
         >
           [Function]
         </Query>,
+        "data-test": "StoryList",
       },
       "ref": null,
       "rendered": Object {
@@ -252,7 +254,7 @@ ShallowWrapper {
         "rendered": [Function],
         "type": [Function],
       },
-      "type": Symbol(react.fragment),
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

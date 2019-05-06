@@ -9,7 +9,7 @@ const StoryList = (): JSX.Element => {
 
     const test = React.useContext(StoryContext)
     return (
-        <>
+        <div data-test="StoryList">
             <Query
                 query={gql`
                 {
@@ -24,7 +24,7 @@ const StoryList = (): JSX.Element => {
                     if (loading) return <p>Loading...</p>;
                     if (error) return <p>Error :(</p>;
                     return (
-                        <div data-test="StoryList">
+                        <div>
                             <button
                                 className='btn btn-primary'
                                 onClick={() => test.dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: true })}>Add Story</button>
@@ -38,7 +38,7 @@ const StoryList = (): JSX.Element => {
                     );
                 }}
             </Query>
-        </>
+        </div>
     )
 };
 export default StoryList;
