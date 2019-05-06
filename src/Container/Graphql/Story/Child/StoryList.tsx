@@ -24,7 +24,7 @@ const StoryList = (): JSX.Element => {
                     if (loading) return <p>Loading...</p>;
                     if (error) return <p>Error :(</p>;
                     return (
-                        <div>
+                        <div data-test="StoryList">
                             <button
                                 className='btn btn-primary'
                                 onClick={() => test.dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: true })}>Add Story</button>
