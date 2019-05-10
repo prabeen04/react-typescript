@@ -14,6 +14,7 @@ const StoryList = (): JSX.Element => {
                 query={gql`
                 {
                     stories {
+                    id
                     title
                 }
                 }

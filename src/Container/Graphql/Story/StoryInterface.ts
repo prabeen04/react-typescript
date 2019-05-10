@@ -6,5 +6,6 @@ export interface IStories {
 }
 
 export interface IStory {
-    title: String
+    id: String;
+    title: String;
 }
