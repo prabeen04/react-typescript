@@ -31,7 +31,7 @@ const StoryList = (): JSX.Element => {
                             <hr />
                             <>
                                 {
-                                    data.stories.map((item: IStory, i: any) => <SingleStory key={i} title={item.title} />)
+                                    data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story} dispatch={() => { }} />)
                                 }
                             </>
                         </div>
