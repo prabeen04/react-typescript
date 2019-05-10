@@ -5,8 +5,8 @@ import * as types from '../StoryActionTypes'
 import SingleStory from './SingleStory';
 import { IStory } from "../StoryInterface";
 import StoryContext from "../StoryContext";
-const StoryList = (): JSX.Element => {
 
+const StoryList = (): JSX.Element => {
     const test = React.useContext(StoryContext)
     return (
         <div data-test="StoryList">
@@ -31,7 +31,7 @@ const StoryList = (): JSX.Element => {
                             <hr />
                             <>
                                 {
-                                    data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story} dispatch={() => { }} />)
+                                    data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story}/>)
                                 }
                             </>
                         </div>
