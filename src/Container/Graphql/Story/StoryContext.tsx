@@ -1,4 +1,4 @@
 import * as React from 'react';
 import { initialState } from "./useStory";
-const StoryContext = React.createContext({ state: initialState, dispatch: (a: any) => { } })
+const StoryContext = React.createContext(initialState)
 export default StoryContext
