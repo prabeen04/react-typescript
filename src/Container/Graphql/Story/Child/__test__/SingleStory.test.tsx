@@ -4,7 +4,10 @@ import SingleStory from '../SingleStory';
 
 describe('<SingleStory/>', () => {
     const props = {
-        title: 'test'
+        story: {
+            id: 'id1',
+            title: 'test'
+        }
     }
     it('should match snapshot', () => {
         const wrapper = shallow(<SingleStory {...props} />)
