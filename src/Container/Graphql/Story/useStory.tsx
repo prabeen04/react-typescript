@@ -3,14 +3,15 @@ import * as types from './StoryActionTypes';
 
 export const initialState: any = {
     addStoryModal: false,
-    selectedStory: null,
+    selectedStory: 'null',
 }
 export default function useStory() {
     const [state, dispatch] = React.useReducer(storyReducer, initialState)
+    console.log(state)
     return { state, dispatch }
 }
 
-function storyReducer(state: any = initialState, action: any) {
+function storyReducer(state: any, action: any) {
     switch (action.type) {
         case types.TOGGLE_ADD_STORY_MODAL:
             return { ...state, addStoryModal: action.payload }
