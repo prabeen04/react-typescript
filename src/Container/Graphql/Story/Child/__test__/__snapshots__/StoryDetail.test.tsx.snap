@@ -18,40 +18,22 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <p>
-        Story details
-      </p>,
+      "children": Array [
+        <p>
+          Story details
+        </p>,
+        <a
+          href="#"
+        >
+          null
+        </a>,
+      ],
       "className": "story-detail",
       "data-test": "StoryDetail",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "Story details",
-      },
-      "ref": null,
-      "rendered": "Story details",
-      "type": "p",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <p>
-          Story details
-        </p>,
-        "className": "story-detail",
-        "data-test": "StoryDetail",
-      },
-      "ref": null,
-      "rendered": Object {
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -62,6 +44,66 @@ ShallowWrapper {
         "rendered": "Story details",
         "type": "p",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "null",
+          "href": "#",
+        },
+        "ref": null,
+        "rendered": "null",
+        "type": "a",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            Story details
+          </p>,
+          <a
+            href="#"
+          >
+            null
+          </a>,
+        ],
+        "className": "story-detail",
+        "data-test": "StoryDetail",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Story details",
+          },
+          "ref": null,
+          "rendered": "Story details",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "null",
+            "href": "#",
+          },
+          "ref": null,
+          "rendered": "null",
+          "type": "a",
+        },
+      ],
       "type": "div",
     },
   ],
