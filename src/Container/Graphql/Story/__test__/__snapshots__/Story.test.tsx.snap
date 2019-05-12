@@ -132,18 +132,12 @@ ShallowWrapper {
         "_currentRenderer": null,
         "_currentRenderer2": null,
         "_currentValue": Object {
-          "dispatch": [Function],
-          "state": Object {
-            "addStoryModal": false,
-            "selectedStory": "null",
-          },
+          "addStoryModal": false,
+          "selectedStory": "null",
         },
         "_currentValue2": Object {
-          "dispatch": [Function],
-          "state": Object {
-            "addStoryModal": false,
-            "selectedStory": "null",
-          },
+          "addStoryModal": false,
+          "selectedStory": "null",
         },
         "_threadCount": 0,
       },
@@ -269,18 +263,12 @@ ShallowWrapper {
           "_currentRenderer": null,
           "_currentRenderer2": null,
           "_currentValue": Object {
-            "dispatch": [Function],
-            "state": Object {
-              "addStoryModal": false,
-              "selectedStory": "null",
-            },
+            "addStoryModal": false,
+            "selectedStory": "null",
           },
           "_currentValue2": Object {
-            "dispatch": [Function],
-            "state": Object {
-              "addStoryModal": false,
-              "selectedStory": "null",
-            },
+            "addStoryModal": false,
+            "selectedStory": "null",
           },
           "_threadCount": 0,
         },
