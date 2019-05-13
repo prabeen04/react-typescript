@@ -3,7 +3,7 @@ import * as types from './StoryActionTypes';
 
 export const initialState: any = {
     addStoryModal: false,
-    selectedStory: 'null',
+    selectedStory: null,
 }
 export default function useStory() {
     const [state, dispatch] = React.useReducer(storyReducer, initialState)

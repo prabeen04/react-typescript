@@ -18,22 +18,23 @@ export default function StoryDetail() {
   return (
     <div className='story-detail' data-test='StoryDetail'>
       <p>Story details</p>
-      <Query query={GET_STORY_DETAIL}
-        variables={{ storyId }}
-        skip={!storyId}
-      >
-        {({ loading, error, data }) => {
-          console.log(data)
-          if (loading) return <p>Loading...</p>;
-          if (error) return <p>Error :(</p>;
-          return (
-            <div>
-              <h3>{data.getStoryById.title} </h3>
-              <p>{data.getStoryById.article} </p>
-            </div>
-          );
-        }}
-      </Query>
+      {storyId &&
+        <Query query={GET_STORY_DETAIL}
+          variables={{ storyId }}
+          skip={!storyId}
+        >
+          {({ loading, error, data }) => {
+            console.log(data)
+            if (loading) return <p>Loading...</p>;
+            if (error) return <p>Error :(</p>;
+            return (
+              <div>
+                <h3>{data.getStoryById.title} </h3>
+                <p>{data.getStoryById.article} </p>
+              </div>
+            );
+          }}
+        </Query>}
     </div>
   )
 }
