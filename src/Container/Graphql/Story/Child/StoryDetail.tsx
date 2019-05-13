@@ -4,9 +4,10 @@ import gql from 'graphql-tag'
 import StoryContext from "../StoryContext";
 export default function StoryDetail() {
   const { state, dispatch } = React.useContext(StoryContext)
+  const storyId = state.selectedStory
   const GET_STORY_DETAIL = gql`
-  query GetStoryById($id: String!) {
-    getStoryById(id: $id) {
+  query Story($storyId: String) {
+    getStoryById(id: $storyId) {
                     id
                     title
                   }
@@ -18,7 +19,7 @@ export default function StoryDetail() {
       <p>Story details</p>
       <a href='#'>{state.selectedStory}</a>
       <Query query={GET_STORY_DETAIL}
-        variables={{ $id: state.selectedStory }}
+        variables={{ storyId }}
       >
         {({ loading, error, data }) => {
           console.log(data)
