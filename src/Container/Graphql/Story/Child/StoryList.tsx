@@ -8,7 +8,6 @@ import StoryContext from "../StoryContext";
 
 const StoryList = (): JSX.Element => {
     const { state, dispatch } = React.useContext(StoryContext)
-    console.log(state, dispatch)
     return (
         <div data-test="StoryList">
             <Query
@@ -22,7 +21,6 @@ const StoryList = (): JSX.Element => {
             `}
             >
                 {({ loading, error, data }) => {
-                    console.log(data)
                     if (loading) return <p>Loading...</p>;
                     if (error) return <p>Error :(</p>;
                     return (
