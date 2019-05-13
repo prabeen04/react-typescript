@@ -2,11 +2,12 @@ import * as React from 'react';
 import * as types from '../StoryActionTypes';
 import { IStory } from '../StoryInterface';
 import useStory from "../useStory";
+import StoryContext from '../StoryContext'
 interface ISingleStory {
     story: IStory;
 }
 export default function SingleStory(props: ISingleStory): JSX.Element {
-    const { dispatch } = useStory()
+    const { state, dispatch } = React.useContext(StoryContext)
     return (
         <h1
             data-test="SingleStory"

@@ -7,7 +7,8 @@ import { IStory } from "../StoryInterface";
 import StoryContext from "../StoryContext";
 
 const StoryList = (): JSX.Element => {
-    const test = React.useContext(StoryContext)
+    const { state, dispatch } = React.useContext(StoryContext)
+    console.log(state, dispatch)
     return (
         <div data-test="StoryList">
             <Query
@@ -28,11 +29,11 @@ const StoryList = (): JSX.Element => {
                         <div>
                             <button
                                 className='btn btn-primary'
-                                onClick={() => test.dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: true })}>Add Story</button>
+                                onClick={() => dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: true })}>Add Story</button>
                             <hr />
                             <>
                                 {
-                                    data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story}/>)
+                                    data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
                                 }
                             </>
                         </div>
