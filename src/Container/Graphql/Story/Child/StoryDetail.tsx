@@ -10,7 +10,7 @@ export default function StoryDetail() {
       <a href='#'>{state.selectedStory}</a>
       <Query query={gql`
                 {
-                  getStoryById(id: "5cbf2970bb668c41a88f693f") {
+                  getStoryById(id: $id) {
                     id
                     title
                     user {
@@ -18,7 +18,9 @@ export default function StoryDetail() {
                     }
                   }
                 }
-            `}>
+            `}
+        variables={{ $id: state.selectedStory }}
+      >
         {({ loading, error, data }) => {
           console.log(data)
           if (loading) return <p>Loading...</p>;
