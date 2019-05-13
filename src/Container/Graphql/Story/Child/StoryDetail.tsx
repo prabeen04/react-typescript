@@ -4,7 +4,7 @@ import gql from 'graphql-tag'
 import StoryContext from "../StoryContext";
 export default function StoryDetail() {
   const { state, dispatch } = React.useContext(StoryContext)
-  const storyId = state.selectedStory
+  const storyId = state && state.selectedStory
   const GET_STORY_DETAIL = gql`
   query Story($storyId: String!) {
     getStoryById(id: $storyId) {
