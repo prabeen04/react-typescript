@@ -11,6 +11,7 @@ export default function StoryDetail() {
       id
       title
       article
+      createdAt
     }
   }
 `;
@@ -31,6 +32,7 @@ export default function StoryDetail() {
               <div>
                 <h3>{data.getStoryById.title} </h3>
                 <p>{data.getStoryById.article} </p>
+                <p>{data.getStoryById.createdAt}</p>
               </div>
             );
           }}
