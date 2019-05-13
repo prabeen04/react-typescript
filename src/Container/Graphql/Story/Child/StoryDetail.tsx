@@ -8,16 +8,16 @@ export default function StoryDetail() {
   const GET_STORY_DETAIL = gql`
   query Story($storyId: String!) {
     getStoryById(id: $storyId) {
-                    id
-                    title
-                  }
+      id
+      title
+      article
+    }
   }
 `;
 
   return (
     <div className='story-detail' data-test='StoryDetail'>
       <p>Story details</p>
-      <a href='#'>{state.selectedStory}</a>
       <Query query={GET_STORY_DETAIL}
         variables={{ storyId }}
         skip={!storyId}
@@ -28,7 +28,8 @@ export default function StoryDetail() {
           if (error) return <p>Error :(</p>;
           return (
             <div>
-              <p>test </p>
+              <h3>{data.getStoryById.title} </h3>
+              <p>{data.getStoryById.article} </p>
             </div>
           );
         }}
