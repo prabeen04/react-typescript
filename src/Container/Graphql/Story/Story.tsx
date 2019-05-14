@@ -14,7 +14,7 @@ export default function Story(): JSX.Element {
             <div className="story-list">
                 <StoryList />
             </div>
-            <div className="story-detail">
+            <div className="story-detail-wrapper">
                 <StoryDetail />
             </div>
             <AddStoryModal/>

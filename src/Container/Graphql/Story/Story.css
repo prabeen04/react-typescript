@@ -6,8 +6,16 @@
 .story-list{
     flex-basis: 25%;
 }
-.story-detail{
+.story-detail-wrapper{
     flex-basis: 70%;
+    border: 1px solid #aaa;
+    padding: 1rem;
+}
+.story-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .story-title{
     color: #888;
