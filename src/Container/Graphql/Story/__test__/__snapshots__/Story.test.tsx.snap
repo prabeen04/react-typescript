@@ -28,7 +28,7 @@ ShallowWrapper {
           <StoryList />
         </div>
         <div
-          className="story-detail"
+          className="story-detail-wrapper"
         >
           <StoryDetail />
         </div>
@@ -55,7 +55,7 @@ ShallowWrapper {
             <StoryList />
           </div>,
           <div
-            className="story-detail"
+            className="story-detail-wrapper"
           >
             <StoryDetail />
           </div>,
@@ -92,7 +92,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <StoryDetail />,
-            "className": "story-detail",
+            "className": "story-detail-wrapper",
           },
           "ref": null,
           "rendered": Object {
@@ -159,7 +159,7 @@ ShallowWrapper {
             <StoryList />
           </div>
           <div
-            className="story-detail"
+            className="story-detail-wrapper"
           >
             <StoryDetail />
           </div>
@@ -186,7 +186,7 @@ ShallowWrapper {
               <StoryList />
             </div>,
             <div
-              className="story-detail"
+              className="story-detail-wrapper"
             >
               <StoryDetail />
             </div>,
@@ -223,7 +223,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <StoryDetail />,
-              "className": "story-detail",
+              "className": "story-detail-wrapper",
             },
             "ref": null,
             "rendered": Object {
