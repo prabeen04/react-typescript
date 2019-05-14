@@ -23,6 +23,9 @@ const StoryList = (): JSX.Element => {
                 {({ loading, error, data }) => {
                     if (loading) return <p>Loading...</p>;
                     if (error) return <p>Error :(</p>;
+                    if(!state.selectedStory){
+                        dispatch({ type: types.SET_SELECTED_STORY, payload: data.stories[0].id })
+                    }
                     return (
                         <div>
                             <button
