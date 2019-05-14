@@ -18,7 +18,6 @@ export default function StoryDetail() {
 
   return (
     <div className='story-detail' data-test='StoryDetail'>
-      <p>Story details</p>
       {storyId &&
         <Query query={GET_STORY_DETAIL}
           variables={{ storyId }}
@@ -29,11 +28,13 @@ export default function StoryDetail() {
             if (loading) return <p>Loading...</p>;
             if (error) return <p>Error :(</p>;
             return (
-              <div>
-                <h3>{data.getStoryById.title} </h3>
+              <>
+                <div className='story-detail-header'>
+                  <h3>{data.getStoryById.title} </h3>
+                </div>
                 <p>{data.getStoryById.article} </p>
                 <p>{data.getStoryById.createdAt}</p>
-              </div>
+              </>
             );
           }}
         </Query>}
