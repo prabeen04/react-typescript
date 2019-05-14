@@ -35,11 +35,10 @@ export default function StoryDetail() {
                 <div className='story-detail-header'>
                   <div>
                   <h3>{data.getStoryById.title} </h3>
-                  <p>{data.getStoryById.user.userName} </p>
+                  <p className='author'>{data.getStoryById.user.userName} - {data.getStoryById.createdAt}</p>
                   </div>
                 </div>
-                <p>{data.getStoryById.article} </p>
-                <p>{data.getStoryById.createdAt}</p>
+                <p className='article'>{data.getStoryById.article} </p>
               </>
             );
           }}

@@ -33,3 +33,13 @@
     display: flex;
     justify-content: center;
 }
+.story-detail-header>h3{
+    color: #aaa;
+}
+.author{
+    color: #444;
+}
+.article{
+    color: #999;
+    font-size: rem;
+}
