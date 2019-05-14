@@ -11,7 +11,10 @@ export default function StoryDetail() {
       id
       title
       article
-      createdAt
+      createdAt 
+      user {
+          userName
+        }
     }
   }
 `;
@@ -30,7 +33,10 @@ export default function StoryDetail() {
             return (
               <>
                 <div className='story-detail-header'>
+                  <div>
                   <h3>{data.getStoryById.title} </h3>
+                  <p>{data.getStoryById.user.userName} </p>
+                  </div>
                 </div>
                 <p>{data.getStoryById.article} </p>
                 <p>{data.getStoryById.createdAt}</p>
