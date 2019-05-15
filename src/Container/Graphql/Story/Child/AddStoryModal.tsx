@@ -20,11 +20,8 @@ export default function AddStoryModal() {
     const [storyTitle, setStoryTitle] = React.useState<string>('')
     const [user, setUser] = React.useState<string>('')
     function handleSubmit(e: React.FormEvent, addStory: any) {
-        console.log(addStory)
         e.preventDefault()
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
-        addStory({ variables: { title: storyTitle, article: 'article 2', createdAt: "12-01-2019", authorId: "5ca8cae848efb73984d347a6" } })
-
     }
     return (
         <Modal
