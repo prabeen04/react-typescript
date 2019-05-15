@@ -30,6 +30,15 @@ export default function AddStoryModal() {
             toggle={() => dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })}
         >
             <>
+                <Mutation mutation={ADD_STORY}>
+                    {
+                        (addStory, { data }) => {
+                            console.log(addStory)
+                            console.log(data)
+                            return <p>sdlkhsjh</p>
+                        }
+                    }
+                </Mutation>
                 <form onSubmit={handleSubmit}>
                     <TextInput
                         className='form-control'
