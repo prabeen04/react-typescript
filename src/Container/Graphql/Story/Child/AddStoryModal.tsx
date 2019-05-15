@@ -19,9 +19,12 @@ export default function AddStoryModal() {
     const { state, dispatch } = React.useContext(StoryContext)
     const [storyTitle, setStoryTitle] = React.useState<string>('')
     const [user, setUser] = React.useState<string>('')
-    function handleSubmit(e: React.FormEvent) {
+    function handleSubmit(e: React.FormEvent, addStory: any) {
+        console.log(addStory)
         e.preventDefault()
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
+        addStory({ variables: { title: storyTitle, article: 'article 2', createdAt: 74747474747454 } })
+
     }
     return (
         <Modal
@@ -34,7 +37,7 @@ export default function AddStoryModal() {
                     {
                         (addStory, { loading, data, error }) => {
                             return (
-                                <form onSubmit={handleSubmit}>
+                                <form onSubmit={(e) => handleSubmit(e, addStory)}>
                                     <TextInput
                                         className='form-control'
                                         name='title'
