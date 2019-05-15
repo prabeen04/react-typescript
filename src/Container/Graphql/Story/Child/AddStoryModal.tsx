@@ -1,9 +1,19 @@
 import * as React from 'react'
+import gql from "graphql-tag";
+import { Mutation } from "react-apollo";
 import * as types from '../StoryActionTypes'
 import Modal from '../../../../Utils/Modal'
 import TextInput from '../../../../Component/Form/TextInput'
 import SelectInput from '../../../../Component/Form/SelectInput'
 import StoryContext from '../StoryContext';
+
+const ADD_STORY = gql`
+  mutation AddStory($title: String!, $article: String!, $createdAt: String, $authorId: String) {
+    addStory( title: $title, article: $article, createdAt: $createdAt, authorId: $authorId ){
+    title
+  }
+  }
+`;
 
 export default function AddStoryModal() {
     const { state, dispatch } = React.useContext(StoryContext)
@@ -11,7 +21,7 @@ export default function AddStoryModal() {
     const [user, setUser] = React.useState<string>('')
     function handleSubmit(e: React.FormEvent) {
         e.preventDefault()
-        dispatch({type: types.TOGGLE_ADD_STORY_MODAL, payload: false})
+        dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
     }
     return (
         <Modal
