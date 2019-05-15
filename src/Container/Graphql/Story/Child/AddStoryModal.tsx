@@ -8,7 +8,7 @@ import SelectInput from '../../../../Component/Form/SelectInput'
 import StoryContext from '../StoryContext';
 
 const ADD_STORY = gql`
-  mutation AddStory($title: String!, $article: String!, $createdAt: String, $authorId: String) {
+  mutation AddStory($title: String!, $article: String!, $createdAt: Int, $authorId: String) {
     addStory( title: $title, article: $article, createdAt: $createdAt, authorId: $authorId ){
     title
   }
@@ -23,7 +23,7 @@ export default function AddStoryModal() {
         console.log(addStory)
         e.preventDefault()
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
-        addStory({ variables: { title: storyTitle, article: 'article 2', createdAt: 74747474747454 } })
+        addStory({ variables: { title: storyTitle, article: 'article 2', createdAt: "12-01-2019", authorId: "5ca8cae848efb73984d347a6" } })
 
     }
     return (
