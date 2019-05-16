@@ -24,7 +24,7 @@ export default function AddStoryModal() {
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
         addStory({
             variables: {
-                title: "sdl  d gsd g msd g nsdg s d",
+                title: storyTitle,
                 article: "asdasd body of, as fs dfmnsd nfmgsd gsmdgm medium story kas,f ma sf ams fmasf",
                 createdAt: "12-01-2019",
                 authorId: "5ca8cae848efb73984d347a6",
