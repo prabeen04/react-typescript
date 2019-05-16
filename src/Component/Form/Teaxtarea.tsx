@@ -6,10 +6,11 @@ export interface ITextareaProps {
     onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
     placeholder?: string;
     className?: string;
-    style?: object
+    style?: object;
+    rows?: number;
 }
 export default function Textarea(props: ITextareaProps) {
-    const { name, value, placeholder, onChange, ...rest } = props;
+    const { name, value, placeholder, onChange, rows,  ...rest } = props;
     return (
         <>
             <textarea
@@ -19,6 +20,7 @@ export default function Textarea(props: ITextareaProps) {
                 placeholder={placeholder}
                 onChange={onChange}
                 {...rest}
+                rows={rows || 5}
             />
         </>
     )

@@ -28,7 +28,7 @@ export default function AddStoryModal() {
         addStory({
             variables: {
                 title: storyTitle,
-                article: "asdasd body of, as fs dfmnsd nfmgsd gsmdgm medium story kas,f ma sf ams fmasf",
+                article,
                 createdAt: "12-01-2019",
                 authorId: "5ca8cae848efb73984d347a6",
             }
