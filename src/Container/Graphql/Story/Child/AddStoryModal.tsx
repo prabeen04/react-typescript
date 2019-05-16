@@ -12,28 +12,27 @@ import useUsers from '../../../Users/useUsers'
 const ADD_STORY = gql`
   mutation AddStory($title: String!, $article: String!, $createdAt: String!, $authorId: String!) {
     addStory( title: $title, article: $article, createdAt: $createdAt, authorId: $authorId ){
-    title
-  }
+        title
+    }
   }
 `;
 
 export default function AddStoryModal() {
     const { state, dispatch } = React.useContext(StoryContext)
-    const [storyTitle, setStoryTitle] = React.useState<string>('')
+    const [title, setTitle] = React.useState<string>('')
     const [article, setArticle] = React.useState<string>('')
     const [user, setUser] = React.useState<string>('')
     const { data, loading, error } = useUsers()
     const { users } = data
-    console.log('*************************', users)
     function handleSubmit(e: React.FormEvent, addStory: any) {
         e.preventDefault()
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
         addStory({
             variables: {
-                title: storyTitle,
+                title,
                 article,
                 createdAt: "12-01-2019",
-                authorId: "5ca8cae848efb73984d347a6",
+                authorId: user,
             }
         })
     }
@@ -51,24 +50,21 @@ export default function AddStoryModal() {
                 <Mutation mutation={ADD_STORY}>
                     {
                         (addStory, { loading, data, error }) => {
-                            console.log(loading)
-                            console.log(data)
-                            console.log(error)
                             return (
                                 <form onSubmit={(e) => handleSubmit(e, addStory)}>
                                     <TextInput
                                         className='form-control'
                                         name='title'
-                                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setStoryTitle(e.target.value)}
-                                        value={storyTitle}
+                                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
+                                        value={title}
                                         placeholder="What's the story ?"
                                     /><br />
                                     <SelectInput
                                         className='form-control'
-                                        name='title'
+                                        name='user'
                                         onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
                                         value={user}
-                                        placeholder="What's the story ?"
+                                        placeholder="Author"
                                         options={renderUsers() && renderUsers()}
                                     /><br />
                                     <Textarea
