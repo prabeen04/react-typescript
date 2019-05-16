@@ -22,6 +22,14 @@ export default function AddStoryModal() {
     function handleSubmit(e: React.FormEvent, addStory: any) {
         e.preventDefault()
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
+        addStory({
+            variables: {
+                title: "sdl  d gsd g msd g nsdg s d",
+                article: "asdasd body of, as fs dfmnsd nfmgsd gsmdgm medium story kas,f ma sf ams fmasf",
+                createdAt: "12-01-2019",
+                userId: "5ca8cae848efb73984d347a6",
+            }
+        })
     }
     return (
         <Modal
@@ -33,6 +41,9 @@ export default function AddStoryModal() {
                 <Mutation mutation={ADD_STORY}>
                     {
                         (addStory, { loading, data, error }) => {
+                            console.log(loading)
+                            console.log(data)
+                            console.log(error)
                             return (
                                 <form onSubmit={(e) => handleSubmit(e, addStory)}>
                                     <TextInput
