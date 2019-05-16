@@ -12,7 +12,7 @@ const GET_USERS = gql`
 }
 
 `
-function useUsers(props: any) {
+export default function useUsers() {
     const { data, loading, error } = useQuery(GET_USERS)
     return { data, loading, error }
 }

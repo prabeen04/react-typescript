@@ -6,11 +6,12 @@ export interface ISelectInputInputProps {
     onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
     placeholder?: string;
     className?: string;
-    options: any[];
+    options: any;
     style?: object
 }
 export default function SelectInputInput(props: ISelectInputInputProps) {
     const { name, value, placeholder, onChange, options, ...rest } = props;
+    console.log(options)
     return (
         <>
             <select
@@ -21,7 +22,7 @@ export default function SelectInputInput(props: ISelectInputInputProps) {
                 onChange={onChange}
                 {...rest}
             >
-            {options.map((option: any, i: number) => <option key={i} value={option.value}>{option.label}</option>)}
+            {options && options.map((option: any, i: number) => <option key={i} value={option.value}>{option.label}</option>)}
             </select>
         </>
     )
