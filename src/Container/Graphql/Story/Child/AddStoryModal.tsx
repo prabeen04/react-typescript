@@ -6,6 +6,7 @@ import Modal from '../../../../Utils/Modal'
 import TextInput from '../../../../Component/Form/TextInput'
 import SelectInput from '../../../../Component/Form/SelectInput'
 import StoryContext from '../StoryContext';
+import Textarea from '../../../../Component/Form/Teaxtarea';
 
 const ADD_STORY = gql`
   mutation AddStory($title: String!, $article: String!, $createdAt: String!, $authorId: String!) {
@@ -18,7 +19,9 @@ const ADD_STORY = gql`
 export default function AddStoryModal() {
     const { state, dispatch } = React.useContext(StoryContext)
     const [storyTitle, setStoryTitle] = React.useState<string>('')
+    const [article, setArticle] = React.useState<string>('')
     const [user, setUser] = React.useState<string>('')
+
     function handleSubmit(e: React.FormEvent, addStory: any) {
         e.preventDefault()
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
@@ -61,6 +64,14 @@ export default function AddStoryModal() {
                                         placeholder="What's the story ?"
                                         options={[{ label: 'one', value: 1 }, { label: 'two', value: 2 }, { label: 'three', value: 3 },]}
                                     /><br />
+                                    <Textarea
+                                        className='form-control'
+                                        name='article'
+                                        onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setArticle(e.target.value)}
+                                        value={article}
+                                        placeholder="Describe the hell and heaven :)"
+                                    />
+                                    <br/>
                                     <button className='btn btn-primary'>Add</button>
                                 </form>
                             )
