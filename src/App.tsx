@@ -12,6 +12,7 @@ import Movie from './Container/Movie/Movie';
 import Story from './Container/Story/Story';
 
 import './App.css';
+import StoryDetail from './Container/Story/Child/StoryDetail/StoryDetail';
 const client = new ApolloClient({
   uri: "http://localhost:4000/graphql"
 });
@@ -36,6 +37,7 @@ class App extends React.Component<IAppProps, IAppState> {
                 <Route exact path='/fetch' component={Fetch} />
                 <Route exact path='/Movie' component={Movie} />
                 <Route exact path='/story' component={Story} />
+                <Route exact path='/story/:id' component={StoryDetail} />
               </Switch>
             </div>
           </Style.Provider>

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
 import gql from 'graphql-tag'
-import StoryContext from "../StoryContext";
+import StoryContext from "../../StoryContext";
 export default function StoryDetail() {
   const { state, dispatch } = React.useContext(StoryContext)
   const storyId = state && state.selectedStory
