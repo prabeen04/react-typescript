@@ -1,10 +1,14 @@
-import * as React from 'react'
+import * as React from 'react';
+import { withRouter } from 'react-router-dom';
+import { RouteComponentProps } from "react-router";
 import { Query } from "react-apollo";
 import gql from 'graphql-tag'
-import StoryContext from "../../StoryContext";
-export default function StoryDetail() {
-  const { state, dispatch } = React.useContext(StoryContext)
-  const storyId = state && state.selectedStory
+
+interface IStoryDetailProps extends RouteComponentProps<any> {}
+
+function StoryDetail(props: IStoryDetailProps) {
+  const storyId = props.match.params.id; //get storyId from url
+  // get story detail graphql query
   const GET_STORY_DETAIL = gql`
   query Story($storyId: String!) {
     getStoryById(id: $storyId) {
@@ -34,8 +38,8 @@ export default function StoryDetail() {
               <>
                 <div className='story-detail-header'>
                   <div>
-                  <h3>{data.getStoryById.title} </h3>
-                  <p className='author'>{data.getStoryById.user.userName} - {data.getStoryById.createdAt}</p>
+                    <h3>{data.getStoryById.title} </h3>
+                    <p className='author'>{data.getStoryById.user.userName} - {data.getStoryById.createdAt}</p>
                   </div>
                 </div>
                 <p className='article'>{data.getStoryById.article} </p>
@@ -46,3 +50,5 @@ export default function StoryDetail() {
     </div>
   )
 }
+
+export default withRouter(StoryDetail)
