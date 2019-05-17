@@ -4,7 +4,7 @@ import { RouteComponentProps } from "react-router";
 import { Query } from "react-apollo";
 import gql from 'graphql-tag'
 
-interface IStoryDetailProps extends RouteComponentProps<any> {}
+interface IStoryDetailProps extends RouteComponentProps<any> { }
 
 function StoryDetail(props: IStoryDetailProps) {
   const storyId = props.match.params.id; //get storyId from url
@@ -25,6 +25,7 @@ function StoryDetail(props: IStoryDetailProps) {
 
   return (
     <div className='story-detail' data-test='StoryDetail'>
+      <div className="btn btn-primary" onClick={() => props.history.goBack()}>Go back</div>
       {storyId &&
         <Query query={GET_STORY_DETAIL}
           variables={{ storyId }}

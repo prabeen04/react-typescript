@@ -11,7 +11,6 @@ interface ISingleStory extends RouteComponentProps<any> {
 }
 const SingleStory = (props: ISingleStory): JSX.Element => {
     const { state, dispatch } = React.useContext(StoryContext)
-    console.log(props)
     function handleStoryDetailpush() {
         dispatch({ type: types.SET_SELECTED_STORY, payload: props.story.id })
         props.history.push({
