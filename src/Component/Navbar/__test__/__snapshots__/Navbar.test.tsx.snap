@@ -110,9 +110,9 @@ ShallowWrapper {
               <NavLink
                 activeClassName="active-menu"
                 className="nav-link nav-menu"
-                to="/graphql"
+                to="/story"
               >
-                Graphql
+                Stories
               </NavLink>
             </NavItem>
           </Nav>
@@ -212,9 +212,9 @@ ShallowWrapper {
                 <NavLink
                   activeClassName="active-menu"
                   className="nav-link nav-menu"
-                  to="/graphql"
+                  to="/story"
                 >
-                  Graphql
+                  Stories
                 </NavLink>
               </NavItem>
             </Nav>
@@ -316,9 +316,9 @@ ShallowWrapper {
                 <NavLink
                   activeClassName="active-menu"
                   className="nav-link nav-menu"
-                  to="/graphql"
+                  to="/story"
                 >
-                  Graphql
+                  Stories
                 </NavLink>
               </NavItem>
             </Nav>,
@@ -395,9 +395,9 @@ ShallowWrapper {
                   <NavLink
                     activeClassName="active-menu"
                     className="nav-link nav-menu"
-                    to="/graphql"
+                    to="/story"
                   >
-                    Graphql
+                    Stories
                   </NavLink>
                 </NavItem>,
               ],
@@ -540,9 +540,9 @@ ShallowWrapper {
                   "children": <NavLink
                     activeClassName="active-menu"
                     className="nav-link nav-menu"
-                    to="/graphql"
+                    to="/story"
                   >
-                    Graphql
+                    Stories
                   </NavLink>,
                   "tag": "li",
                 },
@@ -553,12 +553,12 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "activeClassName": "active-menu",
-                    "children": "Graphql",
+                    "children": "Stories",
                     "className": "nav-link nav-menu",
-                    "to": "/graphql",
+                    "to": "/story",
                   },
                   "ref": null,
-                  "rendered": "Graphql",
+                  "rendered": "Stories",
                   "type": [Function],
                 },
                 "type": [Function],
@@ -671,9 +671,9 @@ ShallowWrapper {
                 <NavLink
                   activeClassName="active-menu"
                   className="nav-link nav-menu"
-                  to="/graphql"
+                  to="/story"
                 >
-                  Graphql
+                  Stories
                 </NavLink>
               </NavItem>
             </Nav>
@@ -773,9 +773,9 @@ ShallowWrapper {
                   <NavLink
                     activeClassName="active-menu"
                     className="nav-link nav-menu"
-                    to="/graphql"
+                    to="/story"
                   >
-                    Graphql
+                    Stories
                   </NavLink>
                 </NavItem>
               </Nav>
@@ -877,9 +877,9 @@ ShallowWrapper {
                   <NavLink
                     activeClassName="active-menu"
                     className="nav-link nav-menu"
-                    to="/graphql"
+                    to="/story"
                   >
-                    Graphql
+                    Stories
                   </NavLink>
                 </NavItem>
               </Nav>,
@@ -956,9 +956,9 @@ ShallowWrapper {
                     <NavLink
                       activeClassName="active-menu"
                       className="nav-link nav-menu"
-                      to="/graphql"
+                      to="/story"
                     >
-                      Graphql
+                      Stories
                     </NavLink>
                   </NavItem>,
                 ],
@@ -1101,9 +1101,9 @@ ShallowWrapper {
                     "children": <NavLink
                       activeClassName="active-menu"
                       className="nav-link nav-menu"
-                      to="/graphql"
+                      to="/story"
                     >
-                      Graphql
+                      Stories
                     </NavLink>,
                     "tag": "li",
                   },
@@ -1114,12 +1114,12 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "activeClassName": "active-menu",
-                      "children": "Graphql",
+                      "children": "Stories",
                       "className": "nav-link nav-menu",
-                      "to": "/graphql",
+                      "to": "/story",
                     },
                     "ref": null,
-                    "rendered": "Graphql",
+                    "rendered": "Stories",
                     "type": [Function],
                   },
                   "type": [Function],
