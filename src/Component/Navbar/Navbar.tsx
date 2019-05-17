@@ -28,7 +28,7 @@ export default function MyNavbar() {
                             <NavLink activeClassName='active-menu' to="/movie" className='nav-link nav-menu'>Movies</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink activeClassName='active-menu' to="/graphql" className='nav-link nav-menu'>Graphql</NavLink>
+                            <NavLink activeClassName='active-menu' to="/story" className='nav-link nav-menu'>Stories</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

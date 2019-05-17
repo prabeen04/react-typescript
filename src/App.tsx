@@ -9,7 +9,7 @@ import Todo from './Component/Todo/Todo';
 import Counter from './Component/Counter/Counter'
 import Fetch from './Component/Fetch/Fetch';
 import Movie from './Container/Movie/Movie';
-import Graphql from './Container/Graphql/Graphql';
+import Story from './Container/Story/Story';
 
 import './App.css';
 const client = new ApolloClient({
@@ -35,7 +35,7 @@ class App extends React.Component<IAppProps, IAppState> {
                 <Route exact path='/counter' component={Counter} />
                 <Route exact path='/fetch' component={Fetch} />
                 <Route exact path='/Movie' component={Movie} />
-                <Route exact path='/graphql' component={Graphql} />
+                <Route exact path='/story' component={Story} />
               </Switch>
             </div>
           </Style.Provider>

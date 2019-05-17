@@ -2,12 +2,12 @@ import * as React from 'react'
 import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
 import * as types from '../StoryActionTypes'
-import Modal from '../../../../Utils/Modal'
-import TextInput from '../../../../Component/Form/TextInput'
-import SelectInput from '../../../../Component/Form/SelectInput'
+import Modal from '../../../Utils/Modal'
+import TextInput from '../../../Component/Form/TextInput'
+import SelectInput from '../../../Component/Form/SelectInput'
 import StoryContext from '../StoryContext';
-import Textarea from '../../../../Component/Form/Teaxtarea';
-import useUsers from '../../../Users/useUsers'
+import Textarea from '../../../Component/Form/Teaxtarea';
+import useUsers from '../../Users/useUsers'
 
 const ADD_STORY = gql`
   mutation AddStory($title: String!, $article: String!, $createdAt: String!, $authorId: String!) {
