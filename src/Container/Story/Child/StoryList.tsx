@@ -5,6 +5,7 @@ import * as types from '../StoryActionTypes'
 import SingleStory from './SingleStory';
 import { IStory } from "../StoryInterface";
 import StoryContext from "../StoryContext";
+import Empty from "../../../Component/Common/Empty";
 
 const StoryList = (): JSX.Element => {
     const { state, dispatch } = React.useContext(StoryContext)
@@ -38,7 +39,7 @@ const StoryList = (): JSX.Element => {
 
                                 {
                                     !data.stories.length
-                                        ? <h2>No Stories yet, Add your story</h2>
+                                        ? <Empty description='No Stories yet, Add your story' />
                                         : data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
                                 }
                             </>
