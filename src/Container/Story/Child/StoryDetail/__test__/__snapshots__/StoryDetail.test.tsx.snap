@@ -1,16 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SingleStory/> should match snapshot 1`] = `
+exports[`<StoryDetail/> should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withRouter(SingleStory)
-    story={
-      Object {
-        "id": "id1",
-        "title": "test",
-      }
-    }
-  />,
+  Symbol(enzyme.__unrendered__): <withRouter(StoryDetail) />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
