@@ -35,8 +35,11 @@ const StoryList = (): JSX.Element => {
                                 onClick={() => dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: true })}>Add Story</button>
                             <hr />
                             <>
+
                                 {
-                                    data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
+                                    !data.stories.length
+                                        ? <h2>No Stories yet, Add your story</h2>
+                                        : data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
                                 }
                             </>
                         </div>
