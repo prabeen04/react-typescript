@@ -1,6 +1,6 @@
 export interface IEmpty {
-    description: String;
+    description: string;
     children?: JSX.Element;
-    image?: HTMLImageElement | String;
+    image?: HTMLImageElement | string;
     rest?: any[]
 }

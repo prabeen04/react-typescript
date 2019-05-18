@@ -6,8 +6,8 @@ import * as types from '../StoryActionTypes'
 import Modal from '../../../Utils/Modal'
 import TextInput from '../../../Component/Form/TextInput'
 import SelectInput from '../../../Component/Form/SelectInput'
+import Editor from '../../../Component/Form/Editor'
 import StoryContext from '../StoryContext';
-import Textarea from '../../../Component/Form/Teaxtarea';
 import useUsers from '../../Users/useUsers'
 
 const ADD_STORY = gql`
@@ -68,13 +68,7 @@ export default function AddStoryModal() {
                                         placeholder="Author"
                                         options={renderUsers() && renderUsers()}
                                     /><br />
-                                    <Textarea
-                                        className='form-control'
-                                        name='article'
-                                        onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setArticle(e.target.value)}
-                                        value={article}
-                                        placeholder="Describe the hell and heaven :)"
-                                    />
+                                    <Editor/>
                                     <br />
                                     <button className='btn btn-primary'>Add</button>
                                 </form>
