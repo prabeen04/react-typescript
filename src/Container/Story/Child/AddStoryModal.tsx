@@ -1,6 +1,7 @@
 import * as React from 'react'
 import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
+import moment from 'moment';
 import * as types from '../StoryActionTypes'
 import Modal from '../../../Utils/Modal'
 import TextInput from '../../../Component/Form/TextInput'
@@ -31,7 +32,7 @@ export default function AddStoryModal() {
             variables: {
                 title,
                 article,
-                createdAt: "12-01-2019",
+                createdAt: moment().toISOString(),
                 authorId: user,
             }
         })

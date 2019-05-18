@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { RouteComponentProps } from "react-router";
 import { Query } from "react-apollo";
 import gql from 'graphql-tag'
-
+import moment from 'moment';
 interface IStoryDetailProps extends RouteComponentProps<any> { }
 
 function StoryDetail(props: IStoryDetailProps) {
@@ -40,7 +40,7 @@ function StoryDetail(props: IStoryDetailProps) {
                 <div className='story-detail-header'>
                   <div>
                     <h3>{data.getStoryById.title} </h3>
-                    <p className='author'>{data.getStoryById.user.userName} - {data.getStoryById.createdAt}</p>
+                    <p className='author'>{data.getStoryById.user.userName} - { moment(data.getStoryById.createdAt).fromNow()}</p>
                   </div>
                 </div>
                 <p className='article'>{data.getStoryById.article} </p>
