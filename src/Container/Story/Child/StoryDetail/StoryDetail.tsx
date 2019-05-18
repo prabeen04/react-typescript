@@ -4,6 +4,8 @@ import { RouteComponentProps } from "react-router";
 import { Query } from "react-apollo";
 import gql from 'graphql-tag'
 import moment from 'moment';
+import StoryDetailHeader from './StoryDetailHeader';
+
 interface IStoryDetailProps extends RouteComponentProps<any> { }
 
 function StoryDetail(props: IStoryDetailProps) {
@@ -24,31 +26,84 @@ function StoryDetail(props: IStoryDetailProps) {
 `;
 
   return (
-    <div className='story-detail' data-test='StoryDetail'>
-      <div className="btn btn-primary" onClick={() => props.history.goBack()}>Go back</div>
-      {storyId &&
-        <Query query={GET_STORY_DETAIL}
-          variables={{ storyId }}
-          skip={!storyId}
-        >
-          {({ loading, error, data }: any) => {
-            console.log(data)
-            if (loading) return <p>Loading...</p>;
-            if (error) return <p>Error :(</p>;
-            return (
-              <>
-                <div className='story-detail-header'>
-                  <div>
-                    <h3>{data.getStoryById.title} </h3>
-                    <p className='author'>{data.getStoryById.user.userName} - { moment(data.getStoryById.createdAt).fromNow()}</p>
+    <>
+      <StoryDetailHeader />
+      <div className='story-detail' data-test='StoryDetail'>
+        {storyId &&
+          <Query query={GET_STORY_DETAIL}
+            variables={{ storyId }}
+            skip={!storyId}
+          >
+            {({ loading, error, data }: any) => {
+              console.log(data)
+              if (loading) return <p>Loading...</p>;
+              if (error) return <p>Error :(</p>;
+              return (
+                <>
+                  <div className='story-detail-heading'>
+                    <div>
+                      <h3>{data.getStoryById.title} </h3>
+                      <p className='author'>{data.getStoryById.user.userName} - {moment(data.getStoryById.createdAt).fromNow()}</p>
+                    </div>
                   </div>
-                </div>
-                <p className='article'>{data.getStoryById.article} </p>
-              </>
-            );
-          }}
-        </Query>}
-    </div>
+                  <p className='article'>{data.getStoryById.article} </p>
+                </>
+              );
+            }}
+          </Query>}
+      </div>
+    </>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   )
 }
 

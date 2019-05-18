@@ -11,8 +11,8 @@ export default function StoryHeader() {
                 <button
                     className='btn btn-primary red'
                     onClick={() => dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: true })}>
-                    <i className="fas fa-paper-plane"></i>&nbsp;&nbsp;
-                    Add Story</button>
+                    &nbsp;<i className="fas fa-plus"></i>&nbsp;
+                    </button>
             </div>
         </div>
     )
