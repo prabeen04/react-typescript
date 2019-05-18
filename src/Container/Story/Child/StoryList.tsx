@@ -30,20 +30,13 @@ const StoryList = (): JSX.Element => {
                         }
                     }
                     return (
-                        <div>
-                            <button
-                                className='btn btn-primary'
-                                onClick={() => dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: true })}>Add Story</button>
-                            <hr />
-                            <>
-
-                                {
-                                    !data.stories.length
-                                        ? <Empty description='No Stories yet, Add your story' />
-                                        : data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
-                                }
-                            </>
-                        </div>
+                        <>
+                            {
+                                !data.stories.length
+                                    ? <Empty description='No Stories yet, Add your story' />
+                                    : data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
+                            }
+                        </>
                     );
                 }}
             </Query>

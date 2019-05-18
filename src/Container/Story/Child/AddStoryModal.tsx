@@ -21,7 +21,7 @@ const ADD_STORY = gql`
 export default function AddStoryModal() {
     const { state, dispatch } = React.useContext(StoryContext)
     const [title, setTitle] = React.useState<string>('')
-    const [article, setArticle] = React.useState<string>('')
+    const [article, setArticle] = React.useState<string>('test description')
     const [user, setUser] = React.useState<string>('')
     const { data, loading, error } = useUsers()
     const { users } = data

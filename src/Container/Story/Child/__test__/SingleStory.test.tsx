@@ -13,7 +13,7 @@ describe('<SingleStory/>', () => {
         const wrapper = shallow(<SingleStory {...props} />)
         expect(wrapper).toMatchSnapshot()
     })
-    it('should render story', () => {
+    it('should render SingleStory', () => {
         const wrapper = shallow(<SingleStory {...props} />)
 
         expect(wrapper.find('[data-test="SingleStory"]').length).toEqual(1)

@@ -11,6 +11,12 @@
     border: 1px solid #aaa;
     padding: 1rem;
 }
+.story-header{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .story-detail{
     display: flex;
     flex-direction: column;

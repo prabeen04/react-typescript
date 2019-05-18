@@ -11,7 +11,7 @@ export interface IUserAddressModal {
 export default function Modal_(props: IUserAddressModal) {
     const { children, toggle, visible, title, noHeader } = props
     return (
-        <div style={{width: '800px'}}>
+        <div>
             <Modal isOpen={visible} toggle={toggle} >
                 <ModalHeader toggle={toggle} hidden={noHeader}>{title}</ModalHeader>
                 <ModalBody>{children}</ModalBody>
