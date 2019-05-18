@@ -31,7 +31,7 @@ function StoryDetail(props: IStoryDetailProps) {
           variables={{ storyId }}
           skip={!storyId}
         >
-          {({ loading, error, data }) => {
+          {({ loading, error, data }: any) => {
             console.log(data)
             if (loading) return <p>Loading...</p>;
             if (error) return <p>Error :(</p>;

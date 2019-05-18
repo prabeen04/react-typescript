@@ -20,7 +20,7 @@ const StoryList = (): JSX.Element => {
                 }
             `}
             >
-                {({ loading, error, data }) => {
+                {({ loading, error, data }: any) => {
                     if (loading) return <p>Loading...</p>;
                     if (error) return <p>Error :(</p>;
                     if(!state.selectedStory){

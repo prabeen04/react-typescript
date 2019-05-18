@@ -49,7 +49,7 @@ export default function AddStoryModal() {
             <>
                 <Mutation mutation={ADD_STORY}>
                     {
-                        (addStory, { loading, data, error }) => {
+                        (addStory: any, { loading, data, error }: any) => {
                             return (
                                 <form onSubmit={(e) => handleSubmit(e, addStory)}>
                                     <TextInput
