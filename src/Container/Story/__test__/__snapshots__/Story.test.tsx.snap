@@ -38,11 +38,6 @@ ShallowWrapper {
           >
             <StoryList />
           </div>
-          <div
-            className="story-detail-wrapper"
-          >
-            <StoryDetail />
-          </div>
           <AddStoryModal />
         </div>
       </Context.Provider>,
@@ -61,11 +56,6 @@ ShallowWrapper {
             className="story-list"
           >
             <StoryList />
-          </div>
-          <div
-            className="story-detail-wrapper"
-          >
-            <StoryDetail />
           </div>
           <AddStoryModal />
         </div>,
@@ -89,11 +79,6 @@ ShallowWrapper {
             >
               <StoryList />
             </div>,
-            <div
-              className="story-detail-wrapper"
-            >
-              <StoryDetail />
-            </div>,
             <AddStoryModal />,
           ],
           "className": "story-wrapper",
@@ -108,26 +93,6 @@ ShallowWrapper {
             "props": Object {
               "children": <StoryList />,
               "className": "story-list",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <StoryDetail />,
-              "className": "story-detail-wrapper",
             },
             "ref": null,
             "rendered": Object {
@@ -206,11 +171,6 @@ ShallowWrapper {
             >
               <StoryList />
             </div>
-            <div
-              className="story-detail-wrapper"
-            >
-              <StoryDetail />
-            </div>
             <AddStoryModal />
           </div>
         </Context.Provider>,
@@ -229,11 +189,6 @@ ShallowWrapper {
               className="story-list"
             >
               <StoryList />
-            </div>
-            <div
-              className="story-detail-wrapper"
-            >
-              <StoryDetail />
             </div>
             <AddStoryModal />
           </div>,
@@ -257,11 +212,6 @@ ShallowWrapper {
               >
                 <StoryList />
               </div>,
-              <div
-                className="story-detail-wrapper"
-              >
-                <StoryDetail />
-              </div>,
               <AddStoryModal />,
             ],
             "className": "story-wrapper",
@@ -276,26 +226,6 @@ ShallowWrapper {
               "props": Object {
                 "children": <StoryList />,
                 "className": "story-list",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {},
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <StoryDetail />,
-                "className": "story-detail-wrapper",
               },
               "ref": null,
               "rendered": Object {
@@ -361,6 +291,7 @@ ShallowWrapper {
           "getChildContext": Object {
             "calledByRenderer": false,
           },
+          "getDerivedStateFromError": true,
           "getDerivedStateFromProps": Object {
             "hasShouldComponentUpdateBug": false,
           },
