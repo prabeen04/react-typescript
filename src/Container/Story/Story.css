@@ -55,6 +55,7 @@
     display: flex;
     justify-content: center;
     border-radius: 0.2rem;
+    border-top: 1px solid rgba(245, 50, 1, 0.322);
 }
 
 .story-detail-heading>h3 {

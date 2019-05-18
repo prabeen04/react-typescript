@@ -27,7 +27,7 @@ function StoryDetail(props: IStoryDetailProps) {
                   <div className='story-detail-heading'>
                     <div>
                       <h3>{data.getStoryById.title} </h3>
-                      <p className='author'>{data.getStoryById.user.userName} - {moment(data.getStoryById.createdAt).fromNow()}</p>
+                      <p className='author'>{data.getStoryById.user.userName} - {moment(data.getStoryById.createdAt).format('lll')}</p>
                     </div>
                   </div>
                   <p className='article'>{data.getStoryById.article} </p>
