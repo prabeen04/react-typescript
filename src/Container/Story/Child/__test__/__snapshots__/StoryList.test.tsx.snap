@@ -74,7 +74,7 @@ ShallowWrapper {
             ],
             "kind": "Document",
             "loc": Object {
-              "end": 146,
+              "end": 50,
               "start": 0,
             },
           }
@@ -145,7 +145,7 @@ ShallowWrapper {
           ],
           "kind": "Document",
           "loc": Object {
-            "end": 146,
+            "end": 50,
             "start": 0,
           },
         },
@@ -218,7 +218,7 @@ ShallowWrapper {
               ],
               "kind": "Document",
               "loc": Object {
-                "end": 146,
+                "end": 50,
                 "start": 0,
               },
             }
@@ -289,7 +289,7 @@ ShallowWrapper {
             ],
             "kind": "Document",
             "loc": Object {
-              "end": 146,
+              "end": 50,
               "start": 0,
             },
           },

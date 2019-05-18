@@ -29,6 +29,7 @@ ShallowWrapper {
           }
         }
       >
+        <StoryHeader />
         <div
           className="story-wrapper"
           data-test="Story"
@@ -48,140 +49,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": <div
-          className="story-wrapper"
-          data-test="Story"
-        >
+        "children": Array [
+          <StoryHeader />,
           <div
-            className="story-list"
-          >
-            <StoryList />
-          </div>
-          <AddStoryModal />
-        </div>,
-        "value": Object {
-          "dispatch": [Function],
-          "state": Object {
-            "addStoryModal": false,
-            "selectedStory": null,
-          },
-        },
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="story-list"
-            >
-              <StoryList />
-            </div>,
-            <AddStoryModal />,
-          ],
-          "className": "story-wrapper",
-          "data-test": "Story",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <StoryList />,
-              "className": "story-list",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": "div",
-      },
-      "type": Object {
-        "$$typeof": Symbol(react.provider),
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": Object {
-            "$$typeof": Symbol(react.context),
-            "_calculateChangedBits": null,
-            "_context": [Circular],
-          },
-          "Provider": [Circular],
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": Object {
-            "addStoryModal": false,
-            "selectedStory": null,
-          },
-          "_currentValue2": Object {
-            "addStoryModal": false,
-            "selectedStory": null,
-          },
-          "_threadCount": 0,
-        },
-      },
-    },
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <Context.Provider
-          value={
-            Object {
-              "dispatch": [Function],
-              "state": Object {
-                "addStoryModal": false,
-                "selectedStory": null,
-              },
-            }
-          }
-        >
-          <div
-            className="story-wrapper"
-            data-test="Story"
-          >
-            <div
-              className="story-list"
-            >
-              <StoryList />
-            </div>
-            <AddStoryModal />
-          </div>
-        </Context.Provider>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": <div
             className="story-wrapper"
             data-test="Story"
           >
@@ -192,16 +62,27 @@ ShallowWrapper {
             </div>
             <AddStoryModal />
           </div>,
-          "value": Object {
-            "dispatch": [Function],
-            "state": Object {
-              "addStoryModal": false,
-              "selectedStory": null,
-            },
+        ],
+        "value": Object {
+          "dispatch": [Function],
+          "state": Object {
+            "addStoryModal": false,
+            "selectedStory": null,
           },
         },
-        "ref": null,
-        "rendered": Object {
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
@@ -251,6 +132,155 @@ ShallowWrapper {
           ],
           "type": "div",
         },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.provider),
+        "_context": Object {
+          "$$typeof": Symbol(react.context),
+          "Consumer": Object {
+            "$$typeof": Symbol(react.context),
+            "_calculateChangedBits": null,
+            "_context": [Circular],
+          },
+          "Provider": [Circular],
+          "_calculateChangedBits": null,
+          "_currentRenderer": null,
+          "_currentRenderer2": null,
+          "_currentValue": Object {
+            "addStoryModal": false,
+            "selectedStory": null,
+          },
+          "_currentValue2": Object {
+            "addStoryModal": false,
+            "selectedStory": null,
+          },
+          "_threadCount": 0,
+        },
+      },
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <Context.Provider
+          value={
+            Object {
+              "dispatch": [Function],
+              "state": Object {
+                "addStoryModal": false,
+                "selectedStory": null,
+              },
+            }
+          }
+        >
+          <StoryHeader />
+          <div
+            className="story-wrapper"
+            data-test="Story"
+          >
+            <div
+              className="story-list"
+            >
+              <StoryList />
+            </div>
+            <AddStoryModal />
+          </div>
+        </Context.Provider>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <StoryHeader />,
+            <div
+              className="story-wrapper"
+              data-test="Story"
+            >
+              <div
+                className="story-list"
+              >
+                <StoryList />
+              </div>
+              <AddStoryModal />
+            </div>,
+          ],
+          "value": Object {
+            "dispatch": [Function],
+            "state": Object {
+              "addStoryModal": false,
+              "selectedStory": null,
+            },
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="story-list"
+                >
+                  <StoryList />
+                </div>,
+                <AddStoryModal />,
+              ],
+              "className": "story-wrapper",
+              "data-test": "Story",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <StoryList />,
+                  "className": "story-list",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
         "type": Object {
           "$$typeof": Symbol(react.provider),
           "_context": Object {
