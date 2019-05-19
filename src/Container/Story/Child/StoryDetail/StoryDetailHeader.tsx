@@ -8,7 +8,8 @@ function StoryDetailHeader(props: IStoryDetailHeader) {
     return (
         <div className='story-detail-header'>
             <div>
-                <button className='btn btn-primary red'
+                <button className='btn btn-primary'
+                    style={{backgroundColor: '#bb26261c'}}
                     onClick={() => props.history.goBack()}
                 >
                     <i className="fas fa-long-arrow-alt-left"></i>&nbsp;

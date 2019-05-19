@@ -30,7 +30,9 @@ function StoryDetail(props: IStoryDetailProps) {
                       <p className='author'>{data.getStoryById.user.userName} - {moment(data.getStoryById.createdAt).format('lll')}</p>
                     </div>
                   </div>
-                  <p className='article'>{data.getStoryById.article} </p>
+                  <div className="article-body">
+                    <p className='article'>{data.getStoryById.article} </p>
+                  </div>
                 </>
               );
             }}
