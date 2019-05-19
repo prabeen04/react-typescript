@@ -2,6 +2,7 @@ import * as React from 'react'
 import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
 import moment from 'moment';
+import { EditorState } from 'draft-js';
 import * as types from '../StoryActionTypes'
 import Modal from '../../../Utils/Modal'
 import TextInput from '../../../Component/Form/TextInput'
@@ -22,6 +23,7 @@ export default function AddStoryModal() {
     const { state, dispatch } = React.useContext(StoryContext)
     const [title, setTitle] = React.useState<string>('')
     const [article, setArticle] = React.useState<string>('test description')
+    const [editorState, setEditorState] = React.useState<EditorState>(EditorState.createEmpty())
     const [user, setUser] = React.useState<string>('')
     const { data, loading, error } = useUsers()
     const { users } = data
@@ -41,7 +43,10 @@ export default function AddStoryModal() {
     function renderUsers() {
         return users && users.map((user: any) => ({ label: user.userName, value: user.id }))
     }
-    console.log(renderUsers())
+    function handleEditorStateChange(e: EditorState) {
+        console.log(e)
+        setEditorState(e)
+    }
     return (
         <Modal
             noHeader
@@ -69,7 +74,10 @@ export default function AddStoryModal() {
                                         placeholder="Author"
                                         options={renderUsers() && renderUsers()}
                                     /><br />
-                                    <Editor/>
+                                    <Editor
+                                        editorState={editorState}
+                                        setEditorState={handleEditorStateChange}
+                                    />
                                     <br />
                                     <button className='btn btn-primary' disabled={true}>Add</button>
                                 </form>
