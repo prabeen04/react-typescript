@@ -25,6 +25,7 @@ export default function AddStoryModal() {
     const [user, setUser] = React.useState<string>('')
     const { data, loading, error } = useUsers()
     const { users } = data
+    const disabled = !title && !article && !user
     function handleSubmit(e: React.FormEvent, addStory: any) {
         e.preventDefault()
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
@@ -70,7 +71,7 @@ export default function AddStoryModal() {
                                     /><br />
                                     <Editor/>
                                     <br />
-                                    <button className='btn btn-primary'>Add</button>
+                                    <button className='btn btn-primary' disabled={true}>Add</button>
                                 </form>
                             )
                         }
