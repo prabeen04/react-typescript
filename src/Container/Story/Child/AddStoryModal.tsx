@@ -2,7 +2,7 @@ import * as React from 'react'
 import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
 import moment from 'moment';
-import { EditorState } from 'draft-js';
+import { EditorState, convertToRaw } from 'draft-js';
 import * as types from '../StoryActionTypes'
 import Modal from '../../../Utils/Modal'
 import TextInput from '../../../Component/Form/TextInput'
@@ -44,7 +44,7 @@ export default function AddStoryModal() {
         return users && users.map((user: any) => ({ label: user.userName, value: user.id }))
     }
     function handleEditorStateChange(e: EditorState) {
-        console.log(e)
+        console.log(e.getCurrentContent())
         setEditorState(e)
     }
     return (
