@@ -12,7 +12,7 @@ function StoryDetailHeader(props: IStoryDetailHeader) {
                     onClick={() => props.history.goBack()}
                 >
                     <i className="fas fa-long-arrow-alt-left"></i>&nbsp;
-                    Go back</button>
+                     back</button>
             </div>
             <div></div>
         </div>
