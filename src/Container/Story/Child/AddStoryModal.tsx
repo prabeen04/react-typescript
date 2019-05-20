@@ -16,7 +16,13 @@ const draftToHtml = require("draftjs-to-html");
 const ADD_STORY = gql`
   mutation AddStory($title: String!, $article: String!, $createdAt: String!, $authorId: String!) {
     addStory( title: $title, article: $article, createdAt: $createdAt, authorId: $authorId ){
+        id
         title
+        article
+        user {
+            userName
+        }
+        createdAt
     }
   }
 `;
@@ -49,9 +55,11 @@ export default function AddStoryModal() {
     }
     function updateStoriesAfterCreate(cache: any, { data: { addStory } }: any) {
         const { stories } = cache.readQuery({ query: GET_STORIES });
+        console.log(stories, addStory)
+        const updatedStories = [...stories, addStory]
         cache.writeQuery({
             query: GET_STORIES,
-            data: { stories: stories.concat([addStory]) },
+            data: updatedStories,
         });
     }
     return (
