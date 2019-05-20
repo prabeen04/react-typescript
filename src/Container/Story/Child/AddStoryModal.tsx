@@ -2,7 +2,7 @@ import * as React from 'react'
 import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
 import moment from 'moment';
-import { EditorState, convertToRaw, convertFromRaw, } from 'draft-js';
+import { EditorState, convertToRaw } from 'draft-js';
 import * as types from '../StoryActionTypes'
 import Modal from '../../../Utils/Modal'
 import TextInput from '../../../Component/Form/TextInput'
@@ -10,7 +10,6 @@ import SelectInput from '../../../Component/Form/SelectInput'
 import Editor from '../../../Component/Form/Editor'
 import StoryContext from '../StoryContext';
 import useUsers from '../../Users/useUsers'
-import { HtmlAttributes } from 'csstype';
 const draftToHtml = require("draftjs-to-html");
 
 const ADD_STORY = gql`
@@ -24,7 +23,6 @@ const ADD_STORY = gql`
 export default function AddStoryModal() {
     const { state, dispatch } = React.useContext(StoryContext)
     const [title, setTitle] = React.useState<string>('')
-    const [article, setArticle] = React.useState<string>('test description')
     const [editorState, setEditorState] = React.useState<EditorState>(EditorState.createEmpty())
     const [user, setUser] = React.useState<string>('')
     const { data, loading, error } = useUsers()
@@ -46,7 +44,6 @@ export default function AddStoryModal() {
         return users && users.map((user: any) => ({ label: user.userName, value: user.id }))
     }
     function handleEditorStateChange(e: EditorState) {
-        console.log(draftToHtml(convertToRaw(e.getCurrentContent())).outerHTML)
         setEditorState(e)
     }
     return (
