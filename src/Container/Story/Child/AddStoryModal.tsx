@@ -2,7 +2,7 @@ import * as React from 'react'
 import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
 import moment from 'moment';
-import { EditorState, convertToRaw, convertFromRaw } from 'draft-js';
+import { EditorState, convertToRaw, convertFromRaw, } from 'draft-js';
 import * as types from '../StoryActionTypes'
 import Modal from '../../../Utils/Modal'
 import TextInput from '../../../Component/Form/TextInput'
@@ -36,7 +36,7 @@ export default function AddStoryModal() {
         addStory({
             variables: {
                 title,
-                article,
+                article: draftToHtml(convertToRaw(editorState.getCurrentContent())),
                 createdAt: moment().toISOString(),
                 authorId: user,
             }
@@ -46,9 +46,8 @@ export default function AddStoryModal() {
         return users && users.map((user: any) => ({ label: user.userName, value: user.id }))
     }
     function handleEditorStateChange(e: EditorState) {
-        console.log(draftToHtml(convertToRaw(e.getCurrentContent())))
-        let htmlContent = draftToHtml(convertToRaw(e.getCurrentContent()));
-        setEditorState(htmlContent)
+        console.log(draftToHtml(convertToRaw(e.getCurrentContent())).outerHTML)
+        setEditorState(e)
     }
     return (
         <Modal
