@@ -47,6 +47,13 @@ export default function AddStoryModal() {
     function handleEditorStateChange(e: EditorState) {
         setEditorState(e)
     }
+    function updateStoriesAfterCreate(cache: any, { data: { addStory } }: any) {
+        const { stories } = cache.readQuery({ query: GET_STORIES });
+        cache.writeQuery({
+            query: GET_STORIES,
+            data: { stories: stories.concat([addStory]) },
+        });
+    }
     return (
         <Modal
             noHeader
@@ -56,13 +63,7 @@ export default function AddStoryModal() {
             <>
                 <Mutation
                     mutation={ADD_STORY}
-                    update={(cache: any, { data: { addStory } }: any) => {
-                        const { stories } = cache.readQuery({ query: GET_STORIES });
-                        cache.writeQuery({
-                            query: GET_STORIES,
-                            data: { stories: stories.concat([addStory]) },
-                        });
-                    }}
+                    update={updateStoriesAfterCreate}
                 >
                     {
                         (addStory: any, { loading, data, error }: any) => {
