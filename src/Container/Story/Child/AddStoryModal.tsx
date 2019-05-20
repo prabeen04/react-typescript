@@ -2,7 +2,7 @@ import * as React from 'react'
 import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
 import moment from 'moment';
-import { EditorState, convertToRaw } from 'draft-js';
+import { EditorState, convertToRaw, convertFromRaw } from 'draft-js';
 import * as types from '../StoryActionTypes'
 import Modal from '../../../Utils/Modal'
 import TextInput from '../../../Component/Form/TextInput'
@@ -10,6 +10,8 @@ import SelectInput from '../../../Component/Form/SelectInput'
 import Editor from '../../../Component/Form/Editor'
 import StoryContext from '../StoryContext';
 import useUsers from '../../Users/useUsers'
+import { HtmlAttributes } from 'csstype';
+const draftToHtml = require("draftjs-to-html");
 
 const ADD_STORY = gql`
   mutation AddStory($title: String!, $article: String!, $createdAt: String!, $authorId: String!) {
@@ -27,7 +29,7 @@ export default function AddStoryModal() {
     const [user, setUser] = React.useState<string>('')
     const { data, loading, error } = useUsers()
     const { users } = data
-    const disabled = !title && !article && !user
+    const disabled = !title && !user
     function handleSubmit(e: React.FormEvent, addStory: any) {
         e.preventDefault()
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
@@ -44,8 +46,9 @@ export default function AddStoryModal() {
         return users && users.map((user: any) => ({ label: user.userName, value: user.id }))
     }
     function handleEditorStateChange(e: EditorState) {
-        console.log(e.getCurrentContent())
-        setEditorState(e)
+        console.log(draftToHtml(convertToRaw(e.getCurrentContent())))
+        let htmlContent = draftToHtml(convertToRaw(e.getCurrentContent()));
+        setEditorState(htmlContent)
     }
     return (
         <Modal
@@ -79,7 +82,7 @@ export default function AddStoryModal() {
                                         setEditorState={handleEditorStateChange}
                                     />
                                     <br />
-                                    <button className='btn btn-primary' disabled={true}>Add</button>
+                                    <button className='btn btn-primary' disabled={disabled}>Add</button>
                                 </form>
                             )
                         }
