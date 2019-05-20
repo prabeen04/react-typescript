@@ -4,6 +4,7 @@ import { Mutation } from "react-apollo";
 import moment from 'moment';
 import { EditorState, convertToRaw } from 'draft-js';
 import * as types from '../StoryActionTypes'
+import { GET_STORIES } from "../StoryQuery";
 import Modal from '../../../Utils/Modal'
 import TextInput from '../../../Component/Form/TextInput'
 import SelectInput from '../../../Component/Form/SelectInput'
@@ -53,7 +54,16 @@ export default function AddStoryModal() {
             toggle={() => dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })}
         >
             <>
-                <Mutation mutation={ADD_STORY}>
+                <Mutation
+                    mutation={ADD_STORY}
+                    update={(cache: any, { data: { addStory } }: any) => {
+                        const { stories } = cache.readQuery({ query: GET_STORIES });
+                        cache.writeQuery({
+                            query: GET_STORIES,
+                            data: { stories: stories.concat([addStory]) },
+                        });
+                    }}
+                >
                     {
                         (addStory: any, { loading, data, error }: any) => {
                             return (

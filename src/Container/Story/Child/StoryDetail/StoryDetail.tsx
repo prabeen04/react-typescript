@@ -31,7 +31,7 @@ function StoryDetail(props: IStoryDetailProps) {
                     </div>
                   </div>
                   <div className="article-body">
-                    <div dangerouslySetInnerHTML={{ __html: data.getStoryById.article }} className='article' />
+                    <div dangerouslySetInnerHTML={{ __html: data.getStoryById.article }} className='article-body' />
                   </div>
                 </>
               );
