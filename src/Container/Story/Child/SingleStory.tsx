@@ -23,7 +23,7 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
         <div className="single-story"
             onClick={handleStoryDetailpush}
         >
-            <i className="far fa-comment"></i>
+            <i className="fas fa-book-reader"></i>
             <div>
 
                 <h1
