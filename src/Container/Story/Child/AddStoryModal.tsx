@@ -44,7 +44,7 @@ export default function AddStoryModal() {
         const updatedStories = [...stories, addStory]
         cache.writeQuery({
             query: GET_STORIES,
-            data: updatedStories,
+            data: { stories: updatedStories },
         });
     }
     return (
