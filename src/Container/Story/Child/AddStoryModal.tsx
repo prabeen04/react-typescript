@@ -1,10 +1,9 @@
 import * as React from 'react'
-import gql from "graphql-tag";
 import { Mutation } from "react-apollo";
 import moment from 'moment';
 import { EditorState, convertToRaw } from 'draft-js';
 import * as types from '../StoryActionTypes'
-import { GET_STORIES } from "../StoryQuery";
+import { ADD_STORY, GET_STORIES } from "../StoryQuery";
 import Modal from '../../../Utils/Modal'
 import TextInput from '../../../Component/Form/TextInput'
 import SelectInput from '../../../Component/Form/SelectInput'
@@ -12,20 +11,6 @@ import Editor from '../../../Component/Form/Editor'
 import StoryContext from '../StoryContext';
 import useUsers from '../../Users/useUsers'
 const draftToHtml = require("draftjs-to-html");
-
-const ADD_STORY = gql`
-  mutation AddStory($title: String!, $article: String!, $createdAt: String!, $authorId: String!) {
-    addStory( title: $title, article: $article, createdAt: $createdAt, authorId: $authorId ){
-        id
-        title
-        article
-        user {
-            userName
-        }
-        createdAt
-    }
-  }
-`;
 
 export default function AddStoryModal() {
     const { state, dispatch } = React.useContext(StoryContext)

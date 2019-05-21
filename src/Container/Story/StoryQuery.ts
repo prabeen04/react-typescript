@@ -1,5 +1,7 @@
 import gql from 'graphql-tag';
-
+/**
+ * @Query
+ */
 // get story detail graphql query
 export const GET_STORY_DETAIL = gql`
   query Story($storyId: String!) {
@@ -20,5 +22,20 @@ export const GET_STORIES = gql`
       id
       title
   }
+  }
+`;
+
+
+/**
+ * @Mutation
+ */
+
+export const ADD_STORY = gql`
+  mutation AddStory($title: String!, $article: String!, $createdAt: String!, $authorId: String!) {
+    addStory( title: $title, article: $article, createdAt: $createdAt, authorId: $authorId ){
+        id
+        title
+        article
+    }
   }
 `;
