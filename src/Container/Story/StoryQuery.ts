@@ -21,6 +21,7 @@ export const GET_STORIES = gql`
       stories {
       id
       title
+      createdAt
   }
   }
 `;
@@ -36,6 +37,7 @@ export const ADD_STORY = gql`
         id
         title
         article
+        createdAt
     }
   }
 `;

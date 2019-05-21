@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Query } from "react-apollo";
+import moment from 'moment';
 import * as types from '../StoryActionTypes'
 import SingleStory from './SingleStory';
 import { IStory } from "../StoryInterface";
@@ -26,7 +27,9 @@ const StoryList = (): JSX.Element => {
                             {
                                 !data.stories.length
                                     ? <Empty description='No Stories yet, Add your story' />
-                                    : data.stories.map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
+                                    : data.stories
+                                        .sort((a: IStory, b: IStory) => moment(a.createdAt) < moment(b.createdAt) ? 1 : -1)
+                                        .map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
                             }
                         </>
                     );

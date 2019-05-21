@@ -5,6 +5,7 @@ export interface IStories {
 }
 
 export interface IStory {
-    id: String;
-    title: String;
+    id: string;
+    title: string;
+    createdAt?: string;
 }
