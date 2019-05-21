@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { withRouter } from "react-router-dom";
 import { RouteComponentProps } from "react-router";
+import moment from 'moment';
 import * as types from '../StoryActionTypes';
 import { IStory } from '../StoryInterface';
 import StoryContext from '../StoryContext'
@@ -19,12 +20,21 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
         })
     }
     return (
-        <h1
-            data-test="SingleStory"
-            className='story-title'
+        <div className="single-story"
             onClick={handleStoryDetailpush}
         >
-            {props.story.title}
-        </h1>)
+            <i className="far fa-comment"></i>
+            <div>
+
+                <h1
+                    data-test="SingleStory"
+                    className='story-title'
+                >
+                    {props.story.title}
+                </h1>
+                <p className='story-time'>{moment(props.story.createdAt).format('ll')}</p>
+            </div>
+        </div>
+    )
 }
 export default withRouter(SingleStory)

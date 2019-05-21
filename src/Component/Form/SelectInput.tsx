@@ -11,7 +11,6 @@ export interface ISelectInputInputProps {
 }
 export default function SelectInputInput(props: ISelectInputInputProps) {
     const { name, value, placeholder, onChange, options, ...rest } = props;
-    console.log(options)
     return (
         <>
             <select
