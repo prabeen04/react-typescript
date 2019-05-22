@@ -23,8 +23,7 @@ export default function AddStoryModal() {
 
     React.useEffect(() => {
         const userOptions = users && users.map((user: any) => ({ label: user.userName, value: user.id }))
-        console.log(userOptions && userOptions[1])
-        userOptions && setUser(userOptions[1])
+        userOptions && setUser(userOptions[0]['value'])
     }, [users])
 
     function handleSubmit(e: React.FormEvent, addStory: any) {
@@ -40,10 +39,7 @@ export default function AddStoryModal() {
         })
     }
     function renderUsers() {
-        const userOptions = users && users.map((user: any) => ({ label: user.userName, value: user.id }))
-        // setUser(userOptions[1])
-        return userOptions
-
+        return users && users.map((user: any) => ({ label: user.userName, value: user.id }))
     }
     function handleEditorStateChange(e: EditorState) {
         setEditorState(e)
