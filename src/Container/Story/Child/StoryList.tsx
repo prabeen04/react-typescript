@@ -6,7 +6,9 @@ import SingleStory from './SingleStory';
 import { IStory } from "../StoryInterface";
 import StoryContext from "../StoryContext";
 import Empty from "../../../Component/Common/Empty";
+import CircularLoading from '../../../Component/Loading/CircularLoading';
 import { GET_STORIES } from "../StoryQuery";
+
 const StoryList = (): JSX.Element => {
     const { state, dispatch } = React.useContext(StoryContext)
     return (
@@ -15,7 +17,7 @@ const StoryList = (): JSX.Element => {
                 query={GET_STORIES}
             >
                 {({ loading, error, data }: any) => {
-                    if (loading) return <p>Loading...</p>;
+                    if (loading) return <CircularLoading/>;
                     if (error) return <p>Error :(</p>;
                     if (data.stories.length) {
                         if (!state.selectedStory) {

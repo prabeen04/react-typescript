@@ -4,6 +4,7 @@ import { RouteComponentProps } from "react-router";
 import { Query } from "react-apollo";
 import moment from 'moment';
 import StoryDetailHeader from './StoryDetailHeader';
+import CircularLoading from '../../../../Component/Loading/CircularLoading';
 import { GET_STORY_DETAIL } from "../../StoryQuery";
 interface IStoryDetailProps extends RouteComponentProps<any> { }
 
@@ -20,7 +21,7 @@ function StoryDetail(props: IStoryDetailProps) {
           >
             {({ loading, error, data }: any) => {
               console.log(data)
-              if (loading) return <p>Loading...</p>;
+              if (loading) return <CircularLoading/>;
               if (error) return <p>Error :(</p>;
               return (
                 <>
