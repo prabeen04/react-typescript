@@ -75,6 +75,7 @@ export default function AddStoryModal() {
                                         onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
                                         value={user}
                                         placeholder="Author"
+                                        defaultValue={renderUsers() && renderUsers()[1]}
                                         options={renderUsers() && renderUsers()}
                                     /><br />
                                     <Editor

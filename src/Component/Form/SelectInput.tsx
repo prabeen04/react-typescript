@@ -4,13 +4,14 @@ export interface ISelectInputInputProps {
     value: string | number;
     name: string;
     onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+    defaultValue?: any;
     placeholder?: string;
     className?: string;
     options: any;
     style?: object
 }
 export default function SelectInputInput(props: ISelectInputInputProps) {
-    const { name, value, placeholder, onChange, options, ...rest } = props;
+    const { name, value, placeholder, onChange, options, defaultValue, ...rest } = props;
     return (
         <>
             <select
@@ -18,10 +19,11 @@ export default function SelectInputInput(props: ISelectInputInputProps) {
                 name={name}
                 value={value}
                 placeholder={placeholder}
+                defaultValue={defaultValue}
                 onChange={onChange}
                 {...rest}
             >
-            {options && options.map((option: any, i: number) => <option key={i} value={option.value}>{option.label}</option>)}
+                {options && options.map((option: any, i: number) => <option key={i} value={option.value}>{option.label}</option>)}
             </select>
         </>
     )
