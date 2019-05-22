@@ -112,6 +112,13 @@ h6 {
     font-family: Oxygen;
 }
 
+.inside-author {
+    color: rgb(170, 68, 68) !important;
+    margin: 0.1rem !important;
+    font-size: 0.8rem !important;
+    font-family: Cantarell !important;
+}
+
 .article-body>code {
     background-color: rgba(245, 146, 163, 0.788) !important;
     color: #333 !important;

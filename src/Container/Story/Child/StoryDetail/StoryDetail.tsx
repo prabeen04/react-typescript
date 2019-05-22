@@ -21,17 +21,19 @@ function StoryDetail(props: IStoryDetailProps) {
           >
             {({ loading, error, data }: any) => {
               console.log(data)
-              if (loading) return <CircularLoading/>;
+              if (loading) return <CircularLoading />;
               if (error) return <p>Error :(</p>;
               return (
                 <>
                   <div className='story-detail-heading'>
                     <div>
                       <h3>{data.getStoryById.title} </h3>
-                      <p className='author'>{data.getStoryById.user.userName} - {moment(data.getStoryById.createdAt).format('lll')}</p>
+                      <p className='author'>{data.getStoryById.user.userName}</p>
                     </div>
                   </div>
                   <div className="article-body">
+                    <p className='inside-author'>{data.getStoryById.user.userName}</p>
+                    <p className='inside-author'>{moment(data.getStoryById.createdAt).format('lll')}</p>
                     <div dangerouslySetInnerHTML={{ __html: data.getStoryById.article }} className='article-body' />
                   </div>
                 </>
