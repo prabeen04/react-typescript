@@ -20,6 +20,13 @@ export default function AddStoryModal() {
     const { data, loading, error } = useUsers()
     const { users } = data
     const disabled = !title && !user
+
+    React.useEffect(() => {
+        const userOptions = users && users.map((user: any) => ({ label: user.userName, value: user.id }))
+        console.log(userOptions && userOptions[1])
+        userOptions && setUser(userOptions[1])
+    }, [users])
+
     function handleSubmit(e: React.FormEvent, addStory: any) {
         e.preventDefault()
         dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })
@@ -33,7 +40,10 @@ export default function AddStoryModal() {
         })
     }
     function renderUsers() {
-        return users && users.map((user: any) => ({ label: user.userName, value: user.id }))
+        const userOptions = users && users.map((user: any) => ({ label: user.userName, value: user.id }))
+        // setUser(userOptions[1])
+        return userOptions
+
     }
     function handleEditorStateChange(e: EditorState) {
         setEditorState(e)
@@ -75,7 +85,6 @@ export default function AddStoryModal() {
                                         onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
                                         value={user}
                                         placeholder="Author"
-                                        defaultValue={renderUsers() && renderUsers()[1]}
                                         options={renderUsers() && renderUsers()}
                                     /><br />
                                     <Editor
