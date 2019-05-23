@@ -19,6 +19,10 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
             state: { story: props.story }
         })
     }
+    function deleteStory(e: React.SyntheticEvent, id: string) {
+        e.stopPropagation();
+        alert(id)
+    }
     return (
         <div className="single-story"
             onClick={handleStoryDetailpush}
@@ -34,7 +38,9 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
                 <p className='story-time'>{moment(props.story.createdAt).format('ll')}</p>
             </div>
             <div className="story-action-wrapper">
-                <i className="fas fa-trash-alt"></i>
+                <i className="fas fa-trash-alt"
+                    onClick={(e: React.SyntheticEvent) => deleteStory(e, props.story.id)}
+                ></i>
             </div>
         </div>
     )
