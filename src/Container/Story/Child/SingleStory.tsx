@@ -21,9 +21,15 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
             state: { story: props.story }
         })
     }
-    function deleteStory(e: React.SyntheticEvent, id: string) {
+    function handleDeleteStory(e: React.SyntheticEvent, deleteStory: any, id: string) {
         e.stopPropagation();
-        confirm(id)
+        confirm("Are you sure ?")
+        console.log('after confirm')
+        deleteStory({
+            variables: {
+                storyId: id
+            }
+        })
     }
     return (
         <Mutation
@@ -31,7 +37,7 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
             variables={{ storyId: props.story.id }}
         >
             {
-                () => (
+                (deleteStory: any, { loading, data, error }: any) => (
                     <div className="single-story"
                         onClick={handleStoryDetailpush}
                     >
@@ -47,7 +53,7 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
                         </div>
                         <div className="story-action-wrapper">
                             <i className="fas fa-trash-alt"
-                                onClick={(e: React.SyntheticEvent) => deleteStory(e, props.story.id)}
+                                onClick={(e: React.SyntheticEvent) => handleDeleteStory(e, deleteStory, props.story.id)}
                             ></i>
                         </div>
                     </div>
