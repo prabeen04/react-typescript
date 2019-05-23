@@ -41,3 +41,13 @@ export const ADD_STORY = gql`
     }
   }
 `;
+export const DELETE_STORY = gql`
+  mutation DeleteStory($storyId: ID!) {
+    deleteStory( id: $storyId){
+        id
+        title
+        article
+        createdAt
+    }
+  }
+`;
