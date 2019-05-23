@@ -4,7 +4,7 @@ import gql from 'graphql-tag';
  */
 // get story detail graphql query
 export const GET_STORY_DETAIL = gql`
-  query Story($storyId: String!) {
+  query GetStoryById($storyId: ID!) {
     getStoryById(id: $storyId) {
       id
       title
