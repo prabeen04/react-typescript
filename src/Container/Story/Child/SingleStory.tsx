@@ -5,7 +5,7 @@ import moment from 'moment';
 import { Mutation } from 'react-apollo';
 import * as types from '../StoryActionTypes';
 import { IStory } from '../StoryInterface';
-import { DELETE_STORY } from "../StoryQuery";
+import { DELETE_STORY, GET_STORIES } from "../StoryQuery";
 import StoryContext from '../StoryContext'
 
 interface ISingleStory extends RouteComponentProps<any> {
@@ -23,18 +23,30 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
     }
     function handleDeleteStory(e: React.SyntheticEvent, deleteStory: any, id: string) {
         e.stopPropagation();
-        confirm("Are you sure ?")
-        console.log('after confirm')
-        deleteStory({
-            variables: {
-                storyId: id
-            }
-        })
+        let allowDelete: any = confirm("Are you sure ?")
+        if (allowDelete) {
+            console.log('after confirm')
+            deleteStory({
+                variables: {
+                    storyId: id
+                }
+            })
+        }
+    }
+    function updateStoriesAfterDelete(cache: any, { data: { deleteStory } }: any) {
+        const { stories } = cache.readQuery({ query: GET_STORIES });
+        console.log(stories, deleteStory)
+        const updatedStories = stories.filter((story: IStory) => story.id !== deleteStory.id)
+        cache.writeQuery({
+            query: GET_STORIES,
+            data: { stories: updatedStories },
+        });
     }
     return (
         <Mutation
             mutation={DELETE_STORY}
             variables={{ storyId: props.story.id }}
+            update={updateStoriesAfterDelete}
         >
             {
                 (deleteStory: any, { loading, data, error }: any) => (
