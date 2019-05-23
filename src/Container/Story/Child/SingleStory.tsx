@@ -24,8 +24,7 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
             onClick={handleStoryDetailpush}
         >
             <i className="fas fa-book-reader"></i>
-            <div>
-
+            <div style={{ flexBasis: '95%' }}>
                 <h1
                     data-test="SingleStory"
                     className='story-title'
@@ -33,6 +32,9 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
                     {props.story.title}
                 </h1>
                 <p className='story-time'>{moment(props.story.createdAt).format('ll')}</p>
+            </div>
+            <div className="story-action-wrapper">
+                <i className="fas fa-trash-alt"></i>
             </div>
         </div>
     )
