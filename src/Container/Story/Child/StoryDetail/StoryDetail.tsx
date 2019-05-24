@@ -20,21 +20,19 @@ function StoryDetail(props: IStoryDetailProps) {
     <>
       <StoryDetailHeader />
       <div className='story-detail' data-test='StoryDetail'>
-        {storyId &&
-          <>
-            <div className='story-detail-heading'>
-              <div>
-                <h3>{data.getStoryById.title} </h3>
-                <p className='author'>{data.getStoryById.user.userName}</p>
-              </div>
+        <>
+          <div className='story-detail-heading'>
+            <div>
+              <h3>{data.getStoryById.title} </h3>
+              <p className='author'>{data.getStoryById.user.userName}</p>
             </div>
-            <div className="article-body">
-              <p className='inside-author'>{data.getStoryById.user.userName}</p>
-              <p className='inside-author'>{moment(data.getStoryById.createdAt).format('lll')}</p>
-              <div dangerouslySetInnerHTML={{ __html: data.getStoryById.article }} className='article-body' />
-            </div>
-          </>
-        }
+          </div>
+          <div className="article-body">
+            <p className='inside-author'>{data.getStoryById.user.userName}</p>
+            <p className='inside-author'>{moment(data.getStoryById.createdAt).format('lll')}</p>
+            <div dangerouslySetInnerHTML={{ __html: data.getStoryById.article }} className='article-body' />
+          </div>
+        </>
       </div>
     </>
   )
