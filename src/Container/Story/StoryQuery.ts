@@ -41,9 +41,21 @@ export const ADD_STORY = gql`
     }
   }
 `;
+
 export const DELETE_STORY = gql`
   mutation DeleteStory($storyId: ID!) {
     deleteStory( id: $storyId){
+        id
+        title
+        article
+        createdAt
+    }
+  }
+`;
+
+export const UPDATE_STORY = gql`
+  mutation UpdateStory($id: ID!, $title: String, $article: String, $createdAt: String, $authorId: String) {
+    updateStory( id: $id, title: $title, article: $article, createdAt: $createdAt, authorId: $authorId ){
         id
         title
         article
