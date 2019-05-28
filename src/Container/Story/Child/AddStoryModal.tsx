@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Mutation } from "react-apollo";
 import moment from 'moment';
+import { useMutation } from 'react-apollo-hooks';
 import { EditorState, convertToRaw } from 'draft-js';
 import * as types from '../StoryActionTypes'
 import { ADD_STORY, GET_STORIES } from "../StoryQuery";
@@ -53,6 +53,8 @@ export default function AddStoryModal() {
             data: { stories: updatedStories },
         });
     }
+    const addStory = useMutation(ADD_STORY, { update: updateStoriesAfterCreate })
+
     return (
         <Modal
             noHeader
@@ -60,40 +62,29 @@ export default function AddStoryModal() {
             toggle={() => dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })}
         >
             <>
-                <Mutation
-                    mutation={ADD_STORY}
-                    update={updateStoriesAfterCreate}
-                >
-                    {
-                        (addStory: any, { loading, data, error }: any) => {
-                            return (
-                                <form onSubmit={(e) => handleSubmit(e, addStory)}>
-                                    <TextInput
-                                        className='form-control'
-                                        name='title'
-                                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
-                                        value={title}
-                                        placeholder="What's the story ?"
-                                    /><br />
-                                    <SelectInput
-                                        className='form-control'
-                                        name='user'
-                                        onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
-                                        value={user}
-                                        placeholder="Author"
-                                        options={renderUsers() && renderUsers()}
-                                    /><br />
-                                    <Editor
-                                        editorState={editorState}
-                                        setEditorState={handleEditorStateChange}
-                                    />
-                                    <br />
-                                    <button className='btn btn-primary' disabled={disabled}>Add</button>
-                                </form>
-                            )
-                        }
-                    }
-                </Mutation>
+                <form onSubmit={(e) => handleSubmit(e, addStory)}>
+                    <TextInput
+                        className='form-control'
+                        name='title'
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
+                        value={title}
+                        placeholder="What's the story ?"
+                    /><br />
+                    <SelectInput
+                        className='form-control'
+                        name='user'
+                        onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
+                        value={user}
+                        placeholder="Author"
+                        options={renderUsers() && renderUsers()}
+                    /><br />
+                    <Editor
+                        editorState={editorState}
+                        setEditorState={handleEditorStateChange}
+                    />
+                    <br />
+                    <button className='btn btn-primary' disabled={disabled}>Add</button>
+                </form>
 
             </>
         </Modal>

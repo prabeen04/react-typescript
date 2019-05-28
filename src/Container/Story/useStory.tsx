@@ -4,6 +4,7 @@ import * as types from './StoryActionTypes';
 export const initialState: any = {
     addStoryModal: false,
     selectedStory: null,
+    isEditing: false,
 }
 export default function useStory() {
     const [state, dispatch] = React.useReducer(storyReducer, initialState)
@@ -16,6 +17,8 @@ function storyReducer(state: any, action: any) {
             return { ...state, addStoryModal: action.payload }
         case types.SET_SELECTED_STORY:
             return { ...state, selectedStory: action.payload }
+        case types.SET_EDITING_STATE:
+            return { ...state, isEditing: action.payload }
         default:
             throw new Error('should match a case');
     }

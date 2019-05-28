@@ -33,6 +33,10 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
             })
         }
     }
+    function handleUpdateStory(e: React.SyntheticEvent, id: string) {
+        e.stopPropagation();
+        alert(id)
+    }
     function updateStoriesAfterDelete(cache: any, { data: { deleteStory } }: any) {
         const { stories } = cache.readQuery({ query: GET_STORIES });
         console.log(stories, deleteStory)
@@ -64,6 +68,9 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
                             <p className='story-time'>{moment(props.story.createdAt).format('ll')}</p>
                         </div>
                         <div className="story-action-wrapper">
+                            <i className="fas fa-edit"
+                                onClick={(e: React.SyntheticEvent) => handleUpdateStory(e, props.story.id)}
+                            ></i>
                             <i className="fas fa-trash-alt"
                                 onClick={(e: React.SyntheticEvent) => handleDeleteStory(e, deleteStory, props.story.id)}
                             ></i>
