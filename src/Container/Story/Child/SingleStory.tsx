@@ -2,7 +2,7 @@ import * as React from 'react';
 import { withRouter } from "react-router-dom";
 import { RouteComponentProps } from "react-router";
 import moment from 'moment';
-import { Mutation } from 'react-apollo';
+import { useMutation } from "react-apollo-hooks";
 import * as types from '../StoryActionTypes';
 import { IStory } from '../StoryInterface';
 import { DELETE_STORY, GET_STORIES } from "../StoryQuery";
@@ -46,39 +46,33 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
             data: { stories: updatedStories },
         });
     }
+    const deleteStory = useMutation(DELETE_STORY, { variables: { storyId: props.story.id }, update: updateStoriesAfterDelete })
+
     return (
-        <Mutation
-            mutation={DELETE_STORY}
-            variables={{ storyId: props.story.id }}
-            update={updateStoriesAfterDelete}
-        >
-            {
-                (deleteStory: any, { loading, data, error }: any) => (
-                    <div className="single-story"
-                        onClick={handleStoryDetailpush}
+        <>
+            <div className="single-story"
+                onClick={handleStoryDetailpush}
+            >
+                <i className="fas fa-book-reader"></i>
+                <div style={{ flexBasis: '95%' }}>
+                    <h1
+                        data-test="SingleStory"
+                        className='story-title'
                     >
-                        <i className="fas fa-book-reader"></i>
-                        <div style={{ flexBasis: '95%' }}>
-                            <h1
-                                data-test="SingleStory"
-                                className='story-title'
-                            >
-                                {props.story.title}
-                            </h1>
-                            <p className='story-time'>{moment(props.story.createdAt).format('ll')}</p>
-                        </div>
-                        <div className="story-action-wrapper">
-                            <i className="fas fa-edit"
-                                onClick={(e: React.SyntheticEvent) => handleUpdateStory(e, props.story.id)}
-                            ></i>
-                            <i className="fas fa-trash-alt"
-                                onClick={(e: React.SyntheticEvent) => handleDeleteStory(e, deleteStory, props.story.id)}
-                            ></i>
-                        </div>
-                    </div>
-                )
-            }
-        </Mutation>
+                        {props.story.title}
+                    </h1>
+                    <p className='story-time'>{moment(props.story.createdAt).format('ll')}</p>
+                </div>
+                <div className="story-action-wrapper">
+                    <i className="fas fa-edit"
+                        onClick={(e: React.SyntheticEvent) => handleUpdateStory(e, props.story.id)}
+                    ></i>
+                    <i className="fas fa-trash-alt"
+                        onClick={(e: React.SyntheticEvent) => handleDeleteStory(e, deleteStory, props.story.id)}
+                    ></i>
+                </div>
+            </div>
+        </>
     )
 }
 export default withRouter(SingleStory)
