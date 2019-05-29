@@ -62,6 +62,7 @@ export default function StoryForm() {
                         name='title'
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
                         value={title}
+                        defaultValue={state.isEditing && state.currentEditingStory.title}
                         placeholder="What's the story ?"
                     /><br />
                     <SelectInput
