@@ -37,9 +37,11 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
         e.stopPropagation();
         dispatch({
             type: types.SET_EDITING_STATE,
-            isEditing: true,
-            addStoryModal: true,
-            currentEditingStory: state.selectedStory
+            payload: {
+                isEditing: true,
+                addStoryModal: true,
+                currentEditingStory: state.selectedStory
+            }
         })
     }
     function updateStoriesAfterDelete(cache: any, { data: { deleteStory } }: any) {
