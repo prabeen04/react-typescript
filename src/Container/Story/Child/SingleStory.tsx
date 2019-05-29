@@ -35,7 +35,12 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
     }
     function handleUpdateStory(e: React.SyntheticEvent, id: string) {
         e.stopPropagation();
-        alert(id)
+        dispatch({
+            type: types.SET_EDITING_STATE,
+            isEditing: true,
+            addStoryModal: true,
+            currentEditingStory: state.selectedStory
+        })
     }
     function updateStoriesAfterDelete(cache: any, { data: { deleteStory } }: any) {
         const { stories } = cache.readQuery({ query: GET_STORIES });

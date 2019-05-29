@@ -5,6 +5,7 @@ export const initialState: any = {
     addStoryModal: false,
     selectedStory: null,
     isEditing: false,
+    currentEditingStory: null,
 }
 export default function useStory() {
     const [state, dispatch] = React.useReducer(storyReducer, initialState)
@@ -18,7 +19,12 @@ function storyReducer(state: any, action: any) {
         case types.SET_SELECTED_STORY:
             return { ...state, selectedStory: action.payload }
         case types.SET_EDITING_STATE:
-            return { ...state, isEditing: action.payload }
+            return {
+                ...state,
+                isEditing: action.payload.isEditing,
+                addStoryModal: action.payload.addStoryModal,
+                currentEditingStory: action.payload.currentEditingStory
+            }
         default:
             throw new Error('should match a case');
     }
