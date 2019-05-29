@@ -19,7 +19,7 @@ export default function StoryForm() {
     const { data, loading, error } = useUsers()
     const { users } = data
     const disabled = !title && !user
-
+    console.log(state)
     React.useEffect(() => {
         const userOptions = users && users.map((user: any) => ({ label: user.userName, value: user.id }))
         userOptions && setUser(userOptions[0]['value'])

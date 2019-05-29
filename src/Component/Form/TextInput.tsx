@@ -4,7 +4,7 @@ export interface ITextInputProps {
     value: string;
     name: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-    defaultValue: string;
+    defaultValue?: string;
     placeholder?: string;
     className?: string;
     style?: object

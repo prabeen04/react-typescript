@@ -24,6 +24,7 @@ ShallowWrapper {
             "dispatch": [Function],
             "state": Object {
               "addStoryModal": false,
+              "currentEditingStory": null,
               "isEditing": false,
               "selectedStory": null,
             },
@@ -68,6 +69,7 @@ ShallowWrapper {
           "dispatch": [Function],
           "state": Object {
             "addStoryModal": false,
+            "currentEditingStory": null,
             "isEditing": false,
             "selectedStory": null,
           },
@@ -150,11 +152,13 @@ ShallowWrapper {
           "_currentRenderer2": null,
           "_currentValue": Object {
             "addStoryModal": false,
+            "currentEditingStory": null,
             "isEditing": false,
             "selectedStory": null,
           },
           "_currentValue2": Object {
             "addStoryModal": false,
+            "currentEditingStory": null,
             "isEditing": false,
             "selectedStory": null,
           },
@@ -176,6 +180,7 @@ ShallowWrapper {
               "dispatch": [Function],
               "state": Object {
                 "addStoryModal": false,
+                "currentEditingStory": null,
                 "isEditing": false,
                 "selectedStory": null,
               },
@@ -220,6 +225,7 @@ ShallowWrapper {
             "dispatch": [Function],
             "state": Object {
               "addStoryModal": false,
+              "currentEditingStory": null,
               "isEditing": false,
               "selectedStory": null,
             },
@@ -302,11 +308,13 @@ ShallowWrapper {
             "_currentRenderer2": null,
             "_currentValue": Object {
               "addStoryModal": false,
+              "currentEditingStory": null,
               "isEditing": false,
               "selectedStory": null,
             },
             "_currentValue2": Object {
               "addStoryModal": false,
+              "currentEditingStory": null,
               "isEditing": false,
               "selectedStory": null,
             },
