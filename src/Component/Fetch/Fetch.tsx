@@ -3,7 +3,8 @@ import useUserData, { IUserState, IUser, IAddress, ICompany, IGeo } from "../../
 import UserList from "./UserList";
 import UserDetail from './UserDetail';
 import './Fetch.css';
-
+import CircularLoading from '../Loading/CircularLoading';
+import Error from '../Common/Error'
 export default function Fetch() {
     const { fetchingUsers, fetchingUsersError, users } = useUserData();
     const [activeUser, setActiveUser] = React.useState<IUser>(users.length && users[0] || {})
@@ -21,11 +22,9 @@ export default function Fetch() {
             <div className='user-wrapper flex-container space-between'>
                 {
                     fetchingUsers
-                        ? <div className="flex-container center-align-row" style={{ width: '100%', padding: 100 }}>
-                            <div className="loading"></div>
-                        </div>
+                        ? <CircularLoading />
                         : fetchingUsersError
-                            ? <p>Opps, Error while fetching users...</p>
+                            ? <Error description='Error while fetching users' />
                             : <div className='user-detail-content'>
                                 <div className='user-list'>
                                     {users && users.map((user: IUser) => <UserList setUser={setUser} activeUser={activeUser} key={user.id} user={user} />)}

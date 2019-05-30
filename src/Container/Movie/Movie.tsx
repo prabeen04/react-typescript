@@ -3,20 +3,14 @@ import useMovie from './UseMovie';
 import MovieList from './Child/MovieList';
 import MovieHeader from "./Child/MovieHeader";
 import './Movie.css';
+import Empty from '../../Component/Common/Empty';
+import CircularLoading from '../../Component/Loading/CircularLoading';
 
 export default function Movie(): JSX.Element {
     const { state, dispatch } = useMovie();
     const { fetchingMovies, fetchingMoviesError, movies, activeFilter, searchText } = state;
-    if (fetchingMovies) {
-        return (
-            <div className="flex-container center-align-row" style={{ width: '100%', padding: 100 }}>
-                <div className="loading"></div>
-            </div>
-        )
-    }
-    if (fetchingMoviesError) {
-        return <h3>Error fetvhing movies</h3>
-    }
+    if (fetchingMovies) return <CircularLoading/>
+    if (fetchingMoviesError) return <Empty description='Error while fetching movies'/>
     return (
         <div className='movie-wrapper'>
             <MovieHeader

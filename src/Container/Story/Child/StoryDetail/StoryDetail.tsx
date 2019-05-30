@@ -4,6 +4,7 @@ import { RouteComponentProps } from "react-router";
 import { useQuery } from "react-apollo-hooks";
 import moment from 'moment';
 import StoryDetailHeader from './StoryDetailHeader';
+import Error from '../../../../Component/Common/Error'
 import CircularLoading from '../../../../Component/Loading/CircularLoading';
 import { GET_STORY_DETAIL } from "../../StoryQuery";
 interface IStoryDetailProps extends RouteComponentProps<any> { }
@@ -15,7 +16,7 @@ function StoryDetail(props: IStoryDetailProps) {
     skip: !storyId
   })
   if (loading) return <CircularLoading />;
-  if (error) return <p>Error :(</p>;
+  if (error) return <Error description='Unable to fetch data.'/>;
   return (
     <>
       <StoryDetailHeader />
