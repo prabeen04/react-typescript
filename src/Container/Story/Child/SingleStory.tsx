@@ -40,7 +40,7 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
             payload: {
                 isEditing: true,
                 addStoryModal: true,
-                currentEditingStory: state.selectedStory
+                currentEditingStory: props.story,
             }
         })
     }

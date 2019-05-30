@@ -1,0 +1,20 @@
+.error-wrapper {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-wrapper>i {
+    color: #444;
+    font-size: 4rem;
+    margin: 0.5rem;
+}
+
+.error-wrapper>p {
+    color: #777;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
