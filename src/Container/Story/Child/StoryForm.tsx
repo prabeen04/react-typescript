@@ -55,32 +55,32 @@ export default function StoryForm() {
     const addStory = useMutation(ADD_STORY, { update: updateStoriesAfterCreate })
 
     return (
-            <>
-                <form onSubmit={(e) => handleSubmit(e, addStory)}>
-                    <TextInput
-                        className='form-control'
-                        name='title'
-                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
-                        value={title}
-                        defaultValue={state.isEditing && state.currentEditingStory.title}
-                        placeholder="What's the story ?"
-                    /><br />
-                    <SelectInput
-                        className='form-control'
-                        name='user'
-                        onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
-                        value={user}
-                        placeholder="Author"
-                        options={renderUsers() && renderUsers()}
-                    /><br />
-                    <Editor
-                        editorState={editorState}
-                        setEditorState={handleEditorStateChange}
-                    />
-                    <br />
-                    <button className='btn btn-primary' disabled={disabled}>Add</button>
-                </form>
+        <>
+            <form onSubmit={(e) => handleSubmit(e, addStory)}>
+                <TextInput
+                    className='form-control'
+                    name='title'
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
+                    // value={title}
+                    defaultValue={state.isEditing ? state.currentEditingStory.title : ''}
+                    placeholder="What's the story ?"
+                /><br />
+                <SelectInput
+                    className='form-control'
+                    name='user'
+                    onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
+                    value={user}
+                    placeholder="Author"
+                    options={renderUsers() && renderUsers()}
+                /><br />
+                <Editor
+                    editorState={editorState}
+                    setEditorState={handleEditorStateChange}
+                />
+                <br />
+                <button className='btn btn-primary' disabled={disabled}>Add</button>
+            </form>
 
-            </>
+        </>
     )
 }

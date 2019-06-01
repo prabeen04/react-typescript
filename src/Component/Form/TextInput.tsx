@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 export interface ITextInputProps {
-    value: string;
+    value?: string;
     name: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     defaultValue?: string;

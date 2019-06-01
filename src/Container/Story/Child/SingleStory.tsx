@@ -33,14 +33,14 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
             })
         }
     }
-    function handleUpdateStory(e: React.SyntheticEvent, id: string) {
+    function handleUpdateStory(e: React.SyntheticEvent, story: IStory) {
         e.stopPropagation();
         dispatch({
             type: types.SET_EDITING_STATE,
             payload: {
                 isEditing: true,
                 addStoryModal: true,
-                currentEditingStory: props.story,
+                currentEditingStory: story,
             }
         })
     }
@@ -72,7 +72,7 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
                 </div>
                 <div className="story-action-wrapper">
                     <i className="fas fa-edit"
-                        onClick={(e: React.SyntheticEvent) => handleUpdateStory(e, props.story.id)}
+                        onClick={(e: React.SyntheticEvent) => handleUpdateStory(e, props.story)}
                     ></i>
                     <i className="fas fa-trash-alt"
                         onClick={(e: React.SyntheticEvent) => handleDeleteStory(e, deleteStory, props.story.id)}
