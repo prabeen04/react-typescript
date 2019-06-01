@@ -22,17 +22,13 @@ const StoryList = (): JSX.Element => {
     }
     return (
         <div data-test="StoryList">
-
-            <>
-                {
-                    !data.stories.length
-                        ? <Empty description='No Stories yet, Add your story' />
-                        : data.stories
-                            .sort((a: IStory, b: IStory) => moment(a.createdAt) < moment(b.createdAt) ? 1 : -1)
-                            .map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
-                }
-            </>
-
+            {
+                !data.stories.length
+                    ? <Empty description='No Stories yet, Add your story' />
+                    : data.stories
+                        .sort((a: IStory, b: IStory) => moment(a.createdAt) < moment(b.createdAt) ? 1 : -1)
+                        .map((story: IStory, i: any) => <SingleStory key={i} story={story} />)
+            }
         </div>
     )
 };
