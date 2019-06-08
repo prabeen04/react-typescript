@@ -9,6 +9,7 @@ export default function AddStoryModal() {
     return (
         <Modal
             noHeader
+            size='lg'
             visible={state.addStoryModal}
             toggle={() => dispatch({ type: types.TOGGLE_ADD_STORY_MODAL, payload: false })}
         >
