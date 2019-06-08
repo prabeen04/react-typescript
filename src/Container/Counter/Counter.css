@@ -1,0 +1,36 @@
+.counter-wrapper{
+    height: 70vh;
+    padding: 2rem;
+}
+.counter-display{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.counter-display > h1{
+    color: #aaa;
+    font-family: Margarine;
+    font-size: 70px;
+}
+.counter-controls{
+    display: flex;
+    justify-content: center;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .counter-controls{
+        flex-wrap: wrap;
+    }
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .counter-controls{
+        flex-wrap: wrap;
+    }
+    .counter-controls > button{
+        margin: 0.3rem;
+    }
+}

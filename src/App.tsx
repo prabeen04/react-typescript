@@ -6,7 +6,7 @@ import { ApolloProvider as ApolloHooksProvider } from 'react-apollo-hooks';
 import Navbar from './Component/Navbar/Navbar';
 import Landing from './Component/Landing/Landing';
 import Todo from './Component/Todo/Todo';
-import Counter from './Component/Counter/Counter'
+import Counter from './Container/Counter/Counter'
 import Fetch from './Component/Fetch/Fetch';
 import Movie from './Container/Movie/Movie';
 import Story from './Container/Story/Story';
