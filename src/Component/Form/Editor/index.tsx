@@ -11,7 +11,7 @@ const toolbarOption: any = {
         className: undefined,
         component: undefined,
         dropdownClassName: undefined,
-        options: ['bold', 'italic', 'underline', 'strikethrough', 'monospace', 'superscript', 'subscript'],
+        options: ['bold', 'italic', 'underline', 'strikethrough', 'monospace'],
     },
     blockType: {
         inDropdown: true,
