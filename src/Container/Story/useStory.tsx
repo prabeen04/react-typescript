@@ -15,7 +15,11 @@ export default function useStory() {
 function storyReducer(state: any, action: any) {
     switch (action.type) {
         case types.TOGGLE_ADD_STORY_MODAL:
-            return { ...state, addStoryModal: action.payload }
+            return {
+                ...state,
+                addStoryModal: action.payload,
+                isEditing: action.payload === false ? false : state.isEditing
+            };
         case types.SET_SELECTED_STORY:
             return { ...state, selectedStory: action.payload }
         case types.SET_EDITING_STATE:
