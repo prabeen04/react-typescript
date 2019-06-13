@@ -39,7 +39,7 @@ class App extends React.Component<IAppProps, IAppState> {
                 <Route exact path='/Movie' component={Movie} />
                 <Route exact path='/story' component={Story} />
                 <Route exact path='/story/:id' component={StoryDetail} />
-                <Route exact path='/emailValidation' component={VerifyEmail} />
+                <Route exact path='/emailValidation/:token' component={VerifyEmail} />
               </Switch>
             </div>
           </Style.Provider>
