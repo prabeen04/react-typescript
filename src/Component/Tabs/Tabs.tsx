@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Jumbotron, Container, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import Counter from '../Counter/Counter'
+import Counter from '../../Container/Counter/Counter';
 import Todo from "../Todo/Todo";
 import Fetch from '../Fetch/Fetch'
 interface ITabsProps {
