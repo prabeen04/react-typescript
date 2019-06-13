@@ -10,6 +10,7 @@ import Counter from './Container/Counter/Counter'
 import Fetch from './Component/Fetch/Fetch';
 import Movie from './Container/Movie/Movie';
 import Story from './Container/Story/Story';
+import VerifyEmail from './Container/VerifyEmail/VerifyEmail';
 
 import './App.css';
 import StoryDetail from './Container/Story/Child/StoryDetail/StoryDetail';
@@ -38,6 +39,7 @@ class App extends React.Component<IAppProps, IAppState> {
                 <Route exact path='/Movie' component={Movie} />
                 <Route exact path='/story' component={Story} />
                 <Route exact path='/story/:id' component={StoryDetail} />
+                <Route exact path='/emailValidation' component={VerifyEmail} />
               </Switch>
             </div>
           </Style.Provider>
