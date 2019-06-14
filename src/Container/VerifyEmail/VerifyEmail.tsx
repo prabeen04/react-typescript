@@ -15,10 +15,14 @@ function VerifyEmail(props: IVerifyEmail) {
        }
   `;
 
-    // React.useEffect(() => {
-        const addStory = useMutation(VERIFY_EMAIL, { update: () => { } })
-        console.log(addStory)
-    // }, [token])
+    const verifyEmail = useMutation(VERIFY_EMAIL, { update: () => { } })
+    React.useEffect(() => {
+        verifyEmail({
+            variables: {
+                token
+            }
+        })
+    }, [token])
     return (
         <div>
             <h1>Verify your email</h1>
