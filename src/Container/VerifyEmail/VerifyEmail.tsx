@@ -11,7 +11,7 @@ function VerifyEmail(props: IVerifyEmail) {
     const token: string = params.token
     const VERIFY_EMAIL = gql`
     mutation VerifyEmail($token: String!) {
-      verifyEmail( token: token )   
+      verifyEmail( token: $token )   
        }
   `;
 
