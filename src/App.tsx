@@ -10,7 +10,7 @@ import Counter from './Container/Counter/Counter'
 import Fetch from './Component/Fetch/Fetch';
 import Movie from './Container/Movie/Movie';
 import Story from './Container/Story/Story';
-import VerifyEmail from './Container/VerifyEmail/VerifyEmail';
+import VerifyEmail from './Container/Auth/VerifyEmail/VerifyEmail';
 
 import './App.css';
 import StoryDetail from './Container/Story/Child/StoryDetail/StoryDetail';
