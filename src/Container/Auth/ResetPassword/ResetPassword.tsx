@@ -22,7 +22,7 @@ function ResetPassword(props: IResetPassword) {
     }, [token])
     return (
         <div>
-
+            <h1>Reset Password</h1>
         </div>
     )
 }
