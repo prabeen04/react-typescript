@@ -71,6 +71,9 @@ export default function BlogEditor(props: IEditor) {
     return (
         <div>
             <Editor
+                wrapperClassName="editor-wrapper-class"
+                editorClassName="editor-class"
+                toolbarClassName="editor-toolbar-class"
                 placeholder={placeholder || 'Type here'}
                 editorState={editorState}
                 onEditorStateChange={setEditorState}
