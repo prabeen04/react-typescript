@@ -132,3 +132,8 @@ override prebuild components classes
     background-color: #444;
     border: none;
 }
+
+.public-DraftEditor-content {
+    max-height: 250px;
+    overflow: auto;
+}

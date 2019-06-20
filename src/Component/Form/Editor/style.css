@@ -1,6 +1,8 @@
 .editor-wrapper-class {
     background-color: rgba(56, 55, 55, 0.288);
     color: #aaa;
+    /* min-height: 150px;
+    overflow: auto; */
 }
 
 .editor-class {
