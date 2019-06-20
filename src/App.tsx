@@ -37,7 +37,7 @@ class App extends React.Component<IAppProps, IAppState> {
                 <Route exact path='/todo' component={Todo} />
                 <Route exact path='/counter' component={Counter} />
                 <Route exact path='/fetch' component={Fetch} />
-                <Route exact path='/Movie' component={Movie} />
+                <Route exact path='/movie' component={Movie} />
                 <Route exact path='/story' component={Story} />
                 <Route exact path='/story/:id' component={StoryDetail} />
                 <Route exact path='/emailValidation/:token' component={VerifyEmail} />
