@@ -58,14 +58,16 @@ export default function StoryForm() {
             <form onSubmit={(e) => handleSubmit(e, addStory)}>
                 <TextInput
                     className='form-control dark-input'
+                    style={{border: 'none'}}
                     name='title'
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
                     // value={title}
                     defaultValue={state.isEditing ? state.currentEditingStory.title : ''}
                     placeholder="What's the story ?"
-                /><br />
+                    /><br />
                 <SelectInput
                     className='form-control dark-input'
+                    style={{border: 'none'}}
                     name='user'
                     onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
                     value={user}

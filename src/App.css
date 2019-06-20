@@ -118,3 +118,17 @@ override prebuild components classes
 .modal-content {
     background-color: #222 !important;
 }
+
+.rdw-editor-toolbar {
+    border: none;
+}
+
+.rdw-option-wrapper {
+    background-color: #444;
+    border: none;
+}
+
+.rdw-dropdown-wrapper {
+    background-color: #444;
+    border: none;
+}
