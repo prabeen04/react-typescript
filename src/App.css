@@ -116,7 +116,7 @@ override prebuild components classes
 */
 
 .modal-content {
-    background-color: #222 !important;
+    background-color: #111 !important;
 }
 
 .rdw-editor-toolbar {
