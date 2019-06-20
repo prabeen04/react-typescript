@@ -108,3 +108,13 @@ body::-webkit-scrollbar-thumb {
     animation: spin 1s ease-in-out infinite;
     -webkit-animation: spin 1s ease-in-out infinite;
 }
+
+
+/**
+@override 
+override prebuild components classes
+*/
+
+.modal-content {
+    background-color: #222 !important;
+}

@@ -57,7 +57,7 @@ export default function StoryForm() {
         <>
             <form onSubmit={(e) => handleSubmit(e, addStory)}>
                 <TextInput
-                    className='form-control'
+                    className='form-control dark-input'
                     name='title'
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
                     // value={title}
@@ -65,7 +65,7 @@ export default function StoryForm() {
                     placeholder="What's the story ?"
                 /><br />
                 <SelectInput
-                    className='form-control'
+                    className='form-control dark-input'
                     name='user'
                     onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
                     value={user}
