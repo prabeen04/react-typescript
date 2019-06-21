@@ -1,16 +1,16 @@
 .editor-wrapper-class {
-    background-color: rgba(56, 55, 55, 0.288);
+    background-color: rgba(56, 55, 55, 0.188);
     color: #aaa;
     /* min-height: 150px;
     overflow: auto; */
 }
 
 .editor-class {
-    background-color: rgba(56, 55, 55, 0.288);
+    background-color: rgba(56, 55, 55, 0.188);
     color: #aaa;
 }
 
 .editor-toolbar-class {
-    background-color: rgba(56, 55, 55, 0.288);
+    background-color: rgba(56, 55, 55, 0.188);
     color: #aaa;
 }
