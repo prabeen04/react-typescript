@@ -24,7 +24,7 @@ function VerifyEmail(props: IVerifyEmail) {
         })
     }, [token])
     return (
-        <div>
+        <div data-test="VerifyEmail">
             <h1>Verify your email</h1>
         </div>
     )

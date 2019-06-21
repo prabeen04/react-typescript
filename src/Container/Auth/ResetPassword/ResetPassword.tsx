@@ -21,7 +21,7 @@ function ResetPassword(props: IResetPassword) {
         })
     }, [token])
     return (
-        <div data-test="SingleStory">
+        <div data-test="ResetPassword">
             <h1>Reset Password</h1>
         </div>
     )
