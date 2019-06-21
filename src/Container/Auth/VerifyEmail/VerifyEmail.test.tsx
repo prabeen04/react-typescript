@@ -3,12 +3,7 @@ import { shallow } from "enzyme";
 import VerifyEmail from './VerifyEmail';
 
 describe('<VerifyEmail/>', () => {
-    const props = {
-        // story: {
-        //     id: 'id1',
-        //     title: 'test'
-        // }
-    }
+    const props = {}
     it('should match snapshot', () => {
         const wrapper = shallow(<VerifyEmail {...props} />)
         expect(wrapper).toMatchSnapshot()
