@@ -8,9 +8,4 @@ describe('<VerifyEmail/>', () => {
         const wrapper = shallow(<VerifyEmail {...props} />)
         expect(wrapper).toMatchSnapshot()
     })
-    it('should render VerifyEmail', () => {
-        const wrapper = shallow(<VerifyEmail {...props} />)
-
-        expect(wrapper.find('[data-test="VerifyEmail"]').length).toEqual(1)
-    })
 })
