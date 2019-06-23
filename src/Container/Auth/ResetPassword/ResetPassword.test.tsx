@@ -8,4 +8,8 @@ describe('<ResetPassword/>', () => {
         const wrapper = shallow(<ResetPassword {...props} />)
         expect(wrapper).toMatchSnapshot()
     })
+    it('should render once', () => {
+        const wrapper = shallow(<ResetPassword />)
+        expect(wrapper.find('[data-test = "ResetPassword"]').length).toEqual(1)
+    })
 })
