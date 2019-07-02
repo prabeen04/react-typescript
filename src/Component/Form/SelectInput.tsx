@@ -4,19 +4,21 @@ export interface ISelectInputInputProps {
     value: string | number;
     name: string;
     onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+    options: any;
+    defaultValue?: any;
     placeholder?: string;
     className?: string;
-    options: any;
     style?: object
 }
 export default function SelectInputInput(props: ISelectInputInputProps) {
-    const { name, value, placeholder, onChange, options, ...rest } = props;
+    const { name, value, placeholder, onChange, options, defaultValue, ...rest } = props;
     return (
         <>
             <select
                 data-test='SelectInputInput'
                 name={name}
                 value={value}
+                defaultValue={defaultValue}
                 placeholder={placeholder}
                 onChange={onChange}
                 {...rest}
