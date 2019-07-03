@@ -52,7 +52,7 @@ export default function StoryForm() {
         });
     }
     const addStory = useMutation(ADD_STORY, { update: updateStoriesAfterCreate })
-    console.log(state)
+
     return (
         <>
             <form onSubmit={(e) => handleSubmit(e, addStory)}>
@@ -70,7 +70,7 @@ export default function StoryForm() {
                     style={{ border: 'none' }}
                     name='user'
                     onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
-                    value={state.isEditing ? state.currentEditingStory.user : user}
+                    value={user}
                     placeholder="Author"
                     options={renderUsers() && renderUsers()}
                 /><br />
