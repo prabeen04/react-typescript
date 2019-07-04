@@ -22,6 +22,10 @@ export const GET_STORIES = gql`
       id
       title
       createdAt
+      user{
+        userName
+        id
+      }
   }
   }
 `;
@@ -38,6 +42,10 @@ export const ADD_STORY = gql`
         title
         article
         createdAt
+        user {
+          userName,
+          id
+        }
     }
   }
 `;
