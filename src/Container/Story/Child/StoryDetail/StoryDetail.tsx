@@ -15,8 +15,12 @@ function StoryDetail(props: IStoryDetailProps) {
     variables: { storyId },
     skip: !storyId
   })
+  console.log(data)
+  console.log(error)
+  console.log(loading)
+  if (!storyId) return <CircularLoading />;
   if (loading) return <CircularLoading />;
-  if (error) return <Error description='Unable to fetch data.'/>;
+  if (error) return <Error description='Unable to fetch data.' />;
   return (
     <>
       <StoryDetailHeader />

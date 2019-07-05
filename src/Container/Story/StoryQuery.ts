@@ -11,6 +11,7 @@ export const GET_STORY_DETAIL = gql`
       article
       createdAt 
       user {
+          id
           userName
         }
     }
