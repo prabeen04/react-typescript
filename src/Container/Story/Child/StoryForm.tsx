@@ -44,7 +44,6 @@ export default function StoryForm() {
     }
     function updateStoriesAfterCreate(cache: any, { data: { addStory } }: any) {
         const { stories } = cache.readQuery({ query: GET_STORIES });
-        console.log(stories, addStory)
         const updatedStories = [...stories, addStory]
         cache.writeQuery({
             query: GET_STORIES,

@@ -13,7 +13,6 @@ import { GET_STORIES } from "../StoryQuery";
 const StoryList = (): JSX.Element => {
     const { state, dispatch } = React.useContext(StoryContext)
     const { data, loading, error } = useQuery(GET_STORIES)
-    console.log(data)
     if (loading) return <CircularLoading />;
     if (error) return <Error description='Opps!!, some error occoured' />;
     if (data.stories && data.stories.length) {
