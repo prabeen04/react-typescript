@@ -18,6 +18,11 @@ export default function StoryForm() {
     const [user, setUser] = React.useState<string>('')
     const { data, loading, error } = useUsers()
     const { users } = data
+    console.clear()
+    console.log('Users list', users);
+    console.log('state', state)
+    console.log('currentUser', user)
+    const editingUser = state
     const disabled = !title || !user
     React.useEffect(() => {
         const userOptions = users && users.map((user: any) => ({ label: user.userName, value: user.id }))
@@ -69,7 +74,7 @@ export default function StoryForm() {
                     style={{ border: 'none' }}
                     name='user'
                     onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUser(e.target.value)}
-                    value={user}
+                    defaultValue={state.isEditing ? state.currentEditingStory.user.id : user}
                     placeholder="Author"
                     options={renderUsers() && renderUsers()}
                 /><br />
