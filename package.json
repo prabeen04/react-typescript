@@ -51,6 +51,10 @@
     "@typescript-eslint/parser": "^1.11.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
     "react-testing-library": "^6.0.4",
     "typescript": "^3.2.2"
   }
