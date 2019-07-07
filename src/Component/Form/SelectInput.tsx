@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-export interface ISelectInputInputProps {
+export interface SelectInputInputProps {
   value?: string | number;
   name: string;
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
@@ -10,7 +10,7 @@ export interface ISelectInputInputProps {
   className?: string;
   style?: object;
 }
-export default function SelectInputInput(props: ISelectInputInputProps): any {
+export default function SelectInputInput(props: SelectInputInputProps): any {
   const {
     name,
     value,
