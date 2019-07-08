@@ -13,7 +13,16 @@
         "jest": true
     },
     "rules": {
-        "prettier/prettier": ["error", { "singleQuote": true }]
+        "prettier/prettier": ["error", { "singleQuote": true }],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": false
+            }
+        ]
     },
     "settings": {
         "react": {
