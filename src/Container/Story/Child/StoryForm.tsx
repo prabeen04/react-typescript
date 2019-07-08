@@ -12,7 +12,7 @@ import useUsers from '../../Users/useUsers';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const draftToHtml = require('draftjs-to-html');
 
-export default function StoryForm() {
+export default function StoryForm(): any {
   const { state, dispatch } = React.useContext(StoryContext);
   const [title, setTitle] = React.useState<string>('');
   const [editorState, setEditorState] = React.useState<EditorState>(

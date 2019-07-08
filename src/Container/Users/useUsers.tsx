@@ -11,7 +11,7 @@ const GET_USERS = gql`
     }
   }
 `;
-export default function useUsers() {
+export default function useUsers(): any {
   const { data, loading, error } = useQuery(GET_USERS);
   return { data, loading, error };
 }
