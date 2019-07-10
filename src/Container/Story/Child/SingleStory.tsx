@@ -13,7 +13,7 @@ interface ISingleStory extends RouteComponentProps<any> {
 }
 const SingleStory = (props: ISingleStory): JSX.Element => {
   const { state, dispatch } = React.useContext(StoryContext);
-  function handleStoryDetailpush() {
+  function handleStoryDetailpush(): any {
     dispatch({ type: types.SET_SELECTED_STORY, payload: props.story.id });
     props.history.push({
       pathname: `/story/${props.story.id}`,
@@ -24,11 +24,10 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
     e: React.SyntheticEvent,
     deleteStory: any,
     id: string
-  ) {
+  ): void {
     e.stopPropagation();
     let allowDelete: any = confirm('Are you sure ?');
     if (allowDelete) {
-      console.log('after confirm');
       deleteStory({
         variables: {
           storyId: id
@@ -36,7 +35,7 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
       });
     }
   }
-  function handleUpdateStory(e: React.SyntheticEvent, story: IStory) {
+  function handleUpdateStory(e: React.SyntheticEvent, story: IStory): any {
     e.stopPropagation();
     dispatch({
       type: types.SET_EDITING_STATE,
@@ -50,9 +49,8 @@ const SingleStory = (props: ISingleStory): JSX.Element => {
   function updateStoriesAfterDelete(
     cache: any,
     { data: { deleteStory } }: any
-  ) {
+  ): void {
     const { stories } = cache.readQuery({ query: GET_STORIES });
-    console.log(stories, deleteStory);
     const updatedStories = stories.filter(
       (story: IStory) => story.id !== deleteStory.id
     );
