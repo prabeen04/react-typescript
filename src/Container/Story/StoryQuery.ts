@@ -9,66 +9,87 @@ export const GET_STORY_DETAIL = gql`
       id
       title
       article
-      createdAt 
+      createdAt
       user {
-          id
-          userName
-        }
+        id
+        userName
+      }
     }
   }
 `;
 export const GET_STORIES = gql`
   {
-      stories {
+    stories {
       id
       title
       createdAt
-      user{
+      user {
         userName
         id
       }
-  }
+    }
   }
 `;
-
 
 /**
  * @Mutation
  */
 
 export const ADD_STORY = gql`
-  mutation AddStory($title: String!, $article: String!, $createdAt: String!, $authorId: String!) {
-    addStory( title: $title, article: $article, createdAt: $createdAt, authorId: $authorId ){
+  mutation AddStory(
+    $title: String!
+    $article: String!
+    $createdAt: String!
+    $authorId: String!
+  ) {
+    addStory(
+      title: $title
+      article: $article
+      createdAt: $createdAt
+      authorId: $authorId
+    ) {
+      id
+      title
+      article
+      createdAt
+      user {
+        userName
         id
-        title
-        article
-        createdAt
-        user {
-          userName,
-          id
-        }
+      }
     }
   }
 `;
 
 export const DELETE_STORY = gql`
   mutation DeleteStory($storyId: ID!) {
-    deleteStory( id: $storyId){
-        id
-        title
-        article
-        createdAt
+    deleteStory(id: $storyId) {
+      id
+      title
+      article
+      createdAt
     }
   }
 `;
 
 export const UPDATE_STORY = gql`
-  mutation UpdateStory($id: ID!, $title: String, $article: String, $createdAt: String, $authorId: String) {
-    updateStory( id: $id, title: $title, article: $article, createdAt: $createdAt, authorId: $authorId ){
-        id
-        title
-        article
-        createdAt
+  mutation UpdateStory(
+    $id: ID!
+    $title: String
+    $article: String
+    $createdAt: String
+    $authorId: String
+  ) {
+    updateStory(
+      id: $id
+      title: $title
+      article: $article
+      createdAt: $createdAt
+      authorId: $authorId
+    ) {
+      id
+      title
+      article
+      createdAt
     }
   }
 `;
